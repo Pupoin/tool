@@ -60,7 +60,15 @@ Host you
   ForwardX11Trusted yes
   IdentityFile /Users/zhaoyangyuan/.ssh/bes
   AddKeysToAgent yes
-
+  
+Host ling
+  HostName 172.22.107.11
+  User yuanzhy
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  IdentityFile /Users/zhaoyangyuan/.ssh/ling
+  AddKeysToAgent yes
+  
 Host git
   HostName github.com
   User git 
