@@ -1,0 +1,71 @@
+
+ServerAliveInterval 40
+ServerAliveCountMax 60
+ForwardX11Trusted yes
+ForwardX11 yes
+AddKeysToAgent yes
+
+Host cms
+  HostName lxplus.cern.ch
+  User zhyuan
+  ForwardX11Trusted yes
+  ForwardX11 yes
+  IdentityFile /Users/zhaoyangyuan/.ssh/cms
+  AddKeysToAgent yes
+  UseKeychain yes
+
+Host cms6
+  HostName lxplus6.cern.ch
+  User zhyuan
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  IdentityFile /Users/zhaoyangyuan/.ssh/cms
+  AddKeysToAgent yes
+  UseKeychain yes
+
+Host bes6
+  HostName lxslc6.ihep.ac.cn
+  User yuanchy8
+  ForwardX11Trusted yes
+  ForwardX11 yes
+  IdentityFile /Users/zhaoyangyuan/.ssh/bes
+  AddKeysToAgent yes
+
+Host bes
+  HostName lxslc7.ihep.ac.cn
+  User yuanchy8
+  ForwardX11Trusted yes
+  ForwardX11 yes
+  # IdentityFile /Users/zhaoyangyuan/.ssh/bes
+  AddKeysToAgent yes
+
+Host uscms
+  HostName login.uscms.org
+  User zhyuan
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  AddKeysToAgent yes
+
+Host el7
+  HostName login-el7.uscms.org
+  User zhyuan
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  AddKeysToAgent yes
+
+Host you
+  HostName 202.116.85.59
+  User yuanzy
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  IdentityFile /Users/zhaoyangyuan/.ssh/bes
+  AddKeysToAgent yes
+
+Host git
+  HostName github.com
+  User git 
+  ForwardX11 no 
+  ForwardX11Trusted no
+  IdentityFile /Users/zhaoyangyuan/.ssh/github
+  AddKeysToAgent yes
+
