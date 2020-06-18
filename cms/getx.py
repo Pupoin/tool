@@ -24,7 +24,7 @@ for root in rootFiles:
     isTrueRoot = re.match(arg+'_[0-9]*_[0-9]*_ana\.root', root)
     if isTrueRoot == None:
         falseFormatRootFiles.append(root)
-        shutil.move(pathRoot+'/'+root, pathRoot+'/wrong/')
+        #shutil.move(pathRoot+'/'+root, pathRoot+'/wrong/')
         continue
     trueFormatRootFiles.append(root)
 

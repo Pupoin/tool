@@ -1,0 +1,36 @@
+echo 'python3 getx.py 70to100'
+python3 getx.py 70to100
+echo
+
+echo 'ython3 getx.py 100to200'
+python3 getx.py 100to200
+echo
+
+echo 'python3 getx.py 200to400'
+python3 getx.py 200to400
+echo
+
+echo 'python3 getx.py 400to600'
+python3 getx.py 400to600
+echo
+
+echo 'python3 getx.py 600to800'
+python3 getx.py 600to800
+echo
+
+echo 'python3 getx.py 800to1200'
+python3 getx.py 800to1200
+echo
+
+echo 'python3 getx.py 1200to2500'
+python3 getx.py 1200to2500
+echo
+
+echo 'python3 getx.py 2500toInf'
+python3 getx.py 2500toInf
+echo
+
+echo 'python3 getx.py inclusive'
+python3 getx.py inclusive
+echo
+

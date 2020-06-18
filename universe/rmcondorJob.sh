@@ -9,8 +9,8 @@ read -p "Enter ending number: " eend
 #eend=9999
 while [[ $sstart -le $eend ]];  
 do  
-    echo 'condor_rm 12934014.'$sstart
-    condor_rm "12934014.$sstart"
+    echo 'condor_rm 12976799.'$sstart
+    condor_rm "12976799.$sstart"
     ((sstart++))  
 done  
 

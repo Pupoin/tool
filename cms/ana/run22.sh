@@ -1,17 +1,20 @@
-inputRootFolderName="root"
-outputRootFolderName="outputRoot"
+# /bin/bash
 
-inputRootFile=${1##*/}
-outputRootFile_tmp=${1##*/}
-outputRootFile=${outputRootFile_tmp/.root/_ana.root}
+inputRootFile=${1##*/}         # inclusive_12863937*.root
 
-wget --no-check-certificate "http://stash.osgconnect.net/+zhyuan/anaCondor/ana.py" -O ana_${inputRootFile}.py 
+# echo ${inputRootFile}
+# echo ${1}
+# echo ${2}
 
-sed -i "s#inputRootFile.root#../${inputRootFolderName}/${inputRootFile}#" -i ana_${inputRootFile}.py
-sed -i "s#outputRootFile.root#./${outputRootFolderName}/${outputRootFile}#" -i ana_${inputRootFile}.py
+anaName=ana_${inputRootFile}.py
 
-echo start ana_${inputRootFile}
-python ana_${inputRootFile}.py
+wget --no-check-certificate "http://stash.osgconnect.net/+zhyuan/anaCondor/ana.py" -O ${anaName}
 
-echo end ../${inputRootFolderName}/${inputRootFile} ./${outputRootFolderName}/${outputRootFile} success
-# /bin/rm -rf ana_${inputRootFile}.py
+sed -i "s#inputRootFile.root#${1}#" -i ${anaName}
+sed -i "s#outputRootFile.root#${2}#" -i ${anaName}
+
+echo start ${anaName}
+python ${anaName}
+#echo ${outputRootFile}
+echo end ${1} ${2} success
+/bin/rm -rf ${anaName}
