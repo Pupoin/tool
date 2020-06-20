@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/LambdacSigmapPi0Eta/LambdacSigmapPi0Eta-00-00-01/",
+                "${workspaceFolder}/SimplePIDSvc/McDecayModeSvc-00-00-01/**",
+                "${workspaceFolder}/SimplePIDSvc/SimplePIDSvc-00-00-16",
+                "",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Utilities/BestDTagSvc/BestDTagSvc-00-00-03",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Event/EvTimeEvent/EvTimeEvent-00-00-08",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Event/DstEvent/DstEvent-00-02-51",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Event/EventModel/EventModel-01-05-33",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Event/EvtRecEvent/EvtRecEvent-00-02-02",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Event/McTruth/McTruth-00-02-19",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Analysis/DTagTool/DTagTool-00-00-11",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Analysis/VertexFit/VertexFit-00-02-80",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Analysis/ParticleID/ParticleID-00-04-62",
+                "/afs/ihep.ac.cn/bes3/offline/Boss/7.0.3/Mdc/MdcRecEvent/MdcRecEvent-00-05-14",
+                "",
+                "/afs/ihep.ac.cn/bes3/offline/ExternalLib/SLC6/ExternalLib/external/ROOT/5.34.09/x86_64-slc6-gcc46-opt/root/include",
+                "/afs/ihep.ac.cn/bes3/offline/ExternalLib/SLC6/ExternalLib/gaudi/GAUDI_v23r9/GaudiKernel",
+                "/afs/ihep.ac.cn/bes3/offline/ExternalLib/SLC6/ExternalLib/external/CLHEP/2.4.0.2/clhep-2.4.0.2/2.4.0.2/CLHEP/Vector"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

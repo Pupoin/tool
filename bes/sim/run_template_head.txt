@@ -1,0 +1,16 @@
+#include "$OFFLINEEVENTLOOPMGRROOT/share/OfflineEventLoopMgr_Option.txt"
+
+//*************job options for generator (KKMC)***************
+#include "$KKMCROOT/share/jobOptions_KKMC.txt"
+KKMC.CMSEnergy = 4.6;
+KKMC.BeamEnergySpread=0.0011;
+KKMC.NumberOfEventPrinted=10;
+KKMC.GeneratePsi4260=true;
+// Psi(4260)
+KKMC.ResParameterPs7 = {4.6e0, 95e-3, 0.47e-6};
+KKMC.ModeIndexExpXS=-2;
+KKMC.ParticleDecayThroughEvtGen = true;
+KKMC.ThresholdCut =  4.573;
+KKMC.RadiationCorrection = 1;
+KKMC.TagISR = 1;
+KKMC.TagFSR = 1;

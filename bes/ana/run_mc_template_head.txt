@@ -1,0 +1,11 @@
+#include "$ROOTIOROOT/share/jobOptions_ReadRec.txt"
+#include "$VERTEXFITROOT/share/jobOptions_VertexDbSvc.txt"
+#include "$MAGNETICFIELDROOT/share/MagneticField.txt"
+#include "$ABSCORROOT/share/jobOptions_AbsCor.txt"
+#include "$LAMBDACSIGMAPETAROOT/share/jobOptions_SigmapEta.txt"
+#include "$MCDECAYMODESVCROOT/share/GetDecayMode.txt"
+#include "$SIMPLEPIDSVCROOT/share/jobOptions_SimplePIDSvc.txt"
+
+// Input REC or DST file name
+EventCnvSvc.digiRootInputFile ={
+
