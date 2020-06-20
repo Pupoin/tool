@@ -42,6 +42,8 @@ findRunWrong()
         then
             echo "boss.condor "  ${i/.bosslog/}  >> submitWrong
             let n=n+1
+            echo ${i}
+            continue
         fi
 
         printf "\r${i}" 
