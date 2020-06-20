@@ -42,7 +42,7 @@ findRunWrong()
         then
             echo "boss.condor "  ${i/.bosslog/}  >> submitWrong
             let n=n+1
-            echo ${i}
+            printf "${i}"
             continue
         fi
 
@@ -50,8 +50,10 @@ findRunWrong()
     done 
 
     printf "\r                                                   "
-    printf "\rwrong: ${n} \n"
+    printf "\rwrong: ${n} \n\n"
     echo 'resubmit using: source submitWrong'
+    
+    cat submitWrong
 
 }
 
