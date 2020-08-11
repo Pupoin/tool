@@ -5,12 +5,28 @@ set expandtab    "将 tab 转化成 空格
 set softtabstop=4
 "set autoindent
 set nu
-set cindent
+"set cindent
 "set smartindent
 set showmatch
 set hlsearch	" 设置查找高亮
 
 set ruler " 打开状态栏标尺
 set mouse=a "在vim所有模式下开鼠标，复制文档就可以不包含行号了
-set cursorline
+"set cursorline
+"set cursorcolumn
 
+"set rtp+=~/.vim/bundle/Vundle.vim
+  
+"call vundle#begin()
+
+" 在这里面输入安装的插件"
+" " Vundle 本身就是一个插件
+ 
+"所有插件都应该在这一行之前
+"call vundle#end()
+"       
+" filetype off
+"filetype plugin indent on
+
+
+ 

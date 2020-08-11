@@ -1,16 +1,10 @@
+
 # .bashrc
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-
-# for ssh-add key
-#ssh-agent bash
-eval `ssh-agent -s`
-ssh-add ~/.ssh/github
-
-# rm 
-#rsync --delete-before -a -H ./tmp/ ./process/
 
 
 ####################################### Universe ###############################################
@@ -22,7 +16,8 @@ export PS1='\[\033[01;36m\]\u@\h: \W\$\[\033[00m\] '
 
 #..............................................................................................#
 
-alias ll='ls -hl'
+alias ls="ls -v --color"
+alias ll='ls -hlv'
 alias ycd='func() { cd $@; ll;}; func'
 alias ymake='func()
 	{ 
@@ -36,23 +31,28 @@ alias ymake='func()
 
 
 
-export dust='/Users/zhaoyangyuan/.dustBin'
+export dust='/home/zhyuan/.dustBin'
 if [ ! -d $dust ]; then
 	mkdir -p $dust
 fi
 alias rl='ll -a $dust'
-alias rm='func() { 		
-					for i in $@
-					do	
-						str=${i}
-						if test ${str:0:1} != "-"; then
-							mv -iv ${i} $dust/"$(basename ${i})_$(date +"%F_%H:%M:%S")"
-						else
-							echo "dimiss ${i} ! "
-						fi
-					done
-				}; func'
-
+alias rm='func() {         
+                    for i in $@
+                    do    
+                        case "${1}" in                        
+                            -rf)
+                                /bin/rm -rf ${i}
+                                ;;
+                            -*)
+                                echo "use like: rm *"
+                                echo "MATCH  ${i}, dimiss" 
+                                ;;    
+                            *)
+                                mv -iv ${i} $dust/"$(basename ${i})_$(date +"%F_%H:%M:%S")"
+                                ;;
+                        esac
+                    done
+                }; func'
 alias unrm='func() { 
 					for i in $@
 					do
@@ -63,8 +63,8 @@ alias cleardust='func()
 			{
 				echo -e "\033[01;31mare you sure to deleate all in $dust ？[y/n] \033[0m" && 
 				read confirm && 
-				if [ $confirm == 'y' ] || [ $confirm == 'Y' ];then
-					/bin/rm -rfv $dust/*;
+				if [ $confirm=='y' ] || [ $confirm=='Y' ];then
+					/bin/rm -rfv $dust/* > /tmp/deleteFiles;
 				fi
 			};func'
 #..............................................................................................#
@@ -73,3 +73,7 @@ alias cleardust='func()
 
 ################################################################################################
 
+PATH=$PATH:$HOME/bin
+MANPATH=$MANPATH:$HOME/share/man
+PATH=$PATH:$HOME/bin
+MANPATH=$MANPATH:$HOME/share/man
