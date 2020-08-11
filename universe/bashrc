@@ -4,6 +4,13 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# for ssh-add key
+#ssh-agent bash
+eval `ssh-agent -s`
+ssh-add ~/.ssh/github
+
+# rm 
+#rsync --delete-before -a -H ./tmp/ ./process/
 
 
 ####################################### Universe ###############################################

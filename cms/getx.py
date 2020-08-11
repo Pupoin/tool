@@ -8,7 +8,7 @@ writeFile = open('.' + arg + '.getX', 'w')
 
 
 pathLog = './log'
-pathRoot = './root'
+pathRoot = './root/'
 if os.path.exists(pathRoot+'/wrong') == False:
     os.makedirs(pathRoot+'/wrong')
 
@@ -21,7 +21,7 @@ trueFormatRootFiles = []
 # get the root files with right name format in pathRoot
 for root in rootFiles:
     # inclusive_12894116_1000.root
-    isTrueRoot = re.match(arg+'_[0-9]*_[0-9]*_ana\.root', root)
+    isTrueRoot = re.match(arg+'_[0-9]*_[0-9]*\.root', root)
     if isTrueRoot == None:
         falseFormatRootFiles.append(root)
         #shutil.move(pathRoot+'/'+root, pathRoot+'/wrong/')
@@ -29,7 +29,7 @@ for root in rootFiles:
     trueFormatRootFiles.append(root)
 
 # print(falseFormatRootFiles)
-# print(trueFormatRootFiles)
+#print(trueFormatRootFiles)
 
 
 # %%
@@ -37,10 +37,10 @@ for root in rootFiles:
 tmp_dictLog_root = dict()
 for root in trueFormatRootFiles:
     split = re.split('_|\.', root)
-    logFileName = split[0] + '.err_' + split[1] + '-' + split[2]
+    logFileName = split[0]+ "_" + split[1] + '.err_' + split[2] + '-' + split[3]
     tmp_dictLog_root[logFileName] = root
 
-# print(tmp_dictLog_root)
+print(tmp_dictLog_root)
 
 # %%
 # remove the root file which has no corresponding log(err) file

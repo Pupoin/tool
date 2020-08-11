@@ -1,5 +1,5 @@
 # /bin/bash
-inputRootPath="../roottmp"
+inputRootPath="../root"
 outputRootPath="./outputRoot"
 
 mkdir -p ${outputRootPath}

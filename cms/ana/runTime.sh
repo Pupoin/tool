@@ -1,7 +1,7 @@
 starttime=`date +'%Y-%m-%d %H:%M:%S'`
 
 
-parallel -j 100 < paralleljobs --joblog ./parallel.log 
+parallel -j 10 < paralleljobs --joblog ./parallel.log 
 #bash run22.sh ../root/inclusive_12863937_0.root ./outputRoot
 #bash run22.sh ../root/inclusive_12863937_1.root ./outputRoot
 
