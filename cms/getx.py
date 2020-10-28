@@ -8,7 +8,7 @@ writeFile = open('.' + arg + '.getX', 'w')
 
 
 pathLog = './log'
-pathRoot = './root/'
+pathRoot = './root'
 if os.path.exists(pathRoot+'/wrong') == False:
     os.makedirs(pathRoot+'/wrong')
 
@@ -28,7 +28,7 @@ for root in rootFiles:
         continue
     trueFormatRootFiles.append(root)
 
-# print(falseFormatRootFiles)
+#print(falseFormatRootFiles)
 #print(trueFormatRootFiles)
 
 
@@ -37,10 +37,10 @@ for root in rootFiles:
 tmp_dictLog_root = dict()
 for root in trueFormatRootFiles:
     split = re.split('_|\.', root)
-    logFileName = split[0]+ "_" + split[1] + '.err_' + split[2] + '-' + split[3]
+    logFileName = split[0] + '.err_' + split[1] + '_' + split[2]
     tmp_dictLog_root[logFileName] = root
 
-print(tmp_dictLog_root)
+#print(tmp_dictLog_root)
 
 # %%
 # remove the root file which has no corresponding log(err) file
