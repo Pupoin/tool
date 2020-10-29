@@ -50,7 +50,7 @@ for dictLog in tmp_dictLog_root.keys():
         continue
     dictLog_root[dictLog] = tmp_dictLog_root.get(dictLog)
 
-# print(dictLog_root)
+#print(dictLog_root)
 
 
 # %%
@@ -118,7 +118,7 @@ print('xsec +- err: ' + str(round(finalValue, 6)) +
 writeFile.write('\n')
 writeFile.write("run ok file num: "+str(len(dictXsec_err)) + '\n')
 writeFile.write('xsec +- err: '+str(finalValue) +
-                " +- " + str(finalError) + ' pb')
+                " +- " + str(finalError) + ' pb \n')
 
 writeFile.close()
 
