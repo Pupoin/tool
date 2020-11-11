@@ -1,0 +1,1 @@
+sed -i "s/double factor\[4\] =.*$/double factor\[4\] = {5688.025158 , 681.463411 , 212.307003 , 6540.333596 };/" -i plot_LHE_Njets.cc
