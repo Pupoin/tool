@@ -121,17 +121,18 @@ int plot_LHE_Njets()
     cout << "2j " << hist_2j->Integral() << " " << hist_2j->GetEntries() << endl;
     cout << "inlcusive " << hist_inclusive->Integral() << " " << hist_inclusive->GetEntries() << endl;
 
-    double factor[4] = {5688.025158 , 681.463411 , 212.307003 , 6540.333596 };
-    hist_0j->Scale(factor[0] / hist_0j->Integral());
-    hist_1j->Scale(factor[1] / hist_1j->Integral());
-    hist_2j->Scale(factor[2] / hist_2j->Integral());
-    // hist_inclusive->Scale((factor[0]+factor[1]+factor[2]) / hist_inclusive->Integral());
-    hist_inclusive->Scale(factor[3] / hist_inclusive->Integral());
+    double factor[4] = {5691.006823 , 677.040732 , 213.668412 , 6549.252623 };
 
-    cout << "0j " << hist_0j->Integral() << " " << hist_0j->GetEntries() << endl;
-    cout << "1j " << hist_1j->Integral() << " " << hist_1j->GetEntries() << endl;
-    cout << "2j " << hist_2j->Integral() << " " << hist_2j->GetEntries() << endl;
-    cout << "inlcusive " << hist_inclusive->Integral() << " " << hist_inclusive->GetEntries() << endl;
+    hist_0j->Scale(factor[0] / (chain_0j->GetEntries("genWeight>0") - chain_0j->GetEntries("genWeight<0")));
+    hist_1j->Scale(factor[1] / (chain_1j->GetEntries("genWeight>0") - chain_1j->GetEntries("genWeight<0")));
+    hist_2j->Scale(factor[2] / (chain_2j->GetEntries("genWeight>0") - chain_2j->GetEntries("genWeight<0")));
+    hist_inclusive->Scale(factor[3] / (chain_inclusive->GetEntries("genWeight>0") - chain_inclusive->GetEntries("genWeight<0")));
+
+    cout << "_________________  after scale ___________________" << endl;
+    cout << "0j intergral " << hist_0j->Integral() << "  allentries " << hist_0j->GetEntries() << "  p-n "<< chain_0j->GetEntries("genWeight>0") - chain_0j->GetEntries("genWeight<0") << endl;
+    cout << "1j intergral " << hist_1j->Integral() << "  allentries " << hist_1j->GetEntries() << "  p-n "<< chain_1j->GetEntries("genWeight>0") - chain_1j->GetEntries("genWeight<0") << endl;
+    cout << "2j intergral " << hist_2j->Integral() << "  allentries" << hist_2j->GetEntries() << "  p-n "<< chain_2j->GetEntries("genWeight>0") - chain_2j->GetEntries("genWeight<0") << endl;
+    cout << "inlcusive intergral " << hist_inclusive->Integral() << " allentries " << hist_inclusive->GetEntries() << "  p-n "<< chain_inclusive->GetEntries("genWeight>0") - chain_inclusive->GetEntries("genWeight<0") << endl;
 
     TH1D *hist_binned = (TH1D *)hist_2j->Clone("hist_binned");
     hist_binned->Reset();
@@ -188,7 +189,7 @@ int plot_LHE_Njets()
     hstack->GetYaxis()->SetTitle("Events");
     hstack->GetXaxis()->SetNdivisions(105);
     // hstack->GetXaxis()->SetTitle("HT(GeV)");
-    hstack->SetMinimum(0.1);
+    hstack->SetMinimum(0.0000001);
     //hstack->SetMaximum(50000);
     hstack->GetXaxis()->SetLabelSize(0);
     // hstack->SetFillColor(8);
@@ -197,7 +198,7 @@ int plot_LHE_Njets()
     // ______________________________________________________________
 
     TLegend *legend = new TLegend(0.65, 0.65, 0.85, 0.85);
-    legend->SetHeader("MG v2.7.2");
+    legend->SetHeader("MG v2.6.5");
     legend->AddEntry("hist_inclusive", "DY NLO inclusive", "f");
     legend->AddEntry("hist_binned", "DY NLO binned", "f");
     legend->AddEntry("hist_0j", "DY NLO 0j", "f");
@@ -218,6 +219,9 @@ int plot_LHE_Njets()
     double erroverflow = sqrt(pow(Hratio->GetBinError(nbins), 2) + pow(Hratio->GetBinError(nbins + 1), 2));
     Hratio->SetBinContent(nbins, addoverflow);
     Hratio->SetBinError(nbins, erroverflow);
+    
+    cout << Hratio->GetBinContent(4) << endl;
+    cout << Hdenom->GetBinContent(4) << endl;
 
     nbins = hist_binned->GetNbinsX();
     addoverflow = hist_binned->GetBinContent(nbins) + hist_binned->GetBinContent(nbins + 1);
@@ -271,9 +275,9 @@ int plot_LHE_Njets()
     {
         printf("%f +/- %f\n", Hratio->GetBinContent(ibin), Hratio->GetBinError(ibin));
     }
-
+   
     // w->SaveAs("pic_date_Mbc.eps");
-    canv->SaveAs("/stash/user/zhyuan/public/svg/nanogen_272_LHE_Njets.svg");
+    canv->SaveAs("/stash/user/zhyuan/public/svg/nanogen_265_LHE_Njets.svg");
 
     return 0;
 }

@@ -44,7 +44,7 @@ using namespace std;
 //      cout << __LINE__ << " " << weight_p - weight_m << endl;
 // }
 
-int plot_GenMET_ptLog()
+int plot_MET_fiducialGenPtLog()
 {
      TCanvas *canv = new TCanvas("canv", "", 800, 700);
      canv->SetFillColor(0);
@@ -60,7 +60,7 @@ int plot_GenMET_ptLog()
 
      TH1::SetDefaultSumw2(kTRUE);
 
-     double xmin = 10, xmax = 200;
+     double xmin = 0, xmax = 200;
      int xbins = 12;
      TString a("Events/");
      char b[100];
@@ -83,7 +83,7 @@ int plot_GenMET_ptLog()
      TH1D *hist_2j = new TH1D("hist_2j", "", xbins, xmin, xmax);
      TH1D *hist_inclusive = new TH1D("hist_inclusive", "", xbins, xmin, xmax);
 
-     const char param[] = "GenMET_pt";
+     const char param[] = "MET_fiducialGenPt";
 
      // double w0j = chain_0j->GetEntries("genWeight>0") - chain_0j->GetEntries("genWeight<0");
      // double w1j = chain_1j->GetEntries("genWeight>0") - chain_1j->GetEntries("genWeight<0");
@@ -96,11 +96,6 @@ int plot_GenMET_ptLog()
      chain_2j->Project("hist_2j", param, "(genWeight/fabs(genWeight))");
      chain_inclusive->Project("hist_inclusive", param, "(genWeight/fabs(genWeight))");
      
-     hist_0j->Scale(1.0 / (chain_0j->GetEntries("genWeight>0") - chain_0j->GetEntries("genWeight<0")));
-     hist_1j->Scale(1.0 / (chain_1j->GetEntries("genWeight>0") - chain_1j->GetEntries("genWeight<0")));
-     hist_2j->Scale(1.0 / (chain_2j->GetEntries("genWeight>0") - chain_2j->GetEntries("genWeight<0")));
-     hist_inclusive->Scale(1.0 / (chain_inclusive->GetEntries("genWeight>0") - chain_inclusive->GetEntries("genWeight<0")));
-
      // MyFill(chain_0j, hist_0j);
      // MyFill(chain_1j, hist_1j);
      // MyFill(chain_2j, hist_2j);
@@ -111,17 +106,18 @@ int plot_GenMET_ptLog()
      cout << "2j " << hist_2j->Integral() << " " << hist_2j->GetEntries() << endl;
      cout << "inlcusive " << hist_inclusive->Integral() << " " << hist_inclusive->GetEntries() << endl;
 
-     double factor[4] = {5688.025158 , 681.463411 , 212.307003 , 6540.333596 };
+     double factor[4] = {5691.006823 , 677.040732 , 213.668412 , 6549.252623 };
 
-     hist_0j->Scale(factor[0] / hist_0j->Integral());
-     hist_1j->Scale(factor[1] / hist_1j->Integral());
-     hist_2j->Scale(factor[2] / hist_2j->Integral());
-     hist_inclusive->Scale(factor[3] / hist_inclusive->Integral());
+    hist_0j->Scale(factor[0] / (chain_0j->GetEntries("genWeight>0") - chain_0j->GetEntries("genWeight<0")));
+    hist_1j->Scale(factor[1] / (chain_1j->GetEntries("genWeight>0") - chain_1j->GetEntries("genWeight<0")));
+    hist_2j->Scale(factor[2] / (chain_2j->GetEntries("genWeight>0") - chain_2j->GetEntries("genWeight<0")));
+    hist_inclusive->Scale(factor[3] / (chain_inclusive->GetEntries("genWeight>0") - chain_inclusive->GetEntries("genWeight<0")));
 
-     cout << "0j " << hist_0j->Integral() << " " << hist_0j->GetEntries() << endl;
-     cout << "1j " << hist_1j->Integral() << " " << hist_1j->GetEntries() << endl;
-     cout << "2j " << hist_2j->Integral() << " " << hist_2j->GetEntries() << endl;
-     cout << "inlcusive " << hist_inclusive->Integral() << " " << hist_inclusive->GetEntries() << endl;
+    cout << "_________________  after scale ___________________" << endl;
+    cout << "0j intergral " << hist_0j->Integral() << "  allentries " << hist_0j->GetEntries() << "  p-n "<< chain_0j->GetEntries("genWeight>0") - chain_0j->GetEntries("genWeight<0") << endl;
+    cout << "1j intergral " << hist_1j->Integral() << "  allentries " << hist_1j->GetEntries() << "  p-n "<< chain_1j->GetEntries("genWeight>0") - chain_1j->GetEntries("genWeight<0") << endl;
+    cout << "2j intergral " << hist_2j->Integral() << "  allentries" << hist_2j->GetEntries() << "  p-n "<< chain_2j->GetEntries("genWeight>0") - chain_2j->GetEntries("genWeight<0") << endl;
+    cout << "inlcusive intergral " << hist_inclusive->Integral() << " allentries " << hist_inclusive->GetEntries() << "  p-n "<< chain_inclusive->GetEntries("genWeight>0") - chain_inclusive->GetEntries("genWeight<0") << endl;
 
      TH1D *hist_binned = (TH1D *)hist_2j->Clone("hist_binned");
      hist_binned->Reset();
@@ -186,7 +182,7 @@ int plot_GenMET_ptLog()
      // ______________________________________________________________
 
      TLegend *legend = new TLegend(0.65, 0.65, 0.85, 0.85);
-     legend->SetHeader("MG v2.7.2");
+     legend->SetHeader("MG v2.6.5");
      legend->AddEntry("hist_inclusive", "DY NLO inclusive", "f");
      legend->AddEntry("hist_binned", "DY NLO binned", "f");
      legend->AddEntry("hist_0j", "DY NLO 0j", "f");
@@ -260,7 +256,7 @@ int plot_GenMET_ptLog()
      }
 
      // w->SaveAs("pic_date_Mbc.eps");
-     canv->SaveAs("/stash/user/zhyuan/public/svg/nanogen_272_GenMET_ptLog.svg");
+     canv->SaveAs("/stash/user/zhyuan/public/svg/nanogen_265_MET_fiducialGenPtLog.svg");
 
      return 0;
 }

@@ -6,45 +6,40 @@
 #include "TString.h"
 #include "TStyle.h"
 #include <iostream>
-#include <Riostream.h>
 #include "THStack.h"
-#include "TThread.h"
 
 using namespace std;
-// void MyFill(TChain *chain_0j, TH1D *hist_0j)
-// {
-//      Float_t genWeight;
-//      UInt_t nGenJet;
-//      UChar_t LHE_NpNLO;
-//      chain_0j->SetBranchAddress("genWeight", &genWeight);
-//      chain_0j->SetBranchAddress("nGenJet", &nGenJet);
-//      chain_0j->SetBranchAddress("LHE_NpNLO", &LHE_NpNLO);
-//      int weight_p = 0, weight_m = 0;
-//      cout << __LINE__ << " entries:" << chain_0j->GetEntries() << endl;
-//      for (int i = 0; i < chain_0j->GetEntries(); i++)
-//      {
-//           if (i % 2000 == 0 && i != 0)
-//                cout << __LINE__ << " i:" << i << endl;
-//           chain_0j->GetEvent(i);
+void MyFill(TChain *chain_0j, TH1D *hist_0j)
+{
+     Float_t genWeight;
+     UInt_t nGenJet;
+     UChar_t LHE_NpNLO;
+     chain_0j->SetBranchAddress("genWeight", &genWeight);
+     chain_0j->SetBranchAddress("nGenJet", &nGenJet);
+     chain_0j->SetBranchAddress("LHE_NpNLO", &LHE_NpNLO);
+     int weight_p = 0, weight_m = 0;
+     cout << __LINE__ << " entries:" << chain_0j->GetEntries() << endl;
+     for (int i = 0; i < chain_0j->GetEntries(); i++)
+     {
+          if (i % 2000 == 0 && i !=0 )
+               cout << __LINE__ << " i:" << i << endl;
+          chain_0j->GetEvent(i);
 
-//           if (genWeight > 0)
-//           {
-//                weight_p++;
-//                hist_0j->Fill(nGenJet, 1);
-//           }
-//           else
-//           {
-//                weight_m++;
-//                hist_0j->Fill(nGenJet, -1);
-//           }
-//           // hist_0j->Fill(nGenJet);
-//      }
+          if (genWeight > 0)
+          {
+               weight_p++;
+               hist_0j->Fill(nGenJet, 1);
+          }
+          else
+          {
+               weight_m++;
+               hist_0j->Fill(nGenJet, -1);
+          }
+     }
+     hist_0j->Scale(1.0 / (weight_p - weight_m));
+}
 
-//      hist_0j->Scale(1.0 / (weight_p - weight_m));
-//      cout << __LINE__ << " " << weight_p - weight_m << endl;
-// }
-
-int plot_MET_fiducialGenPtLog()
+int plot_nGenJetLog()
 {
      TCanvas *canv = new TCanvas("canv", "", 800, 700);
      canv->SetFillColor(0);
@@ -60,7 +55,7 @@ int plot_MET_fiducialGenPtLog()
 
      TH1::SetDefaultSumw2(kTRUE);
 
-     double xmin = 10, xmax = 200;
+     double xmin = 0, xmax = 12;
      int xbins = 12;
      TString a("Events/");
      char b[100];
@@ -83,36 +78,17 @@ int plot_MET_fiducialGenPtLog()
      TH1D *hist_2j = new TH1D("hist_2j", "", xbins, xmin, xmax);
      TH1D *hist_inclusive = new TH1D("hist_inclusive", "", xbins, xmin, xmax);
 
-     const char param[] = "MET_fiducialGenPt";
-
-     // double w0j = chain_0j->GetEntries("genWeight>0") - chain_0j->GetEntries("genWeight<0");
-     // double w1j = chain_1j->GetEntries("genWeight>0") - chain_1j->GetEntries("genWeight<0");
-     // double w2j = chain_2j->GetEntries("genWeight>0") - chain_2j->GetEntries("genWeight<0");
-     // double w012j = chain_inclusive->GetEntries("genWeight>0") - chain_inclusive->GetEntries("genWeight<0");
-
-     // cout << w0j << " " << w1j << " " << w2j << " " << w012j << endl;
-     chain_0j->Project("hist_0j", param, "(genWeight/fabs(genWeight))");
-     chain_1j->Project("hist_1j", param, "(genWeight/fabs(genWeight))");
-     chain_2j->Project("hist_2j", param, "(genWeight/fabs(genWeight))");
-     chain_inclusive->Project("hist_inclusive", param, "(genWeight/fabs(genWeight))");
-     
-     hist_0j->Scale(1.0 / (chain_0j->GetEntries("genWeight>0") - chain_0j->GetEntries("genWeight<0")));
-     hist_1j->Scale(1.0 / (chain_1j->GetEntries("genWeight>0") - chain_1j->GetEntries("genWeight<0")));
-     hist_2j->Scale(1.0 / (chain_2j->GetEntries("genWeight>0") - chain_2j->GetEntries("genWeight<0")));
-     hist_inclusive->Scale(1.0 / (chain_inclusive->GetEntries("genWeight>0") - chain_inclusive->GetEntries("genWeight<0")));
-
-     // MyFill(chain_0j, hist_0j);
-     // MyFill(chain_1j, hist_1j);
-     // MyFill(chain_2j, hist_2j);
-     // MyFill(chain_inclusive, hist_inclusive);
+     MyFill(chain_0j, hist_0j);
+     MyFill(chain_1j, hist_1j);
+     MyFill(chain_2j, hist_2j);
+     MyFill(chain_inclusive, hist_inclusive);
 
      cout << "0j " << hist_0j->Integral() << " " << hist_0j->GetEntries() << endl;
      cout << "1j " << hist_1j->Integral() << " " << hist_1j->GetEntries() << endl;
      cout << "2j " << hist_2j->Integral() << " " << hist_2j->GetEntries() << endl;
      cout << "inlcusive " << hist_inclusive->Integral() << " " << hist_inclusive->GetEntries() << endl;
 
-     double factor[4] = {5688.025158 , 681.463411 , 212.307003 , 6540.333596 };
-
+    double factor[4] = {5691.006823 , 677.040732 , 213.668412 , 6549.252623 };
      hist_0j->Scale(factor[0] / hist_0j->Integral());
      hist_1j->Scale(factor[1] / hist_1j->Integral());
      hist_2j->Scale(factor[2] / hist_2j->Integral());
@@ -132,6 +108,7 @@ int plot_MET_fiducialGenPtLog()
      hist_binned->Merge(list);
 
      THStack *hstack = new THStack("hstack", "");
+     // hs->SetMaximum(2);
      hstack->Add(hist_0j);
      hstack->Add(hist_1j);
      hstack->Add(hist_2j);
@@ -185,8 +162,10 @@ int plot_MET_fiducialGenPtLog()
      hstack->GetYaxis()->SetTitleOffset(0.96);
      // ______________________________________________________________
 
-     TLegend *legend = new TLegend(0.65, 0.65, 0.85, 0.85);
-     legend->SetHeader("MG v2.7.2");
+
+
+     TLegend *legend = new TLegend(0.65, 0.6, 0.9, 0.85);
+     legend->SetHeader("MG v2.6.5");
      legend->AddEntry("hist_inclusive", "DY NLO inclusive", "f");
      legend->AddEntry("hist_binned", "DY NLO binned", "f");
      legend->AddEntry("hist_0j", "DY NLO 0j", "f");
@@ -240,14 +219,14 @@ int plot_MET_fiducialGenPtLog()
 
      // X axis ratio plot settings
      Hratio->GetXaxis()->SetTitleSize(20);
-     Hratio->GetXaxis()->SetTitle(param);
+     Hratio->GetXaxis()->SetTitle("nGenJet");
      Hratio->GetXaxis()->SetTitleFont(43);
      Hratio->GetXaxis()->SetTitleOffset(4.);
      Hratio->GetXaxis()->SetNdivisions(110);
      // Absolute font size in pixel (precision 3)
      Hratio->GetXaxis()->SetLabelFont(43);
      Hratio->GetXaxis()->SetLabelSize(18);
-     Hratio->SetAxisRange(0, 2, "Y");
+     Hratio->SetAxisRange(0.9, 1.1, "Y");
      Hratio->SetLineColor(kAzure + 1);
      // Hratio->SetErrorLineStyle
 
@@ -260,7 +239,7 @@ int plot_MET_fiducialGenPtLog()
      }
 
      // w->SaveAs("pic_date_Mbc.eps");
-     canv->SaveAs("/stash/user/zhyuan/public/svg/nanogen_272_MET_fiducialGenPtLog.svg");
+     canv->SaveAs("/stash/user/zhyuan/public/svg/nanogen_265_nGenJetLog.svg");
 
      return 0;
 }
