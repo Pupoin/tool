@@ -119,6 +119,37 @@ int plot_Gen_HT()
     cout << "2j intergral " << hist_2j->Integral() << "  allentries" << hist_2j->GetEntries() << "  p-n "<< chain_2j->GetEntries("genWeight>0") - chain_2j->GetEntries("genWeight<0") << endl;
     cout << "inlcusive intergral " << hist_inclusive->Integral() << " allentries " << hist_inclusive->GetEntries() << "  p-n "<< chain_inclusive->GetEntries("genWeight>0") - chain_inclusive->GetEntries("genWeight<0") << endl;
 
+    //--- Ensure no overflow events are left out of scale factor calculation
+    int nbins = hist_inclusive->GetNbinsX();
+    //cout << hist_inclusive->GetBinContent(nbins) << " " << hist_inclusive->GetBinContent(nbins+1) << " " << sqrt(pow(hist_inclusive->GetBinError(nbins), 2)) << " " <<  sqrt(pow(hist_inclusive->GetBinError(nbins + 1), 2))  << endl;
+    //cout << hist_binned->GetBinContent(nbins) << " " << hist_binned->GetBinContent(nbins+1) << " " << sqrt(pow(hist_binned->GetBinError(nbins), 2)) << " " <<  sqrt(pow(hist_binned->GetBinError(nbins + 1), 2))  << endl;
+    // overflow for 0j
+    double addoverflow = hist_0j->GetBinContent(nbins) + hist_0j->GetBinContent(nbins + 1);
+    double erroverflow = sqrt(pow(hist_0j->GetBinError(nbins), 2) + pow(hist_0j->GetBinError(nbins + 1), 2));
+    hist_0j->SetBinContent(nbins, addoverflow);
+    hist_0j->SetBinError(nbins, erroverflow);
+    // overflow for 1j
+    addoverflow = hist_1j->GetBinContent(nbins) + hist_1j->GetBinContent(nbins + 1);
+    erroverflow = sqrt(pow(hist_1j->GetBinError(nbins), 2) + pow(hist_1j->GetBinError(nbins + 1), 2));
+    hist_1j->SetBinContent(nbins, addoverflow);
+    hist_1j->SetBinError(nbins, erroverflow);
+    // overflow for 2j
+    addoverflow = hist_2j->GetBinContent(nbins) + hist_2j->GetBinContent(nbins + 1);
+    erroverflow = sqrt(pow(hist_2j->GetBinError(nbins), 2) + pow(hist_2j->GetBinError(nbins + 1), 2));
+    hist_2j->SetBinContent(nbins, addoverflow);
+    hist_2j->SetBinError(nbins, erroverflow);
+    // overflow for inclusive
+    addoverflow = hist_inclusive->GetBinContent(nbins) + hist_inclusive->GetBinContent(nbins + 1);
+    erroverflow = sqrt(pow(hist_inclusive->GetBinError(nbins), 2) + pow(hist_inclusive->GetBinError(nbins + 1), 2));
+    hist_inclusive->SetBinContent(nbins, addoverflow);
+    hist_inclusive->SetBinError(nbins, erroverflow);
+    // overflow for stitching
+    // nbins = hist_binned->GetNbinsX();
+    // addoverflow = hist_binned->GetBinContent(nbins) + hist_binned->GetBinContent(nbins + 1);
+    // erroverflow = sqrt(pow(hist_binned->GetBinError(nbins), 2) + pow(hist_binned->GetBinError(nbins + 1), 2));
+    // hist_binned->SetBinContent(nbins, addoverflow);
+    // hist_binned->SetBinError(nbins, erroverflow);
+
      TH1D *hist_binned = (TH1D *)hist_2j->Clone("hist_binned");
      hist_binned->Reset();
      TList *list = new TList;
@@ -194,22 +225,8 @@ int plot_Gen_HT()
      legend->Draw();
 
      //--------------------------- ratio -----------------------
-     //--- Ensure no overflow events are left out of scale factor calculation
      TH1D *Hratio = (TH1D *)hist_inclusive->Clone("Hratio");
      TH1D *Hdenom = (TH1D *)hist_binned->Clone("Hdenom");
-
-     int nbins = Hratio->GetNbinsX();
-     double addoverflow = Hratio->GetBinContent(nbins) + Hratio->GetBinContent(nbins + 1);
-     double erroverflow = sqrt(pow(Hratio->GetBinError(nbins), 2) + pow(Hratio->GetBinError(nbins + 1), 2));
-     Hratio->SetBinContent(nbins, addoverflow);
-     Hratio->SetBinError(nbins, erroverflow);
-
-     nbins = hist_binned->GetNbinsX();
-     addoverflow = hist_binned->GetBinContent(nbins) + hist_binned->GetBinContent(nbins + 1);
-     erroverflow = sqrt(pow(hist_binned->GetBinError(nbins), 2) + pow(hist_binned->GetBinError(nbins + 1), 2));
-     hist_binned->SetBinContent(nbins, addoverflow);
-     hist_binned->SetBinError(nbins, erroverflow);
-
      Hratio->Divide(Hdenom);
 
      // ------ Draw ratio --------
