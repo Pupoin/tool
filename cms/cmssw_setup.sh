@@ -41,7 +41,9 @@ cmssw_setup() {
     
     # Delete old cmssw framework
     rm -rf $tmp
-
+    
+    # add by zhaoyang
+    scram b -j 10 
     eval $(scramv1 runtime -sh)
     cd "$basedir"
     
