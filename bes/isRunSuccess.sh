@@ -28,6 +28,11 @@ findRunWrong()
     echo "path is:" $(pwd)
     dir="./joblist"
 
+    numAna=`ls $dir | grep -c txt$`
+    printf "number of *.txt is:\033[31m $numAna \033[0m \n"
+    numLog=`ls $dir | grep -c bosslog`
+    printf "number of bosslog is:\033[31m $numLog \033[0m \n"
+
     # cd $dir
     printf "" > submitWrong
     tmp=""
@@ -42,14 +47,14 @@ findRunWrong()
         then
             echo "boss.condor "  ${i/.bosslog/}  >> submitWrong
             let n=n+1
-            printf "${i}"
+            #printf "${i}"
         fi
 
         printf "\r${i}" 
     done 
 
     printf "\r                                                   "
-    printf "\rwrong: ${n} \n\n"
+    printf "\rwrong:\033[31m ${n} \033[0m\n\n"
     echo 'resubmit using: source submitWrong'
     
     cat submitWrong

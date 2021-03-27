@@ -22,7 +22,7 @@ mkdir -p  ${DEST_DIR} ${WRK_DIR}
 #cp -f ${ANA_DIR}/src/* ${WRK_DIR}/
 cp ${list_files} ${WRK_DIR}/TMP.list
 cd  ${WRK_DIR}
-rm -f ${name}_* list
+/bin/rm -f ${name}_* list
 line_num=`wc -l TMP.list | cut -d" " -f1`
 test ${line_num} -eq 0 && exit 0 
 step=`expr $line_num /  $num `
@@ -51,4 +51,4 @@ do
   i_num=`expr ${i_num} + 1`
 done
 chmod +x list
-rm -f TMP*
+/bin/rm -f TMP*

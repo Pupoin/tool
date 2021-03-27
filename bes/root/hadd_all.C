@@ -1,6 +1,6 @@
 void hadd_all(){
-	TChain *chain1 = new TChain ("TDphipi");
-	TChain *chain2 = new TChain ("TDphipi_truth");
+	TChain *chain1 = new TChain ("tree");
+	TChain *chain2 = new TChain ("tree_truth");
 	chain1->Add("ana*.root");
 	chain2->Add("ana*.root");
    

@@ -72,8 +72,8 @@ void deltaefit()
 
 		// Declare observable x
 		RooRealVar *dE_min=new RooRealVar("dE_min","dE_min",-0.1,0.1) ;
-		TFile *datafile = new TFile("/afs/ihep.ac.cn/users/l/lincx/scratchfs/job_ana/root/all_deltaE.root");
-		TTree *datatree = (TTree*)datafile->Get("TDphipi");
+		TFile *datafile = new TFile("/publicfs/ucas/user/yuanchy8/job/6.6.4p01/root/signal_shape.root");
+		TTree *datatree = (TTree*)datafile->Get("tree");
 		RooDataSet *data = new RooDataSet("data","data",datatree,*dE_min);
 
 		// Create CB PDF and Gaussian PDF cb(x,mean1,sigma2,alpha,n) anf g2(x,mean2,sigma2) and their parameters
