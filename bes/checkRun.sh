@@ -53,9 +53,9 @@ findRunWrong()
     done
 
     printf "\r                                                   "
-    printf "\rwrong:\033[31m ${n} \033[0m\n\n"
+    printf "\rwrong:\033[31m ${n} \033[0m\n"
     echo 'resubmit using: source submitWrong'
-
+    echo 
     #cat submitWrong
 
 }
@@ -69,35 +69,49 @@ mycheckrun3()
 	fi
     mtxt=${1}
     
-    cd 462*/ana
+    cd 4600/ana/
+    echo "4600______________________________________________________________"
+    a=`tail joblist/*log | grep -c "${mtxt}"`
+    printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
+    findRunWrong
+    cd ../../
+    
+    cd 4612/ana/
+    echo "4612______________________________________________________________"
+    a=`tail joblist/*log | grep -c "${mtxt}"`
+    printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
+    findRunWrong
+    cd ../../
+    
+    cd 462*/ana/
     echo "462*______________________________________________________________"
     a=`tail joblist/*log | grep -c "${mtxt}"`
     printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
     findRunWrong
     cd ../../
     
-    cd 4640/ana
+    cd 4640/ana/
     echo "4640____________________________________________________________"
     a=`tail joblist/*log | grep -c "${mtxt}"`
     printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
     findRunWrong
     cd ../../
     
-    cd 4660/ana
+    cd 4660/ana/
     echo "4660____________________________________________________________"
     a=`tail joblist/*log | grep -c "${mtxt}"`
     printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
     findRunWrong
     cd ../../
     
-    cd 4680/ana 
+    cd 4680/ana/ 
     echo "4680____________________________________________________________"
     a=`tail joblist/*log | grep -c "${mtxt}"`
     printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
     findRunWrong
     cd ../../
     
-    cd 4700/ana 
+    cd 4700/ana/ 
     echo "4700____________________________________________________________"
     a=`tail joblist/*log | grep -c "${mtxt}"`
     printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
@@ -115,6 +129,21 @@ mycheckrun2()
 	fi
     mtxt=${1}
     
+    cd 4600/
+    echo "4600______________________________________________________________"
+    a=`tail joblist/*log | grep -c "${mtxt}"`
+    printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
+    findRunWrong
+    cd ../
+    
+    cd 4612/
+    echo "4612______________________________________________________________"
+    a=`tail joblist/*log | grep -c "${mtxt}"`
+    printf "num of ${mtxt}:\033[31m ${a} \033[0m \n"
+    findRunWrong
+    cd ../
+    
+    cd 462*/
     cd 462*/
     echo "462*______________________________________________________________"
     a=`tail joblist/*log | grep -c "${mtxt}"`
