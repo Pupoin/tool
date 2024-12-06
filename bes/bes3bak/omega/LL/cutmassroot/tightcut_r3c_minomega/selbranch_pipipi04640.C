@@ -1,0 +1,24 @@
+// select branch
+void selbranch_pipipi04640()
+{
+    // ROOT::RDataFrame rdf("tree", "4640LL.root");
+    TChain chain("tree");
+    chain.Add("4640LL.root");
+
+    TCut cut = "M_BC_r3c>2.276 && M_BC_r3c<2.294 && np!=0 && npbar!=0 && chi2_min_r3c<30 && ( (etaprimemr3c>0.68&&etaprimemr3c<0.72) || (etaprimemr3c>0.84&&etaprimemr3c<0.89) )";
+    TTree *t=chain.CopyTree(cut);
+
+
+    TFile f("4640LL_selB_pipipi0_topo.root", "recreate");
+    t->Write();
+    f.Close();
+
+
+    // std::vector<std::string> branchList = 
+    //         {"event", "run", "M_BC_r3c", "np", "npbar", "chi2_min_r3c", "deltaE_min_r3c",
+    //         "signal","etaprimemr3c", "mode2", "mode3"
+    //         }; 
+
+    // rdf2.Snapshot("tree", "4640LL_selB_pipipi0.root", branchList );
+
+}

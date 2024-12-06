@@ -1,0 +1,1154 @@
+
+Processing fit_toymc_comb_5.C...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf0_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf1_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf2_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf3_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf4_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf5_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf6_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.29976]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.30579]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.31387]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.32025]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.33046]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.34079]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.34919]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_sig_toy' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x44185e0 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x4695e50 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x47ada30 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_sig_toy' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x442a870 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x46a26f0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x476e780 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_sig_toy' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x47c6020 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x476f2b0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x468bef0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_sig_toy' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x4421160 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x43ff850 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x47969e0 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_sig_toy' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x4791f50 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x47ba6b0 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x47e2dd0 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_sig_toy' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x4792ea0 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x4691c10 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x44245b0 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_sig_toy' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x47c5b00 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x44258b0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x46a2080 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_3pi_sig_toy' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig_toy) creating new cache 0x47e61d0 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig_toy) creating new cache 0x48020c0 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig_toy) creating new cache 0x47b0e10 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_3pi_sig_toy' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig_toy) creating new cache 0x4414580 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig_toy) creating new cache 0x4788460 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig_toy) creating new cache 0x466d6d0 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_3pi_sig_toy' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig_toy) creating new cache 0x4414580 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig_toy) creating new cache 0x4801d70 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig_toy) creating new cache 0x47fb3f0 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_3pi_sig_toy' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig_toy) creating new cache 0x4414580 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig_toy) creating new cache 0x4424590 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig_toy) creating new cache 0x47d5000 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_3pi_sig_toy' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig_toy) creating new cache 0x4414580 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig_toy) creating new cache 0x4409b10 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig_toy) creating new cache 0x4807060 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_3pi_sig_toy' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig_toy) creating new cache 0x4414580 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig_toy) creating new cache 0x47b1880 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig_toy) creating new cache 0x482eb80 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_3pi_sig_toy' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig_toy) creating new cache 0x4414580 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig_toy) creating new cache 0x44104f0 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig_toy) creating new cache 0x4825d20 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_toy' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x4414580 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x47923d0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x47e1fb0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_toy' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x4414580 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x480faa0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x4429350 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_toy' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x4414580 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x4850a40 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x466bb80 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_toy' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x4414580 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x4849260 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x4873bd0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_toy' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x4414580 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x47f39c0 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x4847010 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_toy' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x4414580 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x441d7a0 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x48232a0 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_toy' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x4414580 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x441d7a0 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x483f550 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_sig' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x48bee80 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_sig' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x4907d60 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_sig' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x4948720 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_sig' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x4989090 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_sig' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x49c9aa0 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_sig' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x4a0bf40 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_sig' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x4a4c9b0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_3pi_sig' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig) creating new cache 0x4a8cd40 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_3pi_sig' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig) creating new cache 0x4acd0b0 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_3pi_sig' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig) creating new cache 0x4b0dc90 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_3pi_sig' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig) creating new cache 0x4b4e0b0 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_3pi_sig' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig) creating new cache 0x4b8e480 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_3pi_sig' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig) creating new cache 0x4bcea10 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_3pi_sig' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig) creating new cache 0x4c10e60 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x4c4f070 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x4c8ca00 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x4ccab10 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x4d08d80 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x4d470d0 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x4d86e50 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x4dc5170 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll) Summation contains a RooNLLVar, using its error level
+ **********
+ **   13 **MIGRAD     2.6e+04           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-26201 FROM MIGRAD    STATUS=INITIATE      427 CALLS         428 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Bratio       3.00000e-01   6.00000e-02   0.00000e+00  -1.97693e+02
+   2  c0           1.51430e+00   1.00000e+01   0.00000e+00   7.70374e+00
+   3  c0_3pi_sig  -2.12660e+01   1.00000e+01   0.00000e+00  -3.08565e+00
+   4  c0_sig      -2.12660e+01   1.00000e+01   0.00000e+00  -7.42209e+00
+   5  c1           1.49430e+01   1.00000e+01   0.00000e+00  -5.91813e+00
+   6  c1_3pi_sig  -6.06600e+00   1.00000e+01   0.00000e+00   1.20597e+00
+   7  c1_sig      -6.06600e+00   1.00000e+01   0.00000e+00   7.00133e-01
+   8  c2           2.93150e+00   1.00000e+01   0.00000e+00   1.47559e-01
+   9  c2_3pi_sig  -4.97160e+00   1.00000e+01   0.00000e+00  -4.62299e+00
+  10  c2_sig      -4.97160e+00   1.00000e+01   0.00000e+00  -1.22934e+01
+  11  c3          -3.10540e+00   1.00000e+01   0.00000e+00  -1.24709e+01
+  12  c3_3pi_sig  -2.42890e+00   1.00000e+01   0.00000e+00   2.40185e+00
+  13  c3_sig      -2.42890e+00   1.00000e+01   0.00000e+00  -2.35596e+00
+  14  c4          -4.84230e+00   1.00000e+01   0.00000e+00   4.48119e+00
+  15  c4_3pi_sig  -2.26890e+01   1.00000e+01   0.00000e+00  -7.80984e+00
+  16  c4_sig      -2.26890e+01   1.00000e+01   0.00000e+00   1.04051e+00
+  17  c5          -4.30070e+00   1.00000e+01   0.00000e+00   4.83118e+01
+  18  c5_3pi_sig  -9.34320e+00   1.00000e+01   0.00000e+00  -2.41127e+00
+  19  c5_sig      -9.34320e+00   1.00000e+01   0.00000e+00   1.48817e+00
+  20  c6          -5.40130e+00   1.00000e+01   0.00000e+00   1.97566e+01
+  21  c6_3pi_sig  -7.95930e+00   1.00000e+01   0.00000e+00  -1.39858e+01
+  22  c6_sig      -7.95930e+00   1.00000e+01   0.00000e+00  -3.36856e+00
+  23  mean_all     8.18177e-05   2.00000e-04   1.06150e-01   1.71269e+00
+  24  nbkg0        1.53000e+01   7.65000e+00   0.00000e+00  -5.81627e+02
+  25  nbkg0_3pi_sig   1.45000e+00   7.25000e-01   0.00000e+00  -1.14971e+02
+  26  nbkg0_sig    6.00000e+00   3.00000e+00   0.00000e+00  -4.41270e+02
+  27  nbkg1        3.10000e+00   1.55000e+00   0.00000e+00  -1.55018e+02
+  28  nbkg1_3pi_sig   1.50000e-01   7.50000e-02   0.00000e+00  -1.29585e+01
+  29  nbkg1_sig    8.00000e-01   4.00000e-01   0.00000e+00  -6.48970e+01
+  30  nbkg2        1.50500e+01   7.52500e+00   0.00000e+00  -6.40062e+02
+  31  nbkg2_3pi_sig   9.50000e-01   4.75000e-01   0.00000e+00  -6.91601e+01
+  32  nbkg2_sig    6.05000e+00   3.02500e+00   0.00000e+00  -4.42175e+02
+  33  nbkg3        1.69500e+01   8.47500e+00   0.00000e+00  -7.82064e+02
+  34  nbkg3_3pi_sig   1.40000e+00   7.00000e-01   0.00000e+00  -1.13147e+02
+  35  nbkg3_sig    5.90000e+00   2.95000e+00   0.00000e+00  -4.13498e+02
+  36  nbkg4        1.82500e+01   9.12500e+00   0.00000e+00  -8.67322e+02
+  37  nbkg4_3pi_sig   9.50000e-01   4.75000e-01   0.00000e+00  -7.40159e+01
+  38  nbkg4_sig    6.85000e+00   3.42500e+00   0.00000e+00  -4.91448e+02
+  39  nbkg5        6.00000e+01   3.00000e+01   0.00000e+00  -3.16708e+03
+  40  nbkg5_3pi_sig   3.40000e+00   1.70000e+00   0.00000e+00  -2.43263e+02
+  41  nbkg5_sig    2.34000e+01   1.17000e+01   0.00000e+00  -1.76850e+03
+  42  nbkg6        1.81500e+01   9.07500e+00   0.00000e+00  -9.85135e+02
+  43  nbkg6_3pi_sig   1.25000e+00   6.25000e-01   0.00000e+00  -8.24709e+01
+  44  nbkg6_sig    7.30000e+00   3.65000e+00   0.00000e+00  -5.66702e+02
+  45  nsig_mode0   1.53000e+01   7.65000e+00   0.00000e+00  -8.51312e+02
+  46  nsig_mode1   3.10000e+00   1.55000e+00   0.00000e+00  -1.19243e+02
+  47  nsig_mode2   1.50500e+01   7.52500e+00   0.00000e+00  -7.75651e+02
+  48  nsig_mode3   1.69500e+01   8.47500e+00   0.00000e+00  -8.08433e+02
+  49  nsig_mode4   1.82500e+01   9.12500e+00   0.00000e+00  -8.41573e+02
+  50  nsig_mode5   6.00000e+01   3.00000e+01   0.00000e+00  -2.40368e+03
+  51  nsig_mode6   1.81500e+01   9.07500e+00   0.00000e+00  -7.00032e+02
+  52  sigma_all    3.17480e-05   1.58740e-05   0.00000e+00  -9.62334e-01
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.2220e-01  3.4657e-01  4.8420e-01  5.1298e-01  5.5233e-01  6.0250e-01  6.5363e-01  6.5871e-01  6.9750e-01  8.7400e-01  9.0320e-01  9.1295e-01  9.1866e-01  9.4636e-01  9.5680e-01  9.6470e-01  9.6642e-01  9.8408e-01  9.8771e-01  9.8852e-01  9.9078e-01  9.9837e-01  1.0001e+00  1.0016e+00  1.0030e+00  1.0085e+00  1.0091e+00  1.0093e+00  1.0110e+00  1.0147e+00  1.0310e+00  1.0332e+00  1.0352e+00  1.0495e+00  1.0510e+00  1.0814e+00  1.0874e+00  1.0963e+00  1.0977e+00  1.1177e+00  1.1282e+00  1.1473e+00  1.2274e+00  1.2436e+00  1.2747e+00  1.2965e+00  1.3065e+00  1.3230e+00  1.3339e+00  1.5166e+00  1.5649e+00  2.2207e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.224417 TO DIAGONAL.
+ FCN=-32800.5 FROM HESSE     STATUS=NOT POSDEF   1595 CALLS        4982 TOTAL
+                     EDM=0.0711158    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Bratio       3.07829e-01   3.48467e-02   1.55709e-02   1.50594e-01
+   2  c0          -3.38015e+00   8.94575e+00   2.31691e-02  -6.08658e-03
+   3  c0_3pi_sig  -1.50388e+00   1.65290e+01   4.63964e-02   3.95120e-03
+   4  c0_sig      -1.04651e+01   8.70172e+00   2.42016e-02  -4.03616e-02
+   5  c1           4.75038e+01   7.31593e+01   2.05943e-01  -1.29467e-01
+   6  c1_3pi_sig  -4.99961e+01   7.70246e+01   2.26142e-01  -3.64909e-03
+   7  c1_sig      -1.53830e+01   1.81273e+01   5.41124e-02   5.93004e-03
+   8  c2           4.10852e+00   6.30516e+00   1.67011e-02   1.98801e-01
+   9  c2_3pi_sig   2.67723e+01   1.83175e+01   6.18475e-02  -3.03571e-03
+  10  c2_sig       5.52479e+00   6.68722e+00   1.85186e-02   1.17753e-03
+  11  c3           1.81871e+00   4.71992e+00   1.27694e-02   1.70551e-01
+  12  c3_3pi_sig  -1.05867e+01   1.10821e+01   3.16760e-02   2.32144e-02
+  13  c3_sig      -2.41444e+00   5.91346e+00   1.63620e-02  -3.59055e-03
+  14  c4          -7.62942e+00   3.52239e+00   9.82504e-03   6.08593e-02
+  15  c4_3pi_sig   9.32838e+00   1.27979e+01   3.67671e-02   1.09272e-01
+  16  c4_sig      -2.28139e+01   4.61197e+00   1.43555e-02  -7.31985e-03
+  17  c5          -7.74392e+00   1.56601e+00   4.38746e-03   1.08234e+00
+  18  c5_3pi_sig  -6.54795e+00   5.83900e+00   1.63336e-02   7.76486e-03
+  19  c5_sig      -9.04613e+00   2.16118e+00   6.08054e-03   9.48999e-03
+  20  c6          -8.12069e+00   2.83145e+00   7.21310e-03   1.88911e-01
+  21  c6_3pi_sig   2.68581e+01   1.12686e+01   3.68970e-02   2.47267e-02
+  22  c6_sig      -6.05897e+00   3.55228e+00   9.86691e-03   5.94638e-02
+  23  mean_all     1.02924e-04   1.12214e-04   4.38202e-03   4.39288e-01
+  24  nbkg0        1.30660e+02   1.30161e+01   9.00538e-03  -6.99776e-01
+  25  nbkg0_3pi_sig   2.57519e+01   4.69430e+00   4.30856e-02   3.91266e-02
+  26  nbkg0_sig    9.98245e+01   9.52161e+00   1.96798e-02  -8.41892e-02
+  27  nbkg1        3.47932e+01   6.06344e+00   2.10522e-02  -3.57197e-04
+  28  nbkg1_3pi_sig   3.00004e+00   2.79668e+00   1.64985e-01   1.41859e-02
+  29  nbkg1_sig    1.50801e+01   3.47580e+00   6.33520e-02   3.47056e-02
+  30  nbkg2        1.45764e+02   1.29359e+01   9.58613e-03  -3.08247e-01
+  31  nbkg2_3pi_sig   1.54864e+01   3.65321e+00   4.82729e-02  -1.24345e-02
+  32  nbkg2_sig    1.01711e+02   9.65668e+00   1.99496e-02  -4.75891e-02
+  33  nbkg3        1.84835e+02   1.42163e+01   9.36130e-03  -4.03768e-02
+  34  nbkg3_3pi_sig   2.60019e+01   4.64790e+00   4.67857e-02   5.93472e-02
+  35  nbkg3_sig    9.80057e+01   9.48849e+00   1.99175e-02  -1.56191e-01
+  36  nbkg4        2.15277e+02   1.53702e+01   9.38477e-03   2.52980e-01
+  37  nbkg4_3pi_sig   1.70929e+01   3.77291e+00   5.43669e-02   3.70189e-02
+  38  nbkg4_sig    1.16764e+02   1.02696e+01   1.89307e-02  -1.14645e-01
+  39  nbkg5        8.28677e+02   2.94126e+01   5.51825e-03  -5.30773e-01
+  40  nbkg5_3pi_sig   5.82503e+01   7.10710e+00   2.67658e-02  -7.72552e-02
+  41  nbkg5_sig    4.24939e+02   1.94701e+01   1.10986e-02   3.74401e-01
+  42  nbkg6        2.59729e+02   1.74059e+01   1.02228e-02  -4.39953e-01
+  43  nbkg6_3pi_sig   2.02869e+01   4.39319e+00   4.20451e-02  -4.10154e-02
+  44  nbkg6_sig    1.35687e+02   1.09195e+01   2.05976e-02   2.45870e-01
+  45  nsig_mode0   1.73011e+02   1.37630e+01   9.27478e-03   1.72781e-01
+  46  nsig_mode1   2.47390e+01   5.00197e+00   1.79013e-02   1.08195e-01
+  47  nsig_mode2   1.55507e+02   1.27871e+01   9.37801e-03  -5.63780e-02
+  48  nsig_mode3   1.54060e+02   1.28665e+01   8.62896e-03  -1.18276e-02
+  49  nsig_mode4   1.51284e+02   1.31759e+01   8.39294e-03   3.85420e-01
+  50  nsig_mode5   3.72083e+02   2.18792e+01   4.59552e-03  -2.96610e-01
+  51  nsig_mode6   1.03919e+02   1.30070e+01   8.42907e-03  -1.29237e-01
+  52  sigma_all    6.65852e-06   6.49615e-04   4.51153e-02   4.32778e-02
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-32800.5 FROM MIGRAD    STATUS=CONVERGED    7301 CALLS        7302 TOTAL
+                     EDM=0.000658748    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Bratio       3.07406e-01   4.00152e-02   1.56109e-02  -9.54779e-03
+   2  c0          -3.58032e+00   1.00740e+01   2.31259e-02   9.91186e-03
+   3  c0_3pi_sig  -1.53816e+00   1.82178e+01   4.64154e-02   4.85667e-04
+   4  c0_sig      -1.04455e+01   9.62675e+00   2.42030e-02   1.71948e-03
+   5  c1           4.43955e+01   1.79622e+01   1.03513e-01  -2.36278e-02
+   6  c1_3pi_sig  -5.00000e+01   8.10145e+01   2.26869e-01** at limit **
+   7  c1_sig      -1.54770e+01   1.99427e+01   5.40810e-02  -1.98460e-03
+   8  c2           3.86439e+00   7.16508e+00   1.66781e-02   7.65194e-03
+   9  c2_3pi_sig   2.68341e+01   2.01744e+01   6.19425e-02   6.27840e-03
+  10  c2_sig       5.50512e+00   7.43067e+00   1.85074e-02   3.16298e-03
+  11  c3           1.72086e+00   5.29276e+00   1.27733e-02   2.74377e-03
+  12  c3_3pi_sig  -1.06634e+01   1.22402e+01   3.16706e-02  -1.75016e-03
+  13  c3_sig      -2.42638e+00   6.54977e+00   1.63666e-02   1.39752e-03
+  14  c4          -7.65235e+00   3.90709e+00   9.82702e-03  -1.19039e-03
+  15  c4_3pi_sig   9.82287e+00   1.41805e+01   3.66592e-02  -8.83880e-03
+  16  c4_sig      -2.28079e+01   5.10046e+00   1.43625e-02  -4.24665e-03
+  17  c5          -7.81118e+00   1.73152e+00   4.38547e-03  -2.63660e-02
+  18  c5_3pi_sig  -6.55362e+00   6.45701e+00   1.63361e-02  -8.61081e-04
+  19  c5_sig      -9.04764e+00   2.39150e+00   6.08245e-03  -9.14646e-04
+  20  c6          -8.14773e+00   2.85055e+00   7.20618e-03   2.67682e-03
+  21  c6_3pi_sig   2.67797e+01   1.22217e+01   3.66506e-02   7.08755e-03
+  22  c6_sig      -6.07852e+00   3.91379e+00   9.86863e-03  -3.84464e-04
+  23  mean_all     1.02652e-04   1.48285e-05   1.10824e-02   1.88611e-02
+  24  nbkg0        1.31455e+02   1.38126e+01   9.02799e-03   1.45877e-02
+  25  nbkg0_3pi_sig   2.56981e+01   5.14955e+00   4.27692e-02   5.54720e-03
+  26  nbkg0_sig    1.00005e+02   1.06217e+01   1.97387e-02   6.35343e-03
+  27  nbkg1        3.50507e+01   6.49828e+00   2.09992e-02   4.00134e-03
+  28  nbkg1_3pi_sig   2.98647e+00   2.87830e+00   1.61820e-01   8.10619e-03
+  29  nbkg1_sig    1.50317e+01   3.79730e+00   6.25487e-02   6.16511e-03
+  30  nbkg2        1.46249e+02   1.48227e+01   9.61406e-03   4.03514e-03
+  31  nbkg2_3pi_sig   1.55176e+01   4.04119e+00   4.84534e-02   5.86051e-03
+  32  nbkg2_sig    1.01830e+02   1.07590e+01   1.99814e-02   5.91404e-03
+  33  nbkg3        1.84948e+02   1.60845e+01   9.36711e-03   4.96162e-04
+  34  nbkg3_3pi_sig   2.59001e+01   5.09255e+00   4.61385e-02   5.45460e-03
+  35  nbkg3_sig    9.83173e+01   1.05875e+01   2.00794e-02   1.72631e-02
+  36  nbkg4        2.15085e+02   1.73153e+01   9.37963e-03  -2.31613e-03
+  37  nbkg4_3pi_sig   1.70336e+01   4.13441e+00   5.37727e-02   5.79942e-03
+  38  nbkg4_sig    1.17014e+02   1.14323e+01   1.90416e-02   6.99878e-03
+  39  nbkg5        8.29362e+02   3.31997e+01   5.52866e-03   2.73992e-02
+  40  nbkg5_3pi_sig   5.83982e+01   7.88622e+00   2.69220e-02   7.64473e-03
+  41  nbkg5_sig    4.24272e+02   2.16148e+01   1.10318e-02   7.67447e-03
+  42  nbkg6        2.60393e+02   1.85395e+01   1.02685e-02   2.58711e-02
+  43  nbkg6_3pi_sig   2.03653e+01   4.68238e+00   4.24082e-02   5.00311e-03
+  44  nbkg6_sig    1.35238e+02   1.19640e+01   2.03381e-02   1.17078e-02
+  45  nsig_mode0   1.72642e+02   1.47101e+01   9.22532e-03   1.87288e-02
+  46  nsig_mode1   2.44517e+01   5.28387e+00   1.79082e-02   4.19599e-03
+  47  nsig_mode2   1.55356e+02   1.46688e+01   9.34706e-03   2.13741e-02
+  48  nsig_mode3   1.53992e+02   1.46233e+01   8.62056e-03   9.43880e-03
+  49  nsig_mode4   1.50960e+02   1.48945e+01   8.39222e-03  -5.20805e-03
+  50  nsig_mode5   3.72281e+02   2.48242e+01   4.59259e-03   1.42707e-02
+  51  nsig_mode6   1.03918e+02   1.33368e+01   8.42239e-03   4.49020e-03
+  52  sigma_all    5.30426e-06   7.69905e-05   5.97334e-02   2.23981e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM= 148    NPAR= 52    ERR DEF=0.5
+ ELEMENTS ABOVE DIAGONAL ARE NOT PRINTED.
+  1.612e-03 
+ -1.727e-02  1.029e+02 
+  3.867e-02  1.740e+00  3.477e+02 
+  5.736e-02  2.545e+00  2.064e+00  9.390e+01 
+  2.015e-02 -2.158e-01  4.834e-01  7.170e-01  4.249e+02 
+  4.611e-07 -4.939e-06  1.106e-05  1.641e-05 -1.295e-04  7.999e-04 
+  1.183e-02 -1.267e-01  2.838e-01  4.210e-01 -3.313e+00  1.576e-05  4.235e+02 
+ -9.504e-03  1.018e-01 -2.280e-01 -3.382e-01 -1.188e-01 -2.718e-06 -6.975e-02  5.170e+01 
+  4.184e-02 -4.482e-01  1.004e+00  1.489e+00  5.230e-01  1.197e-05  3.071e-01  1.522e+00  4.425e+02 
+  3.363e-02 -3.603e-01  8.069e-01  1.197e+00  4.204e-01  9.620e-06  2.468e-01  1.223e+00  1.405e+00  5.563e+01 
+ -5.387e-03  5.771e-02 -1.293e-01 -1.917e-01 -6.734e-02 -1.541e-06 -3.954e-02  3.177e-02 -1.398e-01 -1.124e-01  2.812e+01 
+  3.522e-03 -3.772e-02  8.449e-02  1.253e-01  4.402e-02  1.007e-06  2.585e-02 -2.077e-02  9.142e-02  7.348e-02  6.981e-02 
+  3.522e-03 -3.772e-02  8.449e-02  1.253e-01  4.402e-02  1.007e-06  2.585e-02 -2.077e-02  9.142e-02  7.348e-02  6.981e-02  1.531e+02 
+  1.765e-02 -1.891e-01  4.235e-01  6.281e-01  2.206e-01  5.049e-06  1.295e-01 -1.041e-01  4.581e-01  3.682e-01  3.497e-01 
+  1.765e-02 -1.891e-01  4.235e-01  6.281e-01  2.206e-01  5.049e-06  1.295e-01 -1.041e-01  4.581e-01  3.682e-01  3.497e-01  6.250e-02  4.315e+01 
+ -1.735e-03  1.859e-02 -4.163e-02 -6.175e-02 -2.169e-02 -4.962e-07 -1.273e-02  1.023e-02 -4.504e-02 -3.620e-02  5.799e-03 
+ -1.735e-03  1.859e-02 -4.163e-02 -6.175e-02 -2.169e-02 -4.962e-07 -1.273e-02  1.023e-02 -4.504e-02 -3.620e-02  5.799e-03 -3.791e-03 -1.900e-02  1.530e+01 
+ -1.090e-02  1.168e-01 -2.616e-01 -3.880e-01 -1.363e-01 -3.119e-06 -8.001e-02  6.428e-02 -2.830e-01 -2.275e-01  3.644e-02 
+ -1.090e-02  1.168e-01 -2.616e-01 -3.880e-01 -1.363e-01 -3.119e-06 -8.001e-02  6.428e-02 -2.830e-01 -2.275e-01  3.644e-02 -2.382e-02 -1.194e-01 -7.719e-02  2.070e+02 
+ -3.766e-03  4.034e-02 -9.035e-02 -1.340e-01 -4.707e-02 -1.077e-06 -2.764e-02  2.221e-02 -9.776e-02 -7.857e-02  1.259e-02 
+ -3.766e-03  4.034e-02 -9.035e-02 -1.340e-01 -4.707e-02 -1.077e-06 -2.764e-02  2.221e-02 -9.776e-02 -7.857e-02  1.259e-02 -8.228e-03 -4.123e-02 -2.669e-02  4.252e-02  2.613e+01 
+  9.369e-05 -3.441e-04  2.573e-03  3.062e-03  1.171e-03  2.681e-08  6.877e-04 -5.524e-04  2.432e-03  1.955e-03 -3.131e-04 
+  9.369e-05 -3.441e-04  2.573e-03  3.062e-03  1.171e-03  2.681e-08  6.877e-04 -5.524e-04  2.432e-03  1.955e-03 -3.131e-04  2.047e-04  1.026e-03 -1.008e-04 -6.337e-04 -2.189e-04  2.999e+00 
+ -2.332e-03  2.528e-02 -5.580e-02 -8.311e-02 -2.915e-02 -6.670e-07 -1.711e-02  1.375e-02 -6.053e-02 -4.865e-02  7.794e-03 
+ -2.332e-03  2.528e-02 -5.580e-02 -8.311e-02 -2.915e-02 -6.670e-07 -1.711e-02  1.375e-02 -6.053e-02 -4.865e-02  7.794e-03 -5.095e-03 -2.553e-02  2.510e-03  1.577e-02  5.448e-03  3.447e-04  4.193e+01 
+ -2.089e-03  2.257e-02 -5.004e-02 -7.443e-02 -2.612e-02 -5.976e-07 -1.533e-02  1.232e-02 -5.424e-02 -4.359e-02  6.983e-03 
+ -2.089e-03  2.257e-02 -5.004e-02 -7.443e-02 -2.612e-02 -5.976e-07 -1.533e-02  1.232e-02 -5.424e-02 -4.359e-02  6.983e-03 -4.565e-03 -2.288e-02  2.249e-03  1.413e-02  4.881e-03  3.045e-04  3.941e-03  5.724e+00 
+  6.358e-04 -2.079e-02  8.701e-03  2.730e-02  7.948e-03  1.819e-07  4.666e-03 -3.749e-03  1.650e-02  1.327e-02 -2.125e-03 
+  6.358e-04 -2.079e-02  8.701e-03  2.730e-02  7.948e-03  1.819e-07  4.666e-03 -3.749e-03  1.650e-02  1.327e-02 -2.125e-03  1.389e-03  6.962e-03 -6.845e-04 -4.300e-03 -1.485e-03 -1.313e-04 -9.967e-04 -8.716e-04  8.135e+00 
+  1.485e-02 -1.822e-01  3.454e-01  5.362e-01  1.856e-01  4.248e-06  1.090e-01 -8.756e-02  3.855e-01  3.098e-01 -4.963e-02 
+  1.485e-02 -1.822e-01  3.454e-01  5.362e-01  1.856e-01  4.248e-06  1.090e-01 -8.756e-02  3.855e-01  3.098e-01 -4.963e-02  3.244e-02  1.626e-01 -1.599e-02 -1.004e-01 -3.469e-02  5.768e-04 -2.161e-02 -1.933e-02 -6.000e-02  1.537e+02 
+ -2.733e-03  2.529e-02 -6.743e-02 -9.592e-02 -3.416e-02 -7.816e-07 -2.006e-02  1.611e-02 -7.094e-02 -5.701e-02  9.133e-03 
+ -2.733e-03  2.529e-02 -6.743e-02 -9.592e-02 -3.416e-02 -7.816e-07 -2.006e-02  1.611e-02 -7.094e-02 -5.701e-02  9.133e-03 -5.970e-03 -2.992e-02  2.942e-03  1.848e-02  6.384e-03 -2.069e-04  3.931e-03  3.529e-03  1.531e-02 -5.007e-02  1.535e+01 
+  4.636e-09 -2.369e-06 -9.708e-07  9.210e-07  5.810e-08  1.332e-12  3.396e-08 -2.734e-08  1.204e-07  9.673e-08 -1.550e-08 
+  4.636e-09 -2.369e-06 -9.708e-07  9.210e-07  5.810e-08  1.332e-12  3.396e-08 -2.734e-08  1.204e-07  9.673e-08 -1.550e-08  1.013e-08  5.077e-08 -4.999e-09 -3.135e-08 -1.083e-08 -1.850e-08 -1.528e-08 -1.130e-08  1.241e-06  2.085e-06  3.448e-07 
+  4.636e-09 -2.369e-06 -9.708e-07  9.210e-07  5.810e-08  1.332e-12  3.396e-08 -2.734e-08  1.204e-07  9.673e-08 -1.550e-08  1.013e-08  5.077e-08 -4.999e-09 -3.135e-08 -1.083e-08 -1.850e-08 -1.528e-08 -1.130e-08  1.241e-06  2.085e-06  3.448e-07  2.199e-10 
+  2.090e-02 -4.936e+01 -2.116e+00 -3.052e+00  2.612e-01  5.978e-06  1.534e-01 -1.232e-01  5.425e-01  4.360e-01 -6.985e-02 
+  2.090e-02 -4.936e+01 -2.116e+00 -3.052e+00  2.612e-01  5.978e-06  1.534e-01 -1.232e-01  5.425e-01  4.360e-01 -6.985e-02  4.566e-02  2.288e-01 -2.250e-02 -1.413e-01 -4.883e-02 -5.290e-04 -3.103e-02 -2.758e-02  4.282e-02  2.499e-01 -2.558e-02 
+  2.090e-02 -4.936e+01 -2.116e+00 -3.052e+00  2.612e-01  5.978e-06  1.534e-01 -1.232e-01  5.425e-01  4.360e-01 -6.985e-02  4.566e-02  2.288e-01 -2.250e-02 -1.413e-01 -4.883e-02 -5.290e-04 -3.103e-02 -2.758e-02  4.282e-02  2.499e-01 -2.558e-02  5.758e-06  1.912e+02 
+ -8.432e-03 -3.826e-01 -8.259e+00 -4.492e-01 -1.054e-01 -2.412e-06 -6.188e-02  4.972e-02 -2.189e-01 -1.759e-01  2.818e-02 
+ -8.432e-03 -3.826e-01 -8.259e+00 -4.492e-01 -1.054e-01 -2.412e-06 -6.188e-02  4.972e-02 -2.189e-01 -1.759e-01  2.818e-02 -1.842e-02 -9.232e-02  9.076e-03  5.703e-02  1.970e-02 -6.281e-04  1.214e-02  1.089e-02 -6.403e-04 -7.323e-02  1.506e-02 
+ -8.432e-03 -3.826e-01 -8.259e+00 -4.492e-01 -1.054e-01 -2.412e-06 -6.188e-02  4.972e-02 -2.189e-01 -1.759e-01  2.818e-02 -1.842e-02 -9.232e-02  9.076e-03  5.703e-02  1.970e-02 -6.281e-04  1.214e-02  1.089e-02 -6.403e-04 -7.323e-02  1.506e-02  4.174e-07  4.690e-01  2.759e+01 
+ -5.278e-02 -2.355e+00 -1.905e+00 -1.476e+01 -6.597e-01 -1.510e-05 -3.873e-01  3.112e-01 -1.370e+00 -1.101e+00  1.764e-01 
+ -5.278e-02 -2.355e+00 -1.905e+00 -1.476e+01 -6.597e-01 -1.510e-05 -3.873e-01  3.112e-01 -1.370e+00 -1.101e+00  1.764e-01 -1.153e-01 -5.779e-01  5.681e-02  3.569e-01  1.233e-01 -3.091e-03  7.634e-02  6.840e-02 -1.999e-02 -4.849e-01  8.971e-02 
+ -5.278e-02 -2.355e+00 -1.905e+00 -1.476e+01 -6.597e-01 -1.510e-05 -3.873e-01  3.112e-01 -1.370e+00 -1.101e+00  1.764e-01 -1.153e-01 -5.779e-01  5.681e-02  3.569e-01  1.233e-01 -3.091e-03  7.634e-02  6.840e-02 -1.999e-02 -4.849e-01  8.971e-02 -9.151e-09  2.839e+00  4.156e-01  1.138e+02 
+  4.166e-03 -4.463e-02  9.995e-02  1.483e-01  3.664e+01 -2.678e-05 -6.850e-01 -2.456e-02  1.081e-01  8.691e-02 -1.392e-02 
+  4.166e-03 -4.463e-02  9.995e-02  1.483e-01  3.664e+01 -2.678e-05 -6.850e-01 -2.456e-02  1.081e-01  8.691e-02 -1.392e-02  9.101e-03  4.561e-02 -4.484e-03 -2.817e-02 -9.732e-03  2.420e-04 -6.026e-03 -5.400e-03  1.644e-03  3.838e-02 -7.062e-03 
+  4.166e-03 -4.463e-02  9.995e-02  1.483e-01  3.664e+01 -2.678e-05 -6.850e-01 -2.456e-02  1.081e-01  8.691e-02 -1.392e-02  9.101e-03  4.561e-02 -4.484e-03 -2.817e-02 -9.732e-03  2.420e-04 -6.026e-03 -5.400e-03  1.644e-03  3.838e-02 -7.062e-03  1.205e-08  5.402e-02 -2.179e-02 -1.364e-01  4.267e+01 
+ -1.244e-04  1.332e-03 -2.984e-03 -4.426e-03  3.494e-02 -8.913e-05 -4.250e-03  7.333e-04 -3.228e-03 -2.594e-03  4.156e-04 
+ -1.244e-04  1.332e-03 -2.984e-03 -4.426e-03  3.494e-02 -8.913e-05 -4.250e-03  7.333e-04 -3.228e-03 -2.594e-03  4.156e-04 -2.717e-04 -1.362e-03  1.339e-04  8.410e-04  2.905e-04 -7.225e-06  1.799e-04  1.612e-04 -4.906e-05 -1.146e-03  2.108e-04 
+ -1.244e-04  1.332e-03 -2.984e-03 -4.426e-03  3.494e-02 -8.913e-05 -4.250e-03  7.333e-04 -3.228e-03 -2.594e-03  4.156e-04 -2.717e-04 -1.362e-03  1.339e-04  8.410e-04  2.905e-04 -7.225e-06  1.799e-04  1.612e-04 -4.906e-05 -1.146e-03  2.108e-04 -3.587e-10 -1.612e-03  6.505e-04  4.072e-03  7.224e-03  3.044e+00 
+ -2.693e-03  2.884e-02 -6.461e-02 -9.583e-02  7.538e-01 -3.585e-06 -2.596e+00  1.588e-02 -6.990e-02 -5.618e-02  9.000e-03 
+ -2.693e-03  2.884e-02 -6.461e-02 -9.583e-02  7.538e-01 -3.585e-06 -2.596e+00  1.588e-02 -6.990e-02 -5.618e-02  9.000e-03 -5.883e-03 -2.948e-02  2.899e-03  1.821e-02  6.291e-03 -1.566e-04  3.895e-03  3.490e-03 -1.062e-03 -2.481e-02  4.565e-03 
+ -2.693e-03  2.884e-02 -6.461e-02 -9.583e-02  7.538e-01 -3.585e-06 -2.596e+00  1.588e-02 -6.990e-02 -5.618e-02  9.000e-03 -5.883e-03 -2.948e-02  2.899e-03  1.821e-02  6.291e-03 -1.566e-04  3.895e-03  3.490e-03 -1.062e-03 -2.481e-02  4.565e-03 -7.712e-09 -3.491e-02  1.409e-02  8.817e-02  1.559e-01  9.670e-04  1.569e+01 
+  2.080e-02 -2.228e-01  4.990e-01  7.401e-01  2.599e-01  5.948e-06  1.526e-01 -3.370e+01 -3.331e+00 -2.677e+00 -6.951e-02 
+  2.080e-02 -2.228e-01  4.990e-01  7.401e-01  2.599e-01  5.948e-06  1.526e-01 -3.370e+01 -3.331e+00 -2.677e+00 -6.951e-02  4.544e-02  2.277e-01 -2.239e-02 -1.407e-01 -4.859e-02  1.209e-03 -3.009e-02 -2.696e-02  8.203e-03  1.916e-01 -3.526e-02 
+  2.080e-02 -2.228e-01  4.990e-01  7.401e-01  2.599e-01  5.948e-06  1.526e-01 -3.370e+01 -3.331e+00 -2.677e+00 -6.951e-02  4.544e-02  2.277e-01 -2.239e-02 -1.407e-01 -4.859e-02  1.209e-03 -3.009e-02 -2.696e-02  8.203e-03  1.916e-01 -3.526e-02  5.982e-08  2.696e-01 -1.088e-01 -6.809e-01  5.375e-02 -1.604e-03 -3.474e-02  2.202e+02 
+ -7.540e-03  8.078e-02 -1.809e-01 -2.684e-01 -9.425e-02 -2.157e-06 -5.534e-02 -2.744e-01 -8.811e+00 -2.531e-01  2.520e-02 
+ -7.540e-03  8.078e-02 -1.809e-01 -2.684e-01 -9.425e-02 -2.157e-06 -5.534e-02 -2.744e-01 -8.811e+00 -2.531e-01  2.520e-02 -1.647e-02 -8.256e-02  8.117e-03  5.100e-02  1.762e-02 -4.383e-04  1.091e-02  9.774e-03 -2.974e-03 -6.947e-02  1.278e-02 
+ -7.540e-03  8.078e-02 -1.809e-01 -2.684e-01 -9.425e-02 -2.157e-06 -5.534e-02 -2.744e-01 -8.811e+00 -2.531e-01  2.520e-02 -1.647e-02 -8.256e-02  8.117e-03  5.100e-02  1.762e-02 -4.383e-04  1.091e-02  9.774e-03 -2.974e-03 -6.947e-02  1.278e-02 -2.169e-08 -9.776e-02  3.945e-02  2.469e-01 -1.949e-02  5.817e-04  1.260e-02  6.004e-01  1.718e+01 
+ -5.620e-02  6.020e-01 -1.348e+00 -2.000e+00 -7.024e-01 -1.607e-05 -4.124e-01 -2.044e+00 -2.347e+00 -8.796e+00  1.878e-01 
+ -5.620e-02  6.020e-01 -1.348e+00 -2.000e+00 -7.024e-01 -1.607e-05 -4.124e-01 -2.044e+00 -2.347e+00 -8.796e+00  1.878e-01 -1.228e-01 -6.153e-01  6.049e-02  3.801e-01  1.313e-01 -3.266e-03  8.130e-02  7.284e-02 -2.217e-02 -5.177e-01  9.527e-02 
+ -5.620e-02  6.020e-01 -1.348e+00 -2.000e+00 -7.024e-01 -1.607e-05 -4.124e-01 -2.044e+00 -2.347e+00 -8.796e+00  1.878e-01 -1.228e-01 -6.153e-01  6.049e-02  3.801e-01  1.313e-01 -3.266e-03  8.130e-02  7.284e-02 -2.217e-02 -5.177e-01  9.527e-02 -1.616e-07 -7.286e-01  2.940e-01  1.840e+00 -1.452e-01  4.335e-03  9.388e-02  4.473e+00  4.230e-01  1.168e+02 
+  2.185e-02 -2.341e-01  5.243e-01  7.776e-01  2.731e-01  6.250e-06  1.604e-01 -1.288e-01  5.672e-01  4.559e-01 -1.823e+01 
+  2.185e-02 -2.341e-01  5.243e-01  7.776e-01  2.731e-01  6.250e-06  1.604e-01 -1.288e-01  5.672e-01  4.559e-01 -1.823e+01 -2.831e-01 -1.418e+00 -2.352e-02 -1.478e-01 -5.105e-02  1.270e-03 -3.161e-02 -2.832e-02  8.619e-03  2.013e-01 -3.704e-02 
+  2.185e-02 -2.341e-01  5.243e-01  7.776e-01  2.731e-01  6.250e-06  1.604e-01 -1.288e-01  5.672e-01  4.559e-01 -1.823e+01 -2.831e-01 -1.418e+00 -2.352e-02 -1.478e-01 -5.105e-02  1.270e-03 -3.161e-02 -2.832e-02  8.619e-03  2.013e-01 -3.704e-02  6.285e-08  2.833e-01 -1.143e-01 -7.155e-01  5.647e-02 -1.686e-03 -3.650e-02  2.819e-01 -1.022e-01 -7.618e-01  2.593e+02 
+ -5.598e-03  5.997e-02 -1.343e-01 -1.992e-01 -6.998e-02 -1.601e-06 -4.109e-02  3.301e-02 -1.453e-01 -1.168e-01 -1.109e-01 
+ -5.598e-03  5.997e-02 -1.343e-01 -1.992e-01 -6.998e-02 -1.601e-06 -4.109e-02  3.301e-02 -1.453e-01 -1.168e-01 -1.109e-01 -7.361e-01 -9.934e-02  6.026e-03  3.786e-02  1.308e-02 -3.254e-04  8.099e-03  7.257e-03 -2.208e-03 -5.158e-02  9.491e-03 
+ -5.598e-03  5.997e-02 -1.343e-01 -1.992e-01 -6.998e-02 -1.601e-06 -4.109e-02  3.301e-02 -1.453e-01 -1.168e-01 -1.109e-01 -7.361e-01 -9.934e-02  6.026e-03  3.786e-02  1.308e-02 -3.254e-04  8.099e-03  7.257e-03 -2.208e-03 -5.158e-02  9.491e-03 -1.610e-08 -7.259e-02  2.929e-02  1.833e-01 -1.447e-02  4.319e-04  9.352e-03 -7.223e-02  2.619e-02  1.952e-01  4.499e-01 
+ -5.598e-03  5.997e-02 -1.343e-01 -1.992e-01 -6.998e-02 -1.601e-06 -4.109e-02  3.301e-02 -1.453e-01 -1.168e-01 -1.109e-01 -7.361e-01 -9.934e-02  6.026e-03  3.786e-02  1.308e-02 -3.254e-04  8.099e-03  7.257e-03 -2.208e-03 -5.158e-02  9.491e-03 -1.610e-08 -7.259e-02  2.929e-02  1.833e-01 -1.447e-02  4.319e-04  9.352e-03 -7.223e-02  2.619e-02  1.952e-01  4.499e-01  2.714e+01 
+ -5.528e-02  5.922e-01 -1.326e+00 -1.968e+00 -6.910e-01 -1.581e-05 -4.057e-01  3.260e-01 -1.435e+00 -1.153e+00 -1.096e+00 
+ -5.528e-02  5.922e-01 -1.326e+00 -1.968e+00 -6.910e-01 -1.581e-05 -4.057e-01  3.260e-01 -1.435e+00 -1.153e+00 -1.096e+00 -1.958e-01 -4.623e+00  5.951e-02  3.739e-01  1.292e-01 -3.213e-03  7.998e-02  7.166e-02 -2.181e-02 -5.093e-01  9.373e-02 
+ -5.528e-02  5.922e-01 -1.326e+00 -1.968e+00 -6.910e-01 -1.581e-05 -4.057e-01  3.260e-01 -1.435e+00 -1.153e+00 -1.096e+00 -1.958e-01 -4.623e+00  5.951e-02  3.739e-01  1.292e-01 -3.213e-03  7.998e-02  7.166e-02 -2.181e-02 -5.093e-01  9.373e-02 -1.590e-07 -7.168e-01  2.892e-01  1.810e+00 -1.429e-01  4.265e-03  9.236e-02 -7.133e-01  2.586e-01  1.927e+00  4.444e+00 
+ -5.528e-02  5.922e-01 -1.326e+00 -1.968e+00 -6.910e-01 -1.581e-05 -4.057e-01  3.260e-01 -1.435e+00 -1.153e+00 -1.096e+00 -1.958e-01 -4.623e+00  5.951e-02  3.739e-01  1.292e-01 -3.213e-03  7.998e-02  7.166e-02 -2.181e-02 -5.093e-01  9.373e-02 -1.590e-07 -7.168e-01  2.892e-01  1.810e+00 -1.429e-01  4.265e-03  9.236e-02 -7.133e-01  2.586e-01  1.927e+00  4.444e+00  3.112e-01  1.131e+02 
+  2.348e-02 -2.515e-01  5.633e-01  8.355e-01  2.934e-01  6.715e-06  1.723e-01 -1.384e-01  6.094e-01  4.898e-01 -7.847e-02 
+  2.348e-02 -2.515e-01  5.633e-01  8.355e-01  2.934e-01  6.715e-06  1.723e-01 -1.384e-01  6.094e-01  4.898e-01 -7.847e-02  5.129e-02  2.571e-01 -6.265e+00  1.044e+00  3.611e-01  1.365e-03 -3.396e-02 -3.043e-02  9.261e-03  2.163e-01 -3.980e-02 
+  2.348e-02 -2.515e-01  5.633e-01  8.355e-01  2.934e-01  6.715e-06  1.723e-01 -1.384e-01  6.094e-01  4.898e-01 -7.847e-02  5.129e-02  2.571e-01 -6.265e+00  1.044e+00  3.611e-01  1.365e-03 -3.396e-02 -3.043e-02  9.261e-03  2.163e-01 -3.980e-02  6.755e-08  3.044e-01 -1.228e-01 -7.687e-01  6.067e-02 -1.811e-03 -3.922e-02  3.029e-01 -1.098e-01 -8.185e-01  3.182e-01 
+  2.348e-02 -2.515e-01  5.633e-01  8.355e-01  2.934e-01  6.715e-06  1.723e-01 -1.384e-01  6.094e-01  4.898e-01 -7.847e-02  5.129e-02  2.571e-01 -6.265e+00  1.044e+00  3.611e-01  1.365e-03 -3.396e-02 -3.043e-02  9.261e-03  2.163e-01 -3.980e-02  6.755e-08  3.044e-01 -1.228e-01 -7.687e-01  6.067e-02 -1.811e-03 -3.922e-02  3.029e-01 -1.098e-01 -8.185e-01  3.182e-01 -8.154e-02 -8.052e-01  3.004e+02 
+ -5.187e-03  5.556e-02 -1.244e-01 -1.846e-01 -6.483e-02 -1.484e-06 -3.807e-02  3.058e-02 -1.346e-01 -1.082e-01  1.734e-02 
+ -5.187e-03  5.556e-02 -1.244e-01 -1.846e-01 -6.483e-02 -1.484e-06 -3.807e-02  3.058e-02 -1.346e-01 -1.082e-01  1.734e-02 -1.133e-02 -5.679e-02 -3.673e-02  2.253e+00  2.023e-02 -3.015e-04  7.504e-03  6.723e-03 -2.046e-03 -4.779e-02  8.794e-03 
+ -5.187e-03  5.556e-02 -1.244e-01 -1.846e-01 -6.483e-02 -1.484e-06 -3.807e-02  3.058e-02 -1.346e-01 -1.082e-01  1.734e-02 -1.133e-02 -5.679e-02 -3.673e-02  2.253e+00  2.023e-02 -3.015e-04  7.504e-03  6.723e-03 -2.046e-03 -4.779e-02  8.794e-03 -1.492e-08 -6.725e-02  2.713e-02  1.698e-01 -1.340e-02  4.002e-04  8.665e-03 -6.692e-02  2.426e-02  1.808e-01 -7.031e-02 
+ -5.187e-03  5.556e-02 -1.244e-01 -1.846e-01 -6.483e-02 -1.484e-06 -3.807e-02  3.058e-02 -1.346e-01 -1.082e-01  1.734e-02 -1.133e-02 -5.679e-02 -3.673e-02  2.253e+00  2.023e-02 -3.015e-04  7.504e-03  6.723e-03 -2.046e-03 -4.779e-02  8.794e-03 -1.492e-08 -6.725e-02  2.713e-02  1.698e-01 -1.340e-02  4.002e-04  8.665e-03 -6.692e-02  2.426e-02  1.808e-01 -7.031e-02  1.802e-02  1.779e-01  4.970e-01  1.819e+01 
+ -5.497e-02  5.888e-01 -1.319e+00 -1.956e+00 -6.870e-01 -1.572e-05 -4.034e-01  3.241e-01 -1.427e+00 -1.147e+00  1.837e-01 
+ -5.497e-02  5.888e-01 -1.319e+00 -1.956e+00 -6.870e-01 -1.572e-05 -4.034e-01  3.241e-01 -1.427e+00 -1.147e+00  1.837e-01 -1.201e-01 -6.019e-01 -3.893e-01  6.205e-01  9.941e-01 -3.195e-03  7.952e-02  7.125e-02 -2.168e-02 -5.064e-01  9.319e-02 
+ -5.497e-02  5.888e-01 -1.319e+00 -1.956e+00 -6.870e-01 -1.572e-05 -4.034e-01  3.241e-01 -1.427e+00 -1.147e+00  1.837e-01 -1.201e-01 -6.019e-01 -3.893e-01  6.205e-01  9.941e-01 -3.195e-03  7.952e-02  7.125e-02 -2.168e-02 -5.064e-01  9.319e-02 -1.581e-07 -7.127e-01  2.875e-01  1.800e+00 -1.421e-01  4.241e-03  9.182e-02 -7.092e-01  2.571e-01  1.916e+00 -7.451e-01 
+ -5.497e-02  5.888e-01 -1.319e+00 -1.956e+00 -6.870e-01 -1.572e-05 -4.034e-01  3.241e-01 -1.427e+00 -1.147e+00  1.837e-01 -1.201e-01 -6.019e-01 -3.893e-01  6.205e-01  9.941e-01 -3.195e-03  7.952e-02  7.125e-02 -2.168e-02 -5.064e-01  9.319e-02 -1.581e-07 -7.127e-01  2.875e-01  1.800e+00 -1.421e-01  4.241e-03  9.182e-02 -7.092e-01  2.571e-01  1.916e+00 -7.451e-01  1.909e-01  1.885e+00  5.268e+00  2.953e-01  1.317e+02 
+  6.836e-02 -7.304e-01  1.641e+00  2.432e+00  8.544e-01  1.955e-05  5.017e-01 -4.031e-01  1.774e+00  1.426e+00 -2.285e-01 
+  6.836e-02 -7.304e-01  1.641e+00  2.432e+00  8.544e-01  1.955e-05  5.017e-01 -4.031e-01  1.774e+00  1.426e+00 -2.285e-01  1.493e-01  7.485e-01 -7.358e-02 -4.623e-01 -1.597e-01  3.826e-01  2.367e-01  2.120e-01  2.650e-02  6.290e-01 -1.160e-01 
+  6.836e-02 -7.304e-01  1.641e+00  2.432e+00  8.544e-01  1.955e-05  5.017e-01 -4.031e-01  1.774e+00  1.426e+00 -2.285e-01  1.493e-01  7.485e-01 -7.358e-02 -4.623e-01 -1.597e-01  3.826e-01  2.367e-01  2.120e-01  2.650e-02  6.290e-01 -1.160e-01  1.444e-07  8.814e-01 -3.580e-01 -2.238e+00  1.767e-01 -5.274e-03 -1.142e-01  8.820e-01 -3.198e-01 -2.383e+00  9.267e-01 
+  6.836e-02 -7.304e-01  1.641e+00  2.432e+00  8.544e-01  1.955e-05  5.017e-01 -4.031e-01  1.774e+00  1.426e+00 -2.285e-01  1.493e-01  7.485e-01 -7.358e-02 -4.623e-01 -1.597e-01  3.826e-01  2.367e-01  2.120e-01  2.650e-02  6.290e-01 -1.160e-01  1.444e-07  8.814e-01 -3.580e-01 -2.238e+00  1.767e-01 -5.274e-03 -1.142e-01  8.820e-01 -3.198e-01 -2.383e+00  9.267e-01 -2.374e-01 -2.345e+00  9.956e-01 -2.200e-01 -2.331e+00  1.103e+03 
+ -2.080e-02  2.232e-01 -4.987e-01 -7.403e-01 -2.599e-01 -5.948e-06 -1.526e-01  1.226e-01 -5.398e-01 -4.339e-01  6.951e-02 
+ -2.080e-02  2.232e-01 -4.987e-01 -7.403e-01 -2.599e-01 -5.948e-06 -1.526e-01  1.226e-01 -5.398e-01 -4.339e-01  6.951e-02 -4.543e-02 -2.277e-01  2.238e-02  1.406e-01  4.859e-02  2.959e-03  5.193e-01  3.512e-02 -8.312e-03 -1.918e-01  3.522e-02 
+ -2.080e-02  2.232e-01 -4.987e-01 -7.403e-01 -2.599e-01 -5.948e-06 -1.526e-01  1.226e-01 -5.398e-01 -4.339e-01  6.951e-02 -4.543e-02 -2.277e-01  2.238e-02  1.406e-01  4.859e-02  2.959e-03  5.193e-01  3.512e-02 -8.312e-03 -1.918e-01  3.522e-02 -7.203e-08 -2.708e-01  1.087e-01  6.809e-01 -5.374e-02  1.604e-03  3.474e-02 -2.683e-01  9.728e-02  7.250e-01 -2.819e-01 
+ -2.080e-02  2.232e-01 -4.987e-01 -7.403e-01 -2.599e-01 -5.948e-06 -1.526e-01  1.226e-01 -5.398e-01 -4.339e-01  6.951e-02 -4.543e-02 -2.277e-01  2.238e-02  1.406e-01  4.859e-02  2.959e-03  5.193e-01  3.512e-02 -8.312e-03 -1.918e-01  3.522e-02 -7.203e-08 -2.708e-01  1.087e-01  6.809e-01 -5.374e-02  1.604e-03  3.474e-02 -2.683e-01  9.728e-02  7.250e-01 -2.819e-01  7.223e-02  7.133e-01 -3.029e-01  6.692e-02  7.092e-01  2.111e+00  6.317e+01 
+ -1.376e-01  1.474e+00 -3.302e+00 -4.898e+00 -1.720e+00 -3.936e-05 -1.010e+00  8.115e-01 -3.572e+00 -2.871e+00  4.600e-01 
+ -1.376e-01  1.474e+00 -3.302e+00 -4.898e+00 -1.720e+00 -3.936e-05 -1.010e+00  8.115e-01 -3.572e+00 -2.871e+00  4.600e-01 -3.007e-01 -1.507e+00  1.481e-01  9.307e-01  3.215e-01  1.943e-02  2.593e-01  6.654e-01 -5.436e-02 -1.268e+00  2.333e-01 
+ -1.376e-01  1.474e+00 -3.302e+00 -4.898e+00 -1.720e+00 -3.936e-05 -1.010e+00  8.115e-01 -3.572e+00 -2.871e+00  4.600e-01 -3.007e-01 -1.507e+00  1.481e-01  9.307e-01  3.215e-01  1.943e-02  2.593e-01  6.654e-01 -5.436e-02 -1.268e+00  2.333e-01 -4.041e-07 -1.785e+00  7.198e-01  4.506e+00 -3.557e-01  1.062e-02  2.299e-01 -1.776e+00  6.438e-01  4.798e+00 -1.866e+00 
+ -1.376e-01  1.474e+00 -3.302e+00 -4.898e+00 -1.720e+00 -3.936e-05 -1.010e+00  8.115e-01 -3.572e+00 -2.871e+00  4.600e-01 -3.007e-01 -1.507e+00  1.481e-01  9.307e-01  3.215e-01  1.943e-02  2.593e-01  6.654e-01 -5.436e-02 -1.268e+00  2.333e-01 -4.041e-07 -1.785e+00  7.198e-01  4.506e+00 -3.557e-01  1.062e-02  2.299e-01 -1.776e+00  6.438e-01  4.798e+00 -1.866e+00  4.780e-01  4.720e+00 -2.004e+00  4.428e-01  4.693e+00  1.395e+01  2.312e+00  4.685e+02 
+  1.859e-02 -2.773e-01  4.093e-01  6.875e-01  2.323e-01  5.317e-06  1.364e-01 -1.096e-01  4.824e-01  3.878e-01 -6.212e-02 
+  1.859e-02 -2.773e-01  4.093e-01  6.875e-01  2.323e-01  5.317e-06  1.364e-01 -1.096e-01  4.824e-01  3.878e-01 -6.212e-02  4.061e-02  2.035e-01 -2.001e-02 -1.257e-01 -4.342e-02  1.735e-04 -2.730e-02 -2.435e-02  2.804e+00 -2.113e+00  4.150e-01 
+  1.859e-02 -2.773e-01  4.093e-01  6.875e-01  2.323e-01  5.317e-06  1.364e-01 -1.096e-01  4.824e-01  3.878e-01 -6.212e-02  4.061e-02  2.035e-01 -2.001e-02 -1.257e-01 -4.342e-02  1.735e-04 -2.730e-02 -2.435e-02  2.804e+00 -2.113e+00  4.150e-01  7.043e-06  4.343e-01 -8.221e-02 -6.039e-01  4.804e-02 -1.434e-03 -3.105e-02  2.398e-01 -8.694e-02 -6.480e-01  2.519e-01 
+  1.859e-02 -2.773e-01  4.093e-01  6.875e-01  2.323e-01  5.317e-06  1.364e-01 -1.096e-01  4.824e-01  3.878e-01 -6.212e-02  4.061e-02  2.035e-01 -2.001e-02 -1.257e-01 -4.342e-02  1.735e-04 -2.730e-02 -2.435e-02  2.804e+00 -2.113e+00  4.150e-01  7.043e-06  4.343e-01 -8.221e-02 -6.039e-01  4.804e-02 -1.434e-03 -3.105e-02  2.398e-01 -8.694e-02 -6.480e-01  2.519e-01 -6.455e-02 -6.375e-01  2.707e-01 -5.981e-02 -6.338e-01  7.857e-01 -2.404e-01 -1.587e+00  3.446e+02 
+ -1.073e-02  1.287e-01 -2.509e-01 -3.864e-01 -1.341e-01 -3.068e-06 -7.872e-02  6.324e-02 -2.784e-01 -2.238e-01  3.585e-02 
+ -1.073e-02  1.287e-01 -2.509e-01 -3.864e-01 -1.341e-01 -3.068e-06 -7.872e-02  6.324e-02 -2.784e-01 -2.238e-01  3.585e-02 -2.343e-02 -1.174e-01  1.155e-02  7.254e-02  2.506e-02 -4.521e-04  1.560e-02  1.395e-02  4.484e-02 -3.232e+00  3.660e-02 
+ -1.073e-02  1.287e-01 -2.509e-01 -3.864e-01 -1.341e-01 -3.068e-06 -7.872e-02  6.324e-02 -2.784e-01 -2.238e-01  3.585e-02 -2.343e-02 -1.174e-01  1.155e-02  7.254e-02  2.506e-02 -4.521e-04  1.560e-02  1.395e-02  4.484e-02 -3.232e+00  3.660e-02 -1.250e-06 -1.733e-01  5.345e-02  3.504e-01 -2.772e-02  8.275e-04  1.792e-02 -1.384e-01  5.018e-02  3.739e-01 -1.454e-01 
+ -1.073e-02  1.287e-01 -2.509e-01 -3.864e-01 -1.341e-01 -3.068e-06 -7.872e-02  6.324e-02 -2.784e-01 -2.238e-01  3.585e-02 -2.343e-02 -1.174e-01  1.155e-02  7.254e-02  2.506e-02 -4.521e-04  1.560e-02  1.395e-02  4.484e-02 -3.232e+00  3.660e-02 -1.250e-06 -1.733e-01  5.345e-02  3.504e-01 -2.772e-02  8.275e-04  1.792e-02 -1.384e-01  5.018e-02  3.739e-01 -1.454e-01  3.725e-02  3.679e-01 -1.562e-01  3.452e-02  3.658e-01 -4.544e-01  1.385e-01  9.158e-01  1.535e+00  2.279e+01 
+ -3.561e-02  3.655e-01 -8.618e-01 -1.262e+00 -4.451e-01 -1.019e-05 -2.613e-01  2.100e-01 -9.243e-01 -7.429e-01  1.190e-01 
+ -3.561e-02  3.655e-01 -8.618e-01 -1.262e+00 -4.451e-01 -1.019e-05 -2.613e-01  2.100e-01 -9.243e-01 -7.429e-01  1.190e-01 -7.780e-02 -3.899e-01  3.833e-02  2.408e-01  8.319e-02 -2.259e-03  5.143e-02  4.610e-02  1.809e-01 -6.819e-01  6.903e-01 
+ -3.561e-02  3.655e-01 -8.618e-01 -1.262e+00 -4.451e-01 -1.019e-05 -2.613e-01  2.100e-01 -9.243e-01 -7.429e-01  1.190e-01 -7.780e-02 -3.899e-01  3.833e-02  2.408e-01  8.319e-02 -2.259e-03  5.143e-02  4.610e-02  1.809e-01 -6.819e-01  6.903e-01  1.318e-06 -4.222e-01  1.893e-01  1.167e+00 -9.202e-02  2.747e-03  5.948e-02 -4.594e-01  1.666e-01  1.241e+00 -4.827e-01 
+ -3.561e-02  3.655e-01 -8.618e-01 -1.262e+00 -4.451e-01 -1.019e-05 -2.613e-01  2.100e-01 -9.243e-01 -7.429e-01  1.190e-01 -7.780e-02 -3.899e-01  3.833e-02  2.408e-01  8.319e-02 -2.259e-03  5.143e-02  4.610e-02  1.809e-01 -6.819e-01  6.903e-01  1.318e-06 -4.222e-01  1.893e-01  1.167e+00 -9.202e-02  2.747e-03  5.948e-02 -4.594e-01  1.666e-01  1.241e+00 -4.827e-01  1.237e-01  1.221e+00 -5.186e-01  1.146e-01  1.214e+00 -1.511e+00  4.593e-01  3.040e+00  5.294e+00  4.943e-01  1.444e+02 
+ -8.036e-02  4.655e+01  8.082e+00  1.189e+01 -1.005e+00 -2.299e-05 -5.898e-01  4.739e-01 -2.086e+00 -1.677e+00  2.686e-01 
+ -8.036e-02  4.655e+01  8.082e+00  1.189e+01 -1.005e+00 -2.299e-05 -5.898e-01  4.739e-01 -2.086e+00 -1.677e+00  2.686e-01 -1.756e-01 -8.800e-01  8.651e-02  5.435e-01  1.878e-01 -3.003e-03  1.170e-01  1.046e-01 -6.504e-02 -7.957e-01  1.268e-01 
+ -8.036e-02  4.655e+01  8.082e+00  1.189e+01 -1.005e+00 -2.299e-05 -5.898e-01  4.739e-01 -2.086e+00 -1.677e+00  2.686e-01 -1.756e-01 -8.800e-01  8.651e-02  5.435e-01  1.878e-01 -3.003e-03  1.170e-01  1.046e-01 -6.504e-02 -7.957e-01  1.268e-01 -5.731e-06 -5.625e+01 -1.771e+00 -1.098e+01 -2.077e-01  6.200e-03  1.343e-01 -1.037e+00  3.760e-01  2.802e+00 -1.089e+00 
+ -8.036e-02  4.655e+01  8.082e+00  1.189e+01 -1.005e+00 -2.299e-05 -5.898e-01  4.739e-01 -2.086e+00 -1.677e+00  2.686e-01 -1.756e-01 -8.800e-01  8.651e-02  5.435e-01  1.878e-01 -3.003e-03  1.170e-01  1.046e-01 -6.504e-02 -7.957e-01  1.268e-01 -5.731e-06 -5.625e+01 -1.771e+00 -1.098e+01 -2.077e-01  6.200e-03  1.343e-01 -1.037e+00  3.760e-01  2.802e+00 -1.089e+00  2.791e-01  2.756e+00 -1.170e+00  2.586e-01  2.741e+00 -3.404e+00  1.038e+00  6.862e+00 -1.113e+00  5.678e-01  1.737e+00 
+ -8.036e-02  4.655e+01  8.082e+00  1.189e+01 -1.005e+00 -2.299e-05 -5.898e-01  4.739e-01 -2.086e+00 -1.677e+00  2.686e-01 -1.756e-01 -8.800e-01  8.651e-02  5.435e-01  1.878e-01 -3.003e-03  1.170e-01  1.046e-01 -6.504e-02 -7.957e-01  1.268e-01 -5.731e-06 -5.625e+01 -1.771e+00 -1.098e+01 -2.077e-01  6.200e-03  1.343e-01 -1.037e+00  3.760e-01  2.802e+00 -1.089e+00  2.791e-01  2.756e+00 -1.170e+00  2.586e-01  2.741e+00 -3.404e+00  1.038e+00  6.862e+00 -1.113e+00  5.678e-01  1.737e+00  2.169e+02 
+ -1.731e-02  1.855e-01 -4.154e-01 -6.162e-01 -3.274e+01  1.113e-04  2.847e+00  1.021e-01 -4.494e-01 -3.612e-01  5.787e-02 
+ -1.731e-02  1.855e-01 -4.154e-01 -6.162e-01 -3.274e+01  1.113e-04  2.847e+00  1.021e-01 -4.494e-01 -3.612e-01  5.787e-02 -3.783e-02 -1.896e-01  1.864e-02  1.171e-01  4.045e-02 -1.006e-03  2.505e-02  2.244e-02 -6.830e-03 -1.595e-01  2.935e-02 
+ -1.731e-02  1.855e-01 -4.154e-01 -6.162e-01 -3.274e+01  1.113e-04  2.847e+00  1.021e-01 -4.494e-01 -3.612e-01  5.787e-02 -3.783e-02 -1.896e-01  1.864e-02  1.171e-01  4.045e-02 -1.006e-03  2.505e-02  2.244e-02 -6.830e-03 -1.595e-01  2.935e-02 -4.989e-08 -2.245e-01  9.057e-02  5.669e-01 -6.769e+00 -3.002e-02 -6.478e-01 -2.234e-01  8.099e-02  6.036e-01 -2.347e-01 
+ -1.731e-02  1.855e-01 -4.154e-01 -6.162e-01 -3.274e+01  1.113e-04  2.847e+00  1.021e-01 -4.494e-01 -3.612e-01  5.787e-02 -3.783e-02 -1.896e-01  1.864e-02  1.171e-01  4.045e-02 -1.006e-03  2.505e-02  2.244e-02 -6.830e-03 -1.595e-01  2.935e-02 -4.989e-08 -2.245e-01  9.057e-02  5.669e-01 -6.769e+00 -3.002e-02 -6.478e-01 -2.234e-01  8.099e-02  6.036e-01 -2.347e-01  6.013e-02  5.938e-01 -2.522e-01  5.571e-02  5.904e-01 -7.342e-01  2.234e-01  1.478e+00 -1.996e-01  1.152e-01  3.825e-01 
+ -1.731e-02  1.855e-01 -4.154e-01 -6.162e-01 -3.274e+01  1.113e-04  2.847e+00  1.021e-01 -4.494e-01 -3.612e-01  5.787e-02 -3.783e-02 -1.896e-01  1.864e-02  1.171e-01  4.045e-02 -1.006e-03  2.505e-02  2.244e-02 -6.830e-03 -1.595e-01  2.935e-02 -4.989e-08 -2.245e-01  9.057e-02  5.669e-01 -6.769e+00 -3.002e-02 -6.478e-01 -2.234e-01  8.099e-02  6.036e-01 -2.347e-01  6.013e-02  5.938e-01 -2.522e-01  5.571e-02  5.904e-01 -7.342e-01  2.234e-01  1.478e+00 -1.996e-01  1.152e-01  3.825e-01  8.632e-01  2.813e+01 
+ -6.380e-02  6.834e-01 -1.531e+00 -2.270e+00 -7.974e-01 -1.825e-05 -4.682e-01  3.213e+01  1.022e+01  8.211e+00  2.132e-01 
+ -6.380e-02  6.834e-01 -1.531e+00 -2.270e+00 -7.974e-01 -1.825e-05 -4.682e-01  3.213e+01  1.022e+01  8.211e+00  2.132e-01 -1.394e-01 -6.985e-01  6.867e-02  4.315e-01  1.491e-01 -3.708e-03  9.229e-02  8.269e-02 -2.516e-02 -5.878e-01  1.082e-01 
+ -6.380e-02  6.834e-01 -1.531e+00 -2.270e+00 -7.974e-01 -1.825e-05 -4.682e-01  3.213e+01  1.022e+01  8.211e+00  2.132e-01 -1.394e-01 -6.985e-01  6.867e-02  4.315e-01  1.491e-01 -3.708e-03  9.229e-02  8.269e-02 -2.516e-02 -5.878e-01  1.082e-01 -1.835e-07 -8.271e-01  3.337e-01  2.089e+00 -1.649e-01  4.922e-03  1.066e-01 -7.030e+01 -1.842e+00 -1.372e+01 -8.648e-01 
+ -6.380e-02  6.834e-01 -1.531e+00 -2.270e+00 -7.974e-01 -1.825e-05 -4.682e-01  3.213e+01  1.022e+01  8.211e+00  2.132e-01 -1.394e-01 -6.985e-01  6.867e-02  4.315e-01  1.491e-01 -3.708e-03  9.229e-02  8.269e-02 -2.516e-02 -5.878e-01  1.082e-01 -1.835e-07 -8.271e-01  3.337e-01  2.089e+00 -1.649e-01  4.922e-03  1.066e-01 -7.030e+01 -1.842e+00 -1.372e+01 -8.648e-01  2.216e-01  2.188e+00 -9.292e-01  2.053e-01  2.176e+00 -2.706e+00  8.231e-01  5.447e+00 -7.356e-01  4.245e-01  1.409e+00 
+ -6.380e-02  6.834e-01 -1.531e+00 -2.270e+00 -7.974e-01 -1.825e-05 -4.682e-01  3.213e+01  1.022e+01  8.211e+00  2.132e-01 -1.394e-01 -6.985e-01  6.867e-02  4.315e-01  1.491e-01 -3.708e-03  9.229e-02  8.269e-02 -2.516e-02 -5.878e-01  1.082e-01 -1.835e-07 -8.271e-01  3.337e-01  2.089e+00 -1.649e-01  4.922e-03  1.066e-01 -7.030e+01 -1.842e+00 -1.372e+01 -8.648e-01  2.216e-01  2.188e+00 -9.292e-01  2.053e-01  2.176e+00 -2.706e+00  8.231e-01  5.447e+00 -7.356e-01  4.245e-01  1.409e+00  3.181e+00  6.852e-01  2.157e+02 
+ -6.639e-02  7.112e-01 -1.593e+00 -2.363e+00 -8.298e-01 -1.899e-05 -4.872e-01  3.915e-01 -1.723e+00 -1.385e+00  1.738e+01 
+ -6.639e-02  7.112e-01 -1.593e+00 -2.363e+00 -8.298e-01 -1.899e-05 -4.872e-01  3.915e-01 -1.723e+00 -1.385e+00  1.738e+01  8.602e-01  4.309e+00  7.146e-02  4.490e-01  1.551e-01 -3.859e-03  9.604e-02  8.606e-02 -2.619e-02 -6.116e-01  1.126e-01 
+ -6.639e-02  7.112e-01 -1.593e+00 -2.363e+00 -8.298e-01 -1.899e-05 -4.872e-01  3.915e-01 -1.723e+00 -1.385e+00  1.738e+01  8.602e-01  4.309e+00  7.146e-02  4.490e-01  1.551e-01 -3.859e-03  9.604e-02  8.606e-02 -2.619e-02 -6.116e-01  1.126e-01 -1.910e-07 -8.608e-01  3.473e-01  2.174e+00 -1.716e-01  5.122e-03  1.109e-01 -8.566e-01  3.106e-01  2.315e+00 -7.051e+01 
+ -6.639e-02  7.112e-01 -1.593e+00 -2.363e+00 -8.298e-01 -1.899e-05 -4.872e-01  3.915e-01 -1.723e+00 -1.385e+00  1.738e+01  8.602e-01  4.309e+00  7.146e-02  4.490e-01  1.551e-01 -3.859e-03  9.604e-02  8.606e-02 -2.619e-02 -6.116e-01  1.126e-01 -1.910e-07 -8.608e-01  3.473e-01  2.174e+00 -1.716e-01  5.122e-03  1.109e-01 -8.566e-01  3.106e-01  2.315e+00 -7.051e+01 -1.367e+00 -1.350e+01 -9.669e-01  2.136e-01  2.264e+00 -2.815e+00  8.565e-01  5.668e+00 -7.655e-01  4.418e-01  1.467e+00 
+ -6.639e-02  7.112e-01 -1.593e+00 -2.363e+00 -8.298e-01 -1.899e-05 -4.872e-01  3.915e-01 -1.723e+00 -1.385e+00  1.738e+01  8.602e-01  4.309e+00  7.146e-02  4.490e-01  1.551e-01 -3.859e-03  9.604e-02  8.606e-02 -2.619e-02 -6.116e-01  1.126e-01 -1.910e-07 -8.608e-01  3.473e-01  2.174e+00 -1.716e-01  5.122e-03  1.109e-01 -8.566e-01  3.106e-01  2.315e+00 -7.051e+01 -1.367e+00 -1.350e+01 -9.669e-01  2.136e-01  2.264e+00 -2.815e+00  8.565e-01  5.668e+00 -7.655e-01  4.418e-01  1.467e+00  3.310e+00  7.131e-01  2.628e+00  2.142e+02 
+ -6.423e-02  6.880e-01 -1.541e+00 -2.286e+00 -8.028e-01 -1.837e-05 -4.714e-01  3.787e-01 -1.667e+00 -1.340e+00  2.147e-01 
+ -6.423e-02  6.880e-01 -1.541e+00 -2.286e+00 -8.028e-01 -1.837e-05 -4.714e-01  3.787e-01 -1.667e+00 -1.340e+00  2.147e-01 -1.403e-01 -7.032e-01  6.003e+00 -2.857e+00 -9.879e-01 -3.733e-03  9.291e-02  8.325e-02 -2.533e-02 -5.917e-01  1.089e-01 
+ -6.423e-02  6.880e-01 -1.541e+00 -2.286e+00 -8.028e-01 -1.837e-05 -4.714e-01  3.787e-01 -1.667e+00 -1.340e+00  2.147e-01 -1.403e-01 -7.032e-01  6.003e+00 -2.857e+00 -9.879e-01 -3.733e-03  9.291e-02  8.325e-02 -2.533e-02 -5.917e-01  1.089e-01 -1.848e-07 -8.327e-01  3.360e-01  2.103e+00 -1.660e-01  4.955e-03  1.073e-01 -8.287e-01  3.005e-01  2.239e+00 -8.707e-01 
+ -6.423e-02  6.880e-01 -1.541e+00 -2.286e+00 -8.028e-01 -1.837e-05 -4.714e-01  3.787e-01 -1.667e+00 -1.340e+00  2.147e-01 -1.403e-01 -7.032e-01  6.003e+00 -2.857e+00 -9.879e-01 -3.733e-03  9.291e-02  8.325e-02 -2.533e-02 -5.917e-01  1.089e-01 -1.848e-07 -8.327e-01  3.360e-01  2.103e+00 -1.660e-01  4.955e-03  1.073e-01 -8.287e-01  3.005e-01  2.239e+00 -8.707e-01  2.231e-01  2.203e+00 -8.123e+01 -1.360e+00 -1.441e+01 -2.724e+00  8.286e-01  5.484e+00 -7.406e-01  4.274e-01  1.419e+00 
+ -6.423e-02  6.880e-01 -1.541e+00 -2.286e+00 -8.028e-01 -1.837e-05 -4.714e-01  3.787e-01 -1.667e+00 -1.340e+00  2.147e-01 -1.403e-01 -7.032e-01  6.003e+00 -2.857e+00 -9.879e-01 -3.733e-03  9.291e-02  8.325e-02 -2.533e-02 -5.917e-01  1.089e-01 -1.848e-07 -8.327e-01  3.360e-01  2.103e+00 -1.660e-01  4.955e-03  1.073e-01 -8.287e-01  3.005e-01  2.239e+00 -8.707e-01  2.231e-01  2.203e+00 -8.123e+01 -1.360e+00 -1.441e+01 -2.724e+00  8.286e-01  5.484e+00 -7.406e-01  4.274e-01  1.419e+00  3.202e+00  6.899e-01  2.542e+00  2.645e+00  2.222e+02 
+ -1.595e-01  1.707e+00 -3.828e+00 -5.676e+00 -1.994e+00 -4.563e-05 -1.171e+00  9.406e-01 -4.141e+00 -3.328e+00  5.332e-01 
+ -1.595e-01  1.707e+00 -3.828e+00 -5.676e+00 -1.994e+00 -4.563e-05 -1.171e+00  9.406e-01 -4.141e+00 -3.328e+00  5.332e-01 -3.485e-01 -1.747e+00  1.717e-01  1.079e+00  3.727e-01 -3.661e-01 -5.523e-01 -4.947e-01 -6.235e-02 -1.469e+00  2.706e-01 
+ -1.595e-01  1.707e+00 -3.828e+00 -5.676e+00 -1.994e+00 -4.563e-05 -1.171e+00  9.406e-01 -4.141e+00 -3.328e+00  5.332e-01 -3.485e-01 -1.747e+00  1.717e-01  1.079e+00  3.727e-01 -3.661e-01 -5.523e-01 -4.947e-01 -6.235e-02 -1.469e+00  2.706e-01 -3.947e-07 -2.062e+00  8.349e-01  5.223e+00 -4.123e-01  1.231e-02  2.665e-01 -2.058e+00  7.463e-01  5.561e+00 -2.162e+00 
+ -1.595e-01  1.707e+00 -3.828e+00 -5.676e+00 -1.994e+00 -4.563e-05 -1.171e+00  9.406e-01 -4.141e+00 -3.328e+00  5.332e-01 -3.485e-01 -1.747e+00  1.717e-01  1.079e+00  3.727e-01 -3.661e-01 -5.523e-01 -4.947e-01 -6.235e-02 -1.469e+00  2.706e-01 -3.947e-07 -2.062e+00  8.349e-01  5.223e+00 -4.123e-01  1.231e-02  2.665e-01 -2.058e+00  7.463e-01  5.561e+00 -2.162e+00  5.541e-01  5.471e+00 -2.323e+00  5.133e-01  5.440e+00 -2.642e+02 -4.926e+00 -3.256e+01 -1.836e+00  1.061e+00  3.525e+00 
+ -1.595e-01  1.707e+00 -3.828e+00 -5.676e+00 -1.994e+00 -4.563e-05 -1.171e+00  9.406e-01 -4.141e+00 -3.328e+00  5.332e-01 -3.485e-01 -1.747e+00  1.717e-01  1.079e+00  3.727e-01 -3.661e-01 -5.523e-01 -4.947e-01 -6.235e-02 -1.469e+00  2.706e-01 -3.947e-07 -2.062e+00  8.349e-01  5.223e+00 -4.123e-01  1.231e-02  2.665e-01 -2.058e+00  7.463e-01  5.561e+00 -2.162e+00  5.541e-01  5.471e+00 -2.323e+00  5.133e-01  5.440e+00 -2.642e+02 -4.926e+00 -3.256e+01 -1.836e+00  1.061e+00  3.525e+00  7.948e+00  1.713e+00  6.314e+00  6.570e+00  6.356e+00  6.166e+02 
+ -4.088e-02  5.087e-01 -9.477e-01 -1.478e+00 -5.110e-01 -1.169e-05 -3.000e-01  2.411e-01 -1.061e+00 -8.529e-01  1.366e-01 
+ -4.088e-02  5.087e-01 -9.477e-01 -1.478e+00 -5.110e-01 -1.169e-05 -3.000e-01  2.411e-01 -1.061e+00 -8.529e-01  1.366e-01 -8.932e-02 -4.476e-01  4.401e-02  2.765e-01  9.551e-02 -1.562e-03  5.951e-02  5.322e-02 -2.695e+00  4.759e+00 -9.028e-01 
+ -4.088e-02  5.087e-01 -9.477e-01 -1.478e+00 -5.110e-01 -1.169e-05 -3.000e-01  2.411e-01 -1.061e+00 -8.529e-01  1.366e-01 -8.932e-02 -4.476e-01  4.401e-02  2.765e-01  9.551e-02 -1.562e-03  5.951e-02  5.322e-02 -2.695e+00  4.759e+00 -9.028e-01 -6.453e-06 -7.050e-01  2.003e-01  1.334e+00 -1.057e-01  3.154e-03  6.829e-02 -5.275e-01  1.912e-01  1.425e+00 -5.542e-01 
+ -4.088e-02  5.087e-01 -9.477e-01 -1.478e+00 -5.110e-01 -1.169e-05 -3.000e-01  2.411e-01 -1.061e+00 -8.529e-01  1.366e-01 -8.932e-02 -4.476e-01  4.401e-02  2.765e-01  9.551e-02 -1.562e-03  5.951e-02  5.322e-02 -2.695e+00  4.759e+00 -9.028e-01 -6.453e-06 -7.050e-01  2.003e-01  1.334e+00 -1.057e-01  3.154e-03  6.829e-02 -5.275e-01  1.912e-01  1.425e+00 -5.542e-01  1.420e-01  1.402e+00 -5.954e-01  1.316e-01  1.394e+00 -1.731e+00  5.280e-01  3.491e+00 -8.073e+01 -3.447e+00 -1.165e+01 
+ -4.088e-02  5.087e-01 -9.477e-01 -1.478e+00 -5.110e-01 -1.169e-05 -3.000e-01  2.411e-01 -1.061e+00 -8.529e-01  1.366e-01 -8.932e-02 -4.476e-01  4.401e-02  2.765e-01  9.551e-02 -1.562e-03  5.951e-02  5.322e-02 -2.695e+00  4.759e+00 -9.028e-01 -6.453e-06 -7.050e-01  2.003e-01  1.334e+00 -1.057e-01  3.154e-03  6.829e-02 -5.275e-01  1.912e-01  1.425e+00 -5.542e-01  1.420e-01  1.402e+00 -5.954e-01  1.316e-01  1.394e+00 -1.731e+00  5.280e-01  3.491e+00 -8.073e+01 -3.447e+00 -1.165e+01  2.207e+00  4.391e-01  1.618e+00  1.684e+00  1.629e+00  4.043e+00  1.782e+02 
+  7.208e-09 -4.755e-06 -2.132e-06  2.187e-06  9.192e-08  2.137e-12  5.211e-08 -4.250e-08  1.871e-07  1.504e-07 -2.409e-08 
+  7.208e-09 -4.755e-06 -2.132e-06  2.187e-06  9.192e-08  2.137e-12  5.211e-08 -4.250e-08  1.871e-07  1.504e-07 -2.409e-08  1.575e-08  7.893e-08 -7.867e-09 -4.865e-08 -1.686e-08 -2.374e-07 -1.191e-07 -7.642e-08  1.196e-06  2.097e-06  3.285e-07 
+  7.208e-09 -4.755e-06 -2.132e-06  2.187e-06  9.192e-08  2.137e-12  5.211e-08 -4.250e-08  1.871e-07  1.504e-07 -2.409e-08  1.575e-08  7.893e-08 -7.867e-09 -4.865e-08 -1.686e-08 -2.374e-07 -1.191e-07 -7.642e-08  1.196e-06  2.097e-06  3.285e-07  1.331e-10  1.246e-05  9.407e-07 -7.031e-08  1.950e-08 -5.685e-10 -1.163e-08  9.301e-08 -3.372e-08 -2.513e-07  9.772e-08 
+  7.208e-09 -4.755e-06 -2.132e-06  2.187e-06  9.192e-08  2.137e-12  5.211e-08 -4.250e-08  1.871e-07  1.504e-07 -2.409e-08  1.575e-08  7.893e-08 -7.867e-09 -4.865e-08 -1.686e-08 -2.374e-07 -1.191e-07 -7.642e-08  1.196e-06  2.097e-06  3.285e-07  1.331e-10  1.246e-05  9.407e-07 -7.031e-08  1.950e-08 -5.685e-10 -1.163e-08  9.301e-08 -3.372e-08 -2.513e-07  9.772e-08 -2.504e-08 -2.472e-07  1.053e-07 -2.315e-08 -2.457e-07 -3.555e-07 -2.477e-07 -7.200e-07  6.514e-06 -1.264e-06  1.181e-06 
+  7.208e-09 -4.755e-06 -2.132e-06  2.187e-06  9.192e-08  2.137e-12  5.211e-08 -4.250e-08  1.871e-07  1.504e-07 -2.409e-08  1.575e-08  7.893e-08 -7.867e-09 -4.865e-08 -1.686e-08 -2.374e-07 -1.191e-07 -7.642e-08  1.196e-06  2.097e-06  3.285e-07  1.331e-10  1.246e-05  9.407e-07 -7.031e-08  1.950e-08 -5.685e-10 -1.163e-08  9.301e-08 -3.372e-08 -2.513e-07  9.772e-08 -2.504e-08 -2.472e-07  1.053e-07 -2.315e-08 -2.457e-07 -3.555e-07 -2.477e-07 -7.200e-07  6.514e-06 -1.264e-06  1.181e-06 -1.219e-05 -7.856e-08 -2.853e-07 -2.969e-07 -2.876e-07  1.000e-07 -5.957e-06  1.687e-09 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16
+        1  0.46131   1.000 -0.042  0.052  0.147  0.024  0.000  0.014 -0.033  0.050  0.112 -0.025  0.007  0.067 -0.011 -0.019 -0.018
+        2  0.41670  -0.042  1.000  0.009  0.026 -0.001 -0.000 -0.001  0.001 -0.002 -0.005  0.001 -0.000 -0.003  0.000  0.001  0.001
+        3  0.10316   0.052  0.009  1.000  0.011  0.001  0.000  0.001 -0.002  0.003  0.006 -0.001  0.000  0.003 -0.001 -0.001 -0.001
+        4  0.21537   0.147  0.026  0.011  1.000  0.004  0.000  0.002 -0.005  0.007  0.017 -0.004  0.001  0.010 -0.002 -0.003 -0.003
+        5  0.37030   0.024 -0.001  0.001  0.004  1.000 -0.000 -0.008 -0.001  0.001  0.003 -0.001  0.000  0.002 -0.000 -0.000 -0.000
+        6  0.00200   0.000 -0.000  0.000  0.000 -0.000  1.000  0.000 -0.000  0.000  0.000 -0.000  0.000  0.000 -0.000 -0.000 -0.000
+        7  0.04356   0.014 -0.001  0.001  0.002 -0.008  0.000  1.000 -0.000  0.001  0.002 -0.000  0.000  0.001 -0.000 -0.000 -0.000
+        8  0.38142  -0.033  0.001 -0.002 -0.005 -0.001 -0.000 -0.000  1.000  0.010  0.023  0.001 -0.000 -0.002  0.000  0.001  0.001
+        9  0.11608   0.050 -0.002  0.003  0.007  0.001  0.000  0.001  0.010  1.000  0.009 -0.001  0.000  0.003 -0.001 -0.001 -0.001
+       10  0.16687   0.112 -0.005  0.006  0.017  0.003  0.000  0.002  0.023  0.009  1.000 -0.003  0.001  0.008 -0.001 -0.002 -0.002
+       11  0.27159  -0.025  0.001 -0.001 -0.004 -0.001 -0.000 -0.000  0.001 -0.001 -0.003  1.000  0.001  0.010  0.000  0.000  0.000
+       12  0.01432   0.007 -0.000  0.000  0.001  0.000  0.000  0.000 -0.000  0.000  0.001  0.001  1.000  0.001 -0.000 -0.000 -0.000
+       13  0.10027   0.067 -0.003  0.003  0.010  0.002  0.000  0.001 -0.002  0.003  0.008  0.010  0.001  1.000 -0.001 -0.001 -0.001
+       14  0.12084  -0.011  0.000 -0.001 -0.002 -0.000 -0.000 -0.000  0.000 -0.001 -0.001  0.000 -0.000 -0.001  1.000 -0.001 -0.001
+       15  0.04331  -0.019  0.001 -0.001 -0.003 -0.000 -0.000 -0.000  0.001 -0.001 -0.002  0.000 -0.000 -0.001 -0.001  1.000  0.001
+       16  0.02726  -0.018  0.001 -0.001 -0.003 -0.000 -0.000 -0.000  0.001 -0.001 -0.002  0.000 -0.000 -0.001 -0.001  0.001  1.000
+       17  0.01004   0.001 -0.000  0.000  0.000  0.000  0.000  0.000 -0.000  0.000  0.000 -0.000  0.000  0.000 -0.000 -0.000 -0.000
+                     1.000  0.000  0.000 -0.000  0.000 -0.000 -0.001 -0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000
+       18  0.01387  -0.009  0.000 -0.000 -0.001 -0.000 -0.000 -0.000  0.000 -0.000 -0.001  0.000 -0.000 -0.001  0.000  0.000  0.000
+                     0.000  1.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000  0.001 -0.000  0.000  0.000 -0.000  0.000  0.001
+       19  0.02625  -0.022  0.001 -0.001 -0.003 -0.001 -0.000 -0.000  0.001 -0.001 -0.002  0.001 -0.000 -0.001  0.000  0.000  0.000
+                     0.000  0.000  1.000 -0.000 -0.001  0.000 -0.000 -0.001  0.001  0.003 -0.000  0.000  0.000 -0.001  0.001  0.003
+       20  0.08204   0.006 -0.001  0.000  0.001  0.000  0.000  0.000 -0.000  0.000  0.001 -0.000  0.000  0.000 -0.000 -0.000 -0.000
+                    -0.000 -0.000 -0.000  1.000 -0.002  0.001  0.029  0.001 -0.000 -0.001  0.000 -0.000 -0.000  0.000 -0.000 -0.001
+       21  0.06793   0.030 -0.001  0.001  0.004  0.001  0.000  0.000 -0.001  0.001  0.003 -0.001  0.000  0.002 -0.000 -0.001 -0.001
+                     0.000 -0.000 -0.001 -0.002  1.000 -0.001  0.011  0.001 -0.001 -0.004  0.000 -0.000 -0.001  0.001 -0.001 -0.004
+       22  0.02869  -0.017  0.001 -0.001 -0.003 -0.000 -0.000 -0.000  0.001 -0.001 -0.002  0.000 -0.000 -0.001  0.000  0.000  0.000
+                    -0.000  0.000  0.000  0.001 -0.001  1.000  0.006 -0.000  0.001  0.002 -0.000  0.000  0.000 -0.001  0.001  0.002
+       23  0.22547   0.008 -0.016 -0.004  0.006  0.000  0.000  0.000 -0.000  0.000  0.001 -0.000  0.000  0.001 -0.000 -0.000 -0.000
+                    -0.001 -0.000 -0.000  0.029  0.011  0.006  1.000  0.028  0.005 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.001
+       24  0.39376   0.038 -0.352 -0.008 -0.023  0.001  0.000  0.001 -0.001  0.002  0.004 -0.001  0.000  0.003 -0.000 -0.001 -0.001
+                    -0.000 -0.000 -0.001  0.001  0.001 -0.000  0.028  1.000  0.006  0.019  0.001 -0.000 -0.001  0.001 -0.002 -0.005
+       25  0.09522  -0.040 -0.007 -0.084 -0.009 -0.001 -0.000 -0.001  0.001 -0.002 -0.004  0.001 -0.000 -0.003  0.000  0.001  0.001
+                    -0.000  0.000  0.001 -0.000 -0.001  0.001  0.005  0.006  1.000  0.007 -0.001  0.000  0.001 -0.001  0.002  0.005
+       26  0.19140  -0.123 -0.022 -0.010 -0.143 -0.003 -0.000 -0.002  0.004 -0.006 -0.014  0.003 -0.001 -0.008  0.001  0.002  0.002
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002 -0.000  0.019  0.007  1.000 -0.002  0.000  0.002 -0.004  0.006  0.016
+       27  0.29716   0.016 -0.001  0.001  0.002  0.272 -0.000 -0.005 -0.001  0.001  0.002 -0.000  0.000  0.001 -0.000 -0.000 -0.000
+                     0.000 -0.000 -0.000  0.000  0.000 -0.000  0.000  0.001 -0.001 -0.002  1.000  0.001  0.006  0.001 -0.001 -0.002
+       28  0.00424  -0.002  0.000 -0.000 -0.000  0.001 -0.002 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000  0.000  0.000
+                    -0.000  0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000  0.000  0.001  1.000  0.000 -0.000  0.000  0.000
+       29  0.04771  -0.017  0.001 -0.001 -0.002  0.009 -0.000 -0.032  0.001 -0.001 -0.002  0.000 -0.000 -0.001  0.000  0.000  0.000
+                    -0.000  0.000  0.000 -0.000 -0.001  0.000 -0.000 -0.001  0.001  0.002  0.006  0.000  1.000 -0.001  0.001  0.002
+       30  0.39533   0.035 -0.001  0.002  0.005  0.001  0.000  0.000 -0.316 -0.011 -0.024 -0.001  0.000  0.002 -0.000 -0.001 -0.001
+                     0.000 -0.000 -0.001  0.000  0.001 -0.001  0.000  0.001 -0.001 -0.004  0.001 -0.000 -0.001  1.000  0.010  0.028
+       31  0.11329  -0.045  0.002 -0.002 -0.007 -0.001 -0.000 -0.001 -0.009 -0.101 -0.008  0.001 -0.000 -0.003  0.001  0.001  0.001
+                    -0.000  0.000  0.001 -0.000 -0.001  0.001 -0.000 -0.002  0.002  0.006 -0.001  0.000  0.001  0.010  1.000  0.009
+       32  0.18573  -0.130  0.005 -0.007 -0.019 -0.003 -0.000 -0.002 -0.026 -0.010 -0.109  0.003 -0.001 -0.009  0.001  0.002  0.002
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002 -0.001 -0.005  0.005  0.016 -0.002  0.000  0.002  0.028  0.009  1.000
+       33  0.33485   0.034 -0.001  0.002  0.005  0.001  0.000  0.000 -0.001  0.002  0.004 -0.214 -0.001 -0.013 -0.000 -0.001 -0.001
+                     0.000 -0.000 -0.001  0.000  0.001 -0.001  0.000  0.001 -0.001 -0.004  0.001 -0.000 -0.001  0.001 -0.002 -0.004
+                     0.000 -0.000 -0.001  0.000  0.001 -0.001  0.000  0.001 -0.001 -0.004  0.001 -0.000 -0.001  0.001 -0.002 -0.004  1.000  0.005  0.026  0.001 -0.001 -0.004  0.002 -0.002 -0.005  0.001 -0.002 -0.002 -0.005 -0.003 -0.004 -0.299
+       34  0.03584  -0.027  0.001 -0.001 -0.004 -0.001 -0.000 -0.000  0.001 -0.001 -0.003 -0.004 -0.011 -0.003  0.000  0.001  0.000
+                    -0.000  0.000  0.001 -0.000 -0.001  0.000 -0.000 -0.001  0.001  0.003 -0.000  0.000  0.000 -0.001  0.001  0.003
+                    -0.000  0.000  0.001 -0.000 -0.001  0.000 -0.000 -0.001  0.001  0.003 -0.000  0.000  0.000 -0.001  0.001  0.003  0.005  1.000  0.006 -0.001  0.001  0.003 -0.001  0.002  0.004 -0.001  0.001  0.002  0.004  0.002  0.003 -0.018
+       35  0.17296  -0.129  0.005 -0.007 -0.019 -0.003 -0.000 -0.002  0.004 -0.006 -0.015 -0.019 -0.001 -0.066  0.001  0.002  0.002
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002 -0.001 -0.005  0.005  0.016 -0.002  0.000  0.002 -0.005  0.006  0.017
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002 -0.001 -0.005  0.005  0.016 -0.002  0.000  0.002 -0.005  0.006  0.017  0.026  0.006  1.000 -0.004  0.004  0.015 -0.007  0.008  0.021 -0.003  0.007  0.010  0.018  0.011  0.014 -0.087
+       36  0.32010   0.034 -0.001  0.002  0.005  0.001  0.000  0.000 -0.001  0.002  0.004 -0.001  0.000  0.002 -0.092  0.004  0.004
+                     0.000 -0.000 -0.001  0.000  0.001 -0.001  0.000  0.001 -0.001 -0.004  0.001 -0.000 -0.001  0.001 -0.002 -0.004
+                     0.000 -0.000 -0.001  0.000  0.001 -0.001  0.000  0.001 -0.001 -0.004  0.001 -0.000 -0.001  0.001 -0.002 -0.004  0.001 -0.001 -0.004  1.000  0.007  0.026  0.002 -0.002 -0.005  0.001 -0.002 -0.002 -0.005 -0.003 -0.004 -0.004
+       37  0.05302  -0.030  0.001 -0.002 -0.004 -0.001 -0.000 -0.000  0.001 -0.002 -0.003  0.001 -0.000 -0.002 -0.002  0.037  0.001
+                    -0.000  0.000  0.001 -0.000 -0.001  0.001 -0.000 -0.001  0.001  0.004 -0.000  0.000  0.001 -0.001  0.001  0.004
+                    -0.000  0.000  0.001 -0.000 -0.001  0.001 -0.000 -0.001  0.001  0.004 -0.000  0.000  0.001 -0.001  0.001  0.004 -0.001  0.001  0.004  0.007  1.000  0.006 -0.002  0.002  0.005 -0.001  0.002  0.002  0.004  0.002  0.003  0.003
+       38  0.15469  -0.119  0.005 -0.006 -0.018 -0.003 -0.000 -0.002  0.004 -0.006 -0.013  0.003 -0.001 -0.008 -0.009  0.004  0.017
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002 -0.001 -0.004  0.005  0.015 -0.002  0.000  0.002 -0.004  0.005  0.015
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002 -0.001 -0.004  0.005  0.015 -0.002  0.000  0.002 -0.004  0.005  0.015 -0.004  0.003  0.015  0.026  0.006  1.000 -0.006  0.008  0.019 -0.003  0.007  0.009  0.016  0.010  0.013  0.013
+       39  0.32041   0.051 -0.002  0.003  0.008  0.001  0.000  0.001 -0.002  0.003  0.006 -0.001  0.000  0.003 -0.001 -0.001 -0.001
+                     0.007  0.001  0.003  0.000  0.002 -0.001  0.000  0.002 -0.002 -0.006  0.001 -0.000 -0.001  0.002 -0.002 -0.007
+                     0.007  0.001  0.003  0.000  0.002 -0.001  0.000  0.002 -0.002 -0.006  0.001 -0.000 -0.001  0.002 -0.002 -0.007  0.002 -0.001 -0.007  0.002 -0.002 -0.006  1.000  0.008  0.019  0.001 -0.003 -0.004 -0.007 -0.004 -0.006 -0.006
+       40  0.07497  -0.065  0.003 -0.003 -0.010 -0.002 -0.000 -0.001  0.002 -0.003 -0.007  0.002 -0.000 -0.004  0.001  0.001  0.001
+                     0.000  0.010  0.002 -0.000 -0.002  0.001 -0.001 -0.002  0.003  0.008 -0.001  0.000  0.001 -0.002  0.003  0.008
+                     0.000  0.010  0.002 -0.000 -0.002  0.001 -0.001 -0.002  0.003  0.008 -0.001  0.000  0.001 -0.002  0.003  0.008 -0.002  0.002  0.008 -0.002  0.002  0.008  0.008  1.000  0.013 -0.002  0.004  0.005  0.009  0.005  0.007  0.007
+       41  0.18091  -0.158  0.007 -0.008 -0.023 -0.004 -0.000 -0.002  0.005 -0.008 -0.018  0.004 -0.001 -0.011  0.002  0.003  0.003
+                     0.001  0.002  0.013 -0.001 -0.005  0.003 -0.001 -0.006  0.006  0.020 -0.003  0.000  0.003 -0.006  0.007  0.021
+                     0.001  0.002  0.013 -0.001 -0.005  0.003 -0.001 -0.006  0.006  0.020 -0.003  0.000  0.003 -0.006  0.007  0.021 -0.005  0.004  0.021 -0.005  0.005  0.019  0.019  0.013  1.000 -0.004  0.009  0.012  0.022  0.013  0.017  0.018
+       42  0.32750   0.025 -0.001  0.001  0.004  0.001  0.000  0.000 -0.001  0.001  0.003 -0.001  0.000  0.002 -0.000 -0.000 -0.000
+                     0.000 -0.000 -0.001  0.053 -0.009  0.006  0.026  0.002 -0.001 -0.003  0.000 -0.000 -0.000  0.001 -0.001 -0.003
+                     0.000 -0.000 -0.001  0.053 -0.009  0.006  0.026  0.002 -0.001 -0.003  0.000 -0.000 -0.000  0.001 -0.001 -0.003  0.001 -0.001 -0.003  0.001 -0.001 -0.003  0.001 -0.002 -0.004  1.000  0.017  0.024 -0.004 -0.002 -0.003 -0.003
+       43  0.09758  -0.056  0.003 -0.003 -0.008 -0.001 -0.000 -0.001  0.002 -0.003 -0.006  0.001 -0.000 -0.004  0.001  0.001  0.001
+                    -0.000  0.001  0.001  0.003 -0.055  0.002 -0.018 -0.003  0.002  0.007 -0.001  0.000  0.001 -0.002  0.003  0.007
+                    -0.000  0.001  0.001  0.003 -0.055  0.002 -0.018 -0.003  0.002  0.007 -0.001  0.000  0.001 -0.002  0.003  0.007 -0.002  0.001  0.007 -0.002  0.002  0.007 -0.003  0.004  0.009  0.017  1.000  0.009  0.008  0.005  0.006  0.006
+       44  0.10851  -0.074  0.003 -0.004 -0.011 -0.002 -0.000 -0.001  0.002 -0.004 -0.008  0.002 -0.001 -0.005  0.001  0.001  0.001
+                    -0.000  0.001  0.002  0.005 -0.005  0.015  0.007 -0.003  0.003  0.009 -0.001  0.000  0.001 -0.003  0.003  0.010
+                    -0.000  0.001  0.002  0.005 -0.005  0.015  0.007 -0.003  0.003  0.009 -0.001  0.000  0.001 -0.003  0.003  0.010 -0.002  0.002  0.010 -0.002  0.002  0.009 -0.004  0.005  0.012  0.024  0.009  1.000  0.010  0.006  0.008  0.008
+       45  0.39660  -0.136  0.312  0.029  0.083 -0.003 -0.000 -0.002  0.004 -0.007 -0.015  0.003 -0.001 -0.009  0.002  0.003  0.002
+                    -0.000  0.001  0.003 -0.002 -0.004  0.002 -0.026 -0.276 -0.023 -0.070 -0.002  0.000  0.002 -0.005  0.006  0.018
+                    -0.000  0.001  0.003 -0.002 -0.004  0.002 -0.026 -0.276 -0.023 -0.070 -0.002  0.000  0.002 -0.005  0.006  0.018 -0.005  0.004  0.018 -0.005  0.004  0.016 -0.007  0.009  0.022 -0.004  0.008  0.010  1.000  0.011  0.015  0.015
+       46  0.33226  -0.081  0.003 -0.004 -0.012 -0.299  0.001  0.026  0.003 -0.004 -0.009  0.002 -0.001 -0.005  0.001  0.002  0.001
+                    -0.000  0.001  0.002 -0.000 -0.002  0.001 -0.001 -0.003  0.003  0.010 -0.195 -0.003 -0.031 -0.003  0.004  0.011
+                    -0.000  0.001  0.002 -0.000 -0.002  0.001 -0.001 -0.003  0.003  0.010 -0.195 -0.003 -0.031 -0.003  0.004  0.011 -0.003  0.002  0.011 -0.003  0.002  0.010 -0.004  0.005  0.013 -0.002  0.005  0.006  0.011  1.000  0.009  0.009
+       47  0.41440  -0.108  0.005 -0.006 -0.016 -0.003 -0.000 -0.002  0.304  0.033  0.075  0.003 -0.001 -0.007  0.001  0.002  0.002
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.001 -0.004  0.004  0.013 -0.002  0.000  0.002 -0.323 -0.030 -0.086
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.001 -0.004  0.004  0.013 -0.002  0.000  0.002 -0.323 -0.030 -0.086 -0.004  0.003  0.014 -0.004  0.003  0.013 -0.006  0.007  0.017 -0.003  0.006  0.008  0.015  0.009  1.000  0.012
+       48  0.36960  -0.113  0.005 -0.006 -0.017 -0.003 -0.000 -0.002  0.004 -0.006 -0.013  0.224  0.005  0.045  0.001  0.002  0.002
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.001 -0.004  0.005  0.014 -0.002  0.000  0.002 -0.004  0.005  0.015
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.001 -0.004  0.005  0.014 -0.002  0.000  0.002 -0.004  0.005  0.015 -0.299 -0.018 -0.087 -0.004  0.003  0.013 -0.006  0.007  0.018 -0.003  0.006  0.008  0.015  0.009  0.012  1.000
+       49  0.34937  -0.107  0.005 -0.006 -0.016 -0.003 -0.000 -0.002  0.004 -0.005 -0.012  0.003 -0.001 -0.007  0.103 -0.013 -0.013
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.001 -0.004  0.004  0.013 -0.002  0.000  0.002 -0.004  0.005  0.014
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.001 -0.004  0.004  0.013 -0.002  0.000  0.002 -0.004  0.005  0.014 -0.004  0.003  0.014 -0.314 -0.021 -0.084 -0.006  0.007  0.017 -0.003  0.006  0.008  0.015  0.009  0.012  0.012
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.001 -0.004  0.004  0.013 -0.002  0.000  0.002 -0.004  0.005  0.014 -0.004  0.003  0.014 -0.314 -0.021 -0.084 -0.006  0.007  0.017 -0.003  0.006  0.008  0.015  0.009  0.012  0.012  1.000  0.017  0.008 -0.000
+       50  0.36140  -0.160  0.007 -0.008 -0.024 -0.004 -0.000 -0.002  0.005 -0.008 -0.018  0.004 -0.001 -0.011  0.002  0.003  0.003
+                    -0.009 -0.003 -0.008 -0.001 -0.005  0.003 -0.001 -0.006  0.006  0.020 -0.003  0.000  0.003 -0.006  0.007  0.021
+                    -0.009 -0.003 -0.008 -0.001 -0.005  0.003 -0.001 -0.006  0.006  0.020 -0.003  0.000  0.003 -0.006  0.007  0.021 -0.005  0.004  0.021 -0.005  0.005  0.019 -0.320 -0.025 -0.061 -0.004  0.009  0.012  0.022  0.013  0.017  0.018
+                    -0.009 -0.003 -0.008 -0.001 -0.005  0.003 -0.001 -0.006  0.006  0.020 -0.003  0.000  0.003 -0.006  0.007  0.021 -0.005  0.004  0.021 -0.005  0.005  0.019 -0.320 -0.025 -0.061 -0.004  0.009  0.012  0.022  0.013  0.017  0.018  0.017  1.000  0.012  0.000
+       51  0.35018  -0.076  0.004 -0.004 -0.011 -0.002 -0.000 -0.001  0.003 -0.004 -0.009  0.002 -0.001 -0.005  0.001  0.001  0.001
+                    -0.000  0.001  0.002 -0.071  0.029 -0.017 -0.033 -0.004  0.003  0.009 -0.001  0.000  0.001 -0.003  0.003  0.010
+                    -0.000  0.001  0.002 -0.071  0.029 -0.017 -0.033 -0.004  0.003  0.009 -0.001  0.000  0.001 -0.003  0.003  0.010 -0.003  0.002  0.010 -0.003  0.002  0.009 -0.004  0.005  0.012 -0.326 -0.054 -0.073  0.011  0.006  0.008  0.009
+                    -0.000  0.001  0.002 -0.071  0.029 -0.017 -0.033 -0.004  0.003  0.009 -0.001  0.000  0.001 -0.003  0.003  0.010 -0.003  0.002  0.010 -0.003  0.002  0.009 -0.004  0.005  0.012 -0.326 -0.054 -0.073  0.011  0.006  0.008  0.009  0.008  0.012  1.000 -0.011
+       52  0.21962   0.004 -0.011 -0.003  0.005  0.000  0.000  0.000 -0.000  0.000  0.000 -0.000  0.000  0.000 -0.000 -0.000 -0.000
+                    -0.003 -0.000 -0.001  0.010  0.004  0.002  0.219  0.022  0.004 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.001
+                    -0.003 -0.000 -0.001  0.010  0.004  0.002  0.219  0.022  0.004 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.001  0.000 -0.000 -0.001  0.000 -0.000 -0.001 -0.000 -0.001 -0.001  0.009 -0.006  0.002 -0.020 -0.000 -0.000 -0.000
+                    -0.003 -0.000 -0.001  0.010  0.004  0.002  0.219  0.022  0.004 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.001  0.000 -0.000 -0.001  0.000 -0.000 -0.001 -0.000 -0.001 -0.001  0.009 -0.006  0.002 -0.020 -0.000 -0.000 -0.000 -0.000  0.000 -0.011  1.000
+ **********
+ **   18 **HESSE     2.6e+04
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-32800.5 FROM HESSE     STATUS=OK           1549 CALLS        8851 TOTAL
+                     EDM=3.32496    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  Bratio       3.07406e-01   4.00165e-02   3.12218e-03  -3.13769e-01
+   2  c0          -3.58032e+00   1.00813e+01   9.25036e-04  -7.16677e-02
+   3  c0_3pi_sig  -1.53816e+00   1.82120e+01   1.85662e-03  -3.07680e-02
+   4  c0_sig      -1.04455e+01   9.62478e+00   9.68122e-04  -2.10461e-01
+   5  c1           4.43955e+01   1.78911e+01   4.14054e-03   2.04881e+00
+   6  c1_3pi_sig  -5.00000e+01   8.19979e+01   9.07476e-03  -1.57048e+00
+                                 WARNING -   - ABOVE PARAMETER IS AT LIMIT.
+   7  c1_sig      -1.54770e+01   1.99318e+01   2.16324e-03  -3.14710e-01
+   8  c2           3.86439e+00   7.16731e+00   6.67123e-04   7.73650e-02
+   9  c2_3pi_sig   2.68341e+01   2.01800e+01   2.47770e-03   5.66499e-01
+  10  c2_sig       5.50512e+00   7.43002e+00   7.40295e-04   1.10326e-01
+  11  c3           1.72086e+00   5.29157e+00   5.10932e-04   3.44240e-02
+  12  c3_3pi_sig  -1.06634e+01   1.22378e+01   1.26683e-03  -2.14919e-01
+  13  c3_sig      -2.42638e+00   6.54892e+00   6.54663e-04  -4.85466e-02
+  14  c4          -7.65235e+00   3.90698e+00   3.93081e-04  -1.53651e-01
+  15  c4_3pi_sig   9.82287e+00   1.41793e+01   1.46637e-03   2.94385e+00
+  16  c4_sig      -2.28079e+01   5.10050e+00   5.74501e-04  -4.73674e-01
+  17  c5          -7.81118e+00   1.73238e+00   8.77094e-04  -1.56866e-01
+  18  c5_3pi_sig  -6.55362e+00   6.45677e+00   6.53444e-04  -1.31451e-01
+  19  c5_sig      -9.04764e+00   2.39158e+00   2.43298e-04  -1.81955e-01
+  20  c6          -8.14773e+00   2.85060e+00   2.88247e-04  -1.63685e-01
+  21  c6_3pi_sig   2.67797e+01   1.22218e+01   1.46603e-03   5.65210e-01
+  22  c6_sig      -6.07852e+00   3.91378e+00   3.94745e-04  -1.21872e-01
+  23  mean_all     1.02652e-04   9.22427e-05   3.22652e-01   1.02834e-01
+  24  nbkg0        1.31455e+02   1.38257e+01   3.61120e-04  -2.87978e-01
+  25  nbkg0_3pi_sig   2.56981e+01   5.15131e+00   1.71077e-03   4.97125e-01
+  26  nbkg0_sig    1.00005e+02   1.06257e+01   7.89549e-04   3.99500e-01
+  27  nbkg1        3.50507e+01   6.46172e+00   8.39969e-04  -5.78084e-02
+  28  nbkg1_3pi_sig   2.98647e+00   2.88286e+00   6.47282e-03   7.19685e-01
+  29  nbkg1_sig    1.50317e+01   3.79936e+00   2.50195e-03   6.01407e-01
+  30  nbkg2        1.46249e+02   1.48332e+01   3.84563e-04  -1.91369e-01
+  31  nbkg2_3pi_sig   1.55176e+01   4.04376e+00   1.93814e-03   3.69549e-01
+  32  nbkg2_sig    1.01830e+02   1.07643e+01   7.99256e-04   4.14376e-01
+  33  nbkg3        1.84948e+02   1.60971e+01   3.74684e-04  -9.08445e-02
+  34  nbkg3_3pi_sig   2.59001e+01   5.09404e+00   1.84554e-03   5.72423e-01
+  35  nbkg3_sig    9.83173e+01   1.05924e+01   8.03175e-04   3.99179e-01
+  36  nbkg4        2.15085e+02   1.73304e+01   3.75185e-04  -1.78759e-02
+  37  nbkg4_3pi_sig   1.70336e+01   4.13636e+00   2.15091e-03   5.16889e-01
+  38  nbkg4_sig    1.17014e+02   1.14371e+01   7.61663e-04   4.37333e-01
+  39  nbkg5        8.29362e+02   3.32192e+01   2.21147e-04   1.52482e-01
+  40  nbkg5_3pi_sig   5.83982e+01   7.88785e+00   1.07688e-03   4.45965e-01
+  41  nbkg5_sig    4.24272e+02   2.16226e+01   4.41274e-04   5.36278e-01
+  42  nbkg6        2.60393e+02   1.85601e+01   4.10740e-04   1.96828e-01
+  43  nbkg6_3pi_sig   2.03653e+01   4.68362e+00   1.69633e-03   3.65787e-01
+  44  nbkg6_sig    1.35238e+02   1.19671e+01   8.13522e-04   5.74971e-01
+  45  nsig_mode0   1.72642e+02   1.47255e+01   3.69013e-04  -5.97200e-02
+  46  nsig_mode1   2.44517e+01   5.24991e+00   7.16330e-04  -3.49785e-01
+  47  nsig_mode2   1.55356e+02   1.46802e+01   3.73882e-04  -1.40237e-01
+  48  nsig_mode3   1.53992e+02   1.46337e+01   3.44822e-04  -2.45366e-01
+  49  nsig_mode4   1.50960e+02   1.49073e+01   3.35689e-04  -3.15914e-01
+  50  nsig_mode5   3.72281e+02   2.48317e+01   1.83704e-04  -5.04012e-01
+  51  nsig_mode6   1.03918e+02   1.33517e+01   3.36896e-04  -5.50217e-01
+  52  sigma_all    5.30426e-06   1.24555e-04   5.00000e-01  -1.42501e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM= 148    NPAR= 52    ERR DEF=0.5
+ ELEMENTS ABOVE DIAGONAL ARE NOT PRINTED.
+  1.612e-03 
+ -1.697e-02  1.030e+02 
+  3.851e-02  1.764e+00  3.475e+02 
+  5.717e-02  2.577e+00  2.052e+00  9.386e+01 
+  1.823e-02 -2.407e-01  4.195e-01  6.491e-01  4.202e+02 
+  2.001e-08 -1.295e-07  4.853e-07  7.257e-07 -4.985e-06  8.362e-04 
+  1.142e-02 -1.093e-01  2.763e-01  4.044e-01 -2.932e+00  8.176e-07  4.230e+02 
+ -9.441e-03  4.885e-02 -2.421e-01 -3.315e-01 -7.874e-02 -1.090e-07 -7.319e-02  5.173e+01 
+  4.240e-02 -3.910e-01  1.031e+00  1.501e+00  4.483e-01  6.976e-07  3.071e-01  1.513e+00  4.427e+02 
+  3.353e-02 -3.579e-01  7.994e-01  1.190e+00  3.820e-01  4.816e-07  2.370e-01  1.228e+00  1.415e+00  5.562e+01 
+ -5.301e-03  4.601e-02 -1.299e-01 -1.875e-01 -5.450e-02 -8.337e-08 -3.880e-02  3.668e-02 -1.458e-01 -1.097e-01  2.811e+01 
+  3.345e-03 -4.070e-02  7.804e-02  1.189e-01  4.089e-02 -6.409e-08  2.303e-02 -1.644e-02  8.441e-02  6.987e-02  6.713e-02 
+  3.345e-03 -4.070e-02  7.804e-02  1.189e-01  4.089e-02 -6.409e-08  2.303e-02 -1.644e-02  8.441e-02  6.987e-02  6.713e-02  1.530e+02 
+  1.747e-02 -1.898e-01  4.155e-01  6.201e-01  2.010e-01  2.124e-07  1.231e-01 -9.901e-02  4.558e-01  3.638e-01  3.471e-01 
+  1.747e-02 -1.898e-01  4.155e-01  6.201e-01  2.010e-01  2.124e-07  1.231e-01 -9.901e-02  4.558e-01  3.638e-01  3.471e-01  5.923e-02  4.314e+01 
+ -1.719e-03 -1.354e-03 -4.752e-02 -6.085e-02 -8.172e-03 -5.562e-09 -1.440e-02  2.062e-02 -5.910e-02 -3.485e-02  7.989e-03 
+ -1.719e-03 -1.354e-03 -4.752e-02 -6.085e-02 -8.172e-03 -5.562e-09 -1.440e-02  2.062e-02 -5.910e-02 -3.485e-02  7.989e-03 -2.237e-03 -1.727e-02  1.530e+01 
+ -1.125e-02  1.394e-01 -2.617e-01 -3.993e-01 -1.393e-01 -2.376e-08 -7.727e-02  5.437e-02 -2.812e-01 -2.350e-01  3.453e-02 
+ -1.125e-02  1.394e-01 -2.617e-01 -3.993e-01 -1.393e-01 -2.376e-08 -7.727e-02  5.437e-02 -2.812e-01 -2.350e-01  3.453e-02 -2.475e-02 -1.234e-01 -8.489e-02  2.069e+02 
+ -3.947e-03  3.787e-02 -9.549e-02 -1.399e-01 -4.243e-02 -5.006e-09 -2.834e-02  2.511e-02 -1.064e-01 -8.193e-02  1.343e-02 
+ -3.947e-03  3.787e-02 -9.549e-02 -1.399e-01 -4.243e-02 -5.006e-09 -2.834e-02  2.511e-02 -1.064e-01 -8.193e-02  1.343e-02 -7.940e-03 -4.254e-02 -2.640e-02  4.487e-02  2.613e+01 
+  7.435e-05 -1.302e-02 -2.324e-03  2.397e-03  8.046e-03  3.311e-09 -8.412e-04  5.994e-03 -7.229e-03  2.062e-03  1.266e-03 
+  7.435e-05 -1.302e-02 -2.324e-03  2.397e-03  8.046e-03  3.311e-09 -8.412e-04  5.994e-03 -7.229e-03  2.062e-03  1.266e-03  1.011e-03  1.681e-03  4.015e-03 -4.716e-03  5.931e-04  3.002e+00 
+ -2.509e-03  2.044e-02 -6.193e-02 -8.905e-02 -2.482e-02  8.313e-08 -1.841e-02  1.786e-02 -7.038e-02 -5.191e-02  8.981e-03 
+ -2.509e-03  2.044e-02 -6.193e-02 -8.905e-02 -2.482e-02  8.313e-08 -1.841e-02  1.786e-02 -7.038e-02 -5.191e-02  8.981e-03 -4.766e-03 -2.677e-02  4.633e-03  1.553e-02  6.522e-03  1.846e-03  4.193e+01 
+ -2.157e-03  1.927e-02 -5.268e-02 -7.659e-02 -2.237e-02 -4.082e-09 -1.567e-02  1.444e-02 -5.934e-02 -4.473e-02  7.525e-03 
+ -2.157e-03  1.927e-02 -5.268e-02 -7.659e-02 -2.237e-02 -4.082e-09 -1.567e-02  1.444e-02 -5.934e-02 -4.473e-02  7.525e-03 -4.235e-03 -2.315e-02  3.454e-03  1.387e-02  5.501e-03  1.214e-03  4.765e-03  5.724e+00 
+  5.882e-04 -2.337e-02  8.500e-03  2.277e-02  1.582e-02 -9.178e-09  1.883e-03  7.172e-03  5.979e-03  1.336e-02 -1.441e-04 
+  5.882e-04 -2.337e-02  8.500e-03  2.277e-02  1.582e-02 -9.178e-09  1.883e-03  7.172e-03  5.979e-03  1.336e-02 -1.441e-04  2.201e-03  7.467e-03  1.809e-03 -6.973e-03 -9.815e-04  1.145e-03 -3.256e-04 -4.769e-04  8.135e+00 
+  1.468e-02 -1.792e-01  3.428e-01  5.237e-01  1.792e-01  1.948e-07  1.008e-01 -7.055e-02  3.729e-01  3.070e-01 -4.574e-02 
+  1.468e-02 -1.792e-01  3.428e-01  5.237e-01  1.792e-01  1.948e-07  1.008e-01 -7.055e-02  3.729e-01  3.070e-01 -4.574e-02  3.189e-02  1.607e-01 -1.263e-02 -1.062e-01 -3.538e-02  1.848e-03 -2.219e-02 -1.933e-02 -6.705e-02  1.537e+02 
+ -2.828e-03  2.492e-02 -6.912e-02 -9.978e-02 -2.939e-02  6.766e-10 -2.069e-02  1.957e-02 -7.706e-02 -5.851e-02  9.815e-03 
+ -2.828e-03  2.492e-02 -6.912e-02 -9.978e-02 -2.939e-02  6.766e-10 -2.069e-02  1.957e-02 -7.706e-02 -5.851e-02  9.815e-03 -5.592e-03 -3.036e-02  3.694e-03  1.894e-02  7.056e-03  1.787e-04  4.574e-03  3.873e-03  1.556e-02 -5.263e-02  1.535e+01 
+ -4.801e-08 -2.676e-05 -1.009e-05 -2.486e-07  1.469e-05  1.325e-11 -3.713e-06  1.602e-05 -1.870e-05  5.156e-07  3.237e-06 
+ -4.801e-08 -2.676e-05 -1.009e-05 -2.486e-07  1.469e-05  1.325e-11 -3.713e-06  1.602e-05 -1.870e-05  5.156e-07  3.237e-06  1.616e-06  1.303e-06  6.244e-06 -6.323e-06  1.295e-06  3.930e-06  1.998e-06  1.174e-06  5.235e-06  7.065e-06  1.573e-06 
+ -4.801e-08 -2.676e-05 -1.009e-05 -2.486e-07  1.469e-05  1.325e-11 -3.713e-06  1.602e-05 -1.870e-05  5.156e-07  3.237e-06  1.616e-06  1.303e-06  6.244e-06 -6.323e-06  1.295e-06  3.930e-06  1.998e-06  1.174e-06  5.235e-06  7.065e-06  1.573e-06  8.533e-09 
+  2.041e-02 -4.960e+01 -2.156e+00 -3.112e+00  3.257e-01  2.608e-07  1.231e-01 -1.907e-02  4.305e-01  4.344e-01 -4.809e-02 
+  2.041e-02 -4.960e+01 -2.156e+00 -3.112e+00  3.257e-01  2.608e-07  1.231e-01 -1.907e-02  4.305e-01  4.344e-01 -4.809e-02  5.297e-02  2.326e-01  1.393e-02 -1.814e-01 -4.317e-02  2.264e-02 -2.106e-02 -2.121e-02  4.353e-02  2.384e-01 -2.559e-02 
+  2.041e-02 -4.960e+01 -2.156e+00 -3.112e+00  3.257e-01  2.608e-07  1.231e-01 -1.907e-02  4.305e-01  4.344e-01 -4.809e-02  5.297e-02  2.326e-01  1.393e-02 -1.814e-01 -4.317e-02  2.264e-02 -2.106e-02 -2.121e-02  4.353e-02  2.384e-01 -2.559e-02  5.274e-05  1.915e+02 
+ -8.691e-03 -4.027e-01 -8.360e+00 -4.626e-01 -9.204e-02 -1.492e-07 -6.301e-02  5.757e-02 -2.356e-01 -1.801e-01  2.984e-02 
+ -8.691e-03 -4.027e-01 -8.360e+00 -4.626e-01 -9.204e-02 -1.492e-07 -6.301e-02  5.757e-02 -2.356e-01 -1.801e-01  2.984e-02 -1.733e-02 -9.346e-02  1.164e-02  5.808e-02  2.173e-02  1.041e-03  1.423e-02  1.204e-02 -7.906e-04 -7.567e-02  1.593e-02 
+ -8.691e-03 -4.027e-01 -8.360e+00 -4.626e-01 -9.204e-02 -1.492e-07 -6.301e-02  5.757e-02 -2.356e-01 -1.801e-01  2.984e-02 -1.733e-02 -9.346e-02  1.164e-02  5.808e-02  2.173e-02  1.041e-03  1.423e-02  1.204e-02 -7.906e-04 -7.567e-02  1.593e-02  3.791e-06  4.961e-01  2.761e+01 
+ -5.349e-02 -2.429e+00 -1.926e+00 -1.481e+01 -5.966e-01 -6.684e-07 -3.808e-01  3.219e-01 -1.417e+00 -1.112e+00  1.776e-01 
+ -5.349e-02 -2.429e+00 -1.926e+00 -1.481e+01 -5.966e-01 -6.684e-07 -3.808e-01  3.219e-01 -1.417e+00 -1.112e+00  1.776e-01 -1.100e-01 -5.789e-01  6.056e-02  3.695e-01  1.316e-01 -2.051e-04  8.434e-02  7.222e-02 -1.675e-02 -4.832e-01  9.463e-02 
+ -5.349e-02 -2.429e+00 -1.926e+00 -1.481e+01 -5.966e-01 -6.684e-07 -3.808e-01  3.219e-01 -1.417e+00 -1.112e+00  1.776e-01 -1.100e-01 -5.789e-01  6.056e-02  3.695e-01  1.316e-01 -2.051e-04  8.434e-02  7.222e-02 -1.675e-02 -4.832e-01  9.463e-02  6.271e-06  2.949e+00  4.354e-01  1.139e+02 
+  3.885e-03 -5.767e-02  8.728e-02  1.388e-01  3.335e+01 -1.136e-06 -6.272e-01 -1.300e-02  9.160e-02  8.176e-02 -1.091e-02 
+  3.885e-03 -5.767e-02  8.728e-02  1.388e-01  3.335e+01 -1.136e-06 -6.272e-01 -1.300e-02  9.160e-02  8.176e-02 -1.091e-02  9.103e-03  4.325e-02 -4.522e-04 -3.109e-02 -8.804e-03  2.484e-03 -4.924e-03 -4.549e-03  4.754e-03  4.022e-02 -5.869e-03 
+  3.885e-03 -5.767e-02  8.728e-02  1.388e-01  3.335e+01 -1.136e-06 -6.272e-01 -1.300e-02  9.160e-02  8.176e-02 -1.091e-02  9.103e-03  4.325e-02 -4.522e-04 -3.109e-02 -8.804e-03  2.484e-03 -4.924e-03 -4.549e-03  4.754e-03  4.022e-02 -5.869e-03  5.116e-06  8.219e-02 -1.877e-02 -1.260e-01  4.218e+01 
+ -1.438e-04  1.707e-03 -3.372e-03 -5.105e-03  3.686e-02 -4.502e-06 -4.646e-03  7.247e-04 -3.675e-03 -3.007e-03  4.526e-04 
+ -1.438e-04  1.707e-03 -3.372e-03 -5.105e-03  3.686e-02 -4.502e-06 -4.646e-03  7.247e-04 -3.675e-03 -3.007e-03  4.526e-04 -3.039e-04 -1.572e-03  1.146e-04  1.039e-03  3.423e-04 -2.897e-05  2.126e-04  1.849e-04 -9.477e-05 -1.374e-03  2.379e-04 
+ -1.438e-04  1.707e-03 -3.372e-03 -5.105e-03  3.686e-02 -4.502e-06 -4.646e-03  7.247e-04 -3.675e-03 -3.007e-03  4.526e-04 -3.039e-04 -1.572e-03  1.146e-04  1.039e-03  3.423e-04 -2.897e-05  2.126e-04  1.849e-04 -9.477e-05 -1.374e-03  2.379e-04 -5.658e-08 -2.215e-03  7.519e-04  4.737e-03  7.862e-03  3.072e+00 
+ -2.830e-03  2.396e-02 -6.949e-02 -9.995e-02  7.267e-01 -1.252e-07 -2.600e+00  2.000e-02 -7.803e-02 -5.852e-02  9.960e-03 
+ -2.830e-03  2.396e-02 -6.949e-02 -9.995e-02  7.267e-01 -1.252e-07 -2.600e+00  2.000e-02 -7.803e-02 -5.852e-02  9.960e-03 -5.514e-03 -3.030e-02  4.210e-03  1.845e-02  7.157e-03  5.908e-04  4.769e-03  3.991e-03  2.104e-04 -2.396e-02  5.321e-03 
+ -2.830e-03  2.396e-02 -6.949e-02 -9.995e-02  7.267e-01 -1.252e-07 -2.600e+00  2.000e-02 -7.803e-02 -5.852e-02  9.960e-03 -5.514e-03 -3.030e-02  4.210e-03  1.845e-02  7.157e-03  5.908e-04  4.769e-03  3.991e-03  2.104e-04 -2.396e-02  5.321e-03  1.903e-06 -2.419e-02  1.603e-02  9.488e-02  1.557e-01  1.143e-03  1.570e+01 
+  2.060e-02 -2.040e-01  4.962e-01  7.285e-01  2.264e-01  3.796e-07  1.478e-01 -3.376e+01 -3.397e+00 -2.700e+00 -6.903e-02 
+  2.060e-02 -2.040e-01  4.962e-01  7.285e-01  2.264e-01  3.796e-07  1.478e-01 -3.376e+01 -3.397e+00 -2.700e+00 -6.903e-02  4.205e-02  2.226e-01 -2.259e-02 -1.427e-01 -5.051e-02  1.227e-03 -3.198e-02 -2.749e-02  2.828e-03  1.803e-01 -3.748e-02 
+  2.060e-02 -2.040e-01  4.962e-01  7.285e-01  2.264e-01  3.796e-07  1.478e-01 -3.376e+01 -3.397e+00 -2.700e+00 -6.903e-02  4.205e-02  2.226e-01 -2.259e-02 -1.427e-01 -5.051e-02  1.227e-03 -3.198e-02 -2.749e-02  2.828e-03  1.803e-01 -3.748e-02 -4.492e-06  2.316e-01 -1.130e-01 -6.856e-01  4.706e-02 -1.792e-03 -3.719e-02  2.205e+02 
+ -7.816e-03  6.739e-02 -1.916e-01 -2.766e-01 -8.002e-02 -1.288e-07 -5.720e-02 -2.759e-01 -9.085e+00 -2.606e-01  2.740e-02 
+ -7.816e-03  6.739e-02 -1.916e-01 -2.766e-01 -8.002e-02 -1.288e-07 -5.720e-02 -2.759e-01 -9.085e+00 -2.606e-01  2.740e-02 -1.527e-02 -8.371e-02  1.197e-02  5.068e-02  1.983e-02  2.021e-03  1.331e-02  1.113e-02 -2.167e-04 -6.748e-02  1.446e-02 
+ -7.816e-03  6.739e-02 -1.916e-01 -2.766e-01 -8.002e-02 -1.288e-07 -5.720e-02 -2.759e-01 -9.085e+00 -2.606e-01  2.740e-02 -1.527e-02 -8.371e-02  1.197e-02  5.068e-02  1.983e-02  2.021e-03  1.331e-02  1.113e-02 -2.167e-04 -6.748e-02  1.446e-02  4.917e-06 -7.021e-02  4.405e-02  2.620e-01 -1.599e-02  6.673e-04  1.470e-02  6.249e-01  1.721e+01 
+ -5.706e-02  5.805e-01 -1.370e+00 -2.023e+00 -6.339e-01 -7.048e-07 -4.068e-01 -2.071e+00 -2.426e+00 -8.841e+00  1.900e-01 
+ -5.706e-02  5.805e-01 -1.370e+00 -2.023e+00 -6.339e-01 -7.048e-07 -4.068e-01 -2.071e+00 -2.426e+00 -8.841e+00  1.900e-01 -1.171e-01 -6.172e-01  6.584e-02  3.929e-01  1.407e-01  6.524e-04  9.040e-02  7.730e-02 -1.725e-02 -5.147e-01  1.011e-01 
+ -5.706e-02  5.805e-01 -1.370e+00 -2.023e+00 -6.339e-01 -7.048e-07 -4.068e-01 -2.071e+00 -2.426e+00 -8.841e+00  1.900e-01 -1.171e-01 -6.172e-01  6.584e-02  3.929e-01  1.407e-01  6.524e-04  9.040e-02  7.730e-02 -1.725e-02 -5.147e-01  1.011e-01  8.098e-06 -6.834e-01  3.103e-01  1.897e+00 -1.336e-01  5.048e-03  1.015e-01  4.587e+00  4.483e-01  1.169e+02 
+  2.147e-02 -3.177e-01  4.826e-01  7.642e-01  2.949e-01  5.076e-07  1.411e-01 -7.426e-02  5.029e-01  4.512e-01 -1.820e+01 
+  2.147e-02 -3.177e-01  4.826e-01  7.642e-01  2.949e-01  5.076e-07  1.411e-01 -7.426e-02  5.029e-01  4.512e-01 -1.820e+01 -2.670e-01 -1.416e+00  8.242e-04 -1.749e-01 -4.806e-02  1.691e-02 -2.567e-02 -2.424e-02  2.273e-02  2.158e-01 -3.345e-02 
+  2.147e-02 -3.177e-01  4.826e-01  7.642e-01  2.949e-01  5.076e-07  1.411e-01 -7.426e-02  5.029e-01  4.512e-01 -1.820e+01 -2.670e-01 -1.416e+00  8.242e-04 -1.749e-01 -4.806e-02  1.691e-02 -2.567e-02 -2.424e-02  2.273e-02  2.158e-01 -3.345e-02  2.828e-05  4.462e-01 -1.042e-01 -6.963e-01  6.925e-02 -2.120e-03 -3.178e-02  2.659e-01 -8.770e-02 -7.375e-01  2.597e+02 
+ -5.791e-03  5.998e-02 -1.387e-01 -2.054e-01 -6.484e-02 -2.477e-08 -4.108e-02  3.442e-02 -1.531e-01 -1.204e-01 -1.146e-01 
+ -5.791e-03  5.998e-02 -1.387e-01 -2.054e-01 -6.484e-02 -2.477e-08 -4.108e-02  3.442e-02 -1.531e-01 -1.204e-01 -1.146e-01 -7.160e-01 -1.017e-01  6.545e-03  4.004e-02  1.425e-02  1.481e-05  9.156e-03  7.831e-03 -2.066e-03 -5.273e-02  1.018e-02 
+ -5.791e-03  5.998e-02 -1.387e-01 -2.054e-01 -6.484e-02 -2.477e-08 -4.108e-02  3.442e-02 -1.531e-01 -1.204e-01 -1.146e-01 -7.160e-01 -1.017e-01  6.545e-03  4.004e-02  1.425e-02  1.481e-05  9.156e-03  7.831e-03 -2.066e-03 -5.273e-02  1.018e-02  5.003e-07 -7.160e-02  3.134e-02  1.924e-01 -1.377e-02  5.122e-04  1.022e-02 -7.390e-02  2.829e-02  2.053e-01  4.721e-01 
+ -5.791e-03  5.998e-02 -1.387e-01 -2.054e-01 -6.484e-02 -2.477e-08 -4.108e-02  3.442e-02 -1.531e-01 -1.204e-01 -1.146e-01 -7.160e-01 -1.017e-01  6.545e-03  4.004e-02  1.425e-02  1.481e-05  9.156e-03  7.831e-03 -2.066e-03 -5.273e-02  1.018e-02  5.003e-07 -7.160e-02  3.134e-02  1.924e-01 -1.377e-02  5.122e-04  1.022e-02 -7.390e-02  2.829e-02  2.053e-01  4.721e-01  2.716e+01 
+ -5.617e-02  5.719e-01 -1.348e+00 -1.992e+00 -6.241e-01 -5.834e-07 -4.002e-01  3.399e-01 -1.491e+00 -1.167e+00 -1.110e+00 
+ -5.617e-02  5.719e-01 -1.348e+00 -1.992e+00 -6.241e-01 -5.834e-07 -4.002e-01  3.399e-01 -1.491e+00 -1.167e+00 -1.110e+00 -1.877e-01 -4.615e+00  6.511e-02  3.865e-01  1.385e-01  9.687e-04  8.915e-02  7.618e-02 -1.750e-02 -5.075e-01  9.941e-02 
+ -5.617e-02  5.719e-01 -1.348e+00 -1.992e+00 -6.241e-01 -5.834e-07 -4.002e-01  3.399e-01 -1.491e+00 -1.167e+00 -1.110e+00 -1.877e-01 -4.615e+00  6.511e-02  3.865e-01  1.385e-01  9.687e-04  8.915e-02  7.618e-02 -1.750e-02 -5.075e-01  9.941e-02  7.855e-06 -6.743e-01  3.053e-01  1.867e+00 -1.316e-01  4.975e-03  9.985e-02 -7.194e-01  2.759e-01  1.993e+00  4.587e+00 
+ -5.617e-02  5.719e-01 -1.348e+00 -1.992e+00 -6.241e-01 -5.834e-07 -4.002e-01  3.399e-01 -1.491e+00 -1.167e+00 -1.110e+00 -1.877e-01 -4.615e+00  6.511e-02  3.865e-01  1.385e-01  9.687e-04  8.915e-02  7.618e-02 -1.750e-02 -5.075e-01  9.941e-02  7.855e-06 -6.743e-01  3.053e-01  1.867e+00 -1.316e-01  4.975e-03  9.985e-02 -7.194e-01  2.759e-01  1.993e+00  4.587e+00  3.272e-01  1.132e+02 
+  2.331e-02 -2.049e-01  5.701e-01  8.262e-01  2.401e-01  6.146e-08  1.698e-01 -1.586e-01  6.415e-01  4.828e-01 -8.152e-02 
+  2.331e-02 -2.049e-01  5.701e-01  8.262e-01  2.401e-01  6.146e-08  1.698e-01 -1.586e-01  6.415e-01  4.828e-01 -8.152e-02  4.562e-02  2.499e-01 -6.214e+00  1.107e+00  3.796e-01 -7.221e-03 -4.028e-02 -3.356e-02  3.154e-03  2.056e-01 -4.244e-02 
+  2.331e-02 -2.049e-01  5.701e-01  8.262e-01  2.401e-01  6.146e-08  1.698e-01 -1.586e-01  6.415e-01  4.828e-01 -8.152e-02  4.562e-02  2.499e-01 -6.214e+00  1.107e+00  3.796e-01 -7.221e-03 -4.028e-02 -3.356e-02  3.154e-03  2.056e-01 -4.244e-02 -1.362e-05  2.202e-01 -1.306e-01 -7.806e-01  4.847e-02 -1.986e-03 -4.348e-02  2.996e-01 -1.205e-01 -8.353e-01  2.612e-01 
+  2.331e-02 -2.049e-01  5.701e-01  8.262e-01  2.401e-01  6.146e-08  1.698e-01 -1.586e-01  6.415e-01  4.828e-01 -8.152e-02  4.562e-02  2.499e-01 -6.214e+00  1.107e+00  3.796e-01 -7.221e-03 -4.028e-02 -3.356e-02  3.154e-03  2.056e-01 -4.244e-02 -1.362e-05  2.202e-01 -1.306e-01 -7.806e-01  4.847e-02 -1.986e-03 -4.348e-02  2.996e-01 -1.205e-01 -8.353e-01  2.612e-01 -8.449e-02 -8.229e-01  3.010e+02 
+ -5.380e-03  6.631e-02 -1.253e-01 -1.909e-01 -6.641e-02 -3.453e-08 -3.700e-02  2.625e-02 -1.347e-01 -1.123e-01  1.654e-02 
+ -5.380e-03  6.631e-02 -1.253e-01 -1.909e-01 -6.641e-02 -3.453e-08 -3.700e-02  2.625e-02 -1.347e-01 -1.123e-01  1.654e-02 -1.181e-02 -5.898e-02 -4.047e-02  2.406e+00  2.149e-02 -2.184e-03  7.453e-03  6.654e-03 -3.265e-03 -5.065e-02  9.074e-03 
+ -5.380e-03  6.631e-02 -1.253e-01 -1.909e-01 -6.641e-02 -3.453e-08 -3.700e-02  2.625e-02 -1.347e-01 -1.123e-01  1.654e-02 -1.181e-02 -5.898e-02 -4.047e-02  2.406e+00  2.149e-02 -2.184e-03  7.453e-03  6.654e-03 -3.265e-03 -5.065e-02  9.074e-03 -2.901e-06 -8.596e-02  2.782e-02  1.768e-01 -1.480e-02  5.015e-04  8.854e-03 -6.831e-02  2.431e-02  1.880e-01 -8.317e-02 
+ -5.380e-03  6.631e-02 -1.253e-01 -1.909e-01 -6.641e-02 -3.453e-08 -3.700e-02  2.625e-02 -1.347e-01 -1.123e-01  1.654e-02 -1.181e-02 -5.898e-02 -4.047e-02  2.406e+00  2.149e-02 -2.184e-03  7.453e-03  6.654e-03 -3.265e-03 -5.065e-02  9.074e-03 -2.901e-06 -8.596e-02  2.782e-02  1.768e-01 -1.480e-02  5.015e-04  8.854e-03 -6.831e-02  2.431e-02  1.880e-01 -8.317e-02  1.917e-02  1.849e-01  5.292e-01  1.821e+01 
+ -5.581e-02  6.029e-01 -1.328e+00 -1.979e+00 -6.401e-01 -8.100e-07 -3.937e-01  3.187e-01 -1.457e+00 -1.162e+00  1.817e-01 
+ -5.581e-02  6.029e-01 -1.328e+00 -1.979e+00 -6.401e-01 -8.100e-07 -3.937e-01  3.187e-01 -1.457e+00 -1.162e+00  1.817e-01 -1.168e-01 -6.060e-01 -3.944e-01  6.560e-01  1.044e+00 -5.821e-03  8.528e-02  7.378e-02 -2.223e-02 -5.105e-01  9.740e-02 
+ -5.581e-02  6.029e-01 -1.328e+00 -1.979e+00 -6.401e-01 -8.100e-07 -3.937e-01  3.187e-01 -1.457e+00 -1.162e+00  1.817e-01 -1.168e-01 -6.060e-01 -3.944e-01  6.560e-01  1.044e+00 -5.821e-03  8.528e-02  7.378e-02 -2.223e-02 -5.105e-01  9.740e-02 -3.195e-06 -7.345e-01  2.991e-01  1.849e+00 -1.374e-01  5.015e-03  9.704e-02 -7.130e-01  2.678e-01  1.972e+00 -7.619e-01 
+ -5.581e-02  6.029e-01 -1.328e+00 -1.979e+00 -6.401e-01 -8.100e-07 -3.937e-01  3.187e-01 -1.457e+00 -1.162e+00  1.817e-01 -1.168e-01 -6.060e-01 -3.944e-01  6.560e-01  1.044e+00 -5.821e-03  8.528e-02  7.378e-02 -2.223e-02 -5.105e-01  9.740e-02 -3.195e-06 -7.345e-01  2.991e-01  1.849e+00 -1.374e-01  5.015e-03  9.704e-02 -7.130e-01  2.678e-01  1.972e+00 -7.619e-01  2.002e-01  1.941e+00  5.422e+00  3.136e-01  1.318e+02 
+  6.751e-02 -7.628e-01  1.595e+00  2.393e+00  7.947e-01  9.737e-07  4.729e-01 -3.686e-01  1.736e+00  1.406e+00 -2.155e-01 
+  6.751e-02 -7.628e-01  1.595e+00  2.393e+00  7.947e-01  9.737e-07  4.729e-01 -3.686e-01  1.736e+00  1.406e+00 -2.155e-01  1.439e-01  7.356e-01 -5.391e-02 -4.897e-01 -1.620e-01  4.290e-01  2.617e-01  2.239e-01  2.871e-02  6.185e-01 -1.174e-01 
+  6.751e-02 -7.628e-01  1.595e+00  2.393e+00  7.947e-01  9.737e-07  4.729e-01 -3.686e-01  1.736e+00  1.406e+00 -2.155e-01  1.439e-01  7.356e-01 -5.391e-02 -4.897e-01 -1.620e-01  4.290e-01  2.617e-01  2.239e-01  2.871e-02  6.185e-01 -1.174e-01  1.471e-05  9.454e-01 -3.579e-01 -2.230e+00  1.725e-01 -6.121e-03 -1.155e-01  8.654e-01 -3.170e-01 -2.376e+00  9.680e-01 
+  6.751e-02 -7.628e-01  1.595e+00  2.393e+00  7.947e-01  9.737e-07  4.729e-01 -3.686e-01  1.736e+00  1.406e+00 -2.155e-01  1.439e-01  7.356e-01 -5.391e-02 -4.897e-01 -1.620e-01  4.290e-01  2.617e-01  2.239e-01  2.871e-02  6.185e-01 -1.174e-01  1.471e-05  9.454e-01 -3.579e-01 -2.230e+00  1.725e-01 -6.121e-03 -1.155e-01  8.654e-01 -3.170e-01 -2.376e+00  9.680e-01 -2.414e-01 -2.337e+00  9.393e-01 -2.338e-01 -2.352e+00  1.104e+03 
+ -2.124e-02  2.118e-01 -5.114e-01 -7.533e-01 -2.334e-01 -2.538e-07 -1.519e-01  1.309e-01 -5.672e-01 -4.413e-01  7.129e-02 
+ -2.124e-02  2.118e-01 -5.114e-01 -7.533e-01 -2.334e-01 -2.538e-07 -1.519e-01  1.309e-01 -5.672e-01 -4.413e-01  7.129e-02 -4.325e-02 -2.294e-01  2.617e-02  1.446e-01  5.269e-02  6.126e-03  5.620e-01  3.765e-02 -6.213e-03 -1.915e-01  3.770e-02 
+ -2.124e-02  2.118e-01 -5.114e-01 -7.533e-01 -2.334e-01 -2.538e-07 -1.519e-01  1.309e-01 -5.672e-01 -4.413e-01  7.129e-02 -4.325e-02 -2.294e-01  2.617e-02  1.446e-01  5.269e-02  6.126e-03  5.620e-01  3.765e-02 -6.213e-03 -1.915e-01  3.770e-02  4.414e-06 -2.471e-01  1.160e-01  7.071e-01 -4.893e-02  1.880e-03  3.804e-02 -2.720e-01  1.052e-01  7.551e-01 -2.685e-01 
+ -2.124e-02  2.118e-01 -5.114e-01 -7.533e-01 -2.334e-01 -2.538e-07 -1.519e-01  1.309e-01 -5.672e-01 -4.413e-01  7.129e-02 -4.325e-02 -2.294e-01  2.617e-02  1.446e-01  5.269e-02  6.126e-03  5.620e-01  3.765e-02 -6.213e-03 -1.915e-01  3.770e-02  4.414e-06 -2.471e-01  1.160e-01  7.071e-01 -4.893e-02  1.880e-03  3.804e-02 -2.720e-01  1.052e-01  7.551e-01 -2.685e-01  7.656e-02  7.434e-01 -3.142e-01  6.923e-02  7.328e-01  2.187e+00  6.319e+01 
+ -1.391e-01  1.458e+00 -3.325e+00 -4.934e+00 -1.569e+00 -1.336e-06 -9.863e-01  8.182e-01 -3.664e+00 -2.893e+00  4.583e-01 
+ -1.391e-01  1.458e+00 -3.325e+00 -4.934e+00 -1.569e+00 -1.336e-06 -9.863e-01  8.182e-01 -3.664e+00 -2.893e+00  4.583e-01 -2.881e-01 -1.508e+00  1.508e-01  9.686e-01  3.411e-01  2.584e-02  2.823e-01  6.887e-01 -5.034e-02 -1.267e+00  2.442e-01 
+ -1.391e-01  1.458e+00 -3.325e+00 -4.934e+00 -1.569e+00 -1.336e-06 -9.863e-01  8.182e-01 -3.664e+00 -2.893e+00  4.583e-01 -2.881e-01 -1.508e+00  1.508e-01  9.686e-01  3.411e-01  2.584e-02  2.823e-01  6.887e-01 -5.034e-02 -1.267e+00  2.442e-01  6.308e-06 -1.750e+00  7.508e-01  4.617e+00 -3.341e-01  1.240e-02  2.446e-01 -1.778e+00  6.759e-01  4.927e+00 -1.843e+00 
+ -1.391e-01  1.458e+00 -3.325e+00 -4.934e+00 -1.569e+00 -1.336e-06 -9.863e-01  8.182e-01 -3.664e+00 -2.893e+00  4.583e-01 -2.881e-01 -1.508e+00  1.508e-01  9.686e-01  3.411e-01  2.584e-02  2.823e-01  6.887e-01 -5.034e-02 -1.267e+00  2.442e-01  6.308e-06 -1.750e+00  7.508e-01  4.617e+00 -3.341e-01  1.240e-02  2.446e-01 -1.778e+00  6.759e-01  4.927e+00 -1.843e+00  5.000e-01  4.849e+00 -2.016e+00  4.632e-01  4.814e+00  1.427e+01  2.386e+00  4.688e+02 
+  1.800e-02 -2.933e-01  3.963e-01  6.484e-01  2.594e-01  2.213e-07  1.137e-01 -4.218e-02  4.142e-01  3.810e-01 -4.816e-02 
+  1.800e-02 -2.933e-01  3.963e-01  6.484e-01  2.594e-01  2.213e-07  1.137e-01 -4.218e-02  4.142e-01  3.810e-01 -4.816e-02  4.330e-02  2.017e-01 -2.432e-03 -1.446e-01 -4.083e-02  9.480e-03 -2.356e-02 -2.164e-02  2.880e+00 -2.159e+00  4.292e-01 
+  1.800e-02 -2.933e-01  3.963e-01  6.484e-01  2.594e-01  2.213e-07  1.137e-01 -4.218e-02  4.142e-01  3.810e-01 -4.816e-02  4.330e-02  2.017e-01 -2.432e-03 -1.446e-01 -4.083e-02  9.480e-03 -2.356e-02 -2.164e-02  2.880e+00 -2.159e+00  4.292e-01  3.140e-05  4.425e-01 -8.289e-02 -5.803e-01  6.345e-02 -1.865e-03 -2.416e-02  2.047e-01 -7.093e-02 -6.149e-01  3.347e-01 
+  1.800e-02 -2.933e-01  3.963e-01  6.484e-01  2.594e-01  2.213e-07  1.137e-01 -4.218e-02  4.142e-01  3.810e-01 -4.816e-02  4.330e-02  2.017e-01 -2.432e-03 -1.446e-01 -4.083e-02  9.480e-03 -2.356e-02 -2.164e-02  2.880e+00 -2.159e+00  4.292e-01  3.140e-05  4.425e-01 -8.289e-02 -5.803e-01  6.345e-02 -1.865e-03 -2.416e-02  2.047e-01 -7.093e-02 -6.149e-01  3.347e-01 -6.408e-02 -6.076e-01  2.239e-01 -6.885e-02 -6.361e-01  7.874e-01 -2.267e-01 -1.549e+00  3.453e+02 
+ -1.097e-02  1.303e-01 -2.574e-01 -3.911e-01 -1.319e-01 -1.066e-07 -7.577e-02  5.498e-02 -2.808e-01 -2.293e-01  3.459e-02 
+ -1.097e-02  1.303e-01 -2.574e-01 -3.911e-01 -1.319e-01 -1.066e-07 -7.577e-02  5.498e-02 -2.808e-01 -2.293e-01  3.459e-02 -2.360e-02 -1.199e-01  9.918e-03  7.876e-02  2.653e-02 -1.175e-03  1.671e-02  1.450e-02  5.113e-02 -3.248e+00  3.962e-02 
+ -1.097e-02  1.303e-01 -2.574e-01 -3.911e-01 -1.319e-01 -1.066e-07 -7.577e-02  5.498e-02 -2.808e-01 -2.293e-01  3.459e-02 -2.360e-02 -1.199e-01  9.918e-03  7.876e-02  2.653e-02 -1.175e-03  1.671e-02  1.450e-02  5.113e-02 -3.248e+00  3.962e-02 -4.170e-06 -1.706e-01  5.709e-02  3.618e-01 -2.934e-02  1.015e-03  1.817e-02 -1.358e-01  5.101e-02  3.855e-01 -1.583e-01 
+ -1.097e-02  1.303e-01 -2.574e-01 -3.911e-01 -1.319e-01 -1.066e-07 -7.577e-02  5.498e-02 -2.808e-01 -2.293e-01  3.459e-02 -2.360e-02 -1.199e-01  9.918e-03  7.876e-02  2.653e-02 -1.175e-03  1.671e-02  1.450e-02  5.113e-02 -3.248e+00  3.962e-02 -4.170e-06 -1.706e-01  5.709e-02  3.618e-01 -2.934e-02  1.015e-03  1.817e-02 -1.358e-01  5.101e-02  3.855e-01 -1.583e-01  3.942e-02  3.800e-01 -1.547e-01  3.761e-02  3.813e-01 -4.617e-01  1.435e-01  9.470e-01  1.619e+00  2.281e+01 
+ -3.630e-02  3.614e-01 -8.739e-01 -1.285e+00 -3.993e-01 -4.463e-07 -2.599e-01  2.254e-01 -9.663e-01 -7.537e-01  1.216e-01 
+ -3.630e-02  3.614e-01 -8.739e-01 -1.285e+00 -3.993e-01 -4.463e-07 -2.599e-01  2.254e-01 -9.663e-01 -7.537e-01  1.216e-01 -7.417e-02 -3.922e-01  4.186e-02  2.498e-01  8.950e-02 -1.387e-04  5.734e-02  4.902e-02  1.884e-01 -6.936e-01  7.172e-01 
+ -3.630e-02  3.614e-01 -8.739e-01 -1.285e+00 -3.993e-01 -4.463e-07 -2.599e-01  2.254e-01 -9.663e-01 -7.537e-01  1.216e-01 -7.417e-02 -3.922e-01  4.186e-02  2.498e-01  8.950e-02 -1.387e-04  5.734e-02  4.902e-02  1.884e-01 -6.936e-01  7.172e-01  7.496e-06 -4.160e-01  1.986e-01  1.208e+00 -8.344e-02  3.185e-03  6.525e-02 -4.693e-01  1.792e-01  1.289e+00 -4.647e-01 
+ -3.630e-02  3.614e-01 -8.739e-01 -1.285e+00 -3.993e-01 -4.463e-07 -2.599e-01  2.254e-01 -9.663e-01 -7.537e-01  1.216e-01 -7.417e-02 -3.922e-01  4.186e-02  2.498e-01  8.950e-02 -1.387e-04  5.734e-02  4.902e-02  1.884e-01 -6.936e-01  7.172e-01  7.496e-06 -4.160e-01  1.986e-01  1.208e+00 -8.344e-02  3.185e-03  6.525e-02 -4.693e-01  1.792e-01  1.289e+00 -4.647e-01  1.305e-01  1.269e+00 -5.318e-01  1.195e-01  1.254e+00 -1.514e+00  4.804e-01  3.133e+00  5.450e+00  5.197e-01  1.445e+02 
+ -7.912e-02  4.696e+01  8.096e+00  1.194e+01 -9.905e-01 -8.902e-07 -5.390e-01  3.626e-01 -1.974e+00 -1.656e+00  2.410e-01 
+ -7.912e-02  4.696e+01  8.096e+00  1.194e+01 -9.905e-01 -8.902e-07 -5.390e-01  3.626e-01 -1.974e+00 -1.656e+00  2.410e-01 -1.749e-01 -8.691e-01  4.814e-02  5.917e-01  1.869e-01 -2.581e-02  1.122e-01  9.966e-02 -6.484e-02 -7.729e-01  1.286e-01 
+ -7.912e-02  4.696e+01  8.096e+00  1.194e+01 -9.905e-01 -8.902e-07 -5.390e-01  3.626e-01 -1.974e+00 -1.656e+00  2.410e-01 -1.749e-01 -8.691e-01  4.814e-02  5.917e-01  1.869e-01 -2.581e-02  1.122e-01  9.966e-02 -6.484e-02 -7.729e-01  1.286e-01 -5.135e-05 -5.688e+01 -1.835e+00 -1.121e+01 -2.239e-01  7.461e-03  1.272e-01 -9.824e-01  3.547e-01  2.762e+00 -1.230e+00 
+ -7.912e-02  4.696e+01  8.096e+00  1.194e+01 -9.905e-01 -8.902e-07 -5.390e-01  3.626e-01 -1.974e+00 -1.656e+00  2.410e-01 -1.749e-01 -8.691e-01  4.814e-02  5.917e-01  1.869e-01 -2.581e-02  1.122e-01  9.966e-02 -6.484e-02 -7.729e-01  1.286e-01 -5.135e-05 -5.688e+01 -1.835e+00 -1.121e+01 -2.239e-01  7.461e-03  1.272e-01 -9.824e-01  3.547e-01  2.762e+00 -1.230e+00  2.825e-01  2.720e+00 -1.068e+00  2.822e-01  2.768e+00 -3.406e+00  1.021e+00  6.817e+00 -1.098e+00  5.701e-01  1.738e+00 
+ -7.912e-02  4.696e+01  8.096e+00  1.194e+01 -9.905e-01 -8.902e-07 -5.390e-01  3.626e-01 -1.974e+00 -1.656e+00  2.410e-01 -1.749e-01 -8.691e-01  4.814e-02  5.917e-01  1.869e-01 -2.581e-02  1.122e-01  9.966e-02 -6.484e-02 -7.729e-01  1.286e-01 -5.135e-05 -5.688e+01 -1.835e+00 -1.121e+01 -2.239e-01  7.461e-03  1.272e-01 -9.824e-01  3.547e-01  2.762e+00 -1.230e+00  2.825e-01  2.720e+00 -1.068e+00  2.822e-01  2.768e+00 -3.406e+00  1.021e+00  6.817e+00 -1.098e+00  5.701e-01  1.738e+00  2.173e+02 
+ -1.693e-02  1.979e-01 -3.980e-01 -6.016e-01 -3.000e+01  4.756e-06  2.711e+00  8.774e-02 -4.330e-01 -3.533e-01  5.349e-02 
+ -1.693e-02  1.979e-01 -3.980e-01 -6.016e-01 -3.000e+01  4.756e-06  2.711e+00  8.774e-02 -4.330e-01 -3.533e-01  5.349e-02 -3.633e-02 -1.848e-01  1.383e-02  1.227e-01  4.063e-02 -3.407e-03  2.505e-02  2.191e-02 -1.015e-02 -1.599e-01  2.857e-02 
+ -1.693e-02  1.979e-01 -3.980e-01 -6.016e-01 -3.000e+01  4.756e-06  2.711e+00  8.774e-02 -4.330e-01 -3.533e-01  5.349e-02 -3.633e-02 -1.848e-01  1.383e-02  1.227e-01  4.063e-02 -3.407e-03  2.505e-02  2.191e-02 -1.015e-02 -1.599e-01  2.857e-02 -5.608e-06 -2.530e-01  8.873e-02  5.584e-01 -6.410e+00 -3.417e-02 -6.711e-01 -2.132e-01  7.878e-02  5.948e-01 -2.458e-01 
+ -1.693e-02  1.979e-01 -3.980e-01 -6.016e-01 -3.000e+01  4.756e-06  2.711e+00  8.774e-02 -4.330e-01 -3.533e-01  5.349e-02 -3.633e-02 -1.848e-01  1.383e-02  1.227e-01  4.063e-02 -3.407e-03  2.505e-02  2.191e-02 -1.015e-02 -1.599e-01  2.857e-02 -5.608e-06 -2.530e-01  8.873e-02  5.584e-01 -6.410e+00 -3.417e-02 -6.711e-01 -2.132e-01  7.878e-02  5.948e-01 -2.458e-01  6.061e-02  5.856e-01 -2.359e-01  5.862e-02  5.895e-01 -7.201e-01  2.205e-01  1.460e+00 -2.129e-01  1.187e-01  3.764e-01 
+ -1.693e-02  1.979e-01 -3.980e-01 -6.016e-01 -3.000e+01  4.756e-06  2.711e+00  8.774e-02 -4.330e-01 -3.533e-01  5.349e-02 -3.633e-02 -1.848e-01  1.383e-02  1.227e-01  4.063e-02 -3.407e-03  2.505e-02  2.191e-02 -1.015e-02 -1.599e-01  2.857e-02 -5.608e-06 -2.530e-01  8.873e-02  5.584e-01 -6.410e+00 -3.417e-02 -6.711e-01 -2.132e-01  7.878e-02  5.948e-01 -2.458e-01  6.061e-02  5.856e-01 -2.359e-01  5.862e-02  5.895e-01 -7.201e-01  2.205e-01  1.460e+00 -2.129e-01  1.187e-01  3.764e-01  8.699e-01  2.777e+01 
+ -6.269e-02  6.796e-01 -1.491e+00 -2.223e+00 -7.206e-01 -8.098e-07 -4.420e-01  3.221e+01  1.039e+01  8.225e+00  2.037e-01 
+ -6.269e-02  6.796e-01 -1.491e+00 -2.223e+00 -7.206e-01 -8.098e-07 -4.420e-01  3.221e+01  1.039e+01  8.225e+00  2.037e-01 -1.314e-01 -6.810e-01  5.986e-02  4.446e-01  1.521e-01 -8.094e-03  9.510e-02  8.242e-02 -2.420e-02 -5.721e-01  1.096e-01 
+ -6.269e-02  6.796e-01 -1.491e+00 -2.223e+00 -7.206e-01 -8.098e-07 -4.420e-01  3.221e+01  1.039e+01  8.225e+00  2.037e-01 -1.314e-01 -6.810e-01  5.986e-02  4.446e-01  1.521e-01 -8.094e-03  9.510e-02  8.242e-02 -2.420e-02 -5.721e-01  1.096e-01 -4.443e-06 -8.275e-01  3.358e-01  2.077e+00 -1.547e-01  5.623e-03  1.089e-01 -7.090e+01 -1.913e+00 -1.399e+01 -8.614e-01 
+ -6.269e-02  6.796e-01 -1.491e+00 -2.223e+00 -7.206e-01 -8.098e-07 -4.420e-01  3.221e+01  1.039e+01  8.225e+00  2.037e-01 -1.314e-01 -6.810e-01  5.986e-02  4.446e-01  1.521e-01 -8.094e-03  9.510e-02  8.242e-02 -2.420e-02 -5.721e-01  1.096e-01 -4.443e-06 -8.275e-01  3.358e-01  2.077e+00 -1.547e-01  5.623e-03  1.089e-01 -7.090e+01 -1.913e+00 -1.399e+01 -8.614e-01  2.247e-01  2.178e+00 -8.922e-01  2.126e-01  2.176e+00 -2.649e+00  8.221e-01  5.407e+00 -7.117e-01  4.274e-01  1.410e+00 
+ -6.269e-02  6.796e-01 -1.491e+00 -2.223e+00 -7.206e-01 -8.098e-07 -4.420e-01  3.221e+01  1.039e+01  8.225e+00  2.037e-01 -1.314e-01 -6.810e-01  5.986e-02  4.446e-01  1.521e-01 -8.094e-03  9.510e-02  8.242e-02 -2.420e-02 -5.721e-01  1.096e-01 -4.443e-06 -8.275e-01  3.358e-01  2.077e+00 -1.547e-01  5.623e-03  1.089e-01 -7.090e+01 -1.913e+00 -1.399e+01 -8.614e-01  2.247e-01  2.178e+00 -8.922e-01  2.126e-01  2.176e+00 -2.649e+00  8.221e-01  5.407e+00 -7.117e-01  4.274e-01  1.410e+00  3.112e+00  6.625e-01  2.160e+02 
+ -6.510e-02  7.838e-01 -1.523e+00 -2.312e+00 -7.923e-01 -1.046e-06 -4.496e-01  3.263e-01 -1.646e+00 -1.359e+00  1.734e+01 
+ -6.510e-02  7.838e-01 -1.523e+00 -2.312e+00 -7.923e-01 -1.046e-06 -4.496e-01  3.263e-01 -1.646e+00 -1.359e+00  1.734e+01  8.166e-01  4.279e+00  4.374e-02  4.815e-01  1.545e-01 -2.031e-02  9.292e-02  8.225e-02 -3.951e-02 -6.143e-01  1.098e-01 
+ -6.510e-02  7.838e-01 -1.523e+00 -2.312e+00 -7.923e-01 -1.046e-06 -4.496e-01  3.263e-01 -1.646e+00 -1.359e+00  1.734e+01  8.166e-01  4.279e+00  4.374e-02  4.815e-01  1.545e-01 -2.031e-02  9.292e-02  8.225e-02 -3.951e-02 -6.143e-01  1.098e-01 -2.908e-05 -1.011e+00  3.387e-01  2.143e+00 -1.757e-01  6.025e-03  1.080e-01 -8.234e-01  2.981e-01  2.281e+00 -7.118e+01 
+ -6.510e-02  7.838e-01 -1.523e+00 -2.312e+00 -7.923e-01 -1.046e-06 -4.496e-01  3.263e-01 -1.646e+00 -1.359e+00  1.734e+01  8.166e-01  4.279e+00  4.374e-02  4.815e-01  1.545e-01 -2.031e-02  9.292e-02  8.225e-02 -3.951e-02 -6.143e-01  1.098e-01 -2.908e-05 -1.011e+00  3.387e-01  2.143e+00 -1.757e-01  6.025e-03  1.080e-01 -8.234e-01  2.981e-01  2.281e+00 -7.118e+01 -1.420e+00 -1.378e+01 -8.882e-01  2.298e-01  2.274e+00 -2.802e+00  8.425e-01  5.608e+00 -8.276e-01  4.560e-01  1.446e+00 
+ -6.510e-02  7.838e-01 -1.523e+00 -2.312e+00 -7.923e-01 -1.046e-06 -4.496e-01  3.263e-01 -1.646e+00 -1.359e+00  1.734e+01  8.166e-01  4.279e+00  4.374e-02  4.815e-01  1.545e-01 -2.031e-02  9.292e-02  8.225e-02 -3.951e-02 -6.143e-01  1.098e-01 -2.908e-05 -1.011e+00  3.387e-01  2.143e+00 -1.757e-01  6.025e-03  1.080e-01 -8.234e-01  2.981e-01  2.281e+00 -7.118e+01 -1.420e+00 -1.378e+01 -8.882e-01  2.298e-01  2.274e+00 -2.802e+00  8.425e-01  5.608e+00 -8.276e-01  4.560e-01  1.446e+00  3.384e+00  7.055e-01  2.561e+00  2.145e+02 
+ -6.314e-02  6.074e-01 -1.527e+00 -2.239e+00 -6.810e-01 -5.743e-07 -4.539e-01  4.011e-01 -1.701e+00 -1.311e+00  2.145e-01 
+ -6.314e-02  6.074e-01 -1.527e+00 -2.239e+00 -6.810e-01 -5.743e-07 -4.539e-01  4.011e-01 -1.701e+00 -1.311e+00  2.145e-01 -1.271e-01 -6.805e-01  5.943e+00 -2.990e+00 -1.033e+00  8.926e-03  1.040e-01  8.785e-02 -1.557e-02 -5.656e-01  1.129e-01 
+ -6.314e-02  6.074e-01 -1.527e+00 -2.239e+00 -6.810e-01 -5.743e-07 -4.539e-01  4.011e-01 -1.701e+00 -1.311e+00  2.145e-01 -1.271e-01 -6.805e-01  5.943e+00 -2.990e+00 -1.033e+00  8.926e-03  1.040e-01  8.785e-02 -1.557e-02 -5.656e-01  1.129e-01  2.019e-05 -6.935e-01  3.474e-01  2.105e+00 -1.413e-01  5.507e-03  1.144e-01 -8.093e-01  3.168e-01  2.250e+00 -7.711e-01 
+ -6.314e-02  6.074e-01 -1.527e+00 -2.239e+00 -6.810e-01 -5.743e-07 -4.539e-01  4.011e-01 -1.701e+00 -1.311e+00  2.145e-01 -1.271e-01 -6.805e-01  5.943e+00 -2.990e+00 -1.033e+00  8.926e-03  1.040e-01  8.785e-02 -1.557e-02 -5.656e-01  1.129e-01  2.019e-05 -6.935e-01  3.474e-01  2.105e+00 -1.413e-01  5.507e-03  1.144e-01 -8.093e-01  3.168e-01  2.250e+00 -7.711e-01  2.279e-01  2.215e+00 -8.205e+01 -1.429e+00 -1.471e+01 -2.592e+00  8.422e-01  5.456e+00 -6.541e-01  4.243e-01  1.432e+00 
+ -6.314e-02  6.074e-01 -1.527e+00 -2.239e+00 -6.810e-01 -5.743e-07 -4.539e-01  4.011e-01 -1.701e+00 -1.311e+00  2.145e-01 -1.271e-01 -6.805e-01  5.943e+00 -2.990e+00 -1.033e+00  8.926e-03  1.040e-01  8.785e-02 -1.557e-02 -5.656e-01  1.129e-01  2.019e-05 -6.935e-01  3.474e-01  2.105e+00 -1.413e-01  5.507e-03  1.144e-01 -8.093e-01  3.168e-01  2.250e+00 -7.711e-01  2.279e-01  2.215e+00 -8.205e+01 -1.429e+00 -1.471e+01 -2.592e+00  8.422e-01  5.456e+00 -6.541e-01  4.243e-01  1.432e+00  2.992e+00  6.505e-01  2.435e+00  2.475e+00  2.226e+02 
+ -1.569e-01  1.714e+00 -3.727e+00 -5.562e+00 -1.811e+00 -2.239e-06 -1.105e+00  8.866e-01 -4.079e+00 -3.265e+00  5.082e-01 
+ -1.569e-01  1.714e+00 -3.727e+00 -5.562e+00 -1.811e+00 -2.239e-06 -1.105e+00  8.866e-01 -4.079e+00 -3.265e+00  5.082e-01 -3.299e-01 -1.705e+00  1.462e-01  1.116e+00  3.802e-01 -4.156e-01 -6.000e-01 -5.153e-01 -6.253e-02 -1.434e+00  2.737e-01 
+ -1.569e-01  1.714e+00 -3.727e+00 -5.562e+00 -1.811e+00 -2.239e-06 -1.105e+00  8.866e-01 -4.079e+00 -3.265e+00  5.082e-01 -3.299e-01 -1.705e+00  1.462e-01  1.116e+00  3.802e-01 -4.156e-01 -6.000e-01 -5.153e-01 -6.253e-02 -1.434e+00  2.737e-01 -1.523e-05 -2.095e+00  8.385e-01  5.194e+00 -3.897e-01  1.412e-02  2.717e-01 -2.007e+00  7.485e-01  5.536e+00 -2.170e+00 
+ -1.569e-01  1.714e+00 -3.727e+00 -5.562e+00 -1.811e+00 -2.239e-06 -1.105e+00  8.866e-01 -4.079e+00 -3.265e+00  5.082e-01 -3.299e-01 -1.705e+00  1.462e-01  1.116e+00  3.802e-01 -4.156e-01 -6.000e-01 -5.153e-01 -6.253e-02 -1.434e+00  2.737e-01 -1.523e-05 -2.095e+00  8.385e-01  5.194e+00 -3.897e-01  1.412e-02  2.717e-01 -2.007e+00  7.485e-01  5.536e+00 -2.170e+00  5.622e-01  5.448e+00 -2.225e+00  5.335e-01  5.448e+00 -2.658e+02 -5.062e+00 -3.311e+01 -1.794e+00  1.071e+00  3.525e+00 
+ -1.569e-01  1.714e+00 -3.727e+00 -5.562e+00 -1.811e+00 -2.239e-06 -1.105e+00  8.866e-01 -4.079e+00 -3.265e+00  5.082e-01 -3.299e-01 -1.705e+00  1.462e-01  1.116e+00  3.802e-01 -4.156e-01 -6.000e-01 -5.153e-01 -6.253e-02 -1.434e+00  2.737e-01 -1.523e-05 -2.095e+00  8.385e-01  5.194e+00 -3.897e-01  1.412e-02  2.717e-01 -2.007e+00  7.485e-01  5.536e+00 -2.170e+00  5.622e-01  5.448e+00 -2.225e+00  5.335e-01  5.448e+00 -2.658e+02 -5.062e+00 -3.311e+01 -1.794e+00  1.071e+00  3.525e+00  7.811e+00  1.661e+00  6.128e+00  6.424e+00  6.083e+00  6.169e+02 
+ -3.957e-02  5.134e-01 -9.139e-01 -1.413e+00 -4.998e-01 -4.240e-07 -2.676e-01  1.730e-01 -9.852e-01 -8.293e-01  1.198e-01 
+ -3.957e-02  5.134e-01 -9.139e-01 -1.413e+00 -4.998e-01 -4.240e-07 -2.676e-01  1.730e-01 -9.852e-01 -8.293e-01  1.198e-01 -8.768e-02 -4.352e-01  2.625e-02  2.943e-01  9.384e-02 -1.020e-02  5.731e-02  5.060e-02 -2.769e+00  4.775e+00 -9.293e-01 
+ -3.957e-02  5.134e-01 -9.139e-01 -1.413e+00 -4.998e-01 -4.240e-07 -2.676e-01  1.730e-01 -9.852e-01 -8.293e-01  1.198e-01 -8.768e-02 -4.352e-01  2.625e-02  2.943e-01  9.384e-02 -1.020e-02  5.731e-02  5.060e-02 -2.769e+00  4.775e+00 -9.293e-01 -2.862e-05 -7.006e-01  2.002e-01  1.297e+00 -1.141e-01  3.776e-03  6.258e-02 -4.827e-01  1.766e-01  1.380e+00 -6.162e-01 
+ -3.957e-02  5.134e-01 -9.139e-01 -1.413e+00 -4.998e-01 -4.240e-07 -2.676e-01  1.730e-01 -9.852e-01 -8.293e-01  1.198e-01 -8.768e-02 -4.352e-01  2.625e-02  2.943e-01  9.384e-02 -1.020e-02  5.731e-02  5.060e-02 -2.769e+00  4.775e+00 -9.293e-01 -2.862e-05 -7.006e-01  2.002e-01  1.297e+00 -1.141e-01  3.776e-03  6.258e-02 -4.827e-01  1.766e-01  1.380e+00 -6.162e-01  1.416e-01  1.361e+00 -5.377e-01  1.404e-01  1.382e+00 -1.690e+00  5.116e-01  3.411e+00 -8.167e+01 -3.573e+00 -1.188e+01 
+ -3.957e-02  5.134e-01 -9.139e-01 -1.413e+00 -4.998e-01 -4.240e-07 -2.676e-01  1.730e-01 -9.852e-01 -8.293e-01  1.198e-01 -8.768e-02 -4.352e-01  2.625e-02  2.943e-01  9.384e-02 -1.020e-02  5.731e-02  5.060e-02 -2.769e+00  4.775e+00 -9.293e-01 -2.862e-05 -7.006e-01  2.002e-01  1.297e+00 -1.141e-01  3.776e-03  6.258e-02 -4.827e-01  1.766e-01  1.380e+00 -6.162e-01  1.416e-01  1.361e+00 -5.377e-01  1.404e-01  1.382e+00 -1.690e+00  5.116e-01  3.411e+00 -8.167e+01 -3.573e+00 -1.188e+01  2.142e+00  4.378e-01  1.551e+00  1.693e+00  1.502e+00  3.892e+00  1.786e+02 
+  7.140e-09 -1.813e-06 -2.701e-07  1.715e-06  4.822e-07  2.535e-12 -3.867e-07  1.934e-06  1.164e-06  4.967e-07 -2.637e-08 
+  7.140e-09 -1.813e-06 -2.701e-07  1.715e-06  4.822e-07  2.535e-12 -3.867e-07  1.934e-06  1.164e-06  4.967e-07 -2.637e-08 -9.650e-09  1.072e-07 -1.631e-06  1.382e-06 -3.208e-07 -1.622e-06 -7.370e-07 -4.686e-07  2.238e-06  3.912e-06  6.329e-07 
+  7.140e-09 -1.813e-06 -2.701e-07  1.715e-06  4.822e-07  2.535e-12 -3.867e-07  1.934e-06  1.164e-06  4.967e-07 -2.637e-08 -9.650e-09  1.072e-07 -1.631e-06  1.382e-06 -3.208e-07 -1.622e-06 -7.370e-07 -4.686e-07  2.238e-06  3.912e-06  6.329e-07  3.841e-10  6.931e-06  4.059e-07 -1.874e-07  4.152e-07 -1.187e-08  2.487e-07 -3.250e-06 -1.658e-07 -4.778e-07 -2.579e-06 
+  7.140e-09 -1.813e-06 -2.701e-07  1.715e-06  4.822e-07  2.535e-12 -3.867e-07  1.934e-06  1.164e-06  4.967e-07 -2.637e-08 -9.650e-09  1.072e-07 -1.631e-06  1.382e-06 -3.208e-07 -1.622e-06 -7.370e-07 -4.686e-07  2.238e-06  3.912e-06  6.329e-07  3.841e-10  6.931e-06  4.059e-07 -1.874e-07  4.152e-07 -1.187e-08  2.487e-07 -3.250e-06 -1.658e-07 -4.778e-07 -2.579e-06 -2.117e-07 -1.060e-06  3.109e-06  6.433e-07  1.081e-06 -7.581e-06 -1.020e-06 -1.752e-06  1.082e-05 -2.404e-06  2.305e-06 
+  7.140e-09 -1.813e-06 -2.701e-07  1.715e-06  4.822e-07  2.535e-12 -3.867e-07  1.934e-06  1.164e-06  4.967e-07 -2.637e-08 -9.650e-09  1.072e-07 -1.631e-06  1.382e-06 -3.208e-07 -1.622e-06 -7.370e-07 -4.686e-07  2.238e-06  3.912e-06  6.329e-07  3.841e-10  6.931e-06  4.059e-07 -1.874e-07  4.152e-07 -1.187e-08  2.487e-07 -3.250e-06 -1.658e-07 -4.778e-07 -2.579e-06 -2.117e-07 -1.060e-06  3.109e-06  6.433e-07  1.081e-06 -7.581e-06 -1.020e-06 -1.752e-06  1.082e-05 -2.404e-06  2.305e-06 -6.750e-06 -6.418e-07  2.960e-06  2.926e-06 -4.672e-06  8.035e-06 -9.728e-06  2.777e-09 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16
+        1  0.46143   1.000 -0.042  0.051  0.147  0.022  0.000  0.014 -0.033  0.050  0.112 -0.025  0.007  0.066 -0.011 -0.019 -0.019
+        2  0.41834  -0.042  1.000  0.009  0.026 -0.001 -0.000 -0.001  0.001 -0.002 -0.005  0.001 -0.000 -0.003 -0.000  0.001  0.001
+        3  0.10378   0.051  0.009  1.000  0.011  0.001  0.000  0.001 -0.002  0.003  0.006 -0.001  0.000  0.003 -0.001 -0.001 -0.001
+        4  0.21497   0.147  0.026  0.011  1.000  0.003  0.000  0.002 -0.005  0.007  0.016 -0.004  0.001  0.010 -0.002 -0.003 -0.003
+        5  0.34345   0.022 -0.001  0.001  0.003  1.000 -0.000 -0.007 -0.001  0.001  0.002 -0.001  0.000  0.001 -0.000 -0.000 -0.000
+        6  0.00010   0.000 -0.000  0.000  0.000 -0.000  1.000  0.000 -0.000  0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000 -0.000
+        7  0.04275   0.014 -0.001  0.001  0.002 -0.007  0.000  1.000 -0.000  0.001  0.002 -0.000  0.000  0.001 -0.000 -0.000 -0.000
+        8  0.38223  -0.033  0.001 -0.002 -0.005 -0.001 -0.000 -0.000  1.000  0.010  0.023  0.001 -0.000 -0.002  0.001  0.001  0.001
+        9  0.11918   0.050 -0.002  0.003  0.007  0.001  0.000  0.001  0.010  1.000  0.009 -0.001  0.000  0.003 -0.001 -0.001 -0.001
+       10  0.16671   0.112 -0.005  0.006  0.016  0.002  0.000  0.002  0.023  0.009  1.000 -0.003  0.001  0.007 -0.001 -0.002 -0.002
+       11  0.27093  -0.025  0.001 -0.001 -0.004 -0.001 -0.000 -0.000  0.001 -0.001 -0.003  1.000  0.001  0.010  0.000  0.000  0.000
+       12  0.01389   0.007 -0.000  0.000  0.001  0.000 -0.000  0.000 -0.000  0.000  0.001  0.001  1.000  0.001 -0.000 -0.000 -0.000
+       13  0.09952   0.066 -0.003  0.003  0.010  0.001  0.000  0.001 -0.002  0.003  0.007  0.010  0.001  1.000 -0.001 -0.001 -0.001
+       14  0.12080  -0.011 -0.000 -0.001 -0.002 -0.000 -0.000 -0.000  0.001 -0.001 -0.001  0.000 -0.000 -0.001  1.000 -0.002 -0.001
+       15  0.04607  -0.019  0.001 -0.001 -0.003 -0.000 -0.000 -0.000  0.001 -0.001 -0.002  0.000 -0.000 -0.001 -0.002  1.000  0.001
+       16  0.02869  -0.019  0.001 -0.001 -0.003 -0.000 -0.000 -0.000  0.001 -0.001 -0.002  0.000 -0.000 -0.001 -0.001  0.001  1.000
+       17  0.03318   0.001 -0.001 -0.000  0.000  0.000  0.000 -0.000  0.000 -0.000  0.000  0.000  0.000  0.000  0.001 -0.000  0.000
+                     1.000  0.000  0.000  0.000  0.000  0.000  0.025  0.001  0.000 -0.000  0.000 -0.000  0.000  0.000  0.000  0.000
+       18  0.01545  -0.010  0.000 -0.001 -0.001 -0.000  0.000 -0.000  0.000 -0.001 -0.001  0.000 -0.000 -0.001  0.000  0.000  0.000
+                     0.000  1.000  0.000 -0.000 -0.000  0.000  0.003 -0.000  0.000  0.001 -0.000  0.000  0.000 -0.000  0.000  0.001
+       19  0.02782  -0.022  0.001 -0.001 -0.003 -0.000 -0.000 -0.000  0.001 -0.001 -0.003  0.001 -0.000 -0.001  0.000  0.000  0.000
+                     0.000  0.000  1.000 -0.000 -0.001  0.000  0.005 -0.001  0.001  0.003 -0.000  0.000  0.000 -0.001  0.001  0.003
+       20  0.08239   0.005 -0.001  0.000  0.001  0.000 -0.000  0.000  0.000  0.000  0.001 -0.000  0.000  0.000  0.000 -0.000 -0.000
+                     0.000 -0.000 -0.000  1.000 -0.002  0.001  0.020  0.001 -0.000 -0.001  0.000 -0.000  0.000  0.000 -0.000 -0.001
+       21  0.06751   0.029 -0.001  0.001  0.004  0.001  0.000  0.000 -0.001  0.001  0.003 -0.001  0.000  0.002 -0.000 -0.001 -0.001
+                     0.000 -0.000 -0.001 -0.002  1.000 -0.001  0.006  0.001 -0.001 -0.004  0.000 -0.000 -0.000  0.001 -0.001 -0.004
+       22  0.02938  -0.018  0.001 -0.001 -0.003 -0.000  0.000 -0.000  0.001 -0.001 -0.002  0.000 -0.000 -0.001  0.000  0.000  0.000
+                     0.000  0.000  0.000  0.001 -0.001  1.000  0.004 -0.000  0.001  0.002 -0.000  0.000  0.000 -0.001  0.001  0.002
+       23  0.11704  -0.013 -0.029 -0.006 -0.000  0.008  0.000 -0.002  0.024 -0.010  0.001  0.007  0.001  0.002  0.017 -0.005  0.003
+                     0.025  0.003  0.005  0.020  0.006  0.004  1.000  0.041  0.008  0.006  0.009 -0.000  0.005 -0.003  0.013  0.008
+       24  0.39578   0.037 -0.353 -0.008 -0.023  0.001  0.000  0.000 -0.000  0.001  0.004 -0.001  0.000  0.003  0.000 -0.001 -0.001
+                     0.001 -0.000 -0.001  0.001  0.001 -0.000  0.041  1.000  0.007  0.020  0.001 -0.000 -0.000  0.001 -0.001 -0.005
+       25  0.09684  -0.041 -0.008 -0.085 -0.009 -0.001 -0.000 -0.001  0.002 -0.002 -0.005  0.001 -0.000 -0.003  0.001  0.001  0.001
+                     0.000  0.000  0.001 -0.000 -0.001  0.001  0.008  0.007  1.000  0.008 -0.001  0.000  0.001 -0.001  0.002  0.005
+       26  0.19311  -0.125 -0.022 -0.010 -0.143 -0.003 -0.000 -0.002  0.004 -0.006 -0.014  0.003 -0.001 -0.008  0.001  0.002  0.002
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002  0.006  0.020  0.008  1.000 -0.002  0.000  0.002 -0.004  0.006  0.016
+       27  0.27892   0.015 -0.001  0.001  0.002  0.250 -0.000 -0.005 -0.000  0.001  0.002 -0.000  0.000  0.001 -0.000 -0.000 -0.000
+                     0.000 -0.000 -0.000  0.000  0.000 -0.000  0.009  0.001 -0.001 -0.002  1.000  0.001  0.006  0.000 -0.001 -0.002
+       28  0.00440  -0.002  0.000 -0.000 -0.000  0.001 -0.000 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000  0.000  0.000
+                    -0.000  0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000  0.000  0.001  1.000  0.000 -0.000  0.000  0.000
+       29  0.04918  -0.018  0.001 -0.001 -0.003  0.009 -0.000 -0.032  0.001 -0.001 -0.002  0.000 -0.000 -0.001  0.000  0.000  0.000
+                     0.000  0.000  0.000  0.000 -0.000  0.000  0.005 -0.000  0.001  0.002  0.006  0.000  1.000 -0.001  0.001  0.002
+       30  0.39683   0.035 -0.001  0.002  0.005  0.001  0.000  0.000 -0.316 -0.011 -0.024 -0.001  0.000  0.002 -0.000 -0.001 -0.001
+                     0.000 -0.000 -0.001  0.000  0.001 -0.001 -0.003  0.001 -0.001 -0.004  0.000 -0.000 -0.001  1.000  0.010  0.029
+       31  0.11733  -0.047  0.002 -0.002 -0.007 -0.001 -0.000 -0.001 -0.009 -0.104 -0.008  0.001 -0.000 -0.003  0.001  0.001  0.001
+                     0.000  0.000  0.001 -0.000 -0.001  0.001  0.013 -0.001  0.002  0.006 -0.001  0.000  0.001  0.010  1.000  0.010
+       32  0.18811  -0.131  0.005 -0.007 -0.019 -0.003 -0.000 -0.002 -0.027 -0.011 -0.110  0.003 -0.001 -0.009  0.002  0.003  0.003
+                     0.000  0.001  0.003 -0.001 -0.004  0.002  0.008 -0.005  0.005  0.016 -0.002  0.000  0.002  0.029  0.010  1.000
+       33  0.33690   0.033 -0.002  0.002  0.005  0.001  0.000  0.000 -0.001  0.001  0.004 -0.213 -0.001 -0.013  0.000 -0.001 -0.001
+                     0.001 -0.000 -0.001  0.000  0.001 -0.001  0.019  0.002 -0.001 -0.004  0.001 -0.000 -0.000  0.001 -0.001 -0.004
+                     0.001 -0.000 -0.001  0.000  0.001 -0.001  0.019  0.002 -0.001 -0.004  0.001 -0.000 -0.000  0.001 -0.001 -0.004  1.000  0.006  0.027  0.001 -0.001 -0.004  0.002 -0.002 -0.005  0.001 -0.002 -0.002 -0.005 -0.003 -0.004 -0.302
+       34  0.03686  -0.028  0.001 -0.001 -0.004 -0.001 -0.000 -0.000  0.001 -0.001 -0.003 -0.004 -0.011 -0.003  0.000  0.001  0.001
+                     0.000  0.000  0.001 -0.000 -0.001  0.000  0.001 -0.001  0.001  0.003 -0.000  0.000  0.000 -0.001  0.001  0.004
+                     0.000  0.000  0.001 -0.000 -0.001  0.000  0.001 -0.001  0.001  0.003 -0.000  0.000  0.000 -0.001  0.001  0.004  0.006  1.000  0.006 -0.001  0.001  0.003 -0.001  0.002  0.004 -0.001  0.002  0.002  0.004  0.002  0.003 -0.019
+       35  0.17540  -0.131  0.005 -0.007 -0.019 -0.003 -0.000 -0.002  0.004 -0.007 -0.015 -0.020 -0.001 -0.066  0.002  0.003  0.003
+                     0.000  0.001  0.003 -0.001 -0.004  0.002  0.008 -0.005  0.005  0.016 -0.002  0.000  0.002 -0.005  0.006  0.017
+                     0.000  0.001  0.003 -0.001 -0.004  0.002  0.008 -0.005  0.005  0.016 -0.002  0.000  0.002 -0.005  0.006  0.017  0.027  0.006  1.000 -0.004  0.004  0.016 -0.007  0.009  0.021 -0.003  0.007  0.010  0.017  0.010  0.014 -0.088
+       36  0.32254   0.033 -0.001  0.002  0.005  0.001  0.000  0.000 -0.001  0.002  0.004 -0.001  0.000  0.002 -0.092  0.004  0.004
+                    -0.000 -0.000 -0.001  0.000  0.001 -0.001 -0.008  0.001 -0.001 -0.004  0.000 -0.000 -0.001  0.001 -0.002 -0.004
+                    -0.000 -0.000 -0.001  0.000  0.001 -0.001 -0.008  0.001 -0.001 -0.004  0.000 -0.000 -0.001  0.001 -0.002 -0.004  0.001 -0.001 -0.004  1.000  0.007  0.027  0.002 -0.002 -0.005  0.001 -0.002 -0.003 -0.004 -0.003 -0.003 -0.003
+       37  0.05638  -0.031  0.002 -0.002 -0.005 -0.001 -0.000 -0.000  0.001 -0.002 -0.004  0.001 -0.000 -0.002 -0.002  0.039  0.001
+                    -0.000  0.000  0.001 -0.000 -0.001  0.001 -0.007 -0.001  0.001  0.004 -0.001  0.000  0.001 -0.001  0.001  0.004
+                    -0.000  0.000  0.001 -0.000 -0.001  0.001 -0.007 -0.001  0.001  0.004 -0.001  0.000  0.001 -0.001  0.001  0.004 -0.001  0.001  0.004  0.007  1.000  0.006 -0.002  0.002  0.005 -0.001  0.002  0.002  0.004  0.003  0.003  0.004
+       38  0.15714  -0.121  0.005 -0.006 -0.018 -0.003 -0.000 -0.002  0.004 -0.006 -0.014  0.003 -0.001 -0.008 -0.009  0.004  0.018
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002 -0.003 -0.005  0.005  0.015 -0.002  0.000  0.002 -0.004  0.006  0.016
+                    -0.000  0.001  0.003 -0.001 -0.004  0.002 -0.003 -0.005  0.005  0.015 -0.002  0.000  0.002 -0.004  0.006  0.016 -0.004  0.003  0.016  0.027  0.006  1.000 -0.006  0.008  0.019 -0.003  0.007  0.009  0.016  0.010  0.013  0.014
+       39  0.32204   0.051 -0.002  0.003  0.007  0.001  0.000  0.001 -0.002  0.002  0.006 -0.001  0.000  0.003 -0.000 -0.001 -0.001
+                     0.007  0.001  0.003  0.000  0.002 -0.001  0.005  0.002 -0.002 -0.006  0.001 -0.000 -0.001  0.002 -0.002 -0.007
+                     0.007  0.001  0.003  0.000  0.002 -0.001  0.005  0.002 -0.002 -0.006  0.001 -0.000 -0.001  0.002 -0.002 -0.007  0.002 -0.001 -0.007  0.002 -0.002 -0.006  1.000  0.008  0.020  0.001 -0.003 -0.004 -0.007 -0.004 -0.005 -0.006
+       40  0.07679  -0.067  0.003 -0.003 -0.010 -0.001 -0.000 -0.001  0.002 -0.003 -0.007  0.002 -0.000 -0.004  0.001  0.001  0.001
+                     0.000  0.011  0.002 -0.000 -0.002  0.001  0.006 -0.002  0.003  0.008 -0.001  0.000  0.001 -0.002  0.003  0.009
+                     0.000  0.011  0.002 -0.000 -0.002  0.001  0.006 -0.002  0.003  0.008 -0.001  0.000  0.001 -0.002  0.003  0.009 -0.002  0.002  0.009 -0.002  0.002  0.008  0.008  1.000  0.014 -0.002  0.004  0.005  0.009  0.005  0.007  0.007
+       41  0.18275  -0.160  0.007 -0.008 -0.024 -0.004 -0.000 -0.002  0.005 -0.008 -0.018  0.004 -0.001 -0.011  0.002  0.003  0.003
+                     0.001  0.002  0.013 -0.001 -0.005  0.003  0.003 -0.006  0.007  0.020 -0.002  0.000  0.003 -0.006  0.008  0.021
+                     0.001  0.002  0.013 -0.001 -0.005  0.003  0.003 -0.006  0.007  0.020 -0.002  0.000  0.003 -0.006  0.008  0.021 -0.005  0.004  0.021 -0.005  0.005  0.019  0.020  0.014  1.000 -0.004  0.009  0.012  0.021  0.013  0.017  0.018
+       42  0.33050   0.024 -0.002  0.001  0.004  0.001  0.000  0.000 -0.000  0.001  0.003 -0.000  0.000  0.002 -0.000 -0.001 -0.000
+                     0.000 -0.000 -0.000  0.054 -0.009  0.006  0.018  0.002 -0.001 -0.003  0.001 -0.000 -0.000  0.001 -0.001 -0.003
+                     0.000 -0.000 -0.000  0.054 -0.009  0.006  0.018  0.002 -0.001 -0.003  0.001 -0.000 -0.000  0.001 -0.001 -0.003  0.001 -0.001 -0.003  0.001 -0.001 -0.003  0.001 -0.002 -0.004  1.000  0.018  0.024 -0.004 -0.002 -0.003 -0.003
+       43  0.09882  -0.057  0.003 -0.003 -0.008 -0.001 -0.000 -0.001  0.002 -0.003 -0.006  0.001 -0.000 -0.004  0.001  0.001  0.001
+                    -0.000  0.001  0.001  0.004 -0.055  0.002 -0.009 -0.003  0.002  0.007 -0.001  0.000  0.001 -0.002  0.003  0.007
+                    -0.000  0.001  0.001  0.004 -0.055  0.002 -0.009 -0.003  0.002  0.007 -0.001  0.000  0.001 -0.002  0.003  0.007 -0.002  0.002  0.007 -0.002  0.002  0.007 -0.003  0.004  0.009  0.018  1.000  0.009  0.008  0.005  0.006  0.007
+       44  0.11041  -0.075  0.003 -0.004 -0.011 -0.002 -0.000 -0.001  0.003 -0.004 -0.008  0.002 -0.000 -0.005  0.001  0.001  0.001
+                    -0.000  0.001  0.002  0.005 -0.005  0.015  0.007 -0.003  0.003  0.009 -0.001  0.000  0.001 -0.003  0.004  0.010
+                    -0.000  0.001  0.002  0.005 -0.005  0.015  0.007 -0.003  0.003  0.009 -0.001  0.000  0.001 -0.003  0.004  0.010 -0.002  0.002  0.010 -0.003  0.002  0.009 -0.004  0.005  0.012  0.024  0.009  1.000  0.010  0.006  0.008  0.008
+       45  0.39882  -0.134  0.314  0.029  0.084 -0.003 -0.000 -0.002  0.003 -0.006 -0.015  0.003 -0.001 -0.009  0.001  0.003  0.002
+                    -0.001  0.001  0.003 -0.002 -0.004  0.002 -0.038 -0.279 -0.024 -0.071 -0.002  0.000  0.002 -0.004  0.006  0.017
+                    -0.001  0.001  0.003 -0.002 -0.004  0.002 -0.038 -0.279 -0.024 -0.071 -0.002  0.000  0.002 -0.004  0.006  0.017 -0.005  0.004  0.017 -0.004  0.004  0.016 -0.007  0.009  0.021 -0.004  0.008  0.010  1.000  0.011  0.014  0.016
+       46  0.31423  -0.080  0.004 -0.004 -0.012 -0.278  0.000  0.025  0.002 -0.004 -0.009  0.002 -0.001 -0.005  0.001  0.002  0.002
+                    -0.000  0.001  0.002 -0.001 -0.002  0.001 -0.012 -0.003  0.003  0.010 -0.187 -0.004 -0.032 -0.003  0.004  0.010
+                    -0.000  0.001  0.002 -0.001 -0.002  0.001 -0.012 -0.003  0.003  0.010 -0.187 -0.004 -0.032 -0.003  0.004  0.010 -0.003  0.002  0.010 -0.003  0.003  0.010 -0.004  0.005  0.013 -0.002  0.005  0.006  0.011  1.000  0.009  0.009
+       47  0.41594  -0.106  0.005 -0.005 -0.016 -0.002 -0.000 -0.001  0.305  0.034  0.075  0.003 -0.001 -0.007  0.001  0.002  0.002
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.003 -0.004  0.004  0.013 -0.002  0.000  0.002 -0.325 -0.031 -0.088
+                    -0.000  0.001  0.002 -0.001 -0.003  0.002 -0.003 -0.004  0.004  0.013 -0.002  0.000  0.002 -0.325 -0.031 -0.088 -0.004  0.003  0.014 -0.003  0.003  0.013 -0.005  0.007  0.017 -0.003  0.006  0.008  0.014  0.009  1.000  0.012
+       48  0.37127  -0.111  0.005 -0.006 -0.016 -0.003 -0.000 -0.001  0.003 -0.005 -0.012  0.223  0.005  0.044  0.001  0.002  0.002
+                    -0.001  0.001  0.002 -0.001 -0.003  0.002 -0.021 -0.005  0.004  0.014 -0.002  0.000  0.002 -0.004  0.005  0.014
+                    -0.001  0.001  0.002 -0.001 -0.003  0.002 -0.021 -0.005  0.004  0.014 -0.002  0.000  0.002 -0.004  0.005  0.014 -0.302 -0.019 -0.088 -0.003  0.004  0.014 -0.006  0.007  0.018 -0.003  0.007  0.008  0.016  0.009  0.012  1.000
+       49  0.35153  -0.105  0.004 -0.005 -0.015 -0.002 -0.000 -0.001  0.004 -0.005 -0.012  0.003 -0.001 -0.007  0.102 -0.014 -0.014
+                     0.000  0.001  0.002 -0.000 -0.003  0.002  0.015 -0.003  0.004  0.013 -0.001  0.000  0.002 -0.004  0.005  0.014
+                     0.000  0.001  0.002 -0.000 -0.003  0.002  0.015 -0.003  0.004  0.013 -0.001  0.000  0.002 -0.004  0.005  0.014 -0.003  0.003  0.014 -0.317 -0.022 -0.086 -0.005  0.007  0.017 -0.002  0.006  0.008  0.014  0.008  0.011  0.011
+                     0.000  0.001  0.002 -0.000 -0.003  0.002  0.015 -0.003  0.004  0.013 -0.001  0.000  0.002 -0.004  0.005  0.014 -0.003  0.003  0.014 -0.317 -0.022 -0.086 -0.005  0.007  0.017 -0.002  0.006  0.008  0.014  0.008  0.011  0.011  1.000  0.016  0.008 -0.006
+       50  0.36214  -0.157  0.007 -0.008 -0.023 -0.004 -0.000 -0.002  0.005 -0.008 -0.018  0.004 -0.001 -0.010  0.002  0.003  0.003
+                    -0.010 -0.004 -0.009 -0.001 -0.005  0.003 -0.007 -0.006  0.006  0.020 -0.002  0.000  0.003 -0.005  0.007  0.021
+                    -0.010 -0.004 -0.009 -0.001 -0.005  0.003 -0.007 -0.006  0.006  0.020 -0.002  0.000  0.003 -0.005  0.007  0.021 -0.005  0.004  0.021 -0.005  0.005  0.019 -0.322 -0.026 -0.062 -0.004  0.009  0.012  0.021  0.013  0.017  0.018
+                    -0.010 -0.004 -0.009 -0.001 -0.005  0.003 -0.007 -0.006  0.006  0.020 -0.002  0.000  0.003 -0.005  0.007  0.021 -0.005  0.004  0.021 -0.005  0.005  0.019 -0.322 -0.026 -0.062 -0.004  0.009  0.012  0.021  0.013  0.017  0.018  0.016  1.000  0.012  0.006
+       51  0.35299  -0.074  0.004 -0.004 -0.011 -0.002 -0.000 -0.001  0.002 -0.004 -0.008  0.002 -0.001 -0.005  0.001  0.002  0.001
+                    -0.000  0.001  0.002 -0.073  0.029 -0.018 -0.023 -0.004  0.003  0.009 -0.001  0.000  0.001 -0.002  0.003  0.010
+                    -0.000  0.001  0.002 -0.073  0.029 -0.018 -0.023 -0.004  0.003  0.009 -0.001  0.000  0.001 -0.002  0.003  0.010 -0.003  0.002  0.010 -0.002  0.002  0.009 -0.004  0.005  0.012 -0.329 -0.056 -0.074  0.011  0.006  0.008  0.009
+                    -0.000  0.001  0.002 -0.073  0.029 -0.018 -0.023 -0.004  0.003  0.009 -0.001  0.000  0.001 -0.002  0.003  0.010 -0.003  0.002  0.010 -0.002  0.002  0.009 -0.004  0.005  0.012 -0.329 -0.056 -0.074  0.011  0.006  0.008  0.009  0.008  0.012  1.000 -0.014
+       52  0.08643   0.003 -0.003 -0.000  0.003  0.000  0.000 -0.000  0.005  0.001  0.001 -0.000 -0.000  0.000 -0.008  0.002 -0.001
+                    -0.018 -0.002 -0.004  0.015  0.006  0.003  0.079  0.010  0.001 -0.000  0.001 -0.000  0.001 -0.004 -0.001 -0.001
+                    -0.018 -0.002 -0.004  0.015  0.006  0.003  0.079  0.010  0.001 -0.000  0.001 -0.000  0.001 -0.004 -0.001 -0.001 -0.003 -0.001 -0.002  0.003  0.003  0.002 -0.004 -0.002 -0.002  0.011 -0.010  0.004 -0.009 -0.002  0.004  0.004
+                    -0.018 -0.002 -0.004  0.015  0.006  0.003  0.079  0.010  0.001 -0.000  0.001 -0.000  0.001 -0.004 -0.001 -0.001 -0.003 -0.001 -0.002  0.003  0.003  0.002 -0.004 -0.002 -0.002  0.011 -0.010  0.004 -0.009 -0.002  0.004  0.004 -0.006  0.006 -0.014  1.000
+
+  RooFitResult: minimized FCN value: -32800.5, estimated distance to minimum: 3.32496
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MIGRAD=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+                    m0    2.2998e+00
+            m0_3pi_sig    2.2998e+00
+                m0_sig    2.2998e+00
+                    m1    2.3058e+00
+            m1_3pi_sig    2.3058e+00
+                m1_sig    2.3058e+00
+                    m2    2.3139e+00
+            m2_3pi_sig    2.3139e+00
+                m2_sig    2.3139e+00
+                    m3    2.3203e+00
+            m3_3pi_sig    2.3203e+00
+                m3_sig    2.3203e+00
+                    m4    2.3305e+00
+            m4_3pi_sig    2.3305e+00
+                m4_sig    2.3305e+00
+                    m5    2.3408e+00
+            m5_3pi_sig    2.3408e+00
+                m5_sig    2.3408e+00
+                    m6    2.3492e+00
+            m6_3pi_sig    2.3492e+00
+                m6_sig    2.3492e+00
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+                Bratio    3.0000e-01    3.0741e-01 +/-  4.00e-02  <none>
+                    c0    1.5143e+00   -3.5803e+00 +/-  1.01e+01  <none>
+            c0_3pi_sig   -2.1266e+01   -1.5382e+00 +/-  1.82e+01  <none>
+                c0_sig   -2.1266e+01   -1.0446e+01 +/-  9.62e+00  <none>
+                    c1    1.4943e+01    4.4396e+01 +/-  1.79e+01  <none>
+            c1_3pi_sig   -6.0660e+00   -5.0000e+01 +/-  8.20e+01  <none>
+                c1_sig   -6.0660e+00   -1.5477e+01 +/-  1.99e+01  <none>
+                    c2    2.9315e+00    3.8644e+00 +/-  7.17e+00  <none>
+            c2_3pi_sig   -4.9716e+00    2.6834e+01 +/-  2.02e+01  <none>
+                c2_sig   -4.9716e+00    5.5051e+00 +/-  7.43e+00  <none>
+                    c3   -3.1054e+00    1.7209e+00 +/-  5.29e+00  <none>
+            c3_3pi_sig   -2.4289e+00   -1.0663e+01 +/-  1.22e+01  <none>
+                c3_sig   -2.4289e+00   -2.4264e+00 +/-  6.55e+00  <none>
+                    c4   -4.8423e+00   -7.6524e+00 +/-  3.91e+00  <none>
+            c4_3pi_sig   -2.2689e+01    9.8229e+00 +/-  1.42e+01  <none>
+                c4_sig   -2.2689e+01   -2.2808e+01 +/-  5.10e+00  <none>
+                    c5   -4.3007e+00   -7.8112e+00 +/-  1.73e+00  <none>
+            c5_3pi_sig   -9.3432e+00   -6.5536e+00 +/-  6.46e+00  <none>
+                c5_sig   -9.3432e+00   -9.0476e+00 +/-  2.39e+00  <none>
+                    c6   -5.4013e+00   -8.1477e+00 +/-  2.85e+00  <none>
+            c6_3pi_sig   -7.9593e+00    2.6780e+01 +/-  1.22e+01  <none>
+                c6_sig   -7.9593e+00   -6.0785e+00 +/-  3.91e+00  <none>
+              mean_all   -9.9217e-05    1.0265e-04 +/-  9.22e-05  <none>
+                 nbkg0    1.5300e+01    1.3146e+02 +/-  1.38e+01  <none>
+         nbkg0_3pi_sig    1.4500e+00    2.5698e+01 +/-  5.15e+00  <none>
+             nbkg0_sig    6.0000e+00    1.0000e+02 +/-  1.06e+01  <none>
+                 nbkg1    3.1000e+00    3.5051e+01 +/-  6.46e+00  <none>
+         nbkg1_3pi_sig    1.5000e-01    2.9865e+00 +/-  2.88e+00  <none>
+             nbkg1_sig    8.0000e-01    1.5032e+01 +/-  3.80e+00  <none>
+                 nbkg2    1.5050e+01    1.4625e+02 +/-  1.48e+01  <none>
+         nbkg2_3pi_sig    9.5000e-01    1.5518e+01 +/-  4.04e+00  <none>
+             nbkg2_sig    6.0500e+00    1.0183e+02 +/-  1.08e+01  <none>
+                 nbkg3    1.6950e+01    1.8495e+02 +/-  1.61e+01  <none>
+         nbkg3_3pi_sig    1.4000e+00    2.5900e+01 +/-  5.09e+00  <none>
+             nbkg3_sig    5.9000e+00    9.8317e+01 +/-  1.06e+01  <none>
+                 nbkg4    1.8250e+01    2.1509e+02 +/-  1.73e+01  <none>
+         nbkg4_3pi_sig    9.5000e-01    1.7034e+01 +/-  4.14e+00  <none>
+             nbkg4_sig    6.8500e+00    1.1701e+02 +/-  1.14e+01  <none>
+                 nbkg5    6.0000e+01    8.2936e+02 +/-  3.32e+01  <none>
+         nbkg5_3pi_sig    3.4000e+00    5.8398e+01 +/-  7.89e+00  <none>
+             nbkg5_sig    2.3400e+01    4.2427e+02 +/-  2.16e+01  <none>
+                 nbkg6    1.8150e+01    2.6039e+02 +/-  1.86e+01  <none>
+         nbkg6_3pi_sig    1.2500e+00    2.0365e+01 +/-  4.68e+00  <none>
+             nbkg6_sig    7.3000e+00    1.3524e+02 +/-  1.20e+01  <none>
+            nsig_mode0    1.5300e+01    1.7264e+02 +/-  1.47e+01  <none>
+            nsig_mode1    3.1000e+00    2.4452e+01 +/-  5.25e+00  <none>
+            nsig_mode2    1.5050e+01    1.5536e+02 +/-  1.47e+01  <none>
+            nsig_mode3    1.6950e+01    1.5399e+02 +/-  1.46e+01  <none>
+            nsig_mode4    1.8250e+01    1.5096e+02 +/-  1.49e+01  <none>
+            nsig_mode5    6.0000e+01    3.7228e+02 +/-  2.48e+01  <none>
+            nsig_mode6    1.8150e+01    1.0392e+02 +/-  1.34e+01  <none>
+             sigma_all    3.1748e-05    5.3043e-06 +/-  1.25e-04  <none>
+
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x4ef1530 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0_sig) directly selected PDF components: (sigpdf0_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0_sig) indirectly selected PDF components: (shapepdf0_sig,guass_4600)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x4ee53a0 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0_sig) directly selected PDF components: (argus0_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x48d5be0 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig) creating new cache 0x4fa3730 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model0_3pi_sig) ERROR: component selection expression 'sigpdf0_sig' does not select any components of p.d.f.
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model0_3pi_sig) ERROR: component selection expression 'argus0_sig' does not select any components of p.d.f.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x4aa0fc0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0) directly selected PDF components: (sigpdf0)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0) indirectly selected PDF components: (shapepdf0,guass_4600)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x4ab5de0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0) directly selected PDF components: (argus0)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x4fc9af0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x4c78be0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1_sig) directly selected PDF components: (sigpdf1_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1_sig) indirectly selected PDF components: (shapepdf1_sig,guass_4612)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x4fbb990 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1_sig) directly selected PDF components: (argus1_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x4f70d20 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig) creating new cache 0x4faed50 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model1_3pi_sig) ERROR: component selection expression 'sigpdf1_sig' does not select any components of p.d.f.
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model1_3pi_sig) ERROR: component selection expression 'argus1_sig' does not select any components of p.d.f.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x4f9d3a0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1) directly selected PDF components: (sigpdf1)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1) indirectly selected PDF components: (shapepdf1,guass_4612)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x491b9a0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1) directly selected PDF components: (argus1)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x4ab5da0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x4f8edf0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2_sig) directly selected PDF components: (sigpdf2_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2_sig) indirectly selected PDF components: (shapepdf2_sig,guass_4620)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x4fc5210 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2_sig) directly selected PDF components: (argus2_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x4fc52e0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig) creating new cache 0x4c78420 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model2_3pi_sig) ERROR: component selection expression 'sigpdf2_sig' does not select any components of p.d.f.
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model2_3pi_sig) ERROR: component selection expression 'argus2_sig' does not select any components of p.d.f.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x4f9f950 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2) directly selected PDF components: (sigpdf2)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2) indirectly selected PDF components: (shapepdf2,guass_4620)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x4fde100 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2) directly selected PDF components: (argus2)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x4aa0860 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x4972450 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3_sig) directly selected PDF components: (sigpdf3_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3_sig) indirectly selected PDF components: (shapepdf3_sig,guass_4640)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x491c8e0 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3_sig) directly selected PDF components: (argus3_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x4cf3640 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig) creating new cache 0x4fcbbe0 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model3_3pi_sig) ERROR: component selection expression 'sigpdf3_sig' does not select any components of p.d.f.
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model3_3pi_sig) ERROR: component selection expression 'argus3_sig' does not select any components of p.d.f.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x4f910b0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3) directly selected PDF components: (sigpdf3)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3) indirectly selected PDF components: (shapepdf3,guass_4640)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x4ff3920 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3) directly selected PDF components: (argus3)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x4fba320 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x499e8f0 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4_sig) directly selected PDF components: (sigpdf4_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4_sig) indirectly selected PDF components: (shapepdf4_sig,guass_4660)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x4f72860 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4_sig) directly selected PDF components: (argus4_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x4fe9270 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig) creating new cache 0x4d1e760 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model4_3pi_sig) ERROR: component selection expression 'sigpdf4_sig' does not select any components of p.d.f.
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model4_3pi_sig) ERROR: component selection expression 'argus4_sig' does not select any components of p.d.f.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x49f3e90 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4) directly selected PDF components: (sigpdf4)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4) indirectly selected PDF components: (shapepdf4,guass_4660)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x4ca2e50 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4) directly selected PDF components: (argus4)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x4ca2e80 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x4d1c080 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5_sig) directly selected PDF components: (sigpdf5_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5_sig) indirectly selected PDF components: (shapepdf5_sig,guass_4680)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x4fcb870 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5_sig) directly selected PDF components: (argus5_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x4f72600 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig) creating new cache 0x4bb7d20 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model5_3pi_sig) ERROR: component selection expression 'sigpdf5_sig' does not select any components of p.d.f.
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model5_3pi_sig) ERROR: component selection expression 'argus5_sig' does not select any components of p.d.f.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x4d5bdb0 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5) directly selected PDF components: (sigpdf5)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5) indirectly selected PDF components: (shapepdf5,guass_4680)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x4c77c10 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5) directly selected PDF components: (argus5)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x4d9e8c0 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x5018130 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6_sig) directly selected PDF components: (sigpdf6_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6_sig) indirectly selected PDF components: (shapepdf6_sig,guass_4700)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x4ba32b0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6_sig) directly selected PDF components: (argus6_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x4cb6040 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig) creating new cache 0x499f3e0 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model6_3pi_sig) ERROR: component selection expression 'sigpdf6_sig' does not select any components of p.d.f.
+[#0] ERROR:Plotting -- RooAbsPdf::plotOn(model6_3pi_sig) ERROR: component selection expression 'argus6_sig' does not select any components of p.d.f.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x499f090 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6) directly selected PDF components: (sigpdf6)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6) indirectly selected PDF components: (shapepdf6,guass_4700)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x5004cf0 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6) directly selected PDF components: (argus6)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x4fdaf70 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+Br: 0.307406 +/- 0.0400165
+(int) 0

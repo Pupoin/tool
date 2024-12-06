@@ -1,0 +1,57 @@
+4600______________________________________________________________
+num of for sigma pi0_r3c   v10: 100
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/4600
+number of *.txt is: 100
+number of bosslog is: 100
+wrong: 0
+
+resubmit using: source submitWrong
+4612______________________________________________________________
+num of for sigma pi0_r3c   v10: 20
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/4612
+number of *.txt is: 20
+number of bosslog is: 20
+wrong: 0
+
+resubmit using: source submitWrong
+-bash: cd: 462*/ana: No such file or directory
+462*______________________________________________________________
+num of for sigma pi0_r3c   v10: 90
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/4620
+number of *.txt is: 90
+number of bosslog is: 90
+wrong: 0
+
+resubmit using: source submitWrong
+4640____________________________________________________________
+num of for sigma pi0_r3c   v10: 100
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/4640
+number of *.txt is: 100
+number of bosslog is: 100
+wrong: 0
+
+resubmit using: source submitWrong
+4660____________________________________________________________
+num of for sigma pi0_r3c   v10: 90
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/4660
+number of *.txt is: 90
+number of bosslog is: 90
+wrong: 0
+
+resubmit using: source submitWrong
+4680____________________________________________________________
+num of for sigma pi0_r3c   v10: 98
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/4680
+number of *.txt is: 98
+number of bosslog is: 98
+wrong: 0
+
+resubmit using: source submitWrong
+4700____________________________________________________________
+num of for sigma pi0_r3c   v10: 90
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/4700
+number of *.txt is: 90
+number of bosslog is: 90
+wrong: 0
+
+resubmit using: source submitWrong

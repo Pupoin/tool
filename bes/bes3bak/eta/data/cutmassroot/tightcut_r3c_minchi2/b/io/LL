@@ -1,0 +1,5 @@
+root -l /publicfs/ucas/user/yuanchy8/7.0.6/eta/LL/cutmassroot/tightcut_r3c_minchi2/4600LL.root
+
+tree_truth->GetEntries("(ndaughterAm == 8 && Am_id[0] == -3222 && Am_id[1] == 221 && Am_id[2] == -2212 && Am_id[3] == 111 && Am_id[4] == 22 && Am_id[5] == 22 && Am_id[6] == 22 && Am_id[7] == 22)")
+
+tree_truth->GetEntries("(ndaughterAp == 8 && Ap_id[0] == 3222 && Ap_id[1] == 221 && Ap_id[2] == 2212 && Ap_id[3] == 111 && Ap_id[4] == 22 && Ap_id[5] == 22 && Ap_id[6] == 22 && Ap_id[7] == 22)")

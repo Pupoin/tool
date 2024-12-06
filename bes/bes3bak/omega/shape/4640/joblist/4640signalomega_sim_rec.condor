@@ -1,0 +1,13 @@
+#!/bin/tcsh -f
+cd /publicfs/ucas/user/yuanchy8/7.0.6/omega/shape/4640/joblist
+set procid=$1
+set sub_name_number=`expr $procid`
+set sub_name=`printf "%04d\n" $sub_name_number`
+echo -n "Job `grep GlobalJobId $_CONDOR_JOB_AD | cut -d'#' -f2` on " > 4640signalomega_sim_${sub_name}.txt.bosslog
+grep RemoteHost $_CONDOR_JOB_AD >> 4640signalomega_sim_${sub_name}.txt.bosslog
+((time boss.exe 4640signalomega_sim_${sub_name}.txt) >> 4640signalomega_sim_${sub_name}.txt.bosslog) >& 4640signalomega_sim_${sub_name}.txt.bosserr
+sleep 3
+echo -n "Job grep GlobalJobId $_CONDOR_JOB_AD | cut -d'#' -f2 on " > 4640signalomega_rec_${sub_name}.txt.bosslog
+grep RemoteHost $_CONDOR_JOB_AD >> 4640signalomega_rec_${sub_name}.txt.bosslog
+((time boss.exe 4640signalomega_rec_${sub_name}.txt) >> 4640signalomega_rec_${sub_name}.txt.bosslog) >& 4640signalomega_rec_${sub_name}.txt.bosserr
+sleep 3

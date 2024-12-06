@@ -1,0 +1,932 @@
+
+Processing fit_toymc_comb.C...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf0_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf1_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf2_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf3_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf4_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf5_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf6_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.29976]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.30579]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.31387]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.32025]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.33046]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.34079]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.34919]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_sig_toy' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x28d7380 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x2b38800 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x2b80ef0 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_sig_toy' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x2909810 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x18f37f0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x2b892f0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_sig_toy' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x2a6bec0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x28de680 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x2b7b810 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_sig_toy' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x2b9eb20 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x18ef510 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x2b70a20 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_sig_toy' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x2b67160 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x2baff60 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x2bd7e00 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_sig_toy' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x28dd440 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x2b41900 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x2b38fd0 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_sig_toy' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x2ba05a0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x2bb0af0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x2c05b30 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_toy' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x28dd440 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x2b414e0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x29091f0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_toy' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x28dd440 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x2bf20a0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x2bc4990 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_toy' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x2befbc0 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x28c8a00 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x2beacb0 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_toy' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x2befbc0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x2c1a340 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x2bee670 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_toy' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x28cd220 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x2b72eb0 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x2c3b7e0 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_toy' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x28cd220 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x2c67300 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x2c03630 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_toy' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x28cd220 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x2b7ba40 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x2c7d770 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_sig' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x28ac550 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_sig' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x2cfa380 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_sig' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x2d48e00 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_sig' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x2d970f0 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_sig' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x2de55c0 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_sig' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x2e33d80 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_sig' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x2e830e0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x2ece910 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x2f19d60 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x2f65890 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x2fb1190 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x2ffca80 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x3048fe0 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x30948d0 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll) Summation contains a RooNLLVar, using its error level
+ **********
+ **   13 **MIGRAD     1.9e+04           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-10726.8 FROM MIGRAD    STATUS=INITIATE     7232 CALLS        7233 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Bratio       3.00000e-01   6.00000e-02   0.00000e+00  -7.69073e+01
+   2  c0           1.51430e+00   1.00000e+01   0.00000e+00   2.83621e+00
+   3  c0_sig      -2.12660e+01   1.00000e+01   0.00000e+00  -5.72101e+00
+   4  c1           1.49430e+01   1.00000e+01   0.00000e+00  -4.84494e+00
+   5  c1_sig      -6.06600e+00   1.00000e+01   0.00000e+00   7.93800e-01
+   6  c2           2.93150e+00   1.00000e+01   0.00000e+00  -2.17277e+00
+   7  c2_sig      -4.97160e+00   1.00000e+01   0.00000e+00   5.39937e+00
+   8  c3          -3.10540e+00   1.00000e+01   0.00000e+00  -3.86964e+00
+   9  c3_sig      -2.42890e+00   1.00000e+01   0.00000e+00   5.44310e+00
+  10  c4          -4.84230e+00   1.00000e+01   0.00000e+00   2.06420e+00
+  11  c4_sig      -2.26890e+01   1.00000e+01   0.00000e+00  -9.44664e-01
+  12  c5          -4.30070e+00   1.00000e+01   0.00000e+00  -2.68449e+01
+  13  c5_sig      -9.34320e+00   1.00000e+01   0.00000e+00  -3.95736e-01
+  14  c6          -5.40130e+00   1.00000e+01   0.00000e+00   6.81040e+00
+  15  c6_sig      -7.95930e+00   1.00000e+01   0.00000e+00   9.56528e+00
+  16  mean_all     8.88596e-05   2.00000e-04   0.00000e+00   8.08832e+04
+  17  nbkg0        7.35000e+00   3.67500e+00   0.00000e+00  -2.93492e+02
+  18  nbkg0_sig    2.85000e+00   1.42500e+00   0.00000e+00  -2.31785e+02
+  19  nbkg1        1.50000e+00   7.50000e-01   0.00000e+00  -9.55458e+01
+  20  nbkg1_sig    4.00000e-01   2.00000e-01   0.00000e+00  -1.90903e+01
+  21  nbkg2        7.15000e+00   3.57500e+00   0.00000e+00  -3.49026e+02
+  22  nbkg2_sig    2.90000e+00   1.45000e+00   0.00000e+00  -2.15497e+02
+  23  nbkg3        8.10000e+00   4.05000e+00   0.00000e+00  -4.03823e+02
+  24  nbkg3_sig    2.80000e+00   1.40000e+00   0.00000e+00  -2.05298e+02
+  25  nbkg4        8.70000e+00   4.35000e+00   0.00000e+00  -4.35353e+02
+  26  nbkg4_sig    3.25000e+00   1.62500e+00   0.00000e+00  -2.40169e+02
+  27  nbkg5        2.86000e+01   1.43000e+01   0.00000e+00  -1.47658e+03
+  28  nbkg5_sig    1.11500e+01   5.57500e+00   0.00000e+00  -8.43169e+02
+  29  nbkg6        8.70000e+00   4.35000e+00   0.00000e+00  -4.38068e+02
+  30  nbkg6_sig    3.50000e+00   1.75000e+00   0.00000e+00  -2.66078e+02
+  31  nsig_mode0   7.35000e+00   3.67500e+00   0.00000e+00  -3.65250e+02
+  32  nsig_mode1   1.50000e+00   7.50000e-01   0.00000e+00  -5.05639e+01
+  33  nsig_mode2   7.15000e+00   3.57500e+00   0.00000e+00  -3.13426e+02
+  34  nsig_mode3   8.10000e+00   4.05000e+00   0.00000e+00  -3.41280e+02
+  35  nsig_mode4   8.70000e+00   4.35000e+00   0.00000e+00  -3.67461e+02
+  36  nsig_mode5   2.86000e+01   1.43000e+01   0.00000e+00  -1.15114e+03
+  37  nsig_mode6   8.70000e+00   4.35000e+00   0.00000e+00  -3.61628e+02
+  38  sigma_all    1.10269e-06   1.58740e-05   0.00000e+00   0.00000e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE
+ ============== Second derivative enters zero, param 16
+ MINUIT WARNING IN HESSE
+ ============== Second derivative enters zero, param 38
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-13716.9 FROM HESSE     STATUS=OK            936 CALLS       11218 TOTAL
+                     EDM=97.9402    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Bratio       3.16522e-01   7.55086e-02   1.89480e-02   5.85749e-03
+   2  c0          -6.85002e+00   1.73837e+01   2.23302e-02  -2.43866e-03
+   3  c0_sig      -4.14695e+00   1.31375e+01   2.11957e-02   1.42971e-02
+   4  c1           5.00000e+01   9.74665e+01   5.00000e-01** at limit **
+   5  c1_sig      -4.04505e+01   5.07425e+01   9.45303e-02  -5.45752e-03
+   6  c2           2.77873e-01   8.67328e+00   1.33018e-02  -4.40744e-03
+   7  c2_sig      -1.87930e+01   9.58291e+00   1.67849e-02   9.74363e-03
+   8  c3          -3.68859e+00   6.80211e+00   1.07381e-02  -2.38299e-03
+   9  c3_sig      -1.37517e+01   8.91281e+00   1.50619e-02   8.48871e-03
+  10  c4          -7.93477e+00   5.40985e+00   8.83713e-03   7.48827e-04
+  11  c4_sig      -2.12459e+01   7.23697e+00   1.29859e-02  -1.25855e-03
+  12  c5          -1.23831e+00   2.60908e+00   4.21704e-03  -3.23669e-03
+  13  c5_sig      -8.81231e+00   3.47206e+00   5.70699e-03   7.24904e-04
+  14  c6          -7.90897e+00   4.42546e+00   7.25113e-03  -7.73577e-03
+  15  c6_sig      -1.37451e+01   5.73136e+00   9.64604e-03   1.84213e-02
+  16  mean_all     9.20545e-05   8.01504e-06   9.65103e-02  -7.41884e+02
+  17  nbkg0        6.94637e+01   1.16779e+01   8.83277e-03   6.46577e-02
+  18  nbkg0_sig    5.20099e+01   7.41533e+00   2.05295e-02  -5.32088e-02
+  19  nbkg1        2.19612e+01   5.23320e+00   2.26480e-02  -4.38096e-04
+  20  nbkg1_sig    5.64141e+00   2.65766e+00   4.57663e-02   5.06511e-03
+  21  nbkg2        8.69551e+01   1.10069e+01   9.68448e-03   9.53025e-05
+  22  nbkg2_sig    5.18722e+01   7.51538e+00   1.99876e-02   2.13859e-02
+  23  nbkg3        1.01701e+02   1.17895e+01   9.25961e-03   8.76409e-03
+  24  nbkg3_sig    4.95639e+01   7.36308e+00   2.00930e-02   2.78506e-02
+  25  nbkg4        1.10152e+02   1.21300e+01   8.97893e-03  -2.44916e-03
+  26  nbkg4_sig    5.75746e+01   7.95560e+00   1.86644e-02   2.66893e-02
+  27  nbkg5        3.80472e+02   2.26391e+01   5.08177e-03  -2.41915e-02
+  28  nbkg5_sig    2.01521e+02   1.50786e+01   1.03035e-02   3.06947e-02
+  29  nbkg6        1.08138e+02   1.16693e+01   8.78109e-03   4.85569e-02
+  30  nbkg6_sig    6.25948e+01   8.22725e+00   1.81240e-02   2.40918e-02
+  31  nsig_mode0   7.43547e+01   1.14941e+01   8.59243e-03   2.95940e-02
+  32  nsig_mode1   9.37306e+00   4.10440e+00   1.78823e-02  -1.45755e-02
+  33  nsig_mode2   5.61195e+01   9.33677e+00   8.59724e-03   1.32956e-02
+  34  nsig_mode3   6.02913e+01   9.68678e+00   8.09693e-03   1.76493e-02
+  35  nsig_mode4   6.44802e+01   9.91786e+00   7.86949e-03   3.98384e-03
+  36  nsig_mode5   1.92298e+02   1.77739e+01   4.35876e-03  -2.76394e-02
+  37  nsig_mode6   6.63500e+01   9.53847e+00   7.64640e-03   1.50441e-02
+  38  sigma_all    1.23706e-06   3.08956e-08   2.22513e-02  -1.44009e+04
+                               ERR DEF= 0.5
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 38 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-13716.9 FROM MIGRAD    STATUS=FAILED      11321 CALLS       11322 TOTAL
+                     EDM=2654.57    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   0.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Bratio       3.16601e-01   1.97521e-01  -0.00000e+00   6.19120e-03
+   2  c0          -6.86020e+00   3.52810e+01  -0.00000e+00  -1.41792e-03
+   3  c0_sig      -4.14394e+00   3.41745e+01  -0.00000e+00   1.53454e-02
+   4  c1           5.00000e+01   9.83663e+01   0.00000e+00   1.41496e-05
+   5  c1_sig      -4.03804e+01   5.21689e+01   0.00000e+00  -3.38653e-03
+   6  c2           2.81213e-01   3.32790e+01   0.00000e+00  -1.18080e-03
+   7  c2_sig      -1.87925e+01   3.11451e+01  -0.00000e+00   9.81215e-03
+   8  c3          -3.68315e+00   3.28881e+01  -0.00000e+00   2.96136e-03
+   9  c3_sig      -1.37517e+01   3.21036e+01  -0.00000e+00   8.29621e-03
+  10  c4          -7.93046e+00   3.23876e+01  -0.00000e+00   7.00412e-03
+  11  c4_sig      -2.12450e+01   3.00186e+01   0.00000e+00  -6.70093e-05
+  12  c5          -1.23523e+00   3.25451e+01  -0.00000e+00   2.01134e-02
+  13  c5_sig      -8.81131e+00   3.21049e+01  -0.00000e+00   5.25567e-03
+  14  c6          -7.90631e+00   3.22857e+01   0.00000e+00  -9.11933e-04
+  15  c6_sig      -1.37457e+01   3.15952e+01  -0.00000e+00   1.82695e-02
+  16  mean_all     9.73865e-05   6.46583e-04  -0.00000e+00   9.45734e+00
+  17  nbkg0        6.94730e+01   5.68350e+01  -0.00000e+00   6.52200e-02
+  18  nbkg0_sig    5.20185e+01   1.99469e+01   0.00000e+00  -4.90168e-02
+  19  nbkg1        2.19636e+01   1.22121e+01   0.00000e+00   1.51464e-03
+  20  nbkg1_sig    5.63543e+00   3.77657e+00  -0.00000e+00   1.82106e-03
+  21  nbkg2        8.69586e+01   5.64871e+01  -0.00000e+00   2.32689e-03
+  22  nbkg2_sig    5.18658e+01   2.06761e+01  -0.00000e+00   1.78534e-02
+  23  nbkg3        1.01694e+02   6.38415e+01  -0.00000e+00   4.89661e-03
+  24  nbkg3_sig    4.95588e+01   2.01670e+01  -0.00000e+00   2.52467e-02
+  25  nbkg4        1.10142e+02   6.84735e+01   0.00000e+00  -6.85280e-03
+  26  nbkg4_sig    5.75654e+01   2.32492e+01  -0.00000e+00   2.23280e-02
+  27  nbkg5        3.80483e+02   2.22442e+02   0.00000e+00  -1.88800e-02
+  28  nbkg5_sig    2.01516e+02   7.60184e+01  -0.00000e+00   2.90315e-02
+  29  nbkg6        1.08132e+02   6.84763e+01  -0.00000e+00   4.09433e-02
+  30  nbkg6_sig    6.25901e+01   2.47525e+01  -0.00000e+00   2.16077e-02
+  31  nsig_mode0   7.43384e+01   5.73947e+01  -0.00000e+00   1.97002e-02
+  32  nsig_mode1   9.37636e+00   1.08202e+01   0.00000e+00  -1.31852e-02
+  33  nsig_mode2   5.61162e+01   5.28753e+01  -0.00000e+00   9.54111e-03
+  34  nsig_mode3   6.02934e+01   5.89738e+01  -0.00000e+00   1.70679e-02
+  35  nsig_mode4   6.44913e+01   6.32166e+01  -0.00000e+00   1.25886e-02
+  36  nsig_mode5   1.92286e+02   2.00793e+02   0.00000e+00  -3.70872e-02
+  37  nsig_mode6   6.63479e+01   6.36575e+01  -0.00000e+00   1.17791e-02
+  38  sigma_all    1.28102e-06   1.19571e-04   0.00000e+00  -8.28978e+04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM= 106    NPAR= 38    ERR DEF=0.5
+ ELEMENTS ABOVE DIAGONAL ARE NOT PRINTED.
+  4.736e-02 
+ -1.232e-01  1.542e+03 
+  1.388e-01  9.263e+00  1.418e+03 
+ -3.339e-04  7.043e-03 -7.937e-03  2.457e-02 
+  2.652e-01 -5.597e+00  6.306e+00 -4.218e-01  1.696e+03 
+ -1.428e-02  3.011e-01 -3.393e-01  8.173e-04 -6.484e-01  1.326e+03 
+  4.804e-02 -1.014e+00  1.142e+00 -2.748e-03  2.183e+00  1.025e+00  1.167e+03 
+ -9.621e-03  2.028e-01 -2.286e-01  5.515e-04 -4.367e-01  2.356e-02 -7.915e-02  1.290e+03 
+  2.661e-02 -5.616e-01  6.327e-01 -1.522e-03  1.209e+00 -6.507e-02  2.190e-01  3.098e-01  1.236e+03 
+ -2.576e-03  5.422e-02 -6.117e-02  1.483e-04 -1.167e-01  6.330e-03 -2.118e-02  4.298e-03 -1.173e-02  1.248e+03 
+ -6.015e-03  1.269e-01 -1.430e-01  3.443e-04 -2.732e-01  1.471e-02 -4.950e-02  9.923e-03 -2.742e-02 -2.195e-02  1.077e+03 
+ -1.367e-03  2.875e-02 -3.245e-02  7.887e-05 -6.188e-02  3.365e-03 -1.124e-02  2.290e-03 -6.226e-03  6.330e-04  1.414e-03 
+ -1.367e-03  2.875e-02 -3.245e-02  7.887e-05 -6.188e-02  3.365e-03 -1.124e-02  2.290e-03 -6.226e-03  6.330e-04  1.414e-03  1.256e+03 
+ -7.941e-03  1.675e-01 -1.888e-01  4.545e-04 -3.607e-01  1.943e-02 -6.535e-02  1.310e-02 -3.620e-02  3.516e-03  8.184e-03 
+ -7.941e-03  1.675e-01 -1.888e-01  4.545e-04 -3.607e-01  1.943e-02 -6.535e-02  1.310e-02 -3.620e-02  3.516e-03  8.184e-03 -3.452e-03  1.223e+03 
+  1.150e-03 -2.434e-02  2.739e-02 -6.528e-05  5.245e-02 -2.796e-03  9.476e-03 -1.867e-03  5.249e-03 -4.845e-04 -1.181e-03 
+  1.150e-03 -2.434e-02  2.739e-02 -6.528e-05  5.245e-02 -2.796e-03  9.476e-03 -1.867e-03  5.249e-03 -4.845e-04 -1.181e-03 -2.535e-04 -1.559e-03  1.238e+03 
+ -2.125e-02  4.483e-01 -5.052e-01  1.216e-03 -9.654e-01  5.198e-02 -1.749e-01  3.504e-02 -9.688e-02  9.390e-03  2.190e-02 
+ -2.125e-02  4.483e-01 -5.052e-01  1.216e-03 -9.654e-01  5.198e-02 -1.749e-01  3.504e-02 -9.688e-02  9.390e-03  2.190e-02  4.986e-03  2.891e-02  2.685e-02  1.189e+03 
+  7.394e-10 -1.857e-07  1.178e-07  1.115e-09  4.625e-07  3.486e-08  2.866e-08  6.261e-08  1.634e-08  5.176e-08  9.148e-09 
+  7.394e-10 -1.857e-07  1.178e-07  1.115e-09  4.625e-07  3.486e-08  2.866e-08  6.261e-08  1.634e-08  5.176e-08  9.148e-09  3.576e-08  1.259e-08  2.815e-08  1.204e-08  4.953e-07 
+  7.190e-02 -1.159e+02 -5.407e+00 -4.109e-03  3.268e+00 -1.757e-01  5.918e-01 -1.183e-01  3.278e-01 -3.156e-02 -7.405e-02 
+  7.190e-02 -1.159e+02 -5.407e+00 -4.109e-03  3.268e+00 -1.757e-01  5.918e-01 -1.183e-01  3.278e-01 -3.156e-02 -7.405e-02 -1.673e-02 -9.777e-02  1.426e-02 -2.617e-01  2.129e-07  3.851e+03 
+ -5.773e-02 -3.853e+00 -1.038e+01  3.302e-03 -2.623e+00  1.412e-01 -4.751e-01  9.511e-02 -2.632e-01  2.545e-02  5.948e-02 
+ -5.773e-02 -3.853e+00 -1.038e+01  3.302e-03 -2.623e+00  1.412e-01 -4.751e-01  9.511e-02 -2.632e-01  2.545e-02  5.948e-02  1.351e-02  7.852e-02 -1.139e-02  2.101e-01 -3.392e-08  2.249e+00  4.823e+02 
+ -7.516e-03  1.585e-01 -1.786e-01  2.772e-01 -9.493e+00  1.840e-02 -6.184e-02  1.243e-02 -3.425e-02  3.351e-03  7.750e-03 
+ -7.516e-03  1.585e-01 -1.786e-01  2.772e-01 -9.493e+00  1.840e-02 -6.184e-02  1.243e-02 -3.425e-02  3.351e-03  7.750e-03  1.784e-03  1.023e-02 -1.463e-03  2.737e-02  4.005e-08 -9.244e-02  7.430e-02  1.824e+02 
+ -3.273e-02  6.906e-01 -7.781e-01  5.205e-02 -1.833e+01  8.000e-02 -2.693e-01  5.389e-02 -1.492e-01  1.440e-02  3.371e-02 
+ -3.273e-02  6.906e-01 -7.781e-01  5.205e-02 -1.833e+01  8.000e-02 -2.693e-01  5.389e-02 -1.492e-01  1.440e-02  3.371e-02  7.639e-03  4.451e-02 -6.469e-03  1.191e-01 -5.105e-08 -4.032e-01  3.236e-01  1.171e+00  1.914e+01 
+  2.056e-02 -4.338e-01  4.888e-01 -1.175e-03  9.343e-01 -2.411e+01 -1.475e+00 -3.384e-02  9.373e-02 -9.042e-03 -2.118e-02 
+  2.056e-02 -4.338e-01  4.888e-01 -1.175e-03  9.343e-01 -2.411e+01 -1.475e+00 -3.384e-02  9.373e-02 -9.042e-03 -2.118e-02 -4.795e-03 -2.796e-02  4.066e-03 -7.483e-02  3.853e-08  2.533e-01 -2.033e-01 -2.644e-02 -1.153e-01  3.802e+03 
+ -7.400e-02  1.561e+00 -1.759e+00  4.233e-03 -3.362e+00 -1.579e+00 -3.654e+00  1.219e-01 -3.374e-01  3.265e-02  7.625e-02 
+ -7.400e-02  1.561e+00 -1.759e+00  4.233e-03 -3.362e+00 -1.579e+00 -3.654e+00  1.219e-01 -3.374e-01  3.265e-02  7.625e-02  1.733e-02  1.007e-01 -1.459e-02  2.694e-01 -2.298e-08 -9.115e-01  7.318e-01  9.527e-02  4.149e-01  2.273e+00  5.176e+02 
+  2.518e-02 -5.312e-01  5.986e-01 -1.442e-03  1.144e+00 -6.162e-02  2.072e-01 -1.443e+01 -8.108e-01 -1.117e-02 -2.596e-02 
+  2.518e-02 -5.312e-01  5.986e-01 -1.442e-03  1.144e+00 -6.162e-02  2.072e-01 -1.443e+01 -8.108e-01 -1.117e-02 -2.596e-02 -5.937e-03 -3.427e-02  4.932e-03 -9.169e-02 -6.487e-08  3.100e-01 -2.490e-01 -3.247e-02 -1.411e-01  8.864e-02 -3.192e-01 
+  2.518e-02 -5.312e-01  5.986e-01 -1.442e-03  1.144e+00 -6.162e-02  2.072e-01 -1.443e+01 -8.108e-01 -1.117e-02 -2.596e-02 -5.937e-03 -3.427e-02  4.932e-03 -9.169e-02 -6.487e-08  3.100e-01 -2.490e-01 -3.247e-02 -1.411e-01  8.864e-02 -3.192e-01  4.854e+03 
+ -7.382e-02  1.557e+00 -1.755e+00  4.223e-03 -3.354e+00  1.805e-01 -6.075e-01 -8.595e-01 -2.024e+00  3.259e-02  7.606e-02 
+ -7.382e-02  1.557e+00 -1.755e+00  4.223e-03 -3.354e+00  1.805e-01 -6.075e-01 -8.595e-01 -2.024e+00  3.259e-02  7.606e-02  1.730e-02  1.004e-01 -1.454e-02  2.687e-01  8.470e-09 -9.091e-01  7.299e-01  9.504e-02  4.138e-01 -2.599e-01  9.357e-01 
+ -7.382e-02  1.557e+00 -1.755e+00  4.223e-03 -3.354e+00  1.805e-01 -6.075e-01 -8.595e-01 -2.024e+00  3.259e-02  7.606e-02  1.730e-02  1.004e-01 -1.454e-02  2.687e-01  8.470e-09 -9.091e-01  7.299e-01  9.504e-02  4.138e-01 -2.599e-01  9.357e-01  2.250e+00  4.925e+02 
+  2.025e-02 -4.270e-01  4.813e-01 -1.161e-03  9.194e-01 -4.960e-02  1.666e-01 -3.350e-02  9.231e-02 -4.757e+00  1.726e-01 
+  2.025e-02 -4.270e-01  4.813e-01 -1.161e-03  9.194e-01 -4.960e-02  1.666e-01 -3.350e-02  9.231e-02 -4.757e+00  1.726e-01 -4.814e-03 -2.758e-02  3.936e-03 -7.376e-02 -1.203e-07  2.491e-01 -2.002e-01 -2.616e-02 -1.135e-01  7.125e-02 -2.567e-01 
+  2.025e-02 -4.270e-01  4.813e-01 -1.161e-03  9.194e-01 -4.960e-02  1.666e-01 -3.350e-02  9.231e-02 -4.757e+00  1.726e-01 -4.814e-03 -2.758e-02  3.936e-03 -7.376e-02 -1.203e-07  2.491e-01 -2.002e-01 -2.616e-02 -1.135e-01  7.125e-02 -2.567e-01  8.751e-02 -2.561e-01  5.581e+03 
+ -8.602e-02  1.815e+00 -2.045e+00  4.920e-03 -3.908e+00  2.103e-01 -7.079e-01  1.417e-01 -3.922e-01 -3.133e-01  4.715e-01 
+ -8.602e-02  1.815e+00 -2.045e+00  4.920e-03 -3.908e+00  2.103e-01 -7.079e-01  1.417e-01 -3.922e-01 -3.133e-01  4.715e-01  2.013e-02  1.170e-01 -1.696e-02  3.131e-01 -4.101e-08 -1.060e+00  8.506e-01  1.107e-01  4.823e-01 -3.029e-01  1.090e+00 
+ -8.602e-02  1.815e+00 -2.045e+00  4.920e-03 -3.908e+00  2.103e-01 -7.079e-01  1.417e-01 -3.922e-01 -3.133e-01  4.715e-01  2.013e-02  1.170e-01 -1.696e-02  3.131e-01 -4.101e-08 -1.060e+00  8.506e-01  1.107e-01  4.823e-01 -3.029e-01  1.090e+00 -3.710e-01  1.088e+00  2.463e+00  6.526e+02 
+  7.777e-02 -1.641e+00  1.849e+00 -4.447e-03  3.534e+00 -1.901e-01  6.401e-01 -1.281e-01  3.546e-01 -3.424e-02 -8.012e-02 
+  7.777e-02 -1.641e+00  1.849e+00 -4.447e-03  3.534e+00 -1.901e-01  6.401e-01 -1.281e-01  3.546e-01 -3.424e-02 -8.012e-02 -2.325e+00  1.967e-01  1.537e-02 -2.831e-01  1.093e-07  9.582e-01 -7.691e-01 -1.001e-01 -4.361e-01  2.739e-01 -9.859e-01 
+  7.777e-02 -1.641e+00  1.849e+00 -4.447e-03  3.534e+00 -1.901e-01  6.401e-01 -1.281e-01  3.546e-01 -3.424e-02 -8.012e-02 -2.325e+00  1.967e-01  1.537e-02 -2.831e-01  1.093e-07  9.582e-01 -7.691e-01 -1.001e-01 -4.361e-01  2.739e-01 -9.859e-01  3.354e-01 -9.833e-01  2.696e-01 -1.146e+00  5.871e+04 
+ -2.509e-01  5.294e+00 -5.965e+00  1.435e-02 -1.140e+01  6.136e-01 -2.065e+00  4.135e-01 -1.144e+00  1.108e-01  2.585e-01 
+ -2.509e-01  5.294e+00 -5.965e+00  1.435e-02 -1.140e+01  6.136e-01 -2.065e+00  4.135e-01 -1.144e+00  1.108e-01  2.585e-01 -1.090e-01  8.515e-01 -4.941e-02  9.134e-01  2.971e-08 -3.090e+00  2.481e+00  3.231e-01  1.407e+00 -8.835e-01  3.181e+00 
+ -2.509e-01  5.294e+00 -5.965e+00  1.435e-02 -1.140e+01  6.136e-01 -2.065e+00  4.135e-01 -1.144e+00  1.108e-01  2.585e-01 -1.090e-01  8.515e-01 -4.941e-02  9.134e-01  2.971e-08 -3.090e+00  2.481e+00  3.231e-01  1.407e+00 -8.835e-01  3.181e+00 -1.082e+00  3.173e+00 -8.706e-01  3.697e+00  6.201e+00  6.887e+03 
+  1.858e-02 -3.919e-01  4.416e-01 -1.062e-03  8.440e-01 -4.542e-02  1.529e-01 -3.061e-02  8.468e-02 -8.193e-03 -1.914e-02 
+  1.858e-02 -3.919e-01  4.416e-01 -1.062e-03  8.440e-01 -4.542e-02  1.529e-01 -3.061e-02  8.468e-02 -8.193e-03 -1.914e-02 -4.348e-03 -2.527e-02  1.768e+00  4.337e-01  7.041e-09  2.288e-01 -1.837e-01 -2.391e-02 -1.041e-01  6.541e-02 -2.355e-01 
+  1.858e-02 -3.919e-01  4.416e-01 -1.062e-03  8.440e-01 -4.542e-02  1.529e-01 -3.061e-02  8.468e-02 -8.193e-03 -1.914e-02 -4.348e-03 -2.527e-02  1.768e+00  4.337e-01  7.041e-09  2.288e-01 -1.837e-01 -2.391e-02 -1.041e-01  6.541e-02 -2.355e-01  8.012e-02 -2.349e-01  6.444e-02 -2.737e-01  2.475e-01 -7.983e-01  5.579e+03 
+ -8.019e-02  1.692e+00 -1.906e+00  4.587e-03 -3.643e+00  1.961e-01 -6.599e-01  1.322e-01 -3.656e-01  3.540e-02  8.262e-02 
+ -8.019e-02  1.692e+00 -1.906e+00  4.587e-03 -3.643e+00  1.961e-01 -6.599e-01  1.322e-01 -3.656e-01  3.540e-02  8.262e-02  1.879e-02  1.091e-01  1.013e-01  1.616e+00  6.801e-09 -9.876e-01  7.929e-01  1.032e-01  4.495e-01 -2.824e-01  1.017e+00 
+ -8.019e-02  1.692e+00 -1.906e+00  4.587e-03 -3.643e+00  1.961e-01 -6.599e-01  1.322e-01 -3.656e-01  3.540e-02  8.262e-02  1.879e-02  1.091e-01  1.013e-01  1.616e+00  6.801e-09 -9.876e-01  7.929e-01  1.032e-01  4.495e-01 -2.824e-01  1.017e+00 -3.459e-01  1.014e+00 -2.782e-01  1.182e+00 -1.068e+00  3.446e+00  1.636e+00  7.389e+02 
+ -1.481e-01  1.105e+02  1.114e+01  8.467e-03 -6.728e+00  3.620e-01 -1.219e+00  2.438e-01 -6.750e-01  6.521e-02  1.525e-01 
+ -1.481e-01  1.105e+02  1.114e+01  8.467e-03 -6.728e+00  3.620e-01 -1.219e+00  2.438e-01 -6.750e-01  6.521e-02  1.525e-01  3.459e-02  2.014e-01 -2.924e-02  5.390e-01 -1.782e-07 -6.453e+01 -4.632e+00  1.905e-01  8.302e-01 -5.215e-01  1.877e+00 
+ -1.481e-01  1.105e+02  1.114e+01  8.467e-03 -6.728e+00  3.620e-01 -1.219e+00  2.438e-01 -6.750e-01  6.521e-02  1.525e-01  3.459e-02  2.014e-01 -2.924e-02  5.390e-01 -1.782e-07 -6.453e+01 -4.632e+00  1.905e-01  8.302e-01 -5.215e-01  1.877e+00 -6.386e-01  1.872e+00 -5.134e-01  2.182e+00 -1.973e+00  6.363e+00 -4.711e-01  2.034e+00  3.926e+03 
+  1.940e-02 -4.092e-01  4.611e-01 -2.969e-01  2.450e+01 -4.743e-02  1.596e-01 -3.196e-02  8.842e-02 -8.555e-03 -1.998e-02 
+  1.940e-02 -4.092e-01  4.611e-01 -2.969e-01  2.450e+01 -4.743e-02  1.596e-01 -3.196e-02  8.842e-02 -8.555e-03 -1.998e-02 -4.540e-03 -2.638e-02  3.824e-03 -7.060e-02  7.823e-09  2.389e-01 -1.918e-01 -6.682e+00 -3.023e+00  6.830e-02 -2.459e-01 
+  1.940e-02 -4.092e-01  4.611e-01 -2.969e-01  2.450e+01 -4.743e-02  1.596e-01 -3.196e-02  8.842e-02 -8.555e-03 -1.998e-02 -4.540e-03 -2.638e-02  3.824e-03 -7.060e-02  7.823e-09  2.389e-01 -1.918e-01 -6.682e+00 -3.023e+00  6.830e-02 -2.459e-01  8.366e-02 -2.452e-01  6.728e-02 -2.858e-01  2.584e-01 -8.336e-01  6.171e-02 -2.664e-01 -4.919e-01  1.421e+02 
+ -5.328e-02  1.124e+00 -1.267e+00  3.047e-03 -2.421e+00  2.346e+01  3.824e+00  8.779e-02 -2.429e-01  2.350e-02  5.490e-02 
+ -5.328e-02  1.124e+00 -1.267e+00  3.047e-03 -2.421e+00  2.346e+01  3.824e+00  8.779e-02 -2.429e-01  2.350e-02  5.490e-02  1.247e-02  7.247e-02 -1.051e-02  1.940e-01 -2.640e-08 -6.563e-01  5.269e-01  6.858e-02  2.987e-01 -3.378e+01 -5.892e+00 
+ -5.328e-02  1.124e+00 -1.267e+00  3.047e-03 -2.421e+00  2.346e+01  3.824e+00  8.779e-02 -2.429e-01  2.350e-02  5.490e-02  1.247e-02  7.247e-02 -1.051e-02  1.940e-01 -2.640e-08 -6.563e-01  5.269e-01  6.858e-02  2.987e-01 -3.378e+01 -5.892e+00 -2.298e-01  6.737e-01 -1.848e-01  7.851e-01 -7.099e-01  2.290e+00 -1.695e-01  7.319e-01  1.351e+00 -1.770e-01  3.328e+03 
+ -6.466e-02  1.364e+00 -1.537e+00  3.700e-03 -2.938e+00  1.582e-01 -5.321e-01  1.402e+01  2.082e+00  2.857e-02  6.663e-02 
+ -6.466e-02  1.364e+00 -1.537e+00  3.700e-03 -2.938e+00  1.582e-01 -5.321e-01  1.402e+01  2.082e+00  2.857e-02  6.663e-02  1.517e-02  8.797e-02 -1.272e-02  2.354e-01  3.777e-08 -7.963e-01  6.394e-01  8.328e-02  3.625e-01 -2.277e-01  8.197e-01 
+ -6.466e-02  1.364e+00 -1.537e+00  3.700e-03 -2.938e+00  1.582e-01 -5.321e-01  1.402e+01  2.082e+00  2.857e-02  6.663e-02  1.517e-02  8.797e-02 -1.272e-02  2.354e-01  3.777e-08 -7.963e-01  6.394e-01  8.328e-02  3.625e-01 -2.277e-01  8.197e-01 -3.669e+01 -5.777e+00 -2.244e-01  9.528e-01 -8.614e-01  2.779e+00 -2.057e-01  8.882e-01  1.640e+00 -2.148e-01  5.902e-01 
+ -6.466e-02  1.364e+00 -1.537e+00  3.700e-03 -2.938e+00  1.582e-01 -5.321e-01  1.402e+01  2.082e+00  2.857e-02  6.663e-02  1.517e-02  8.797e-02 -1.272e-02  2.354e-01  3.777e-08 -7.963e-01  6.394e-01  8.328e-02  3.625e-01 -2.277e-01  8.197e-01 -3.669e+01 -5.777e+00 -2.244e-01  9.528e-01 -8.614e-01  2.779e+00 -2.057e-01  8.882e-01  1.640e+00 -2.148e-01  5.902e-01  4.137e+03 
+ -5.466e-02  1.153e+00 -1.299e+00  3.129e-03 -2.483e+00  1.338e-01 -4.498e-01  9.022e-02 -2.492e-01  4.654e+00 -4.658e-01 
+ -5.466e-02  1.153e+00 -1.299e+00  3.129e-03 -2.483e+00  1.338e-01 -4.498e-01  9.022e-02 -2.492e-01  4.654e+00 -4.658e-01  1.288e-02  7.439e-02 -1.071e-02  1.990e-01  1.322e-07 -6.728e-01  5.405e-01  7.046e-02  3.063e-01 -1.924e-01  6.929e-01 
+ -5.466e-02  1.153e+00 -1.299e+00  3.129e-03 -2.483e+00  1.338e-01 -4.498e-01  9.022e-02 -2.492e-01  4.654e+00 -4.658e-01  1.288e-02  7.439e-02 -1.071e-02  1.990e-01  1.322e-07 -6.728e-01  5.405e-01  7.046e-02  3.063e-01 -1.924e-01  6.929e-01 -2.360e-01  6.912e-01 -3.658e+01 -6.646e+00 -7.280e-01  2.349e+00 -1.739e-01  7.509e-01  1.386e+00 -1.816e-01  4.989e-01 
+ -5.466e-02  1.153e+00 -1.299e+00  3.129e-03 -2.483e+00  1.338e-01 -4.498e-01  9.022e-02 -2.492e-01  4.654e+00 -4.658e-01  1.288e-02  7.439e-02 -1.071e-02  1.990e-01  1.322e-07 -6.728e-01  5.405e-01  7.046e-02  3.063e-01 -1.924e-01  6.929e-01 -2.360e-01  6.912e-01 -3.658e+01 -6.646e+00 -7.280e-01  2.349e+00 -1.739e-01  7.509e-01  1.386e+00 -1.816e-01  4.989e-01  6.056e-01  4.752e+03 
+ -1.892e-01  3.993e+00 -4.499e+00  1.082e-02 -8.598e+00  4.626e-01 -1.557e+00  3.117e-01 -8.627e-01  8.338e-02  1.949e-01 
+ -1.892e-01  3.993e+00 -4.499e+00  1.082e-02 -8.598e+00  4.626e-01 -1.557e+00  3.117e-01 -8.627e-01  8.338e-02  1.949e-01  2.286e+00 -4.786e-01 -3.735e-02  6.888e-01 -1.696e-07 -2.331e+00  1.871e+00  2.435e-01  1.061e+00 -6.664e-01  2.399e+00 
+ -1.892e-01  3.993e+00 -4.499e+00  1.082e-02 -8.598e+00  4.626e-01 -1.557e+00  3.117e-01 -8.627e-01  8.338e-02  1.949e-01  2.286e+00 -4.786e-01 -3.735e-02  6.888e-01 -1.696e-07 -2.331e+00  1.871e+00  2.435e-01  1.061e+00 -6.664e-01  2.399e+00 -8.161e-01  2.393e+00 -6.562e-01  2.788e+00 -1.300e+02 -1.509e+01 -6.021e-01  2.599e+00  4.800e+00 -6.287e-01  1.727e+00 
+ -1.892e-01  3.993e+00 -4.499e+00  1.082e-02 -8.598e+00  4.626e-01 -1.557e+00  3.117e-01 -8.627e-01  8.338e-02  1.949e-01  2.286e+00 -4.786e-01 -3.735e-02  6.888e-01 -1.696e-07 -2.331e+00  1.871e+00  2.435e-01  1.061e+00 -6.664e-01  2.399e+00 -8.161e-01  2.393e+00 -6.562e-01  2.788e+00 -1.300e+02 -1.509e+01 -6.021e-01  2.599e+00  4.800e+00 -6.287e-01  1.727e+00  2.096e+00  1.771e+00  4.782e+04 
+ -6.149e-02  1.297e+00 -1.462e+00  3.517e-03 -2.794e+00  1.504e-01 -5.061e-01  1.013e-01 -2.803e-01  2.712e-02  6.335e-02 
+ -6.149e-02  1.297e+00 -1.462e+00  3.517e-03 -2.794e+00  1.504e-01 -5.061e-01  1.013e-01 -2.803e-01  2.712e-02  6.335e-02  1.439e-02  8.364e-02 -1.707e+00 -1.436e+00 -2.661e-08 -7.574e-01  6.081e-01  7.915e-02  3.447e-01 -2.165e-01  7.795e-01 
+ -6.149e-02  1.297e+00 -1.462e+00  3.517e-03 -2.794e+00  1.504e-01 -5.061e-01  1.013e-01 -2.803e-01  2.712e-02  6.335e-02  1.439e-02  8.364e-02 -1.707e+00 -1.436e+00 -2.661e-08 -7.574e-01  6.081e-01  7.915e-02  3.447e-01 -2.165e-01  7.795e-01 -2.652e-01  7.775e-01 -2.133e-01  9.061e-01 -8.192e-01  2.643e+00 -2.757e+01 -5.415e+00  1.560e+00 -2.043e-01  5.612e-01 
+ -6.149e-02  1.297e+00 -1.462e+00  3.517e-03 -2.794e+00  1.504e-01 -5.061e-01  1.013e-01 -2.803e-01  2.712e-02  6.335e-02  1.439e-02  8.364e-02 -1.707e+00 -1.436e+00 -2.661e-08 -7.574e-01  6.081e-01  7.915e-02  3.447e-01 -2.165e-01  7.795e-01 -2.652e-01  7.775e-01 -2.133e-01  9.061e-01 -8.192e-01  2.643e+00 -2.757e+01 -5.415e+00  1.560e+00 -2.043e-01  5.612e-01  6.811e-01  5.757e-01  1.993e+00  4.817e+03 
+  2.997e-13 -7.255e-11  4.650e-11  3.864e-13  2.002e-10  1.365e-11  1.159e-11  2.466e-11  6.605e-12  2.042e-11  3.761e-12 
+  2.997e-13 -7.255e-11  4.650e-11  3.864e-13  2.002e-10  1.365e-11  1.159e-11  2.466e-11  6.605e-12  2.042e-11  3.761e-12  1.409e-11  4.961e-12  1.110e-11  4.767e-12  2.212e-14  8.277e-11 -1.396e-11  1.512e-11 -2.074e-11  1.503e-11 -9.628e-12 
+  2.997e-13 -7.255e-11  4.650e-11  3.864e-13  2.002e-10  1.365e-11  1.159e-11  2.466e-11  6.605e-12  2.042e-11  3.761e-12  1.409e-11  4.961e-12  1.110e-11  4.767e-12  2.212e-14  8.277e-11 -1.396e-11  1.512e-11 -2.074e-11  1.503e-11 -9.628e-12 -2.575e-11  2.790e-12 -4.760e-11 -1.672e-11  4.310e-11  1.092e-11  1.474e-12  2.099e-12 -7.003e-11  3.757e-12 -1.050e-11 
+  2.997e-13 -7.255e-11  4.650e-11  3.864e-13  2.002e-10  1.365e-11  1.159e-11  2.466e-11  6.605e-12  2.042e-11  3.761e-12  1.409e-11  4.961e-12  1.110e-11  4.767e-12  2.212e-14  8.277e-11 -1.396e-11  1.512e-11 -2.074e-11  1.503e-11 -9.628e-12 -2.575e-11  2.790e-12 -4.760e-11 -1.672e-11  4.310e-11  1.092e-11  1.474e-12  2.099e-12 -7.003e-11  3.757e-12 -1.050e-11  1.479e-11  5.201e-11 -6.747e-11 -1.038e-11  6.397e-10 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16
+        1  0.06192   1.000 -0.014  0.017 -0.010  0.030 -0.002  0.006 -0.001  0.003 -0.000 -0.001 -0.000 -0.001  0.000 -0.003  0.000
+        2  0.06696  -0.014  1.000  0.006  0.001 -0.003  0.000 -0.001  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000 -0.000
+        3  0.02348   0.017  0.006  1.000 -0.001  0.004 -0.000  0.001 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000
+        4  0.21770  -0.010  0.001 -0.001  1.000 -0.065  0.000 -0.001  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000  0.000
+        5  0.12539   0.030 -0.003  0.004 -0.065  1.000 -0.000  0.002 -0.000  0.001 -0.000 -0.000 -0.000 -0.000  0.000 -0.001  0.000
+        6  0.01567  -0.002  0.000 -0.000  0.000 -0.000  1.000  0.001  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000  0.000
+        7  0.00868   0.006 -0.001  0.001 -0.001  0.002  0.001  1.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000
+        8  0.00851  -0.001  0.000 -0.000  0.000 -0.000  0.000 -0.000  1.000  0.000  0.000  0.000  0.000  0.000 -0.000  0.000  0.000
+        9  0.00466   0.003 -0.000  0.000 -0.000  0.001 -0.000  0.000  0.000  1.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000
+       10  0.00266  -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  1.000 -0.000  0.000  0.000 -0.000  0.000  0.000
+       11  0.00109  -0.001  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000  1.000  0.000  0.000 -0.000  0.000  0.000
+       12  0.00045  -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000  0.000  1.000 -0.000 -0.000  0.000  0.000
+       13  0.00117  -0.001  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000  0.000 -0.000  1.000 -0.000  0.000  0.000
+       14  0.00099   0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  1.000  0.000  0.000
+       15  0.00357  -0.003  0.000 -0.000  0.000 -0.001  0.000 -0.000  0.000 -0.000  0.000  0.000  0.000  0.000  0.000  1.000  0.000
+       16  0.00003   0.000 -0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  1.000
+       17  0.04999   0.005 -0.048 -0.002 -0.000  0.001 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000
+                     1.000  0.002 -0.000 -0.001  0.000 -0.001  0.000 -0.001  0.000 -0.001  0.000 -0.001  0.000 -0.001 -0.017  0.000
+       18  0.01883  -0.012 -0.004 -0.013  0.001 -0.003  0.000 -0.001  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000 -0.000
+                     0.002  1.000  0.000  0.003 -0.000  0.001 -0.000  0.001 -0.000  0.002 -0.000  0.001 -0.000  0.001 -0.003 -0.001
+       19  0.13311  -0.003  0.000 -0.000  0.131 -0.017  0.000 -0.000  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000  0.000
+                    -0.000  0.000  1.000  0.020 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000  0.000 -0.042
+       20  0.13448  -0.034  0.004 -0.005  0.076 -0.102  0.001 -0.002  0.000 -0.001  0.000  0.000  0.000  0.000 -0.000  0.001 -0.000
+                    -0.001  0.003  0.020  1.000 -0.000  0.004 -0.000  0.004 -0.000  0.004 -0.000  0.004 -0.000  0.004  0.003 -0.058
+       21  0.01445   0.002 -0.000  0.000 -0.000  0.000 -0.011 -0.001 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000
+                     0.000 -0.000 -0.000 -0.000  1.000  0.002  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000  0.000
+       22  0.01765  -0.015  0.002 -0.002  0.001 -0.004 -0.002 -0.005  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000 -0.000
+                    -0.001  0.001  0.000  0.004  0.002  1.000 -0.000  0.002 -0.000  0.002 -0.000  0.002 -0.000  0.002  0.001 -0.001
+       23  0.01025   0.002 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.006 -0.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000 -0.000
+                     0.000 -0.000 -0.000 -0.000  0.000 -0.000  1.000  0.001  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000  0.000
+       24  0.01740  -0.015  0.002 -0.002  0.001 -0.004  0.000 -0.001 -0.001 -0.003  0.000  0.000  0.000  0.000 -0.000  0.000  0.000
+                    -0.001  0.001  0.000  0.004 -0.000  0.002  0.001  1.000 -0.000  0.002 -0.000  0.002 -0.000  0.002  0.001 -0.001
+       25  0.00755   0.001 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.002  0.000 -0.000 -0.000  0.000 -0.000 -0.000
+                     0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000 -0.000  1.000  0.001  0.000 -0.000  0.000 -0.000 -0.000  0.000
+       26  0.01732  -0.015  0.002 -0.002  0.001 -0.004  0.000 -0.001  0.000 -0.000 -0.000  0.001  0.000  0.000 -0.000  0.000 -0.000
+                    -0.001  0.002  0.000  0.004 -0.000  0.002 -0.000  0.002  0.001  1.000 -0.000  0.002 -0.000  0.002  0.001 -0.001
+       27  0.00296   0.001 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000  0.000  0.000 -0.000  0.000
+                     0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  1.000  0.000  0.000 -0.000 -0.000  0.000
+       28  0.01515  -0.014  0.002 -0.002  0.001 -0.003  0.000 -0.001  0.000 -0.000  0.000  0.000 -0.000  0.000 -0.000  0.000  0.000
+                    -0.001  0.001  0.000  0.004 -0.000  0.002 -0.000  0.002 -0.000  0.002  0.000  1.000 -0.000  0.002  0.001 -0.001
+       29  0.00556   0.001 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  0.001  0.000  0.000
+                     0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  1.000  0.001 -0.000  0.000
+       30  0.01516  -0.014  0.002 -0.002  0.001 -0.003  0.000 -0.001  0.000 -0.000  0.000  0.000  0.000  0.000  0.000  0.002  0.000
+                    -0.001  0.001  0.000  0.004 -0.000  0.002 -0.000  0.002 -0.000  0.002 -0.000  0.002  0.001  1.000  0.001 -0.001
+       31  0.04877  -0.011  0.045  0.005  0.001 -0.003  0.000 -0.001  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000 -0.000
+                    -0.017 -0.003  0.000  0.003 -0.000  0.001 -0.000  0.001 -0.000  0.001 -0.000  0.001 -0.000  0.001  1.000 -0.001
+       32  0.17040   0.007 -0.001  0.001 -0.159  0.050 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000
+                     0.000 -0.001 -0.042 -0.058  0.000 -0.001  0.000 -0.001  0.000 -0.001  0.000 -0.001  0.000 -0.001 -0.001  1.000
+       33  0.01606  -0.004  0.000 -0.001  0.000 -0.001  0.011  0.002  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000 -0.000
+                    -0.000  0.000  0.000  0.001 -0.009 -0.004 -0.000  0.001 -0.000  0.001 -0.000  0.000 -0.000  0.000  0.000 -0.000
+                    -0.000  0.000  0.000  0.001 -0.009 -0.004 -0.000  0.001 -0.000  0.001 -0.000  0.000 -0.000  0.000  0.000 -0.000  1.000  0.000  0.000  0.000  0.000 -0.000
+       34  0.01208  -0.005  0.001 -0.001  0.000 -0.001  0.000 -0.000  0.006  0.001  0.000  0.000  0.000  0.000 -0.000  0.000  0.000
+                    -0.000  0.000  0.000  0.001 -0.000  0.001 -0.008 -0.004 -0.000  0.001 -0.000  0.001 -0.000  0.001  0.000 -0.000
+                    -0.000  0.000  0.000  0.001 -0.000  0.001 -0.008 -0.004 -0.000  0.001 -0.000  0.001 -0.000  0.001  0.000 -0.000  0.000  1.000  0.000  0.000  0.000  0.000
+       35  0.00919  -0.004  0.000 -0.001  0.000 -0.001  0.000 -0.000  0.000 -0.000  0.002 -0.000  0.000  0.000 -0.000  0.000  0.000
+                    -0.000  0.000  0.000  0.001 -0.000  0.000 -0.000  0.000 -0.007 -0.004 -0.000  0.000 -0.000  0.000  0.000 -0.000
+                    -0.000  0.000  0.000  0.001 -0.000  0.000 -0.000  0.000 -0.007 -0.004 -0.000  0.000 -0.000  0.000  0.000 -0.000  0.000  0.000  1.000  0.000  0.000  0.000
+       36  0.00506  -0.004  0.000 -0.001  0.000 -0.001  0.000 -0.000  0.000 -0.000  0.000  0.000  0.000 -0.000 -0.000  0.000 -0.000
+                    -0.000  0.000  0.000  0.001 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.002 -0.001 -0.000  0.000  0.000 -0.000
+                    -0.000  0.000  0.000  0.001 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.002 -0.001 -0.000  0.000  0.000 -0.000  0.000  0.000  0.000  1.000  0.000 -0.000
+       37  0.00757  -0.004  0.000 -0.001  0.000 -0.001  0.000 -0.000  0.000 -0.000  0.000  0.000  0.000  0.000 -0.001 -0.001 -0.000
+                    -0.000  0.000  0.000  0.001 -0.000  0.000 -0.000  0.001 -0.000  0.001 -0.000  0.000 -0.005 -0.003  0.000 -0.000
+                    -0.000  0.000  0.000  0.001 -0.000  0.000 -0.000  0.001 -0.000  0.001 -0.000  0.000 -0.005 -0.003  0.000 -0.000  0.000  0.000  0.000  0.000  1.000 -0.000
+       38  0.00000   0.000 -0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+                     0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000
+                     0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000 -0.000  0.000  0.000 -0.000 -0.000  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **   18 **HESSE     1.9e+04
+ **********
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 4 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 1.02132 added to diagonal of error matrix
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-13716.9 FROM HESSE     STATUS=OK            880 CALLS       12202 TOTAL
+                     EDM=0.000419064    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  Bratio       3.16601e-01   7.23725e-02   1.89480e-02  -6.56489e+00
+   2  c0          -6.86020e+00   1.63017e+01   8.93209e-03  -1.37638e-01
+   3  c0_sig      -4.14394e+00   1.26816e+01   2.11961e-02  -8.29740e-02
+   4  c1           5.00000e+01   6.15421e+01   1.86099e-01   1.57192e+00
+   5  c1_sig      -4.03804e+01   2.03198e+01   3.78121e-02  -9.40084e-01
+   6  c2           2.81213e-01   8.53344e+00   5.32072e-03   5.62428e-03
+   7  c2_sig      -1.87925e+01   9.37716e+00   6.71397e-03  -3.85313e-01
+   8  c3          -3.68315e+00   6.73437e+00   4.29525e-03  -7.37297e-02
+   9  c3_sig      -1.37517e+01   8.75917e+00   6.02477e-03  -2.78625e-01
+  10  c4          -7.93046e+00   5.37624e+00   3.53485e-03  -1.59282e-01
+  11  c4_sig      -2.12450e+01   7.14429e+00   5.19438e-03  -4.38852e-01
+  12  c5          -1.23523e+00   2.60546e+00   1.68682e-03  -2.47072e-02
+  13  c5_sig      -8.81131e+00   3.46320e+00   2.28280e-03  -1.77151e-01
+  14  c6          -7.90631e+00   4.40751e+00   2.90045e-03  -1.58793e-01
+  15  c6_sig      -1.37457e+01   5.68969e+00   3.85842e-03  -2.78500e-01
+  16  mean_all     9.73865e-05   3.04002e-06   1.76442e-04   9.75411e-02
+  17  nbkg0        6.94730e+01   1.13438e+01   8.83195e-03  -2.13953e-01
+  18  nbkg0_sig    5.20185e+01   7.18007e+00   8.21180e-03   5.48033e-01
+  19  nbkg1        2.19636e+01   4.73973e+00   9.05918e-03   2.22021e-01
+  20  nbkg1_sig    5.63543e+00   2.28398e+00   1.83065e-02   1.74939e-01
+  21  nbkg2        8.69586e+01   1.09031e+01   3.87379e-03   1.35037e-02
+  22  nbkg2_sig    5.18658e+01   7.28559e+00   7.99504e-03   5.12544e-01
+  23  nbkg3        1.01694e+02   1.16960e+01   3.70384e-03   4.62538e-02
+  24  nbkg3_sig    4.95588e+01   7.13635e+00   8.03721e-03   4.94925e-01
+  25  nbkg4        1.10142e+02   1.20453e+01   3.59157e-03   5.50286e-02
+  26  nbkg4_sig    5.75654e+01   7.74008e+00   7.46577e-03   4.96142e-01
+  27  nbkg5        3.80483e+02   2.25868e+01   2.03271e-03   1.08850e-01
+  28  nbkg5_sig    2.01516e+02   1.49234e+01   4.12139e-03   5.30657e-01
+  29  nbkg6        1.08132e+02   1.15934e+01   8.78159e-03   3.57566e-02
+  30  nbkg6_sig    6.25901e+01   8.01864e+00   7.24959e-03   5.12367e-01
+  31  nsig_mode0   7.43384e+01   1.11743e+01   3.43697e-03  -1.57815e-01
+  32  nsig_mode1   9.37636e+00   3.50180e+00   7.15293e-03  -4.99619e-01
+  33  nsig_mode2   5.61162e+01   9.25362e+00   3.43890e-03  -3.53267e-01
+  34  nsig_mode3   6.02934e+01   9.61795e+00   3.23877e-03  -3.89469e-01
+  35  nsig_mode4   6.44913e+01   9.85968e+00   3.14780e-03  -3.92249e-01
+  36  nsig_mode5   1.92286e+02   1.77273e+01   4.35878e-03  -4.55295e-01
+  37  nsig_mode6   6.63479e+01   9.48617e+00   3.05856e-03  -3.73078e-01
+  38  sigma_all    1.28102e-06   4.14374e-09   2.22513e-03  -1.49920e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM= 106    NPAR= 38    ERR DEF=0.5
+ ELEMENTS ABOVE DIAGONAL ARE NOT PRINTED.
+  5.352e-03 
+ -9.815e-02  2.759e+02 
+  1.191e-01  7.640e+00  1.644e+02 
+ -1.134e-05  2.080e-04 -2.524e-04  3.204e-03 
+  8.591e-02 -1.576e+00  1.912e+00 -7.721e-03  5.026e+02 
+ -1.251e-02  2.295e-01 -2.785e-01  2.651e-05 -2.008e-01  7.354e+01 
+  4.163e-02 -7.635e-01  9.265e-01 -8.820e-05  6.682e-01  9.315e-01  8.916e+01 
+ -8.522e-03  1.563e-01 -1.897e-01  1.806e-05 -1.368e-01  1.993e-02 -6.629e-02  4.563e+01 
+  2.313e-02 -4.243e-01  5.148e-01 -4.901e-05  3.713e-01 -5.408e-02  1.799e-01  2.866e-01  7.759e+01 
+ -2.283e-03  4.187e-02 -5.081e-02  4.837e-06 -3.665e-02  5.337e-03 -1.776e-02  3.636e-03 -9.868e-03  2.902e+01 
+ -5.598e-03  1.027e-01 -1.246e-01  1.186e-05 -8.987e-02  1.309e-02 -4.355e-02  8.915e-03 -2.420e-02 -2.182e-02  5.147e+01 
+ -1.246e-03  2.285e-02 -2.773e-02  2.640e-06 -2.000e-02  2.913e-03 -9.692e-03  1.984e-03 -5.386e-03  5.315e-04  1.303e-03 
+ -1.246e-03  2.285e-02 -2.773e-02  2.640e-06 -2.000e-02  2.913e-03 -9.692e-03  1.984e-03 -5.386e-03  5.315e-04  1.303e-03  6.795e+00 
+ -7.342e-03  1.347e-01 -1.634e-01  1.556e-05 -1.179e-01  1.717e-02 -5.711e-02  1.169e-02 -3.174e-02  3.132e-03  7.681e-03 
+ -7.342e-03  1.347e-01 -1.634e-01  1.556e-05 -1.179e-01  1.717e-02 -5.711e-02  1.169e-02 -3.174e-02  3.132e-03  7.681e-03 -3.354e-03  1.201e+01 
+  1.055e-03 -1.936e-02  2.349e-02 -2.236e-06  1.694e-02 -2.468e-03  8.210e-03 -1.681e-03  4.562e-03 -4.502e-04 -1.104e-03 
+  1.055e-03 -1.936e-02  2.349e-02 -2.236e-06  1.694e-02 -2.468e-03  8.210e-03 -1.681e-03  4.562e-03 -4.502e-04 -1.104e-03 -2.457e-04 -1.448e-03  1.948e+01 
+ -1.932e-02  3.544e-01 -4.300e-01  4.094e-05 -3.102e-01  4.517e-02 -1.503e-01  3.077e-02 -8.352e-02  8.242e-03  2.021e-02 
+ -1.932e-02  3.544e-01 -4.300e-01  4.094e-05 -3.102e-01  4.517e-02 -1.503e-01  3.077e-02 -8.352e-02  8.242e-03  2.021e-02  4.499e-03  2.651e-02  2.709e-02  3.252e+01 
+ -1.484e-09  2.722e-08 -3.303e-08  3.145e-12 -2.383e-08  3.470e-09 -1.154e-08  2.364e-09 -6.416e-09  6.332e-10  1.553e-09 
+ -1.484e-09  2.722e-08 -3.303e-08  3.145e-12 -2.383e-08  3.470e-09 -1.154e-08  2.364e-09 -6.416e-09  6.332e-10  1.553e-09  7.265e-08  2.859e-08 -2.927e-10  5.359e-09  9.242e-12 
+  5.957e-02 -9.967e+01 -4.637e+00 -1.262e-04  9.563e-01 -1.393e-01  4.634e-01 -9.487e-02  2.575e-01 -2.541e-02 -6.232e-02 
+  5.957e-02 -9.967e+01 -4.637e+00 -1.262e-04  9.563e-01 -1.393e-01  4.634e-01 -9.487e-02  2.575e-01 -2.541e-02 -6.232e-02 -1.387e-02 -8.173e-02  1.175e-02 -2.151e-01 -1.652e-08  1.294e+02 
+ -4.996e-02 -3.205e+00 -9.043e+00  1.058e-04 -8.019e-01  1.168e-01 -3.886e-01  7.955e-02 -2.159e-01  2.131e-02  5.226e-02 
+ -4.996e-02 -3.205e+00 -9.043e+00  1.058e-04 -8.019e-01  1.168e-01 -3.886e-01  7.955e-02 -2.159e-01  2.131e-02  5.226e-02  1.163e-02  6.854e-02 -9.852e-03  1.804e-01  1.385e-08  1.945e+00  5.263e+01 
+ -2.118e-03  3.884e-02 -4.713e-02  1.362e-02 -1.442e+00  4.951e-03 -1.647e-02  3.372e-03 -9.153e-03  9.034e-04  2.215e-03 
+ -2.118e-03  3.884e-02 -4.713e-02  1.362e-02 -1.442e+00  4.951e-03 -1.647e-02  3.372e-03 -9.153e-03  9.034e-04  2.215e-03  4.930e-04  2.905e-03 -4.176e-04  7.645e-03  5.873e-10 -2.357e-02  1.977e-02  2.303e+01 
+ -2.067e-02  3.791e-01 -4.600e-01  1.858e-03 -4.924e+00  4.832e-02 -1.608e-01  3.291e-02 -8.934e-02  8.817e-03  2.162e-02 
+ -2.067e-02  3.791e-01 -4.600e-01  1.858e-03 -4.924e+00  4.832e-02 -1.608e-01  3.291e-02 -8.934e-02  8.817e-03  2.162e-02  4.812e-03  2.836e-02 -4.076e-03  7.462e-02  5.732e-09 -2.301e-01  1.929e-01  3.469e-01  5.682e+00 
+  1.833e-02 -3.361e-01  4.079e-01 -3.883e-05  2.942e-01 -2.290e+01 -1.364e+00 -2.918e-02  7.922e-02 -7.818e-03 -1.917e-02 
+  1.833e-02 -3.361e-01  4.079e-01 -3.883e-05  2.942e-01 -2.290e+01 -1.364e+00 -2.918e-02  7.922e-02 -7.818e-03 -1.917e-02 -4.267e-03 -2.514e-02  3.614e-03 -6.617e-02 -5.083e-09  2.040e-01 -1.711e-01 -7.252e-03 -7.078e-02  1.195e+02 
+ -6.432e-02  1.180e+00 -1.432e+00  1.363e-04 -1.033e+00 -1.440e+00 -3.233e+00  1.024e-01 -2.780e-01  2.744e-02  6.729e-02 
+ -6.432e-02  1.180e+00 -1.432e+00  1.363e-04 -1.033e+00 -1.440e+00 -3.233e+00  1.024e-01 -2.780e-01  2.744e-02  6.729e-02  1.498e-02  8.825e-02 -1.269e-02  2.322e-01  1.784e-08 -7.160e-01  6.004e-01  2.545e-02  2.484e-01  2.109e+00  5.413e+01 
+  2.259e-02 -4.143e-01  5.027e-01 -4.786e-05  3.626e-01 -5.281e-02  1.757e-01 -1.388e+01 -7.597e-01 -9.636e-03 -2.363e-02 
+  2.259e-02 -4.143e-01  5.027e-01 -4.786e-05  3.626e-01 -5.281e-02  1.757e-01 -1.388e+01 -7.597e-01 -9.636e-03 -2.363e-02 -5.259e-03 -3.099e-02  4.455e-03 -8.155e-02 -6.265e-09  2.514e-01 -2.109e-01 -8.938e-03 -8.724e-02  7.735e-02 -2.715e-01 
+  2.259e-02 -4.143e-01  5.027e-01 -4.786e-05  3.626e-01 -5.281e-02  1.757e-01 -1.388e+01 -7.597e-01 -9.636e-03 -2.363e-02 -5.259e-03 -3.099e-02  4.455e-03 -8.155e-02 -6.265e-09  2.514e-01 -2.109e-01 -8.938e-03 -8.724e-02  7.735e-02 -2.715e-01  1.375e+02 
+ -6.416e-02  1.177e+00 -1.428e+00  1.359e-04 -1.030e+00  1.500e-01 -4.991e-01 -7.959e-01 -1.797e+00  2.737e-02  6.712e-02 
+ -6.416e-02  1.177e+00 -1.428e+00  1.359e-04 -1.030e+00  1.500e-01 -4.991e-01 -7.959e-01 -1.797e+00  2.737e-02  6.712e-02  1.494e-02  8.803e-02 -1.265e-02  2.317e-01  1.779e-08 -7.142e-01  5.989e-01  2.539e-02  2.478e-01 -2.197e-01  7.712e-01 
+ -6.416e-02  1.177e+00 -1.428e+00  1.359e-04 -1.030e+00  1.500e-01 -4.991e-01 -7.959e-01 -1.797e+00  2.737e-02  6.712e-02  1.494e-02  8.803e-02 -1.265e-02  2.317e-01  1.779e-08 -7.142e-01  5.989e-01  2.539e-02  2.478e-01 -2.197e-01  7.712e-01  2.110e+00  5.195e+01 
+  1.823e-02 -3.344e-01  4.058e-01 -3.863e-05  2.927e-01 -4.263e-02  1.418e-01 -2.903e-02  7.881e-02 -4.587e+00  1.743e-01 
+  1.823e-02 -3.344e-01  4.058e-01 -3.863e-05  2.927e-01 -4.263e-02  1.418e-01 -2.903e-02  7.881e-02 -4.587e+00  1.743e-01 -4.245e-03 -2.501e-02  3.596e-03 -6.583e-02 -5.056e-09  2.030e-01 -1.702e-01 -7.214e-03 -7.041e-02  6.244e-02 -2.191e-01 
+  1.823e-02 -3.344e-01  4.058e-01 -3.863e-05  2.927e-01 -4.263e-02  1.418e-01 -2.903e-02  7.881e-02 -4.587e+00  1.743e-01 -4.245e-03 -2.501e-02  3.596e-03 -6.583e-02 -5.056e-09  2.030e-01 -1.702e-01 -7.214e-03 -7.041e-02  6.244e-02 -2.191e-01  7.695e-02 -2.186e-01  1.457e+02 
+ -7.537e-02  1.382e+00 -1.677e+00  1.597e-04 -1.210e+00  1.762e-01 -5.862e-01  1.200e-01 -3.258e-01 -2.923e-01  4.500e-01 
+ -7.537e-02  1.382e+00 -1.677e+00  1.597e-04 -1.210e+00  1.762e-01 -5.862e-01  1.200e-01 -3.258e-01 -2.923e-01  4.500e-01  1.755e-02  1.034e-01 -1.486e-02  2.721e-01  2.090e-08 -8.389e-01  7.035e-01  2.982e-02  2.911e-01 -2.581e-01  9.058e-01 
+ -7.537e-02  1.382e+00 -1.677e+00  1.597e-04 -1.210e+00  1.762e-01 -5.862e-01  1.200e-01 -3.258e-01 -2.923e-01  4.500e-01  1.755e-02  1.034e-01 -1.486e-02  2.721e-01  2.090e-08 -8.389e-01  7.035e-01  2.982e-02  2.911e-01 -2.581e-01  9.058e-01 -3.181e-01  9.036e-01  2.335e+00  6.095e+01 
+  7.095e-02 -1.301e+00  1.579e+00 -1.503e-04  1.139e+00 -1.659e-01  5.519e-01 -1.130e-01  3.067e-01 -3.026e-02 -7.422e-02 
+  7.095e-02 -1.301e+00  1.579e+00 -1.503e-04  1.139e+00 -1.659e-01  5.519e-01 -1.130e-01  3.067e-01 -3.026e-02 -7.422e-02 -2.284e+00  2.060e-01  1.399e-02 -2.561e-01  8.362e-08  7.897e-01 -6.623e-01 -2.807e-02 -2.740e-01  2.430e-01 -8.527e-01 
+  7.095e-02 -1.301e+00  1.579e+00 -1.503e-04  1.139e+00 -1.659e-01  5.519e-01 -1.130e-01  3.067e-01 -3.026e-02 -7.422e-02 -2.284e+00  2.060e-01  1.399e-02 -2.561e-01  8.362e-08  7.897e-01 -6.623e-01 -2.807e-02 -2.740e-01  2.430e-01 -8.527e-01  2.995e-01 -8.506e-01  2.417e-01 -9.991e-01  5.109e+02 
+ -2.272e-01  4.167e+00 -5.057e+00  4.815e-04 -3.648e+00  5.313e-01 -1.767e+00  3.619e-01 -9.822e-01  9.693e-02  2.377e-01 
+ -2.272e-01  4.167e+00 -5.057e+00  4.815e-04 -3.648e+00  5.313e-01 -1.767e+00  3.619e-01 -9.822e-01  9.693e-02  2.377e-01 -1.093e-01  8.199e-01 -4.481e-02  8.204e-01  1.702e-07 -2.529e+00  2.121e+00  8.991e-02  8.776e-01 -7.782e-01  2.731e+00 
+ -2.272e-01  4.167e+00 -5.057e+00  4.815e-04 -3.648e+00  5.313e-01 -1.767e+00  3.619e-01 -9.822e-01  9.693e-02  2.377e-01 -1.093e-01  8.199e-01 -4.481e-02  8.204e-01  1.702e-07 -2.529e+00  2.121e+00  8.991e-02  8.776e-01 -7.782e-01  2.731e+00 -9.591e-01  2.724e+00 -7.741e-01  3.200e+00  6.360e+00  2.240e+02 
+  1.669e-02 -3.061e-01  3.714e-01 -3.536e-05  2.679e-01 -3.902e-02  1.298e-01 -2.657e-02  7.213e-02 -7.119e-03 -1.746e-02 
+  1.669e-02 -3.061e-01  3.714e-01 -3.536e-05  2.679e-01 -3.902e-02  1.298e-01 -2.657e-02  7.213e-02 -7.119e-03 -1.746e-02 -3.885e-03 -2.289e-02  1.760e+00  4.283e-01 -4.628e-09  1.858e-01 -1.558e-01 -6.603e-03 -6.445e-02  5.715e-02 -2.006e-01 
+  1.669e-02 -3.061e-01  3.714e-01 -3.536e-05  2.679e-01 -3.902e-02  1.298e-01 -2.657e-02  7.213e-02 -7.119e-03 -1.746e-02 -3.885e-03 -2.289e-02  1.760e+00  4.283e-01 -4.628e-09  1.858e-01 -1.558e-01 -6.603e-03 -6.445e-02  5.715e-02 -2.006e-01  7.044e-02 -2.001e-01  5.685e-02 -2.350e-01  2.212e-01 -7.086e-01  1.350e+02 
+ -7.044e-02  1.292e+00 -1.568e+00  1.492e-04 -1.131e+00  1.647e-01 -5.479e-01  1.122e-01 -3.045e-01  3.005e-02  7.369e-02 
+ -7.044e-02  1.292e+00 -1.568e+00  1.492e-04 -1.131e+00  1.647e-01 -5.479e-01  1.122e-01 -3.045e-01  3.005e-02  7.369e-02  1.640e-02  9.664e-02  9.865e-02  1.513e+00  1.954e-08 -7.841e-01  6.575e-01  2.787e-02  2.720e-01 -2.412e-01  8.466e-01 
+ -7.044e-02  1.292e+00 -1.568e+00  1.492e-04 -1.131e+00  1.647e-01 -5.479e-01  1.122e-01 -3.045e-01  3.005e-02  7.369e-02  1.640e-02  9.664e-02  9.865e-02  1.513e+00  1.954e-08 -7.841e-01  6.575e-01  2.787e-02  2.720e-01 -2.412e-01  8.466e-01 -2.973e-01  8.445e-01 -2.400e-01  9.920e-01 -9.338e-01  2.991e+00  1.560e+00  6.535e+01 
+ -1.295e-01  9.516e+01  1.008e+01  2.744e-04 -2.079e+00  3.028e-01 -1.007e+00  2.062e-01 -5.598e-01  5.524e-02  1.355e-01 
+ -1.295e-01  9.516e+01  1.008e+01  2.744e-04 -2.079e+00  3.028e-01 -1.007e+00  2.062e-01 -5.598e-01  5.524e-02  1.355e-01  3.015e-02  1.777e-01 -2.554e-02  4.675e-01  3.592e-08 -5.776e+01 -4.228e+00  5.124e-02  5.001e-01 -4.435e-01  1.556e+00 
+ -1.295e-01  9.516e+01  1.008e+01  2.744e-04 -2.079e+00  3.028e-01 -1.007e+00  2.062e-01 -5.598e-01  5.524e-02  1.355e-01  3.015e-02  1.777e-01 -2.554e-02  4.675e-01  3.592e-08 -5.776e+01 -4.228e+00  5.124e-02  5.001e-01 -4.435e-01  1.556e+00 -5.466e-01  1.553e+00 -4.412e-01  1.824e+00 -1.717e+00  5.499e+00 -4.038e-01  1.705e+00  1.256e+02 
+  9.586e-03 -1.758e-01  2.134e-01 -1.475e-02  6.528e+00 -2.241e-02  7.457e-02 -1.527e-02  4.144e-02 -4.089e-03 -1.003e-02 
+  9.586e-03 -1.758e-01  2.134e-01 -1.475e-02  6.528e+00 -2.241e-02  7.457e-02 -1.527e-02  4.144e-02 -4.089e-03 -1.003e-02 -2.232e-03 -1.315e-02  1.891e-03 -3.461e-02 -2.659e-09  1.067e-01 -8.949e-02 -2.754e+00 -1.571e+00  3.283e-02 -1.152e-01 
+  9.586e-03 -1.758e-01  2.134e-01 -1.475e-02  6.528e+00 -2.241e-02  7.457e-02 -1.527e-02  4.144e-02 -4.089e-03 -1.003e-02 -2.232e-03 -1.315e-02  1.891e-03 -3.461e-02 -2.659e-09  1.067e-01 -8.949e-02 -2.754e+00 -1.571e+00  3.283e-02 -1.152e-01  4.046e-02 -1.149e-01  3.266e-02 -1.350e-01  1.271e-01 -4.070e-01  2.989e-02 -1.262e-01 -2.320e-01  1.247e+01 
+ -4.819e-02  8.838e-01 -1.073e+00  1.021e-04 -7.735e-01  2.233e+01  3.587e+00  7.674e-02 -2.083e-01  2.056e-02  5.041e-02 
+ -4.819e-02  8.838e-01 -1.073e+00  1.021e-04 -7.735e-01  2.233e+01  3.587e+00  7.674e-02 -2.083e-01  2.056e-02  5.041e-02  1.122e-02  6.611e-02 -9.504e-03  1.740e-01  1.336e-08 -5.364e-01  4.498e-01  1.907e-02  1.861e-01 -3.271e+01 -5.546e+00 
+ -4.819e-02  8.838e-01 -1.073e+00  1.021e-04 -7.735e-01  2.233e+01  3.587e+00  7.674e-02 -2.083e-01  2.056e-02  5.041e-02  1.122e-02  6.611e-02 -9.504e-03  1.740e-01  1.336e-08 -5.364e-01  4.498e-01  1.907e-02  1.861e-01 -3.271e+01 -5.546e+00 -2.034e-01  5.777e-01 -1.642e-01  6.786e-01 -6.388e-01  2.046e+00 -1.503e-01  6.343e-01  1.166e+00 -8.632e-02  8.601e+01 
+ -5.859e-02  1.075e+00 -1.304e+00  1.241e-04 -9.405e-01  1.370e-01 -4.557e-01  1.351e+01  1.971e+00  2.499e-02  6.129e-02 
+ -5.859e-02  1.075e+00 -1.304e+00  1.241e-04 -9.405e-01  1.370e-01 -4.557e-01  1.351e+01  1.971e+00  2.499e-02  6.129e-02  1.364e-02  8.038e-02 -1.156e-02  2.115e-01  1.625e-08 -6.522e-01  5.469e-01  2.318e-02  2.263e-01 -2.006e-01  7.042e-01 
+ -5.859e-02  1.075e+00 -1.304e+00  1.241e-04 -9.405e-01  1.370e-01 -4.557e-01  1.351e+01  1.971e+00  2.499e-02  6.129e-02  1.364e-02  8.038e-02 -1.156e-02  2.115e-01  1.625e-08 -6.522e-01  5.469e-01  2.318e-02  2.263e-01 -2.006e-01  7.042e-01 -3.580e+01 -5.472e+00 -1.996e-01  8.251e-01 -7.767e-01  2.488e+00 -1.827e-01  7.712e-01  1.418e+00 -1.050e-01  5.276e-01 
+ -5.859e-02  1.075e+00 -1.304e+00  1.241e-04 -9.405e-01  1.370e-01 -4.557e-01  1.351e+01  1.971e+00  2.499e-02  6.129e-02  1.364e-02  8.038e-02 -1.156e-02  2.115e-01  1.625e-08 -6.522e-01  5.469e-01  2.318e-02  2.263e-01 -2.006e-01  7.042e-01 -3.580e+01 -5.472e+00 -1.996e-01  8.251e-01 -7.767e-01  2.488e+00 -1.827e-01  7.712e-01  1.418e+00 -1.050e-01  5.276e-01  9.286e+01 
+ -4.959e-02  9.095e-01 -1.104e+00  1.051e-04 -7.960e-01  1.159e-01 -3.857e-01  7.897e-02 -2.144e-01  4.491e+00 -4.740e-01 
+ -4.959e-02  9.095e-01 -1.104e+00  1.051e-04 -7.960e-01  1.159e-01 -3.857e-01  7.897e-02 -2.144e-01  4.491e+00 -4.740e-01  1.155e-02  6.804e-02 -9.780e-03  1.790e-01  1.375e-08 -5.520e-01  4.629e-01  1.962e-02  1.915e-01 -1.698e-01  5.960e-01 
+ -4.959e-02  9.095e-01 -1.104e+00  1.051e-04 -7.960e-01  1.159e-01 -3.857e-01  7.897e-02 -2.144e-01  4.491e+00 -4.740e-01  1.155e-02  6.804e-02 -9.780e-03  1.790e-01  1.375e-08 -5.520e-01  4.629e-01  1.962e-02  1.915e-01 -1.698e-01  5.960e-01 -2.093e-01  5.945e-01 -3.587e+01 -6.350e+00 -6.574e-01  2.106e+00 -1.546e-01  6.527e-01  1.200e+00 -8.883e-02  4.465e-01 
+ -4.959e-02  9.095e-01 -1.104e+00  1.051e-04 -7.960e-01  1.159e-01 -3.857e-01  7.897e-02 -2.144e-01  4.491e+00 -4.740e-01  1.155e-02  6.804e-02 -9.780e-03  1.790e-01  1.375e-08 -5.520e-01  4.629e-01  1.962e-02  1.915e-01 -1.698e-01  5.960e-01 -2.093e-01  5.945e-01 -3.587e+01 -6.350e+00 -6.574e-01  2.106e+00 -1.546e-01  6.527e-01  1.200e+00 -8.883e-02  4.465e-01  5.429e-01  9.755e+01 
+ -1.731e-01  3.174e+00 -3.852e+00  3.667e-04 -2.778e+00  4.046e-01 -1.346e+00  2.756e-01 -7.480e-01  7.382e-02  1.810e-01 
+ -1.731e-01  3.174e+00 -3.852e+00  3.667e-04 -2.778e+00  4.046e-01 -1.346e+00  2.756e-01 -7.480e-01  7.382e-02  1.810e-01  2.243e+00 -5.023e-01 -3.413e-02  6.248e-01 -1.436e-07 -1.926e+00  1.615e+00  6.848e-02  6.683e-01 -5.926e-01  2.080e+00 
+ -1.731e-01  3.174e+00 -3.852e+00  3.667e-04 -2.778e+00  4.046e-01 -1.346e+00  2.756e-01 -7.480e-01  7.382e-02  1.810e-01  2.243e+00 -5.023e-01 -3.413e-02  6.248e-01 -1.436e-07 -1.926e+00  1.615e+00  6.848e-02  6.683e-01 -5.926e-01  2.080e+00 -7.304e-01  2.075e+00 -5.896e-01  2.437e+00 -1.290e+02 -1.551e+01 -5.396e-01  2.278e+00  4.188e+00 -3.100e-01  1.558e+00 
+ -1.731e-01  3.174e+00 -3.852e+00  3.667e-04 -2.778e+00  4.046e-01 -1.346e+00  2.756e-01 -7.480e-01  7.382e-02  1.810e-01  2.243e+00 -5.023e-01 -3.413e-02  6.248e-01 -1.436e-07 -1.926e+00  1.615e+00  6.848e-02  6.683e-01 -5.926e-01  2.080e+00 -7.304e-01  2.075e+00 -5.896e-01  2.437e+00 -1.290e+02 -1.551e+01 -5.396e-01  2.278e+00  4.188e+00 -3.100e-01  1.558e+00  1.895e+00  1.604e+00  3.146e+02 
+ -5.575e-02  1.022e+00 -1.241e+00  1.181e-04 -8.949e-01  1.303e-01 -4.336e-01  8.877e-02 -2.410e-01  2.378e-02  5.832e-02 
+ -5.575e-02  1.022e+00 -1.241e+00  1.181e-04 -8.949e-01  1.303e-01 -4.336e-01  8.877e-02 -2.410e-01  2.378e-02  5.832e-02  1.298e-02  7.648e-02 -1.709e+00 -1.431e+00  1.546e-08 -6.205e-01  5.204e-01  2.206e-02  2.153e-01 -1.909e-01  6.700e-01 
+ -5.575e-02  1.022e+00 -1.241e+00  1.181e-04 -8.949e-01  1.303e-01 -4.336e-01  8.877e-02 -2.410e-01  2.378e-02  5.832e-02  1.298e-02  7.648e-02 -1.709e+00 -1.431e+00  1.546e-08 -6.205e-01  5.204e-01  2.206e-02  2.153e-01 -1.909e-01  6.700e-01 -2.353e-01  6.684e-01 -1.899e-01  7.851e-01 -7.390e-01  2.367e+00 -2.702e+01 -5.211e+00  1.349e+00 -9.986e-02  5.020e-01 
+ -5.575e-02  1.022e+00 -1.241e+00  1.181e-04 -8.949e-01  1.303e-01 -4.336e-01  8.877e-02 -2.410e-01  2.378e-02  5.832e-02  1.298e-02  7.648e-02 -1.709e+00 -1.431e+00  1.546e-08 -6.205e-01  5.204e-01  2.206e-02  2.153e-01 -1.909e-01  6.700e-01 -2.353e-01  6.684e-01 -1.899e-01  7.851e-01 -7.390e-01  2.367e+00 -2.702e+01 -5.211e+00  1.349e+00 -9.986e-02  5.020e-01  6.103e-01  5.166e-01  1.803e+00  9.027e+01 
+  3.129e-15 -5.738e-14  6.963e-14 -6.629e-18  5.022e-14 -7.315e-15  2.434e-14 -4.982e-15  1.352e-14 -1.335e-15 -3.273e-15 
+  3.129e-15 -5.738e-14  6.963e-14 -6.629e-18  5.022e-14 -7.315e-15  2.434e-14 -4.982e-15  1.352e-14 -1.335e-15 -3.273e-15 -1.531e-13 -6.027e-14  6.170e-16 -1.130e-14 -1.949e-17  3.483e-14 -2.920e-14 -1.238e-15 -1.208e-14  1.071e-14 -3.760e-14 
+  3.129e-15 -5.738e-14  6.963e-14 -6.629e-18  5.022e-14 -7.315e-15  2.434e-14 -4.982e-15  1.352e-14 -1.335e-15 -3.273e-15 -1.531e-13 -6.027e-14  6.170e-16 -1.130e-14 -1.949e-17  3.483e-14 -2.920e-14 -1.238e-15 -1.208e-14  1.071e-14 -3.760e-14  1.321e-14 -3.751e-14  1.066e-14 -4.406e-14 -1.763e-13 -3.588e-13  9.756e-15 -4.118e-14 -7.571e-14  5.604e-15 -2.817e-14 
+  3.129e-15 -5.738e-14  6.963e-14 -6.629e-18  5.022e-14 -7.315e-15  2.434e-14 -4.982e-15  1.352e-14 -1.335e-15 -3.273e-15 -1.531e-13 -6.027e-14  6.170e-16 -1.130e-14 -1.949e-17  3.483e-14 -2.920e-14 -1.238e-15 -1.208e-14  1.071e-14 -3.760e-14  1.321e-14 -3.751e-14  1.066e-14 -4.406e-14 -1.763e-13 -3.588e-13  9.756e-15 -4.118e-14 -7.571e-14  5.604e-15 -2.817e-14 -3.425e-14 -2.899e-14  3.027e-13 -3.259e-14  1.717e-17 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16
+        1  0.43992   1.000 -0.081  0.127 -0.003  0.052 -0.020  0.060 -0.017  0.036 -0.006 -0.011 -0.007 -0.029  0.003 -0.046 -0.007
+        2  0.60948  -0.081  1.000  0.036  0.000 -0.004  0.002 -0.005  0.001 -0.003  0.000  0.001  0.001  0.002 -0.000  0.004  0.001
+        3  0.17552   0.127  0.036  1.000 -0.000  0.007 -0.003  0.008 -0.002  0.005 -0.001 -0.001 -0.001 -0.004  0.000 -0.006 -0.001
+        4  0.08330  -0.003  0.000 -0.000  1.000 -0.006  0.000 -0.000  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000  0.000
+        5  0.12068   0.052 -0.004  0.007 -0.006  1.000 -0.001  0.003 -0.001  0.002 -0.000 -0.001 -0.000 -0.002  0.000 -0.002 -0.000
+        6  0.32434  -0.020  0.002 -0.003  0.000 -0.001  1.000  0.012  0.000 -0.001  0.000  0.000  0.000  0.001 -0.000  0.001  0.000
+        7  0.08343   0.060 -0.005  0.008 -0.000  0.003  0.012  1.000 -0.001  0.002 -0.000 -0.001 -0.000 -0.002  0.000 -0.003 -0.000
+        8  0.23748  -0.017  0.001 -0.002  0.000 -0.001  0.000 -0.001  1.000  0.005  0.000  0.000  0.000  0.000 -0.000  0.001  0.000
+        9  0.04957   0.036 -0.003  0.005 -0.000  0.002 -0.001  0.002  0.005  1.000 -0.000 -0.000 -0.000 -0.001  0.000 -0.002 -0.000
+       10  0.09677  -0.006  0.000 -0.001  0.000 -0.000  0.000 -0.000  0.000 -0.000  1.000 -0.001  0.000  0.000 -0.000  0.000  0.000
+       11  0.01433  -0.011  0.001 -0.001  0.000 -0.001  0.000 -0.001  0.000 -0.000 -0.001  1.000  0.000  0.000 -0.000  0.000  0.000
+       12  0.05512  -0.007  0.001 -0.001  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000  0.000  1.000 -0.000 -0.000  0.000  0.009
+       13  0.03275  -0.029  0.002 -0.004  0.000 -0.002  0.001 -0.002  0.000 -0.001  0.000  0.000 -0.000  1.000 -0.000  0.001  0.003
+       14  0.04788   0.003 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  1.000  0.001 -0.000
+       15  0.06077  -0.046  0.004 -0.006  0.000 -0.002  0.001 -0.003  0.001 -0.002  0.000  0.000  0.000  0.001  0.001  1.000  0.000
+       16  0.01254  -0.007  0.001 -0.001  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000  0.000  0.009  0.003 -0.000  0.000  1.000
+       17  0.56896   0.072 -0.527 -0.032 -0.000  0.004 -0.001  0.004 -0.001  0.003 -0.000 -0.001 -0.000 -0.002  0.000 -0.003 -0.000
+                     1.000  0.024 -0.000 -0.008  0.002 -0.009  0.002 -0.009  0.001 -0.009  0.003 -0.015  0.001 -0.009 -0.453  0.003
+       18  0.14092  -0.094 -0.027 -0.097  0.000 -0.005  0.002 -0.006  0.002 -0.003  0.001  0.001  0.001  0.003 -0.000  0.004  0.001
+                     0.024  1.000  0.001  0.011 -0.002  0.011 -0.002  0.011 -0.002  0.012 -0.004  0.020 -0.002  0.011 -0.052 -0.003
+       19  0.16696  -0.006  0.000 -0.001  0.050 -0.013  0.000 -0.000  0.000 -0.000  0.000  0.000  0.000  0.000 -0.000  0.000  0.000
+                    -0.000  0.001  1.000  0.030 -0.000  0.001 -0.000  0.001 -0.000  0.001 -0.000  0.001 -0.000  0.001  0.001 -0.163
+       20  0.22892  -0.119  0.010 -0.015  0.014 -0.092  0.002 -0.007  0.002 -0.004  0.001  0.001  0.001  0.003 -0.000  0.005  0.001
+                    -0.008  0.011  0.030  1.000 -0.003  0.014 -0.003  0.014 -0.002  0.016 -0.005  0.025 -0.002  0.014  0.019 -0.187
+       21  0.36015   0.023 -0.002  0.003 -0.000  0.001 -0.244 -0.013 -0.000  0.001 -0.000 -0.000 -0.000 -0.001  0.000 -0.001 -0.000
+                     0.002 -0.002 -0.000 -0.003  1.000  0.026  0.001 -0.003  0.000 -0.003  0.001 -0.005  0.000 -0.003 -0.004  0.001
+       22  0.15373  -0.120  0.010 -0.015  0.000 -0.006 -0.023 -0.047  0.002 -0.004  0.001  0.001  0.001  0.003 -0.000  0.006  0.001
+                    -0.009  0.011  0.001  0.014  0.026  1.000 -0.003  0.015 -0.002  0.016 -0.005  0.025 -0.002  0.014  0.019 -0.004
+       23  0.33607   0.026 -0.002  0.003 -0.000  0.001 -0.001  0.002 -0.175 -0.007 -0.000 -0.000 -0.000 -0.001  0.000 -0.001 -0.000
+                     0.002 -0.002 -0.000 -0.003  0.001 -0.003  1.000  0.025  0.001 -0.003  0.001 -0.005  0.001 -0.003 -0.004  0.001
+       24  0.15242  -0.122  0.010 -0.015  0.000 -0.006  0.002 -0.007 -0.016 -0.028  0.001  0.001  0.001  0.004 -0.000  0.006  0.001
+                    -0.009  0.011  0.001  0.014 -0.003  0.015  0.025  1.000 -0.003  0.016 -0.005  0.025 -0.002  0.014  0.019 -0.005
+       25  0.30419   0.021 -0.002  0.003 -0.000  0.001 -0.000  0.001 -0.000  0.001 -0.071  0.002 -0.000 -0.001  0.000 -0.001 -0.000
+                     0.001 -0.002 -0.000 -0.002  0.000 -0.002  0.001 -0.003  1.000  0.025  0.001 -0.004  0.000 -0.002 -0.003  0.001
+       26  0.16075  -0.132  0.011 -0.017  0.000 -0.007  0.003 -0.008  0.002 -0.005 -0.007  0.008  0.001  0.004 -0.000  0.006  0.001
+                    -0.009  0.012  0.001  0.016 -0.003  0.016 -0.003  0.016  0.025  1.000 -0.006  0.027 -0.003  0.016  0.021 -0.005
+       27  0.32256   0.043 -0.003  0.005 -0.000  0.002 -0.001  0.003 -0.001  0.002 -0.000 -0.000 -0.039  0.003  0.000 -0.002  0.001
+                     0.003 -0.004 -0.000 -0.005  0.001 -0.005  0.001 -0.005  0.001 -0.006  1.000  0.019  0.001 -0.005 -0.007  0.002
+       28  0.22519  -0.208  0.017 -0.026  0.001 -0.011  0.004 -0.013  0.004 -0.007  0.001  0.002 -0.003  0.016 -0.001  0.010  0.004
+                    -0.015  0.020  0.001  0.025 -0.005  0.025 -0.005  0.025 -0.004  0.027  0.019  1.000 -0.004  0.025  0.033 -0.008
+       29  0.24604   0.020 -0.002  0.002 -0.000  0.001 -0.000  0.001 -0.000  0.001 -0.000 -0.000 -0.000 -0.001  0.034  0.006 -0.000
+                     0.001 -0.002 -0.000 -0.002  0.000 -0.002  0.001 -0.002  0.000 -0.003  0.001 -0.004  1.000  0.017 -0.003  0.001
+       30  0.14436  -0.119  0.010 -0.015  0.000 -0.006  0.002 -0.007  0.002 -0.004  0.001  0.001  0.001  0.003  0.003  0.033  0.001
+                    -0.009  0.011  0.001  0.014 -0.003  0.014 -0.003  0.014 -0.002  0.016 -0.005  0.025  0.017  1.000  0.019 -0.004
+       31  0.57080  -0.158  0.511  0.070  0.000 -0.008  0.003 -0.010  0.003 -0.006  0.001  0.002  0.001  0.005 -0.001  0.007  0.001
+                    -0.453 -0.052  0.001  0.019 -0.004  0.019 -0.004  0.019 -0.003  0.021 -0.007  0.033 -0.003  0.019  1.000 -0.006
+       32  0.26012   0.037 -0.003  0.005 -0.074  0.082 -0.001  0.002 -0.001  0.001 -0.000 -0.000 -0.000 -0.001  0.000 -0.002 -0.000
+                     0.003 -0.003 -0.163 -0.187  0.001 -0.004  0.001 -0.005  0.001 -0.005  0.002 -0.008  0.001 -0.004 -0.006  1.000
+       33  0.39796  -0.071  0.006 -0.009  0.000 -0.004  0.281  0.041  0.001 -0.003  0.000  0.001  0.000  0.002 -0.000  0.003  0.000
+                    -0.005  0.007  0.000  0.008 -0.323 -0.081 -0.002  0.009 -0.001  0.009 -0.003  0.015 -0.001  0.008  0.011 -0.003
+                    -0.005  0.007  0.000  0.008 -0.323 -0.081 -0.002  0.009 -0.001  0.009 -0.003  0.015 -0.001  0.008  0.011 -0.003  1.000  0.006  0.005  0.009  0.006 -0.000
+       34  0.36897  -0.083  0.007 -0.011  0.000 -0.004  0.002 -0.005  0.207  0.023  0.000  0.001  0.001  0.002 -0.000  0.004  0.001
+                    -0.006  0.008  0.001  0.010 -0.002  0.010 -0.317 -0.079 -0.002  0.011 -0.004  0.017 -0.002  0.010  0.013 -0.003
+                    -0.006  0.008  0.001  0.010 -0.002  0.010 -0.317 -0.079 -0.002  0.011 -0.004  0.017 -0.002  0.010  0.013 -0.003  0.006  1.000  0.006  0.011  0.007 -0.000
+       35  0.32462  -0.069  0.006 -0.009  0.000 -0.004  0.001 -0.004  0.001 -0.002  0.084 -0.007  0.000  0.002 -0.000  0.003  0.000
+                    -0.005  0.006  0.000  0.008 -0.002  0.008 -0.002  0.008 -0.301 -0.082 -0.003  0.014 -0.001  0.008  0.011 -0.003
+                    -0.005  0.006  0.000  0.008 -0.002  0.008 -0.002  0.008 -0.301 -0.082 -0.003  0.014 -0.001  0.008  0.011 -0.003  0.005  0.006  1.000  0.009  0.006 -0.000
+       36  0.35417  -0.133  0.011 -0.017  0.000 -0.007  0.003 -0.008  0.002 -0.005  0.001  0.001  0.049 -0.008 -0.000  0.006 -0.003
+                    -0.010  0.013  0.001  0.016 -0.003  0.016 -0.004  0.016 -0.003  0.018 -0.322 -0.058 -0.003  0.016  0.021 -0.005
+                    -0.010  0.013  0.001  0.016 -0.003  0.016 -0.004  0.016 -0.003  0.018 -0.322 -0.058 -0.003  0.016  0.021 -0.005  0.009  0.011  0.009  1.000  0.011  0.000
+       37  0.26966  -0.080  0.006 -0.010  0.000 -0.004  0.002 -0.005  0.001 -0.003  0.000  0.001  0.001  0.002 -0.041 -0.026  0.001
+                    -0.006  0.008  0.000  0.010 -0.002  0.010 -0.002  0.010 -0.002  0.011 -0.003  0.017 -0.245 -0.068  0.013 -0.003
+                    -0.006  0.008  0.000  0.010 -0.002  0.010 -0.002  0.010 -0.002  0.011 -0.003  0.017 -0.245 -0.068  0.013 -0.003  0.006  0.007  0.006  0.011  1.000 -0.000
+       38  0.00155   0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000 -0.002
+                     0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000
+                     0.000 -0.000 -0.000 -0.000  0.000 -0.000  0.000 -0.000  0.000 -0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000 -0.000  0.000 -0.000  1.000
+
+  RooFitResult: minimized FCN value: -13716.9, estimated distance to minimum: 0.000419064
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MIGRAD=4 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+                    m0    2.2998e+00
+                m0_sig    2.2998e+00
+                    m1    2.3058e+00
+                m1_sig    2.3058e+00
+                    m2    2.3139e+00
+                m2_sig    2.3139e+00
+                    m3    2.3203e+00
+                m3_sig    2.3203e+00
+                    m4    2.3305e+00
+                m4_sig    2.3305e+00
+                    m5    2.3408e+00
+                m5_sig    2.3408e+00
+                    m6    2.3492e+00
+                m6_sig    2.3492e+00
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+                Bratio    3.0000e-01    3.1660e-01 +/-  7.24e-02  <none>
+                    c0    1.5143e+00   -6.8602e+00 +/-  1.63e+01  <none>
+                c0_sig   -2.1266e+01   -4.1439e+00 +/-  1.27e+01  <none>
+                    c1    1.4943e+01    5.0000e+01 +/-  6.15e+01  <none>
+                c1_sig   -6.0660e+00   -4.0380e+01 +/-  2.03e+01  <none>
+                    c2    2.9315e+00    2.8121e-01 +/-  8.53e+00  <none>
+                c2_sig   -4.9716e+00   -1.8792e+01 +/-  9.38e+00  <none>
+                    c3   -3.1054e+00   -3.6831e+00 +/-  6.73e+00  <none>
+                c3_sig   -2.4289e+00   -1.3752e+01 +/-  8.76e+00  <none>
+                    c4   -4.8423e+00   -7.9305e+00 +/-  5.38e+00  <none>
+                c4_sig   -2.2689e+01   -2.1245e+01 +/-  7.14e+00  <none>
+                    c5   -4.3007e+00   -1.2352e+00 +/-  2.61e+00  <none>
+                c5_sig   -9.3432e+00   -8.8113e+00 +/-  3.46e+00  <none>
+                    c6   -5.4013e+00   -7.9063e+00 +/-  4.41e+00  <none>
+                c6_sig   -7.9593e+00   -1.3746e+01 +/-  5.69e+00  <none>
+              mean_all   -9.9217e-05    9.7386e-05 +/-  3.04e-06  <none>
+                 nbkg0    7.3500e+00    6.9473e+01 +/-  1.13e+01  <none>
+             nbkg0_sig    2.8500e+00    5.2019e+01 +/-  7.18e+00  <none>
+                 nbkg1    1.5000e+00    2.1964e+01 +/-  4.74e+00  <none>
+             nbkg1_sig    4.0000e-01    5.6354e+00 +/-  2.28e+00  <none>
+                 nbkg2    7.1500e+00    8.6959e+01 +/-  1.09e+01  <none>
+             nbkg2_sig    2.9000e+00    5.1866e+01 +/-  7.29e+00  <none>
+                 nbkg3    8.1000e+00    1.0169e+02 +/-  1.17e+01  <none>
+             nbkg3_sig    2.8000e+00    4.9559e+01 +/-  7.14e+00  <none>
+                 nbkg4    8.7000e+00    1.1014e+02 +/-  1.20e+01  <none>
+             nbkg4_sig    3.2500e+00    5.7565e+01 +/-  7.74e+00  <none>
+                 nbkg5    2.8600e+01    3.8048e+02 +/-  2.26e+01  <none>
+             nbkg5_sig    1.1150e+01    2.0152e+02 +/-  1.49e+01  <none>
+                 nbkg6    8.7000e+00    1.0813e+02 +/-  1.16e+01  <none>
+             nbkg6_sig    3.5000e+00    6.2590e+01 +/-  8.02e+00  <none>
+            nsig_mode0    7.3500e+00    7.4338e+01 +/-  1.12e+01  <none>
+            nsig_mode1    1.5000e+00    9.3764e+00 +/-  3.50e+00  <none>
+            nsig_mode2    7.1500e+00    5.6116e+01 +/-  9.25e+00  <none>
+            nsig_mode3    8.1000e+00    6.0293e+01 +/-  9.62e+00  <none>
+            nsig_mode4    8.7000e+00    6.4491e+01 +/-  9.86e+00  <none>
+            nsig_mode5    2.8600e+01    1.9229e+02 +/-  1.77e+01  <none>
+            nsig_mode6    8.7000e+00    6.6348e+01 +/-  9.49e+00  <none>
+             sigma_all    3.1748e-05    1.2810e-06 +/-  4.14e-09  <none>
+
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x31fc180 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0_sig) directly selected PDF components: (sigpdf0_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0_sig) indirectly selected PDF components: (shapepdf0_sig,guass_4600)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x31f61d0 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0_sig) directly selected PDF components: (argus0_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x31f36c0 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x32c06c0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0) directly selected PDF components: (sigpdf0)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0) indirectly selected PDF components: (shapepdf0,guass_4600)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x3379060 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0) directly selected PDF components: (argus0)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model0) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x337c160 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x2f04d90 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1_sig) directly selected PDF components: (sigpdf1_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1_sig) indirectly selected PDF components: (shapepdf1_sig,guass_4612)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x3372990 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1_sig) directly selected PDF components: (argus1_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x337a420 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x33643f0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1) directly selected PDF components: (sigpdf1)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1) indirectly selected PDF components: (shapepdf1,guass_4612)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x32b8830 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1) directly selected PDF components: (argus1)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model1) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x33643f0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x3160470 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2_sig) directly selected PDF components: (sigpdf2_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2_sig) indirectly selected PDF components: (shapepdf2_sig,guass_4620)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x33669c0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2_sig) directly selected PDF components: (argus2_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x3371020 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x336c6b0 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2) directly selected PDF components: (sigpdf2)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2) indirectly selected PDF components: (shapepdf2,guass_4620)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x3373610 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2) directly selected PDF components: (argus2)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model2) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x3362fe0 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x2f7ec40 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3_sig) directly selected PDF components: (sigpdf3_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3_sig) indirectly selected PDF components: (shapepdf3_sig,guass_4640)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x2f7ec40 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3_sig) directly selected PDF components: (argus3_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x2f7ec40 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x3362fe0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3) directly selected PDF components: (sigpdf3)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3) indirectly selected PDF components: (shapepdf3,guass_4640)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x2dcf2e0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3) directly selected PDF components: (argus3)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model3) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x2dcf2e0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x2fdf500 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4_sig) directly selected PDF components: (sigpdf4_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4_sig) indirectly selected PDF components: (shapepdf4_sig,guass_4660)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x2f49900 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4_sig) directly selected PDF components: (argus4_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x2fdf500 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x2db1c90 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4) directly selected PDF components: (sigpdf4)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4) indirectly selected PDF components: (shapepdf4,guass_4660)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x2f97af0 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4) directly selected PDF components: (argus4)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model4) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x2f97af0 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x33bd510 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5_sig) directly selected PDF components: (sigpdf5_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5_sig) indirectly selected PDF components: (shapepdf5_sig,guass_4680)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x2fe1030 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5_sig) directly selected PDF components: (argus5_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x2e54690 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x3468590 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5) directly selected PDF components: (sigpdf5)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5) indirectly selected PDF components: (shapepdf5,guass_4680)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x3370960 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5) directly selected PDF components: (argus5)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model5) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x3370960 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x2dcc800 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6_sig) directly selected PDF components: (sigpdf6_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6_sig) indirectly selected PDF components: (shapepdf6_sig,guass_4700)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x2ea1430 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6_sig) directly selected PDF components: (argus6_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6_sig) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x3031800 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x302c290 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6) directly selected PDF components: (sigpdf6)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6) indirectly selected PDF components: (shapepdf6,guass_4700)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x347c5b0 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6) directly selected PDF components: (argus6)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model6) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x347c5b0 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+_________________________________________________________________
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_sig' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf0_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x34d5790 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_sig' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf1_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x34e73d0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_sig' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf2_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x34f8d80 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_sig' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf3_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x350a450 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_sig' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf4_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x351bce0 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_sig' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf5_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x352dc10 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_sig' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf6_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x353f2a0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pdfSig) directly selected PDF components: (argus0_sig,argus1_sig,argus2_sig,argus3_sig,argus4_sig,argus5_sig,argus6_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pdfSig) indirectly selected PDF components: (model0_sig,model1_sig,model2_sig,model3_sig,model4_sig,model5_sig,model6_sig)
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf0_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x2e19b50 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf1_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x3524110 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf2_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x307ddc0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf3_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x351de50 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf4_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x34d6980 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf5_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x34a2040 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf6_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x34aa9d0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pdfSig) directly selected PDF components: (sigpdf0_sig,sigpdf1_sig,sigpdf2_sig,sigpdf3_sig,sigpdf4_sig,sigpdf5_sig,sigpdf6_sig)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pdfSig) indirectly selected PDF components: (shapepdf0_sig,guass_4600,shapepdf1_sig,guass_4612,shapepdf2_sig,guass_4620,shapepdf3_sig,guass_4640,shapepdf4_sig,guass_4660,shapepdf5_sig,guass_4680,shapepdf6_sig,guass_4700,model0_sig,model1_sig,model2_sig,model3_sig,model4_sig,model5_sig,model6_sig)
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf0_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x3512a90 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf1_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x35551f0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf2_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x2eb7cd0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf3_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x3510600 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf4_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x307e780 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf5_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x30ca970 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf6_sig' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x34abe40 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf0' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x351de80 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf1' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x351c0c0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf2' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x34d3920 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf3' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x355d870 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf4' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x34d6320 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf5' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x34d9d50 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6' created with bounds [2.25,2.34919]
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf6' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x2eb3940 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pdfRef) directly selected PDF components: (argus0,argus1,argus2,argus3,argus4,argus5,argus6)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pdfRef) indirectly selected PDF components: (model0,model1,model2,model3,model4,model5,model6)
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf0' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x34b3c90 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf1' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x351ad20 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf2' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x34a9f80 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf3' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x3520c60 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf4' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x34b8740 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf5' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x34fb560 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf6' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x34d77c0 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pdfRef) directly selected PDF components: (sigpdf0,sigpdf1,sigpdf2,sigpdf3,sigpdf4,sigpdf5,sigpdf6)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pdfRef) indirectly selected PDF components: (shapepdf0,guass_4600,shapepdf1,guass_4612,shapepdf2,guass_4620,shapepdf3,guass_4640,shapepdf4,guass_4660,shapepdf5,guass_4680,shapepdf6,guass_4700,model0,model1,model2,model3,model4,model5,model6)
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf0' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x34e5910 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf1' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x2f98de0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf2' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x34f7630 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf3' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x353a730 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf4' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x34ff970 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf5' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x3566730 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+[#0] WARNING:Eval -- The FFT convolution 'sigpdf6' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x35422c0 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset (M_BC_r3c) with code 0 from preexisting content.
+Br: 0.316601 +/- 0.0723725
+656, 4600 ref nbkg0: 69.473 11.3438
+657, 4612 ref nbkg1: 21.9636 4.73973
+658, 4620 ref nbkg2: 86.9586 10.9031
+659, 4640 ref nbkg3: 101.694 11.696
+660, 4660 ref nbkg4: 110.142 12.0453
+661, 4680 ref nbkg5: 380.483 22.5868
+662, 4700 ref nbkg6: 108.132 11.5934
+664, 4600 sig nbkg0: 52.0185 7.18007
+665, 4612 sig nbkg1: 5.63543 2.28398
+666, 4620 sig nbkg2: 51.8658 7.28559
+667, 4640 sig nbkg3: 49.5588 7.13635
+668, 4660 sig nbkg4: 57.5654 7.74008
+669, 4680 sig nbkg5: 201.516 14.9234
+670, 4700 sig nbkg6: 62.5901 8.01864
+672, 4600 ref nsig_mode0: 74.3384 11.1743
+673, 4612 ref nsig_mode1: 9.37636 3.5018
+674, 4620 ref nsig_mode2: 56.1162 9.25362
+675, 4640 ref nsig_mode3: 60.2934 9.61795
+676, 4660 ref nsig_mode4: 64.4913 9.85968
+677, 4680 ref nsig_mode5: 192.286 17.7273
+678, 4670 ref nsig_mode6: 66.3479 9.48617
+680, 4600 sig nsig_mode0_sig: 8.15461 2.06285
+681, 4612 sig nsig_mode1_sig: 1.02181 0.454758
+682, 4620 sig nsig_mode2_sig: 6.10027 1.66049
+683, 4640 sig nsig_mode3_sig: 6.51366 1.74342
+684, 4660 sig nsig_mode4_sig: 6.84112 1.8207
+685, 4680 sig nsig_mode5_sig: 20.7229 4.86581
+686, 4700 sig nsig_mode6_sig: 7.02027 1.8233
+result->minNll() -13716.9 |FCN_single - FCN_bkg| = 21315.4
+ Sigma: -0
+(int) 0

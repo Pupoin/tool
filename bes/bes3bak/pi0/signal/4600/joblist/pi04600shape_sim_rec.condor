@@ -1,0 +1,13 @@
+#!/bin/tcsh -f
+cd /publicfs/ucas/user/yuanchy8/7.0.6/pi0/signal/4600/joblist
+set procid=$1
+set sub_name_number=`expr $procid`
+set sub_name=`printf "%04d\n" $sub_name_number`
+echo -n "Job `grep GlobalJobId $_CONDOR_JOB_AD | cut -d'#' -f2` on " > pi04600shape_sim_${sub_name}.txt.bosslog
+grep RemoteHost $_CONDOR_JOB_AD >> pi04600shape_sim_${sub_name}.txt.bosslog
+((time boss.exe pi04600shape_sim_${sub_name}.txt) >> pi04600shape_sim_${sub_name}.txt.bosslog) >& pi04600shape_sim_${sub_name}.txt.bosserr
+sleep 3
+echo -n "Job grep GlobalJobId $_CONDOR_JOB_AD | cut -d'#' -f2 on " > pi04600shape_rec_${sub_name}.txt.bosslog
+grep RemoteHost $_CONDOR_JOB_AD >> pi04600shape_rec_${sub_name}.txt.bosslog
+((time boss.exe pi04600shape_rec_${sub_name}.txt) >> pi04600shape_rec_${sub_name}.txt.bosslog) >& pi04600shape_rec_${sub_name}.txt.bosserr
+sleep 3

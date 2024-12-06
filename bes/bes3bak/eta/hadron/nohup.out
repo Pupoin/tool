@@ -1,0 +1,11 @@
+/publicfs/ucas/user/yuanchy8/7.0.6/eta/hadron
+/publicfs/ucas/user/yuanchy8/7.0.6/eta/hadron
+/publicfs/ucas/user/yuanchy8/7.0.6/eta/hadron
+/publicfs/ucas/user/yuanchy8/7.0.6/eta/hadron
+/publicfs/ucas/user/yuanchy8/7.0.6/eta/hadron
+/publicfs/ucas/user/yuanchy8/7.0.6/eta/hadron
+/publicfs/ucas/user/yuanchy8/7.0.6/eta/hadron
+Warning in <TFile::Init>: file ana_1002.root probably not closed, trying to recover
+Warning in <TFile::Init>: no keys recovered, file has been made a Zombie
+Error in <TFileMerger::AddFile>: cannot open file ana_1002.root
+hadd exiting due to error in ana_1002.root

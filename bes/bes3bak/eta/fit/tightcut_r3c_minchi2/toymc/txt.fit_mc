@@ -1,0 +1,103 @@
+    Floating Parameter    FinalValue +/-  Error     GblCorr.
+  --------------------  --------------------------  --------
+                Bratio    4.6491e-01 +/-  1.74e-02  <none>
+                    c0   -7.8705e+00 +/-  6.05e+00  <none>
+                    c1   -1.2432e+01 +/-  1.04e+01  <none>
+                    c2   -9.2376e+00 +/-  3.29e+00  <none>
+                    c3   -5.1768e+00 +/-  2.58e+00  <none>
+                    c4   -1.5620e+00 +/-  2.32e+00  <none>
+                    c5   -2.0249e+00 +/-  1.01e+00  <none>
+                    c6   -2.1848e+00 +/-  1.58e+00  <none>
+                c0_sig   -1.5469e+01 +/-  5.15e+00  <none>
+                c1_sig   -1.2743e+01 +/-  9.46e+00  <none>
+                c2_sig   -7.6351e+00 +/-  3.40e+00  <none>
+                c3_sig   -8.0365e+00 +/-  2.84e+00  <none>
+                c4_sig   -2.9408e+00 +/-  2.43e+00  <none>
+                c5_sig   -3.9057e+00 +/-  1.17e+00  <none>
+                c6_sig    7.2880e-02 +/-  1.89e+00  <none>
+            c0_3pi_sig    7.2304e+00 +/-  1.08e+01  <none>
+            c1_3pi_sig   -5.1479e+00 +/-  1.95e+01  <none>
+            c2_3pi_sig    3.1108e-01 +/-  7.28e+00  <none>
+            c3_3pi_sig    6.0674e-01 +/-  5.78e+00  <none>
+            c4_3pi_sig    1.3072e+00 +/-  5.18e+00  <none>
+            c5_3pi_sig    6.1658e-01 +/-  2.70e+00  <none>
+            c6_3pi_sig   -4.0673e+00 +/-  3.93e+00  <none>
+                 nbkg0    5.2813e+02 +/-  3.16e+01  <none>
+                 nbkg1    1.0814e+02 +/-  1.41e+01  <none>
+                 nbkg2    6.3922e+02 +/-  3.25e+01  <none>
+                 nbkg3    7.6330e+02 +/-  3.44e+01  <none>
+                 nbkg4    6.8434e+02 +/-  3.24e+01  <none>
+                 nbkg5    2.6189e+03 +/-  6.18e+01  <none>
+                 nbkg6    8.8479e+02 +/-  3.53e+01  <none>
+             nbkg0_sig    3.9786e+02 +/-  2.25e+01  <none>
+             nbkg1_sig    7.8462e+01 +/-  9.65e+00  <none>
+             nbkg2_sig    4.5524e+02 +/-  2.34e+01  <none>
+             nbkg3_sig    5.1480e+02 +/-  2.46e+01  <none>
+             nbkg4_sig    5.4021e+02 +/-  2.50e+01  <none>
+             nbkg5_sig    1.8085e+03 +/-  4.60e+01  <none>
+             nbkg6_sig    6.0410e+02 +/-  2.61e+01  <none>
+         nbkg0_3pi_sig    9.8139e+01 +/-  1.08e+01  <none>
+         nbkg1_3pi_sig    1.8308e+01 +/-  4.66e+00  <none>
+         nbkg2_3pi_sig    1.0149e+02 +/-  1.09e+01  <none>
+         nbkg3_3pi_sig    1.2808e+02 +/-  1.20e+01  <none>
+         nbkg4_3pi_sig    1.2075e+02 +/-  1.18e+01  <none>
+         nbkg5_3pi_sig    3.5061e+02 +/-  2.00e+01  <none>
+         nbkg6_3pi_sig    1.3619e+02 +/-  1.23e+01  <none>
+            nsig_mode0    1.0516e+03 +/-  3.68e+01  <none>
+            nsig_mode1    1.7659e+02 +/-  1.52e+01  <none>
+            nsig_mode2    9.0248e+02 +/-  3.43e+01  <none>
+            nsig_mode3    8.9494e+02 +/-  3.42e+01  <none>
+            nsig_mode4    9.4095e+02 +/-  3.40e+01  <none>
+            nsig_mode5    2.6676e+03 +/-  5.96e+01  <none>
+            nsig_mode6    7.7493e+02 +/-  3.18e+01  <none>
+             sigma_all    2.9431e-04 +/-  2.19e-04  <none>
+              mean_all    8.3358e-05 +/-  3.44e-05  <none>
+
+Br: 0.464912 +/- 0.0174276
+678, 4600 ref nbkg0: 528.127 31.5962
+679, 4612 ref nbkg1: 108.144 14.1162
+680, 4620 ref nbkg2: 639.224 32.5493
+681, 4640 ref nbkg3: 763.301 34.4374
+682, 4660 ref nbkg4: 684.34 32.3644
+683, 4680 ref nbkg5: 2618.95 61.7621
+684, 4700 ref nbkg6: 884.785 35.3101
+
+686, 4600 sig nbkg0: 397.864 22.5006
+687, 4612 sig nbkg1: 78.4616 9.65234
+688, 4620 sig nbkg2: 455.244 23.4179
+689, 4640 sig nbkg3: 514.795 24.5667
+690, 4660 sig nbkg4: 540.207 25.0062
+691, 4680 sig nbkg5: 1808.46 45.976
+692, 4700 sig nbkg6: 604.104 26.1101
+
+694, 4600 sig 3pi nbkg0: 98.1394 10.8454
+695, 4612 sig 3pi nbkg1: 18.3085 4.66468
+696, 4620 sig 3pi nbkg2: 101.493 10.8581
+697, 4640 sig 3pi nbkg3: 128.084 12.0255
+698, 4660 sig 3pi nbkg4: 120.753 11.7927
+699, 4680 sig 3pi nbkg5: 350.606 20.0442
+700, 4700 sig 3pi nbkg6: 136.193 12.2908
+
+703, 4600 ref nsig_mode0: 1051.64 36.829
+704, 4612 ref nsig_mode1: 176.586 15.1784
+705, 4620 ref nsig_mode2: 902.482 34.2761
+706, 4640 ref nsig_mode3: 894.939 34.158
+707, 4660 ref nsig_mode4: 940.947 34.0412
+708, 4680 ref nsig_mode5: 2667.63 59.6181
+709, 4670 ref nsig_mode6: 774.929 31.8378
+
+711, 4600 sig nsig_modec_sig: 182.429 9.97579
+712, 4612 sig nsig_modec_sig: 30.3725 2.91182
+713, 4620 sig nsig_modec_sig: 153.474 8.68774
+714, 4640 sig nsig_modec_sig: 152.54 8.6749
+715, 4660 sig nsig_modec_sig: 156.147 8.66068
+716, 4680 sig nsig_modec_sig: 445.342 21.185
+717, 4700 sig nsig_modec_sig: 126.351 7.41297
+
+719, 4600 sig nsig_mode0_3pi_sig: 50.8164 2.77881
+720, 4612 sig nsig_mode1_3pi_sig: 8.13166 0.779586
+721, 4620 sig nsig_mode2_3pi_sig: 41.0946 2.32625
+722, 4640 sig nsig_mode3_3pi_sig: 40.3523 2.29482
+723, 4660 sig nsig_mode4_3pi_sig: 41.6177 2.30832
+724, 4680 sig nsig_mode5_3pi_sig: 117.019 5.5666
+725, 4700 sig nsig_mode6_3pi_sig: 33.6494 1.9742

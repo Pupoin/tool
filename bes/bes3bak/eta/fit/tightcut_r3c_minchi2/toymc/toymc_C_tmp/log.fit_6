@@ -1,0 +1,248 @@
+
+Processing fit_toymc_comb_6.C...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf0_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf1_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf2_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf3_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf4_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf5_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'sigpdf6_sig_toy' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.29976]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.30579]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.31387]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.32025]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.33046]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.34079]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'fitrange' created with bounds [2.25,2.34919]
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_sig_toy' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x3e60da0 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x40de510 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig_toy) creating new cache 0x41f6040 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_sig_toy' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x41c2ec0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x41ff2e0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig_toy) creating new cache 0x41d65c0 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_sig_toy' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x41fb0f0 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x4216e80 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig_toy) creating new cache 0x40bc900 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_sig_toy' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x4204a30 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x4206240 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig_toy) creating new cache 0x3e49d70 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_sig_toy' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x4217f20 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x40bcc90 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig_toy) creating new cache 0x4211140 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_sig_toy' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x40b4730 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x41d5860 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig_toy) creating new cache 0x423b6b0 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_sig_toy' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x3e721f0 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x40da670 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig_toy) creating new cache 0x422ba30 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_3pi_sig_toy' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig_toy) creating new cache 0x420d9c0 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig_toy) creating new cache 0x40ad690 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig_toy) creating new cache 0x4256a30 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_3pi_sig_toy' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig_toy) creating new cache 0x4218bc0 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig_toy) creating new cache 0x4263ac0 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig_toy) creating new cache 0x4201780 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_3pi_sig_toy' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig_toy) creating new cache 0x4218bc0 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig_toy) creating new cache 0x40bfeb0 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig_toy) creating new cache 0x4210ec0 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_3pi_sig_toy' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig_toy) creating new cache 0x4218bc0 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig_toy) creating new cache 0x427aba0 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig_toy) creating new cache 0x41bf7d0 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_3pi_sig_toy' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig_toy) creating new cache 0x4218bc0 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig_toy) creating new cache 0x4248df0 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig_toy) creating new cache 0x4241b10 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_3pi_sig_toy' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig_toy) creating new cache 0x4218bc0 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig_toy) creating new cache 0x3e605d0 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig_toy) creating new cache 0x41f13f0 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_3pi_sig_toy' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig_toy) creating new cache 0x4218bc0 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig_toy) creating new cache 0x4257eb0 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig_toy) creating new cache 0x426faa0 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_toy' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x4218bc0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x4232250 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_toy) creating new cache 0x4247070 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_toy' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x4218bc0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x4232250 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_toy) creating new cache 0x428e9f0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_toy' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x4218bc0 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x3e51a60 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_toy) creating new cache 0x3e5d800 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_toy' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x4218bc0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x428d000 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_toy) creating new cache 0x42c64d0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_toy' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x4218bc0 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x42625c0 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_toy) creating new cache 0x42d1a90 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_toy' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x4218bc0 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x422a840 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_toy) creating new cache 0x4283d80 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_toy' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x4218bc0 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x428d290 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_toy) creating new cache 0x42d3160 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_sig' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_sig) creating new cache 0x43021a0 with pdf shapepdf0_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_sig' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_sig) creating new cache 0x434af50 with pdf shapepdf1_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_sig' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_sig) creating new cache 0x438b710 with pdf shapepdf2_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_sig' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_sig) creating new cache 0x43cbeb0 with pdf shapepdf3_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_sig' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_sig) creating new cache 0x440c6c0 with pdf shapepdf4_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_sig' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_sig) creating new cache 0x444e4d0 with pdf shapepdf5_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_sig' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_sig) creating new cache 0x448ed10 with pdf shapepdf6_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0_3pi_sig' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0_3pi_sig) creating new cache 0x44cf020 with pdf shapepdf0_3pi_sig_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1_3pi_sig' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1_3pi_sig) creating new cache 0x450f330 with pdf shapepdf1_3pi_sig_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2_3pi_sig' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2_3pi_sig) creating new cache 0x454fe80 with pdf shapepdf2_3pi_sig_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3_3pi_sig' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3_3pi_sig) creating new cache 0x4590750 with pdf shapepdf3_3pi_sig_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4_3pi_sig' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4_3pi_sig) creating new cache 0x45d1880 with pdf shapepdf4_3pi_sig_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5_3pi_sig' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5_3pi_sig) creating new cache 0x4611d10 with pdf shapepdf5_3pi_sig_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6_3pi_sig' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6_3pi_sig) creating new cache 0x4654100 with pdf shapepdf6_3pi_sig_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf0' created with bounds [2.25,2.29976]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf0) creating new cache 0x4691ee0 with pdf shapepdf0_CONV_guass_4600_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf1' created with bounds [2.25,2.30579]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf1) creating new cache 0x46cf7d0 with pdf shapepdf1_CONV_guass_4612_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf2' created with bounds [2.25,2.31387]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf2) creating new cache 0x470d510 with pdf shapepdf2_CONV_guass_4620_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf3' created with bounds [2.25,2.32025]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf3) creating new cache 0x474b2f0 with pdf shapepdf3_CONV_guass_4640_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf4' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf4) creating new cache 0x4789110 with pdf shapepdf4_CONV_guass_4660_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf5' created with bounds [2.25,2.34079]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf5) creating new cache 0x47c7e00 with pdf shapepdf5_CONV_guass_4680_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_sigpdf6' created with bounds [2.25,2.34919]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(sigpdf6) creating new cache 0x4805c00 with pdf shapepdf6_CONV_guass_4700_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll) Summation contains a RooNLLVar, using its error level
+ **********
+ **   13 **MIGRAD     2.6e+04           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-13364 FROM MIGRAD    STATUS=INITIATE      412 CALLS         413 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Bratio       3.00000e-01   6.00000e-02   0.00000e+00  -1.18740e+02
+   2  c0           1.51430e+00   1.00000e+01   0.00000e+00   2.10660e+00
+   3  c0_3pi_sig  -2.12660e+01   1.00000e+01   0.00000e+00   1.93326e-01
+   4  c0_sig      -2.12660e+01   1.00000e+01   0.00000e+00  -1.45529e+00
+   5  c1           1.49430e+01   1.00000e+01   0.00000e+00  -1.44349e+00
+   6  c1_3pi_sig  -6.06600e+00   1.00000e+01   0.00000e+00   1.04214e+00
+   7  c1_sig      -6.06600e+00   1.00000e+01   0.00000e+00  -5.58730e-01
+   8  c2           2.93150e+00   1.00000e+01   0.00000e+00  -8.58001e+00
+   9  c2_3pi_sig  -4.97160e+00   1.00000e+01   0.00000e+00  -5.97564e+00
+  10  c2_sig      -4.97160e+00   1.00000e+01   0.00000e+00  -1.25299e+01
+  11  c3          -3.10540e+00   1.00000e+01   0.00000e+00  -6.68760e+00
+  12  c3_3pi_sig  -2.42890e+00   1.00000e+01   0.00000e+00  -6.91730e+00
+  13  c3_sig      -2.42890e+00   1.00000e+01   0.00000e+00   3.45805e+00
+  14  c4          -4.84230e+00   1.00000e+01   0.00000e+00  -2.59395e+00
+  15  c4_3pi_sig  -2.26890e+01   1.00000e+01   0.00000e+00  -2.73224e+00
+  16  c4_sig      -2.26890e+01   1.00000e+01   0.00000e+00  -6.79027e+00
+  17  c5          -4.30070e+00   1.00000e+01   0.00000e+00  -3.17525e+00
+  18  c5_3pi_sig  -9.34320e+00   1.00000e+01   0.00000e+00  -9.27803e-01
+  19  c5_sig      -9.34320e+00   1.00000e+01   0.00000e+00   9.57130e+00
+  20  c6          -5.40130e+00   1.00000e+01   0.00000e+00  -9.18404e+00
+  21  c6_3pi_sig  -7.95930e+00   1.00000e+01   0.00000e+00  -7.23984e+00
+  22  c6_sig      -7.95930e+00   1.00000e+01   0.00000e+00  -1.20631e+00
+  23  mean_all    -9.92170e-05   2.00000e-04   0.00000e+00  -1.12997e+01
+  24  nbkg0        8.60000e+00   4.30000e+00   0.00000e+00  -4.05363e+02
+  25  nbkg0_3pi_sig   8.50000e-01   4.25000e-01   0.00000e+00  -5.38114e+01
+  26  nbkg0_sig    3.40000e+00   1.70000e+00   0.00000e+00  -2.28399e+02
+  27  nbkg1        1.75000e+00   8.75000e-01   0.00000e+00  -7.94321e+01
+  28  nbkg1_3pi_sig   1.35707e+00   5.00000e-02   0.00000e+00  -2.35691e-01
+  29  nbkg1_sig    4.50000e-01   2.25000e-01   0.00000e+00  -3.30479e+01
+  30  nbkg2        8.50000e+00   4.25000e+00   0.00000e+00  -3.56914e+02
+  31  nbkg2_3pi_sig   5.50000e-01   2.75000e-01   0.00000e+00  -3.92665e+01
+  32  nbkg2_sig    3.40000e+00   1.70000e+00   0.00000e+00  -2.48701e+02
+  33  nbkg3        9.55000e+00   4.77500e+00   0.00000e+00  -4.27134e+02
+  34  nbkg3_3pi_sig   8.00000e-01   4.00000e-01   0.00000e+00  -6.51991e+01
+  35  nbkg3_sig    3.30000e+00   1.65000e+00   0.00000e+00  -2.37778e+02
+  36  nbkg4        1.03000e+01   5.15000e+00   0.00000e+00  -5.14665e+02
+  37  nbkg4_3pi_sig   5.50000e-01   2.75000e-01   0.00000e+00  -2.50156e+01
+  38  nbkg4_sig    3.85000e+00   1.92500e+00   0.00000e+00  -2.82513e+02
+  39  nbkg5        3.38000e+01   1.69000e+01   0.00000e+00  -1.76057e+03
+  40  nbkg5_3pi_sig   1.90000e+00   9.50000e-01   0.00000e+00  -1.24970e+02
+  41  nbkg5_sig    1.32000e+01   6.60000e+00   0.00000e+00  -1.01907e+03
+  42  nbkg6        1.02000e+01   5.10000e+00   0.00000e+00  -5.63913e+02
+  43  nbkg6_3pi_sig   7.00000e-01   3.50000e-01   0.00000e+00  -5.35647e+01
+  44  nbkg6_sig    4.15000e+00   2.07500e+00   0.00000e+00  -3.12833e+02
+  45  nsig_mode0   8.60000e+00   4.30000e+00   0.00000e+00  -4.36210e+02
+  46  nsig_mode1   1.75000e+00   8.75000e-01   0.00000e+00  -8.02292e+01
+  47  nsig_mode2   8.50000e+00   4.25000e+00   0.00000e+00  -4.43167e+02
+  48  nsig_mode3   9.55000e+00   4.77500e+00   0.00000e+00  -4.61548e+02
+  49  nsig_mode4   1.03000e+01   5.15000e+00   0.00000e+00  -4.61215e+02
+  50  nsig_mode5   3.38000e+01   1.69000e+01   0.00000e+00  -1.36713e+03
+  51  nsig_mode6   1.02000e+01   5.10000e+00   0.00000e+00  -3.85652e+02
+  52  sigma_all    9.97713e-04   1.58740e-05   2.87899e+00   2.44585e-01
+                               ERR DEF= 0.5
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -5.3521e+00  6.5038e-01  7.4557e-01  8.1327e-01  9.2128e-01  9.2897e-01  9.4216e-01  9.5524e-01  9.6001e-01  9.6139e-01  9.6200e-01  9.6581e-01  9.6909e-01  9.7162e-01  9.7691e-01  9.7960e-01  9.8285e-01  9.8494e-01  9.8538e-01  9.9574e-01  9.9721e-01  9.9885e-01  9.9942e-01  9.9950e-01  9.9976e-01  1.0009e+00  1.0010e+00  1.0018e+00  1.0027e+00  1.0031e+00  1.0034e+00  1.0066e+00  1.0131e+00  1.0142e+00  1.0195e+00  1.0253e+00  1.0351e+00  1.0425e+00  1.0491e+00  1.0529e+00  1.0586e+00  1.1170e+00  1.1263e+00  1.1541e+00  1.1990e+00  1.2242e+00  1.2597e+00  1.2753e+00  1.3080e+00  1.3552e+00  2.5044e+00  4.8520e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 5.356938 TO DIAGONAL.
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 6 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 46 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 50 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 342.903 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.1551e-01  9.9958e-01  9.9974e-01  9.9979e-01  9.9988e-01  9.9990e-01  9.9992e-01  9.9994e-01  9.9995e-01  9.9997e-01  9.9997e-01  9.9998e-01  9.9998e-01  9.9998e-01  9.9999e-01  9.9999e-01  9.9999e-01  9.9999e-01  9.9999e-01  9.9999e-01  9.9999e-01  9.9999e-01  9.9999e-01  9.9999e-01  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0000e+00  1.0001e+00  1.0001e+00  1.0001e+00  1.0002e+00  1.0002e+00  1.0003e+00  1.0004e+00  1.0005e+00  1.0007e+00  1.0015e+00  2.2129e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.217725 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT

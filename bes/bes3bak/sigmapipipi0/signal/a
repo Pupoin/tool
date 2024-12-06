@@ -1,0 +1,25 @@
+# mkdir 4600 
+# cp /publicfs/ucas/user/yuanchy8/7.0.6/omega/signal
+
+
+energy=(4600 4612 4620 4640 4660 4680 4700)
+
+for i_e in ${energy[@]}
+do 
+    mkdir ${i_e}
+    # mkdir ana
+    cd ${i_e}
+    mkdir ana
+    cd ana
+    cp /publicfs/ucas/user/yuanchy8/7.0.6/omega/signal/${i_e}/ana/run_mc_template_*.txt .
+    cp /publicfs/ucas/user/yuanchy8/7.0.6/omega/signal/${i_e}/ana/splitjobs_dstlist.sh .
+    cd .. 
+    cp    /publicfs/ucas/user/yuanchy8/7.0.6/omega/signal/${i_e}/gensimrec.sh .
+    cp    /publicfs/ucas/user/yuanchy8/7.0.6/omega/signal/${i_e}/xs_user.dat .
+    # cp    /publicfs/ucas/user/yuanchy8/7.0.6/omega/signal/${i_e}/xs_user.dat joblist_3pi/
+    cp -r /publicfs/ucas/user/yuanchy8/7.0.6/omega/signal/${i_e}/rec_ini .
+    cp -r /publicfs/ucas/user/yuanchy8/7.0.6/omega/signal/${i_e}/sim_ini .
+    # cd "${i_e}/joblist_3pi/"
+    # . subjob > o &
+    cd ../
+done

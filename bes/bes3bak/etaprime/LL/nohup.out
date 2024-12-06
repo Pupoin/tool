@@ -1,0 +1,10 @@
+./sub.sh: line 3: .: list: file not found
+/publicfs/ucas/user/yuanchy8/7.0.6/etaprime/LL
+ln: failed to create symbolic link './4600LL.root': File exists
+/publicfs/ucas/user/yuanchy8/7.0.6/etaprime/LL
+/publicfs/ucas/user/yuanchy8/7.0.6/etaprime/LL
+/publicfs/ucas/user/yuanchy8/7.0.6/etaprime/LL
+/publicfs/ucas/user/yuanchy8/7.0.6/etaprime/LL
+/publicfs/ucas/user/yuanchy8/7.0.6/etaprime/LL
+/publicfs/ucas/user/yuanchy8/7.0.6/etaprime/LL
+ln: failed to create symbolic link './4700LL.root': File exists

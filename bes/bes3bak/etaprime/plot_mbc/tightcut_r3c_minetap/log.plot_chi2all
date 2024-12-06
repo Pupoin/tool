@@ -1,0 +1,17 @@
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.20/06                        https://root.cern |
+  | (c) 1995-2020, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Jun 10 2020, 06:10:57                 |
+  | From tags/v6-20-06@v6-20-06                                      |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q'       |
+   ------------------------------------------------------------------
+
+
+Processing plot_chi2all.C...
+0.000106936
+0.000112717
+0.00289017
+LL bkg num *  weight :41.477
+hadron bkg num *  weight :261.144
+0.000241578
+(int) 0

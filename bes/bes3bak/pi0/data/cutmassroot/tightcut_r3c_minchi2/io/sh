@@ -1,0 +1,25 @@
+hadd 4600io.root /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4600LL_adddipim.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4600hadron_rmLc.root \
+                 #/publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4600LL_adddipim.root \
+                 #/publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4600hadron_rmLc.root
+
+hadd 4612io.root /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4612LL_adddipim.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4612hadron_rmLc.root \
+                 #/publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4612LL_adddipim.root \
+                 #/publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4612hadron_rmLc.root
+
+hadd 4620io.root /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4620LL_adddipim.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4620hadron_rmLc.root
+
+hadd 4640io.root /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4640LL_adddipim.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4640hadron_rmLc.root
+
+hadd 4660io.root /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4660LL_adddipim.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4660hadron_rmLc.root
+
+hadd 4680io.root /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4680LL_adddipim.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4680hadron_rmLc.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4680hadron_rmLc.root
+
+hadd 4700io.root /publicfs/ucas/user/yuanchy8/7.0.6/pi0/LL/cutmassroot/tightcut_r3c_minchi2/4700LL_adddipim.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/pi0/hadron/cutmassroot/tightcut_r3c_minchi2/4700hadron_rmLc.root

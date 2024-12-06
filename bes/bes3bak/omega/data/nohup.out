@@ -1,0 +1,16 @@
+./sub.sh: line 19: .: list: file not found
+./sub.sh: line 27: .: list: file not found
+./sub.sh: line 23: .: list: file not found
+/publicfs/ucas/user/yuanchy8/7.0.6/omega/data
+ln: failed to create symbolic link './4600data.root': File exists
+/publicfs/ucas/user/yuanchy8/7.0.6/omega/data
+ln: failed to create symbolic link './4612data.root': File exists
+/publicfs/ucas/user/yuanchy8/7.0.6/omega/data
+ln: failed to create symbolic link './4620data.root': File exists
+/publicfs/ucas/user/yuanchy8/7.0.6/omega/data
+ln: failed to create symbolic link './4640data.root': File exists
+/publicfs/ucas/user/yuanchy8/7.0.6/omega/data
+ln: failed to create symbolic link './4660data.root': File exists
+ln: failed to create symbolic link './4680data.root': File exists
+/publicfs/ucas/user/yuanchy8/7.0.6/omega/data
+ln: failed to create symbolic link './4700data.root': File exists

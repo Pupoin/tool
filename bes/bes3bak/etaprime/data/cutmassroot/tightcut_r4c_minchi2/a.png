@@ -1,0 +1,40 @@
+{
+//========= Macro generated from object: M_BC/M_BC
+//========= by ROOT version6.20/06
+   
+   TH1D *M_BC__1 = new TH1D("M_BC__1","M_BC",20,2.25,2.35);
+   M_BC__1->SetBinContent(1,5);
+   M_BC__1->SetBinContent(2,11);
+   M_BC__1->SetBinContent(3,9);
+   M_BC__1->SetBinContent(4,9);
+   M_BC__1->SetBinContent(5,7);
+   M_BC__1->SetBinContent(6,10);
+   M_BC__1->SetBinContent(7,6);
+   M_BC__1->SetBinContent(8,19);
+   M_BC__1->SetBinContent(9,9);
+   M_BC__1->SetBinContent(10,5);
+   M_BC__1->SetBinContent(11,6);
+   M_BC__1->SetBinContent(12,3);
+   M_BC__1->SetBinContent(13,2);
+   M_BC__1->SetBinContent(14,8);
+   M_BC__1->SetBinContent(15,1);
+   M_BC__1->SetBinContent(16,1);
+   M_BC__1->SetBinContent(17,2);
+   M_BC__1->SetBinContent(20,1);
+   M_BC__1->SetEntries(114);
+   M_BC__1->SetDirectory(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#000099");
+   M_BC__1->SetLineColor(ci);
+   M_BC__1->GetXaxis()->SetLabelFont(42);
+   M_BC__1->GetXaxis()->SetTitleOffset(1);
+   M_BC__1->GetXaxis()->SetTitleFont(42);
+   M_BC__1->GetYaxis()->SetLabelFont(42);
+   M_BC__1->GetYaxis()->SetTitleFont(42);
+   M_BC__1->GetZaxis()->SetLabelFont(42);
+   M_BC__1->GetZaxis()->SetTitleOffset(1);
+   M_BC__1->GetZaxis()->SetTitleFont(42);
+   M_BC__1->Draw("");
+}

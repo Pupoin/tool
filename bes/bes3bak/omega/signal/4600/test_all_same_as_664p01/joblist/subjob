@@ -1,0 +1,1 @@
+hep_sub -g physics -o /dev/null -e /dev/null omegasignal4600_sim_rec.condor -argu "%{ProcId}" -n 50

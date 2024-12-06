@@ -1,0 +1,5 @@
+->minNll(): -1.40047e+06
+fit: efficiency = 0.0853  ,all 1e+06 ,fit num 85340.7
+truth: efficiency = 0.0897  ,all 1e+06 ,truth num 89729
+efficiency = 0.0853 
+mean: -4.76846e-05 7.42118e-06

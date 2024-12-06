@@ -1,0 +1,57 @@
+yesPhotos
+
+Alias ALambda_c+ Lambda_c+
+Alias ALambda_c- anti-Lambda_c-
+ChargeConj ALambda_c- ALambda_c+
+
+Alias BLambda_c+ Lambda_c+
+Alias BLambda_c- anti-Lambda_c-
+ChargeConj BLambda_c- BLambda_c+
+
+Alias ASigma+ Sigma+
+Alias Aanti-Sigma- anti-Sigma-
+ChargeConj ASigma+ Aanti-Sigma-
+
+Alias Api0 pi0
+
+Decay psi(4260)
+1.0      ALambda_c+ BLambda_c-   PHOTOS PHSP;
+1.0      BLambda_c+ ALambda_c-   PHOTOS PHSP; 
+Enddecay
+
+Decay ALambda_c+
+1.0      ASigma+            eta         PHOTOS PHSP;
+Enddecay
+
+Decay ASigma+
+1.0    p+  Api0                       PHSP;
+Enddecay
+Decay Aanti-Sigma-
+1    anti-p-  Api0                      PHSP;
+Enddecay
+
+Decay Api0
+1.0    gamma gamma                        PHSP;
+Enddecay
+
+Decay eta
+1.0    gamma gamma                        PHSP;
+Enddecay
+
+Decay BLambda_c-
+1.0    e-    anti-nu_e       PHOTOS     PHSP;  
+Enddecay
+
+#######################################################
+CDecay ALambda_c-
+
+Decay BLambda_c+
+1.0    e+    nu_e       PHOTOS     PHSP;  
+Enddecay
+
+
+
+
+
+   
+End

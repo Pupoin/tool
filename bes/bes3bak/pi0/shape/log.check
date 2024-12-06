@@ -1,0 +1,59 @@
+yuanchy8@lxslc710: shape$ mycheckrun3 "for sigma pi0_r3c   v10"
+4600______________________________________________________________
+num of for sigma pi0_r3c   v10: 34
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/shape/4600/ana
+number of *.txt is: 34
+number of bosslog is: 34
+wrong: 0
+resubmit using: source submitWrong
+
+4612______________________________________________________________
+num of for sigma pi0_r3c   v10: 25
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/shape/4612/ana
+number of *.txt is: 25
+number of bosslog is: 25
+wrong: 0
+resubmit using: source submitWrong
+
+462*______________________________________________________________
+num of for sigma pi0_r3c   v10: 20
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/shape/4620/ana
+number of *.txt is: 20
+number of bosslog is: 20
+wrong: 0
+resubmit using: source submitWrong
+
+4640____________________________________________________________
+num of for sigma pi0_r3c   v10: 20
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/shape/4640/ana
+number of *.txt is: 20
+number of bosslog is: 20
+wrong: 0
+resubmit using: source submitWrong
+
+4660____________________________________________________________
+num of for sigma pi0_r3c   v10: 20
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/shape/4660/ana
+number of *.txt is: 20
+number of bosslog is: 20
+wrong: 0
+resubmit using: source submitWrong
+
+4680____________________________________________________________
+num of for sigma pi0_r3c   v10: 20
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/shape/4680/ana
+number of *.txt is: 20
+number of bosslog is: 20
+wrong: 0
+resubmit using: source submitWrong
+
+4700____________________________________________________________
+num of for sigma pi0_r3c   v10: 20
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/pi0/shape/4700/ana
+number of *.txt is: 20
+number of bosslog is: 20
+wrong: 0
+resubmit using: source submitWrong
+
+yuanchy8@lxslc710: shape$ pwd
+/publicfs/ucas/user/yuanchy8/7.0.6/pi0/shape

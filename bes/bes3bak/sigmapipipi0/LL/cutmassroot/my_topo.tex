@@ -1,0 +1,1640 @@
+\documentclass[landscape]{article}
+\usepackage{/publicfs/ucas/user/yuanchy8/topo/topoana/share/geometry}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{longtable}
+\usepackage{/publicfs/ucas/user/yuanchy8/topo/topoana/share/makecell}
+\usepackage{color}
+\usepackage{amssymb} % The package is used for the \dashrightarrow
+\newcommand{\tablecaption}[1]{\caption{#1} \\}
+\usepackage{caption}
+\captionsetup{font=normalsize}
+\newcommand{\tableheader}[1]
+{
+  \hline
+  #1
+  \hline
+  \endfirsthead
+
+  \hline
+  #1
+  \hline
+  \endhead
+
+  \endfoot
+
+  \endlastfoot
+}
+% The following command \tableheaderP is developed as a substitute for \tableheader, in cases that hlines are needed at the bottom of the pages (except for the last one) of the tables when \EOL is defined and used as \\ with no \hline followed. In the command \tableheaderP, P is the initial of PRIME.
+\newcommand{\tableheaderP}[1]
+{
+  \hline
+  #1
+  \hline
+  \endfirsthead
+
+  \hline
+  #1
+  \hline
+  \endhead
+
+  \hline % This is the only difference between \tableheader and \tableheaderP.
+  \endfoot
+
+  \endlastfoot
+}
+\setcellgapes[t]{2pt}
+\makegapedcells
+\newcounter{rownumbers}
+\newcommand\rn{\stepcounter{rownumbers}\arabic{rownumbers}}
+% \newcommand{\EOL}{\\ \hline} % Use this definition to retain hlines in the body part.
+\newcommand{\EOL}{\\} % Use this definition to remove hlines in the body part.
+% The following command \EOLP is developed as a supplementary to \EOL, in cases that hlines are needed in some tables (nLineMean>2, the average number of lines occupied by one decay object is larger than two) when \EOL is only defined as \\ with no \hline followed for other tables. In the command \EOLP, P is the initial of PRIME.
+\newcommand{\EOLP}{\\ \hline} % Use this definition to retain hlines in the body part.
+% \newcommand{\EOLP}{\\} % Use this definition to remove hlines in the body part.
+\newcommand{\topoTags}[1]{#1} % Use this definition to retain topology tags.
+% \newcommand{\topoTags}[1]{} % Use this definition to remove topology tags.
+\begin{document}
+\title{Topology Analysis \footnote{\small{Xingyu Zhou, Liaoning Normal University, zhouxy@lnnu.edu.cn}} \footnote{\small{This package is implemented referring to a program called {\sc Topo}, which is first developed by Prof. Shuxian Du from Zhengzhou University and later extended and maintained by Prof. Gang Li from Institute of High Energy Physics, Chinese Academy of Sciences. The {\sc Topo} program has been widely used by colleagues in BESIII collaboration. Several years ago, when I was a Ph.D. student working on the BESIII experiment, I learned the idea of topology analysis and a lot of programming techniques from the {\sc Topo} program. So, I really appreciate the original works of Prof. Du and Prof. Li very much. To meet my own needs and to practice developing analysis tools with C++, ROOT, and LaTeX, I wrote the package from scratch. At that time, the package functioned well but was relatively simple. At the end of 2017, when I just started my post-doctoral research at Beihang University, my co-supervisor Prof. Chengping Shen reminded me that it could be a useful tool for the Belle II experiment as well. So, I revised and extended it, making it more well-rounded and suitable for the Belle II experiment. Now, it also applies to many other similar high energy physics experiments. Here, I would like to thank Prof. Du and Prof. Li for their original works, and Prof. Shen for his suggestion, guidance, support, and encouragement.}} \footnote{\small{Besides, I would like to thank all of the people who have helped me in the development of the program. I am particularly grateful to Prof. Xingtao Huang for his comments on the principles and styles of the program, to Remco de Boer for his suggestions on the tex output and the use of GitHub, and to Xi Chen for his discussions on the core algorithms. I am especially indebted to Prof. Xiqing Hao, Longke Li, Xiaoping Qin, Ilya Komarov, Yubo Li, Guanda Gong, Suxian Li, Junhao Yin, Prof. Xiaolong Wang, Yeqi Chen, Hannah Wakeling, Hongrong Qi, Hui Li, Ning Cao, Sanjeeda Bharati Das, Kazuki Kojima, Tingting Han, Fang Yan, Lin Wang, Meiru An, and Noreen Rauls for their advice in extending and perfecting the program. Also, I thank Xi'an Xiong, Runqiu Ma, Wencheng Yan, Sen Jia, Lu Cao, Dong Liu, Hongpeng Wang, Jiawei Zhang, Jiajun Liu, Maoqiang Jing, Yi Zhang, Wei Shan, and Yadi Wang for their efforts in helping me test the program.}} \footnote{\small{The paper on the tool has been published by {\it Computer Physics Communications}. You can find this paper and the preprint corresponding to it in the links \href{https://doi.org/10.1016/j.cpc.2020.107540}{Comput. Phys. Commun. 258 (2021) 107540} and \href{https://arxiv.org/abs/2001.04016}{arXiv:2001.04016}, respectively. If the tool really helps your researches, we would appreciate it very much if you could cite the paper in your publications.}} \\ \vspace{1cm} \Large{(v2.12.3)}}
+\maketitle
+
+\clearpage
+
+\newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+\listoftables
+
+\newgeometry{left=0.0cm,right=0.0cm,top=2.5cm,bottom=2.5cm}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clcccc}
+\tablecaption{Decay trees and their respective initial-final states.}
+\tableheaderP{rowNo & \thead{decay tree \\ (decay initial-final states)} & \topoTags{iDcyTr & iDcyIFSts & }nEtr & nCEtr \\}
+
+% \rn = 1
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} K^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{-} K^{+} \bar{p} 
+$) } & \topoTags{17 & 12 & }1196 & 1196 \EOL
+
+% \rn = 2
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{6 & 5 & }919 & 2115 \EOL
+
+% \rn = 3
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \omega \bar{\Sigma}^{-} ,
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{23 & 5 & }860 & 2975 \EOL
+
+% \rn = 4
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{0 & 0 & }754 & 3729 \EOL
+
+% \rn = 5
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{4 & 4 & }681 & 4410 \EOL
+
+% \rn = 6
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \bar{\Sigma}^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{29 & 0 & }638 & 5048 \EOL
+
+% \rn = 7
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} \bar{\Sigma}^{0} ,
+\bar{\Sigma}^{0} \rightarrow \bar{\Lambda} \gamma ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma 
+$) } & \topoTags{20 & 14 & }632 & 5680 \EOL
+
+% \rn = 8
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{55 & 5 & }508 & 6188 \EOL
+
+% \rn = 9
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} K^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{-} K^{+} \bar{p} 
+$) } & \topoTags{7 & 6 & }475 & 6663 \EOL
+
+% \rn = 10
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{42 & 5 & }420 & 7083 \EOL
+
+% \rn = 11
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \omega \bar{\Lambda} ,
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{28 & 1 & }389 & 7472 \EOL
+
+% \rn = 12
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} \pi^{-} K^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{-} K^{+} \bar{p} 
+$) } & \topoTags{3 & 3 & }378 & 7850 \EOL
+
+% \rn = 13
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} K_{L}^{0} \bar{p} 
+$) } & \topoTags{54 & 36 & }373 & 8223 \EOL
+
+% \rn = 14
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{21 & 15 & }340 & 8563 \EOL
+
+% \rn = 15
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{50 & 0 & }327 & 8890 \EOL
+
+% \rn = 16
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} \pi^{-} \bar{\Sigma}^{+} ,
+\bar{\Sigma}^{+} \rightarrow \pi^{+} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{5 & 2 & }308 & 9198 \EOL
+
+% \rn = 17
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{15 & 4 & }302 & 9500 \EOL
+
+% \rn = 18
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \pi^{-} \bar{\Sigma}^{0} ,
+\bar{\Sigma}^{0} \rightarrow \bar{\Lambda} \gamma ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} \gamma 
+$) } & \topoTags{44 & 29 & }274 & 9774 \EOL
+
+% \rn = 19
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \bar{p} 
+$) } & \topoTags{32 & 22 & }248 & 10022 \EOL
+
+% \rn = 20
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{22 & 16 & }205 & 10227 \EOL
+
+% \rn = 21
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{12 & 2 & }201 & 10428 \EOL
+
+% \rn = 22
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} \bar{\Sigma}^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \bar{p} 
+$) } & \topoTags{37 & 21 & }195 & 10623 \EOL
+
+% \rn = 23
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} K_{L}^{0} \bar{p} 
+$) } & \topoTags{51 & 34 & }182 & 10805 \EOL
+
+% \rn = 24
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \mu^{-} \bar{\nu}_{\mu} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{+} \bar{p} 
+$) } & \topoTags{26 & 18 & }170 & 10975 \EOL
+
+% \rn = 25
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} \bar{\Sigma}^{0} ,
+\bar{\Sigma}^{0} \rightarrow \bar{\Lambda} \gamma ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{-} \bar{n} \gamma 
+$) } & \topoTags{10 & 8 & }161 & 11136 \EOL
+
+% \rn = 26
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow e^{-} \bar{\nu}_{e} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{+} \bar{p} 
+$) } & \topoTags{36 & 25 & }154 & 11290 \EOL
+
+% \rn = 27
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \eta \bar{\Lambda} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{90 & 38 & }147 & 11437 \EOL
+
+% \rn = 28
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \omega \bar{\Lambda} ,
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{9 & 7 & }143 & 11580 \EOL
+
+% \rn = 29
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \bar{p} 
+$) } & \topoTags{31 & 21 & }140 & 11720 \EOL
+
+% \rn = 30
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \rho^{-} \bar{\Sigma}^{*0} ,
+\rho^{-} \rightarrow \pi^{0} \pi^{-} ,
+\bar{\Sigma}^{*0} \rightarrow \pi^{0} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{19 & 5 & }132 & 11852 \EOL
+
+% \rn = 31
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \pi^{-} \bar{\Sigma}^{+} ,
+\bar{\Sigma}^{+} \rightarrow \pi^{+} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{97 & 24 & }114 & 11966 \EOL
+
+% \rn = 32
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{13 & 9 & }107 & 12073 \EOL
+
+% \rn = 33
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \omega \bar{\Sigma}^{-} ,
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{-} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{2 & 2 & }105 & 12178 \EOL
+
+% \rn = 34
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \bar{\Sigma}^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{-} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{56 & 24 & }104 & 12282 \EOL
+
+% \rn = 35
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta^{\prime} \bar{\Sigma}^{-} ,
+\eta^{\prime} \rightarrow \pi^{+} \pi^{-} \gamma^{F} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma^{F} 
+$) } & \topoTags{47 & 31 & }98 & 12380 \EOL
+
+% \rn = 36
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} K^{0} \bar{n} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{80 & 2 & }93 & 12473 \EOL
+
+% \rn = 37
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta K^{0} \bar{p} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{58 & 38 & }88 & 12561 \EOL
+
+% \rn = 38
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \pi^{-} \bar{\Sigma}^{0} ,
+\bar{\Sigma}^{0} \rightarrow \bar{\Lambda} \gamma ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} \gamma 
+$) } & \topoTags{41 & 27 & }86 & 12647 \EOL
+
+% \rn = 39
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta \bar{\Sigma}^{*-} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+\bar{\Sigma}^{*-} \rightarrow \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{81 & 38 & }83 & 12730 \EOL
+
+% \rn = 40
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} K^{0} \bar{n} ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} K_{L}^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{18 & 13 & }81 & 12811 \EOL
+
+% \rn = 41
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{52 & 4 & }78 & 12889 \EOL
+
+% \rn = 42
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{\Sigma}^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{66 & 1 & }77 & 12966 \EOL
+
+% \rn = 43
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \rho^{-} \bar{\Sigma}^{0} ,
+\rho^{-} \rightarrow \pi^{0} \pi^{-} ,
+\bar{\Sigma}^{0} \rightarrow \bar{\Lambda} \gamma ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma 
+$) } & \topoTags{163 & 14 & }76 & 13042 \EOL
+
+% \rn = 44
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} \bar{\Sigma}^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{-} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{34 & 16 & }74 & 13116 \EOL
+
+% \rn = 45
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} K^{0} \bar{n} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{35 & 24 & }73 & 13189 \EOL
+
+% \rn = 46
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \omega \bar{\Sigma}^{*-} ,
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Sigma}^{*-} \rightarrow \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{25 & 1 & }72 & 13261 \EOL
+
+% \rn = 47
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \pi^{-} K^{+} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{-} \pi^{-} K^{+} \bar{n} 
+$) } & \topoTags{67 & 44 & }71 & 13332 \EOL
+
+% \rn = 48
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \pi^{-} \eta \bar{\Sigma}^{+} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+\bar{\Sigma}^{+} \rightarrow \pi^{+} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{33 & 23 & }65 & 13397 \EOL
+
+% \rn = 49
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \eta \bar{\Lambda} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{1 & 1 & }64 & 13461 \EOL
+
+% \rn = 50
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta^{\prime} \bar{\Sigma}^{-} ,
+\eta^{\prime} \rightarrow \pi^{+} \pi^{-} \eta ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{101 & 57 & }62 & 13523 \EOL
+
+% \rn = 51
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta^{\prime} \bar{\Sigma}^{-} ,
+\eta^{\prime} \rightarrow \pi^{+} \pi^{-} \eta ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} ,
+\eta \rightarrow \gamma \gamma 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma \gamma 
+$) } & \topoTags{146 & 77 & }54 & 13577 \EOL
+
+% \rn = 52
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} K^{0} \bar{n} ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{182 & 95 & }52 & 13629 \EOL
+
+% \rn = 53
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \omega \bar{\Delta}^{-} ,
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Delta}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{107 & 5 & }50 & 13679 \EOL
+
+% \rn = 54
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} K^{0} \bar{n} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{155 & 9 & }50 & 13729 \EOL
+
+% \rn = 55
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow e^{-} \bar{\nu}_{e} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{0} \bar{n} 
+$) } & \topoTags{64 & 42 & }49 & 13778 \EOL
+
+% \rn = 56
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \mu^{-} \bar{\nu}_{\mu} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{0} \bar{n} 
+$) } & \topoTags{57 & 37 & }48 & 13826 \EOL
+
+% \rn = 57
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta \bar{\Sigma}^{-} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{141 & 5 & }46 & 13872 \EOL
+
+% \rn = 58
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} K^{0} \bar{n} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{83 & 16 & }45 & 13917 \EOL
+
+% \rn = 59
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \eta \bar{\Lambda} ,
+\eta \rightarrow \gamma \gamma ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} \gamma \gamma 
+$) } & \topoTags{61 & 32 & }44 & 13961 \EOL
+
+% \rn = 60
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta \bar{\Sigma}^{*-} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Sigma}^{*-} \rightarrow \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{91 & 1 & }43 & 14004 \EOL
+
+% \rn = 61
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta \bar{\Sigma}^{-} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \bar{p} 
+$) } & \topoTags{96 & 22 & }42 & 14046 \EOL
+
+% \rn = 62
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta K^{0} \bar{p} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} K_{L}^{0} \bar{p} 
+$) } & \topoTags{136 & 71 & }42 & 14088 \EOL
+
+% \rn = 63
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta^{\prime} \bar{\Sigma}^{-} ,
+\eta^{\prime} \rightarrow \pi^{0} \pi^{0} \eta ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{138 & 57 & }40 & 14128 \EOL
+
+% \rn = 64
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \bar{\Sigma}^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \bar{p} 
+$) } & \topoTags{16 & 11 & }39 & 14167 \EOL
+
+% \rn = 65
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{40 & 24 & }39 & 14206 \EOL
+
+% \rn = 66
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \pi^{-} K^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} K^{+} \bar{p} 
+$) } & \topoTags{65 & 43 & }39 & 14245 \EOL
+
+% \rn = 67
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta^{\prime} \bar{\Sigma}^{-} ,
+\eta^{\prime} \rightarrow \pi^{+} \pi^{-} \eta ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{87 & 52 & }37 & 14282 \EOL
+
+% \rn = 68
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta K^{0} \bar{p} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} K_{L}^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{63 & 41 & }36 & 14318 \EOL
+
+% \rn = 69
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow K^{0} \bar{p} ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \bar{p} 
+$) } & \topoTags{112 & 62 & }35 & 14353 \EOL
+
+% \rn = 70
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta^{\prime} \bar{\Sigma}^{-} ,
+\eta^{\prime} \rightarrow \pi^{+} \pi^{-} \eta ,
+\bar{\Sigma}^{-} \rightarrow \pi^{-} \bar{n} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{151 & 23 & }35 & 14388 \EOL
+
+% \rn = 71
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta K^{0} \bar{p} ,
+\eta \rightarrow \gamma \gamma ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} \gamma \gamma 
+$) } & \topoTags{200 & 32 & }35 & 14423 \EOL
+
+% \rn = 72
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \eta \bar{\Lambda} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{30 & 20 & }32 & 14455 \EOL
+
+% \rn = 73
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \omega \bar{\Lambda} ,
+\omega \rightarrow \pi^{0} \gamma ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma 
+$) } & \topoTags{121 & 14 & }32 & 14487 \EOL
+
+% \rn = 74
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow K^{0} \bar{p} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{157 & 56 & }32 & 14519 \EOL
+
+% \rn = 75
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow K^{0} \bar{p} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \bar{p} 
+$) } & \topoTags{167 & 11 & }31 & 14550 \EOL
+
+% \rn = 76
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \rho^{-} \bar{\Delta}^{0} ,
+\rho^{-} \rightarrow \pi^{0} \pi^{-} ,
+\bar{\Delta}^{0} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{94 & 0 & }28 & 14578 \EOL
+
+% \rn = 77
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta \bar{\Sigma}^{*-} ,
+\eta \rightarrow \gamma \gamma ,
+\bar{\Sigma}^{*-} \rightarrow \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} \gamma \gamma 
+$) } & \topoTags{48 & 32 & }28 & 14606 \EOL
+
+% \rn = 78
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta \bar{\Sigma}^{*-} ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+\bar{\Sigma}^{*-} \rightarrow \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{82 & 20 & }28 & 14634 \EOL
+
+% \rn = 79
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} K^{0} \bar{p} ,
+K^{0} \rightarrow K_{L}^{0} ,
+K_{L}^{0} \rightarrow \pi^{0} \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{127 & 38 & }28 & 14662 \EOL
+
+% \rn = 80
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \rho^{+} \bar{\Delta}^{--} ,
+\rho^{+} \rightarrow \pi^{0} \pi^{+} ,
+\bar{\Delta}^{--} \rightarrow \pi^{-} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{133 & 0 & }28 & 14690 \EOL
+
+% \rn = 81
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{+} \bar{\Sigma}^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{0} \pi^{+} \bar{p} 
+$) } & \topoTags{153 & 80 & }28 & 14718 \EOL
+
+% \rn = 82
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \bar{\Sigma}^{0} ,
+\bar{\Sigma}^{0} \rightarrow \bar{\Lambda} \gamma ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} \gamma 
+$) } & \topoTags{59 & 39 & }27 & 14745 \EOL
+
+% \rn = 83
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow K^{0} K^{-} \bar{\Lambda} ,
+K^{0} \rightarrow K_{S}^{0} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} K^{-} \bar{p} 
+$) } & \topoTags{95 & 54 & }26 & 14771 \EOL
+
+% \rn = 84
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta K^{0} \bar{p} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} 
+$) } & \topoTags{8 & 1 & }26 & 14797 \EOL
+
+% \rn = 85
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} K^{-} \bar{\Xi}^{0} ,
+\bar{\Xi}^{0} \rightarrow \pi^{0} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} K^{-} \bar{p} 
+$) } & \topoTags{14 & 10 & }26 & 14823 \EOL
+
+% \rn = 86
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \eta \bar{\Lambda} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{209 & 7 & }26 & 14849 \EOL
+
+% \rn = 87
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \omega \bar{p} ,
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{215 & 0 & }26 & 14875 \EOL
+
+% \rn = 88
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta K^{0} \bar{p} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+K^{0} \rightarrow K_{S}^{0} ,
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{68 & 38 & }25 & 14900 \EOL
+
+% \rn = 89
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{125 & 56 & }25 & 14925 \EOL
+
+% \rn = 90
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \pi^{-} \eta \bar{\Sigma}^{+} ,
+\eta \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Sigma}^{+} \rightarrow \pi^{+} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{158 & 65 & }25 & 14950 \EOL
+
+% \rn = 91
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta^{\prime} \bar{\Sigma}^{-} ,
+\eta^{\prime} \rightarrow \pi^{0} \pi^{0} \eta ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} ,
+\eta \rightarrow \gamma \gamma 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \bar{p} \gamma \gamma 
+$) } & \topoTags{62 & 40 & }24 & 14974 \EOL
+
+% \rn = 92
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow K^{-} \bar{\Xi}^{0} ,
+\bar{\Xi}^{0} \rightarrow \pi^{0} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} K^{-} \bar{p} 
+$) } & \topoTags{196 & 73 & }24 & 14998 \EOL
+
+% \rn = 93
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \bar{\Sigma}^{-} \gamma^{f} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{0} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma^{f} 
+$) } & \topoTags{86 & 30 & }23 & 15021 \EOL
+
+% \rn = 94
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \rho^{-} \bar{\Sigma}^{*0} ,
+\rho^{-} \rightarrow \pi^{0} \pi^{-} ,
+\bar{\Sigma}^{*0} \rightarrow \pi^{0} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} 
+$) } & \topoTags{73 & 9 & }23 & 15044 \EOL
+
+% \rn = 95
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{\Sigma}^{-} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{-} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{160 & 82 & }23 & 15067 \EOL
+
+% \rn = 96
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \omega \bar{\Sigma}^{*-} ,
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\bar{\Sigma}^{*-} \rightarrow \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} 
+$) } & \topoTags{88 & 7 & }22 & 15089 \EOL
+
+% \rn = 97
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta K^{0} \bar{p} ,
+\eta \rightarrow \gamma \gamma ,
+K^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \bar{p} \gamma \gamma 
+$) } & \topoTags{171 & 88 & }22 & 15111 \EOL
+
+% \rn = 98
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \bar{\Lambda} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{179 & 56 & }21 & 15132 \EOL
+
+% \rn = 99
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \eta^{\prime} \bar{\Sigma}^{-} ,
+\eta^{\prime} \rightarrow \pi^{+} \pi^{-} \gamma^{F} ,
+\bar{\Sigma}^{-} \rightarrow \pi^{-} \bar{n} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} \gamma^{F} 
+$) } & \topoTags{214 & 89 & }21 & 15153 \EOL
+
+% \rn = 100
+\rn & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow K^{*-} \bar{\Lambda} ,
+K^{*-} \rightarrow \pi^{-} \bar{K}^{0} ,
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} ,
+\bar{K}^{0} \rightarrow K_{L}^{0} 
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \pi^{+} \pi^{-} \bar{p} 
+$) } & \topoTags{278 & 15 & }21 & 15174 \EOL
+
+rest & \makecell[l]{ $ 
+\bar{\Lambda}_{c}^{-} \rightarrow \rm{others \  (481 \  in \  total)}
+$ \\ ($
+\bar{\Lambda}_{c}^{-} \dashrightarrow \rm{corresponding\ to\ others}
+$) } & \topoTags{--- & --- & }1861 & 17035 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Decay initial-final states.}
+\tableheaderP{rowNo & \thead{decay initial-final states} & \topoTags{iDcyIFSts & }nEtr & nCEtr \\}
+
+% \rn = 1
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} $ & \topoTags{5 & }3002 & 3002 \EOL
+
+% \rn = 2
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} $ & \topoTags{0 & }1837 & 4839 \EOL
+
+% \rn = 3
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{-} K^{+} \bar{p} $ & \topoTags{12 & }1196 & 6035 \EOL
+
+% \rn = 4
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} $ & \topoTags{4 & }1093 & 7128 \EOL
+
+% \rn = 5
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma $ & \topoTags{14 & }751 & 7879 \EOL
+
+% \rn = 6
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} $ & \topoTags{2 & }736 & 8615 \EOL
+
+% \rn = 7
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} $ & \topoTags{1 & }690 & 9305 \EOL
+
+% \rn = 8
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{-} K^{+} \bar{p} $ & \topoTags{6 & }475 & 9780 \EOL
+
+% \rn = 9
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} $ & \topoTags{38 & }396 & 10176 \EOL
+
+% \rn = 10
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{-} K^{+} \bar{p} $ & \topoTags{3 & }378 & 10554 \EOL
+
+% \rn = 11
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} K_{L}^{0} \bar{p} $ & \topoTags{36 & }375 & 10929 \EOL
+
+% \rn = 12
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \pi^{+} \pi^{-} \bar{p} $ & \topoTags{15 & }370 & 11299 \EOL
+
+% \rn = 13
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \bar{p} $ & \topoTags{21 & }349 & 11648 \EOL
+
+% \rn = 14
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{-} \bar{n} $ & \topoTags{16 & }337 & 11985 \EOL
+
+% \rn = 15
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} $ & \topoTags{24 & }335 & 12320 \EOL
+
+% \rn = 16
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \bar{p} $ & \topoTags{22 & }315 & 12635 \EOL
+
+% \rn = 17
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} \gamma $ & \topoTags{29 & }274 & 12909 \EOL
+
+% \rn = 18
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} $ & \topoTags{7 & }213 & 13122 \EOL
+
+% \rn = 19
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} $ & \topoTags{9 & }210 & 13332 \EOL
+
+% \rn = 20
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} K_{L}^{0} \bar{p} $ & \topoTags{34 & }185 & 13517 \EOL
+
+% \rn = 21
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{-} \bar{n} \gamma $ & \topoTags{8 & }183 & 13700 \EOL
+
+% \rn = 22
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{+} \bar{p} $ & \topoTags{18 & }170 & 13870 \EOL
+
+% \rn = 23
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{+} \bar{p} $ & \topoTags{25 & }154 & 14024 \EOL
+
+% \rn = 24
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma^{F} $ & \topoTags{31 & }120 & 14144 \EOL
+
+% \rn = 25
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} $ & \topoTags{57 & }116 & 14260 \EOL
+
+% \rn = 26
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} $ & \topoTags{23 & }115 & 14375 \EOL
+
+% \rn = 27
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} \gamma \gamma $ & \topoTags{32 & }109 & 14484 \EOL
+
+% \rn = 28
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} K_{L}^{0} \pi^{-} \bar{n} $ & \topoTags{13 & }90 & 14574 \EOL
+
+% \rn = 29
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} \gamma $ & \topoTags{27 & }87 & 14661 \EOL
+
+% \rn = 30
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} $ & \topoTags{56 & }84 & 14745 \EOL
+
+% \rn = 31
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \bar{p} $ & \topoTags{11 & }74 & 14819 \EOL
+
+% \rn = 32
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{-} \pi^{-} K^{+} \bar{n} $ & \topoTags{44 & }71 & 14890 \EOL
+
+% \rn = 33
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} $ & \topoTags{20 & }67 & 14957 \EOL
+
+% \rn = 34
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} K^{-} \bar{p} $ & \topoTags{54 & }67 & 15024 \EOL
+
+% \rn = 35
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} K_{L}^{0} \pi^{+} \pi^{-} \bar{p} $ & \topoTags{41 & }63 & 15087 \EOL
+
+% \rn = 36
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} K^{-} \bar{p} $ & \topoTags{73 & }60 & 15147 \EOL
+
+% \rn = 37
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma \gamma $ & \topoTags{77 & }59 & 15206 \EOL
+
+% \rn = 38
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{-} \bar{n} $ & \topoTags{26 & }54 & 15260 \EOL
+
+% \rn = 39
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} K^{-} \bar{p} $ & \topoTags{10 & }53 & 15313 \EOL
+
+% \rn = 40
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma^{f} $ & \topoTags{30 & }53 & 15366 \EOL
+
+% \rn = 41
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \pi^{-} \bar{n} $ & \topoTags{95 & }52 & 15418 \EOL
+
+% \rn = 42
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{0} \bar{n} $ & \topoTags{42 & }49 & 15467 \EOL
+
+% \rn = 43
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{0} \bar{n} $ & \topoTags{37 & }48 & 15515 \EOL
+
+% \rn = 44
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} K_{L}^{0} \bar{p} $ & \topoTags{71 & }44 & 15559 \EOL
+
+% \rn = 45
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma^{f} $ & \topoTags{92 & }42 & 15601 \EOL
+
+% \rn = 46
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma^{F} $ & \topoTags{67 & }42 & 15643 \EOL
+
+% \rn = 47
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} $ & \topoTags{52 & }40 & 15683 \EOL
+
+% \rn = 48
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{0} \bar{p} $ & \topoTags{33 & }40 & 15723 \EOL
+
+% \rn = 49
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} K^{+} \bar{p} $ & \topoTags{43 & }39 & 15762 \EOL
+
+% \rn = 50
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \pi^{-} \bar{n} $ & \topoTags{65 & }39 & 15801 \EOL
+
+% \rn = 51
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{+} \pi^{-} \bar{p} \gamma^{F} $ & \topoTags{17 & }36 & 15837 \EOL
+
+% \rn = 52
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \bar{p} $ & \topoTags{62 & }35 & 15872 \EOL
+
+% \rn = 53
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} K^{-} \bar{n} $ & \topoTags{68 & }34 & 15906 \EOL
+
+% \rn = 54
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{0} \pi^{+} \bar{p} $ & \topoTags{80 & }32 & 15938 \EOL
+
+% \rn = 55
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} \gamma^{f} $ & \topoTags{84 & }29 & 15967 \EOL
+
+% \rn = 56
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} K^{+} K^{-} \bar{p} $ & \topoTags{112 & }28 & 15995 \EOL
+
+% \rn = 57
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \bar{p} \gamma \gamma $ & \topoTags{40 & }27 & 16022 \EOL
+
+% \rn = 58
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \bar{p} \gamma $ & \topoTags{39 & }27 & 16049 \EOL
+
+% \rn = 59
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \pi^{-} \bar{n} $ & \topoTags{82 & }25 & 16074 \EOL
+
+% \rn = 60
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} \gamma^{F} $ & \topoTags{99 & }25 & 16099 \EOL
+
+% \rn = 61
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} \gamma^{F} $ & \topoTags{89 & }23 & 16122 \EOL
+
+% \rn = 62
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{-} \bar{n} \gamma $ & \topoTags{35 & }23 & 16145 \EOL
+
+% \rn = 63
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{0} \bar{p} $ & \topoTags{93 & }23 & 16168 \EOL
+
+% \rn = 64
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} K^{-} \bar{n} $ & \topoTags{51 & }23 & 16191 \EOL
+
+% \rn = 65
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} \pi^{-} \bar{n} \gamma \gamma $ & \topoTags{70 & }23 & 16214 \EOL
+
+% \rn = 66
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \bar{p} \gamma \gamma $ & \topoTags{88 & }22 & 16236 \EOL
+
+% \rn = 67
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \bar{p} \gamma \gamma $ & \topoTags{19 & }22 & 16258 \EOL
+
+% \rn = 68
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{0} \pi^{+} \bar{p} $ & \topoTags{72 & }20 & 16278 \EOL
+
+% \rn = 69
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} K^{-} \bar{n} $ & \topoTags{28 & }20 & 16298 \EOL
+
+% \rn = 70
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \pi^{-} \bar{n} \gamma^{f} $ & \topoTags{100 & }20 & 16318 \EOL
+
+% \rn = 71
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{0} \pi^{+} \bar{p} \gamma $ & \topoTags{53 & }17 & 16335 \EOL
+
+% \rn = 72
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{-} \bar{n} \gamma \gamma $ & \topoTags{55 & }17 & 16352 \EOL
+
+% \rn = 73
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} $ & \topoTags{106 & }17 & 16369 \EOL
+
+% \rn = 74
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{0} \pi^{+} \bar{p} \gamma $ & \topoTags{133 & }17 & 16386 \EOL
+
+% \rn = 75
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \bar{p} \gamma $ & \topoTags{96 & }16 & 16402 \EOL
+
+% \rn = 76
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} \nu_{e} \pi^{+} \pi^{-} \pi^{-} \bar{p} $ & \topoTags{109 & }16 & 16418 \EOL
+
+% \rn = 77
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \bar{p} \gamma \gamma $ & \topoTags{134 & }16 & 16434 \EOL
+
+% \rn = 78
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{+} \bar{p} \gamma^{f} $ & \topoTags{98 & }14 & 16448 \EOL
+
+% \rn = 79
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{+} \pi^{-} K^{-} \bar{n} $ & \topoTags{48 & }13 & 16461 \EOL
+
+% \rn = 80
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma \gamma^{f} $ & \topoTags{126 & }13 & 16474 \EOL
+
+% \rn = 81
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow K_{L}^{0} \pi^{+} K^{-} \bar{p} $ & \topoTags{145 & }13 & 16487 \EOL
+
+% \rn = 82
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{0} \pi^{0} \bar{p} \gamma^{F} $ & \topoTags{78 & }12 & 16499 \EOL
+
+% \rn = 83
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{-} K^{+} K^{-} \bar{n} $ & \topoTags{104 & }12 & 16511 \EOL
+
+% \rn = 84
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma $ & \topoTags{125 & }12 & 16523 \EOL
+
+% \rn = 85
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{-} K^{+} \bar{p} \gamma^{F} $ & \topoTags{76 & }11 & 16534 \EOL
+
+% \rn = 86
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{+} \pi^{+} \pi^{-} \bar{p} $ & \topoTags{49 & }11 & 16545 \EOL
+
+% \rn = 87
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} \gamma $ & \topoTags{91 & }11 & 16556 \EOL
+
+% \rn = 88
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{0} \pi^{0} \pi^{+} \bar{p} $ & \topoTags{129 & }11 & 16567 \EOL
+
+% \rn = 89
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{0} \pi^{-} \bar{n} \gamma^{F} $ & \topoTags{159 & }11 & 16578 \EOL
+
+% \rn = 90
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} \pi^{+} \pi^{+} \pi^{-} \bar{p} $ & \topoTags{86 & }10 & 16588 \EOL
+
+% \rn = 91
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{-} \bar{\nu}_{e} K^{+} \bar{p} $ & \topoTags{127 & }10 & 16598 \EOL
+
+% \rn = 92
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{-} K^{+} \bar{p} \gamma^{f} $ & \topoTags{113 & }9 & 16607 \EOL
+
+% \rn = 93
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{0} \pi^{0} \pi^{0} \bar{p} \gamma^{F} $ & \topoTags{153 & }9 & 16616 \EOL
+
+% \rn = 94
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \mu^{-} \bar{\nu}_{\mu} K^{+} \bar{p} $ & \topoTags{154 & }9 & 16625 \EOL
+
+% \rn = 95
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma^{F} $ & \topoTags{64 & }8 & 16633 \EOL
+
+% \rn = 96
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{0} \pi^{0} \pi^{0} \pi^{-} \bar{n} \gamma^{F} $ & \topoTags{45 & }8 & 16641 \EOL
+
+% \rn = 97
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{+} \pi^{-} \pi^{-} \bar{n} \gamma^{F} $ & \topoTags{50 & }8 & 16649 \EOL
+
+% \rn = 98
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow e^{+} e^{-} \pi^{0} \pi^{+} \pi^{-} \bar{p} \gamma^{F} \gamma^{f} $ & \topoTags{108 & }8 & 16657 \EOL
+
+% \rn = 99
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{0} \pi^{+} \pi^{+} \pi^{-} \pi^{-} \bar{p} \gamma^{F} $ & \topoTags{155 & }8 & 16665 \EOL
+
+% \rn = 100
+\rn & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \pi^{-} K^{+} \bar{p} \gamma^{f} $ & \topoTags{157 & }8 & 16673 \EOL
+
+rest & $ \bar{\Lambda}_{c}^{-} \dashrightarrow \rm{others \  (141 \  in \  total)} $ & \topoTags{--- & }362 & 17035 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Cascade decay branches of $ K_{L}^{0} $ (only the first five hierarchies are involved).}
+\tableheaderP{rowNo & \thead{cascade decay branch of $ K_{L}^{0} $} & \topoTags{iCascDcyBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & \makecell[l]{ $ 
+K_{L}^{0} \rightarrow \pi^{0} \pi^{0} \pi^{0} 
+$ } & \topoTags{1 & }71 & 71 \EOL
+
+% \rn = 2
+\rn & \makecell[l]{ $ 
+K_{L}^{0} \rightarrow e^{+} \nu_{e} \pi^{-} 
+$ } & \topoTags{5 & }29 & 100 \EOL
+
+% \rn = 3
+\rn & \makecell[l]{ $ 
+K_{L}^{0} \rightarrow e^{-} \bar{\nu}_{e} \pi^{+} 
+$ } & \topoTags{3 & }26 & 126 \EOL
+
+% \rn = 4
+\rn & \makecell[l]{ $ 
+K_{L}^{0} \rightarrow \mu^{+} \nu_{\mu} \pi^{-} 
+$ } & \topoTags{4 & }22 & 148 \EOL
+
+% \rn = 5
+\rn & \makecell[l]{ $ 
+K_{L}^{0} \rightarrow \pi^{0} \pi^{+} \pi^{-} 
+$ } & \topoTags{0 & }22 & 170 \EOL
+
+% \rn = 6
+\rn & \makecell[l]{ $ 
+K_{L}^{0} \rightarrow \mu^{-} \bar{\nu}_{\mu} \pi^{+} 
+$ } & \topoTags{2 & }20 & 190 \EOL
+
+% \rn = 7
+\rn & \makecell[l]{ $ 
+K_{L}^{0} \rightarrow \pi^{0} \pi^{0} \pi^{0} ,
+\pi^{0} \rightarrow e^{+} e^{-} \gamma^{F} 
+$ } & \topoTags{6 & }2 & 192 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Cascade decay branches of $ K_{S}^{0} $ (only the first five hierarchies are involved).}
+\tableheaderP{rowNo & \thead{cascade decay branch of $ K_{S}^{0} $} & \topoTags{iCascDcyBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & \makecell[l]{ $ 
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} 
+$ } & \topoTags{0 & }2054 & 2054 \EOL
+
+% \rn = 2
+\rn & \makecell[l]{ $ 
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} 
+$ } & \topoTags{1 & }1069 & 3123 \EOL
+
+% \rn = 3
+\rn & \makecell[l]{ $ 
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} \gamma^{f} 
+$ } & \topoTags{3 & }39 & 3162 \EOL
+
+% \rn = 4
+\rn & \makecell[l]{ $ 
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} ,
+\pi^{0} \rightarrow e^{+} e^{-} \gamma^{F} 
+$ } & \topoTags{2 & }11 & 3173 \EOL
+
+% \rn = 5
+\rn & \makecell[l]{ $ 
+K_{S}^{0} \rightarrow \pi^{+} \pi^{-} \gamma^{F} 
+$ } & \topoTags{4 & }7 & 3180 \EOL
+
+% \rn = 6
+\rn & \makecell[l]{ $ 
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} ,
+\pi^{0} \rightarrow e^{+} e^{-} \gamma^{F} \gamma^{f} \gamma^{f} 
+$ } & \topoTags{5 & }1 & 3181 \EOL
+
+% \rn = 7
+\rn & \makecell[l]{ $ 
+K_{S}^{0} \rightarrow \pi^{0} \pi^{0} ,
+\pi^{0} \rightarrow e^{+} e^{-} \gamma^{F} \gamma^{f} 
+$ } & \topoTags{6 & }1 & 3182 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Cascade decay branches of $ \bar{\Lambda} $ (only the first five hierarchies are involved).}
+\tableheaderP{rowNo & \thead{cascade decay branch of $ \bar{\Lambda} $} & \topoTags{iCascDcyBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} 
+$ } & \topoTags{0 & }4861 & 4861 \EOL
+
+% \rn = 2
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} 
+$ } & \topoTags{1 & }1407 & 6268 \EOL
+
+% \rn = 3
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} ,
+\pi^{0} \rightarrow e^{+} e^{-} \gamma^{F} 
+$ } & \topoTags{2 & }15 & 6283 \EOL
+
+% \rn = 4
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} \gamma^{f} 
+$ } & \topoTags{5 & }8 & 6291 \EOL
+
+% \rn = 5
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow \bar{n} \gamma 
+$ } & \topoTags{6 & }3 & 6294 \EOL
+
+% \rn = 6
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow \pi^{+} \bar{p} \gamma^{F} 
+$ } & \topoTags{7 & }3 & 6297 \EOL
+
+% \rn = 7
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow \pi^{0} \bar{n} ,
+\pi^{0} \rightarrow e^{+} e^{-} \gamma^{F} \gamma^{f} 
+$ } & \topoTags{4 & }2 & 6299 \EOL
+
+% \rn = 8
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow e^{+} \nu_{e} \bar{p} 
+$ } & \topoTags{3 & }1 & 6300 \EOL
+
+% \rn = 9
+\rn & \makecell[l]{ $ 
+\bar{\Lambda} \rightarrow e^{+} \nu_{e} \bar{p} \gamma^{f} \gamma^{f} 
+$ } & \topoTags{8 & }1 & 6301 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Cascade decay branches of $ \omega $ (only the first five hierarchies are involved).}
+\tableheaderP{rowNo & \thead{cascade decay branch of $ \omega $} & \topoTags{iCascDcyBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} 
+$ } & \topoTags{0 & }1697 & 1697 \EOL
+
+% \rn = 2
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{0} \gamma 
+$ } & \topoTags{2 & }69 & 1766 \EOL
+
+% \rn = 3
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} \gamma^{f} 
+$ } & \topoTags{6 & }25 & 1791 \EOL
+
+% \rn = 4
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{+} \pi^{+} \pi^{-} \pi^{-} 
+$ } & \topoTags{4 & }11 & 1802 \EOL
+
+% \rn = 5
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{+} \pi^{-} 
+$ } & \topoTags{7 & }10 & 1812 \EOL
+
+% \rn = 6
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\pi^{0} \rightarrow e^{+} e^{-} \gamma^{F} 
+$ } & \topoTags{1 & }8 & 1820 \EOL
+
+% \rn = 7
+\rn & \makecell[l]{ $ 
+\omega \rightarrow e^{+} e^{-} \pi^{0} 
+$ } & \topoTags{8 & }4 & 1824 \EOL
+
+% \rn = 8
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{0} \pi^{+} \pi^{-} ,
+\pi^{0} \rightarrow e^{+} e^{-} \gamma^{F} \gamma^{f} 
+$ } & \topoTags{5 & }2 & 1826 \EOL
+
+% \rn = 9
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{+} \pi^{-} \gamma^{F} 
+$ } & \topoTags{3 & }1 & 1827 \EOL
+
+% \rn = 10
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \pi^{+} \pi^{-} \gamma^{f} 
+$ } & \topoTags{9 & }1 & 1828 \EOL
+
+% \rn = 11
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \eta \gamma ,
+\eta \rightarrow \pi^{+} \pi^{-} \gamma^{F} 
+$ } & \topoTags{10 & }1 & 1829 \EOL
+
+% \rn = 12
+\rn & \makecell[l]{ $ 
+\omega \rightarrow \eta \gamma ,
+\eta \rightarrow \pi^{0} \pi^{0} \pi^{0} 
+$ } & \topoTags{11 & }1 & 1830 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Production branches of $ K_{S}^{0} $.}
+\tableheaderP{rowNo & \thead{production branch of $ K_{S}^{0} $} & \topoTags{iProdBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & $ K^{0} \rightarrow {\color{blue}{ K_{S}^{0} }} $ & \topoTags{0 & }3039 & 3039 \EOL
+
+% \rn = 2
+\rn & $ \bar{K}^{0} \rightarrow {\color{blue}{ K_{S}^{0} }} $ & \topoTags{1 & }96 & 3135 \EOL
+
+% \rn = 3
+\rn & $ \phi \rightarrow K_{L}^{0} {\color{blue}{ K_{S}^{0} }} $ & \topoTags{2 & }47 & 3182 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Production branches of $ \bar{\Lambda} $.}
+\tableheaderP{rowNo & \thead{production branch of $ \bar{\Lambda} $} & \topoTags{iProdBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & $ \bar{\Sigma}^{0} \rightarrow {\color{blue}{ \bar{\Lambda} }} \gamma $ & \topoTags{4 & }1412 & 1412 \EOL
+
+% \rn = 2
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} {\color{blue}{ \bar{\Lambda} }} $ & \topoTags{0 & }991 & 2403 \EOL
+
+% \rn = 3
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \pi^{-} {\color{blue}{ \bar{\Lambda} }} $ & \topoTags{2 & }888 & 3291 \EOL
+
+% \rn = 4
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} \pi^{-} {\color{blue}{ \bar{\Lambda} }} $ & \topoTags{5 & }636 & 3927 \EOL
+
+% \rn = 5
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \omega {\color{blue}{ \bar{\Lambda} }} $ & \topoTags{3 & }599 & 4526 \EOL
+
+rest & others \  (23 \  in \  total) & \topoTags{--- & }1775 & 6301 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Production branches of $ \omega $.}
+\tableheaderP{rowNo & \thead{production branch of $ \omega $} & \topoTags{iProdBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow {\color{blue}{ \omega }} \bar{\Sigma}^{-} $ & \topoTags{0 & }1022 & 1022 \EOL
+
+% \rn = 2
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} {\color{blue}{ \omega }} \bar{\Lambda} $ & \topoTags{1 & }599 & 1621 \EOL
+
+% \rn = 3
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow {\color{blue}{ \omega }} \bar{\Sigma}^{*-} $ & \topoTags{2 & }120 & 1741 \EOL
+
+% \rn = 4
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow {\color{blue}{ \omega }} \bar{\Delta}^{-} $ & \topoTags{3 & }59 & 1800 \EOL
+
+% \rn = 5
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow {\color{blue}{ \omega }} \bar{p} $ & \topoTags{5 & }26 & 1826 \EOL
+
+rest & others \  (2 \  in \  total) & \topoTags{--- & }4 & 1830 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Production branches of $ K_{L}^{0} $.}
+\tableheaderP{rowNo & \thead{production branch of $ K_{L}^{0} $} & \topoTags{iProdBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & $ K^{0} \rightarrow {\color{blue}{ K_{L}^{0} }} $ & \topoTags{0 & }1382 & 1382 \EOL
+
+% \rn = 2
+\rn & $ \bar{K}^{0} \rightarrow {\color{blue}{ K_{L}^{0} }} $ & \topoTags{2 & }55 & 1437 \EOL
+
+% \rn = 3
+\rn & $ \phi \rightarrow {\color{blue}{ K_{L}^{0} }} K_{S}^{0} $ & \topoTags{1 & }47 & 1484 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{clccc}
+\tablecaption{Production branches of $ K^{+} $.}
+\tableheaderP{rowNo & \thead{production branch of $ K^{+} $} & \topoTags{iProdBrP & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{-} {\color{blue}{ K^{+} }} \bar{p} $ & \topoTags{2 & }1208 & 1208 \EOL
+
+% \rn = 2
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} {\color{blue}{ K^{+} }} \bar{p} $ & \topoTags{1 & }475 & 1683 \EOL
+
+% \rn = 3
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{0} \pi^{0} \pi^{-} {\color{blue}{ K^{+} }} \bar{p} $ & \topoTags{0 & }382 & 2065 \EOL
+
+% \rn = 4
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{-} \pi^{-} {\color{blue}{ K^{+} }} \bar{n} $ & \topoTags{4 & }71 & 2136 \EOL
+
+% \rn = 5
+\rn & $ \bar{\Lambda}_{c}^{-} \rightarrow \pi^{+} \pi^{-} \pi^{-} {\color{blue}{ K^{+} }} \bar{p} $ & \topoTags{3 & }39 & 2175 \EOL
+
+rest & others \  (10 \  in \  total) & \topoTags{--- & }86 & 2261 \\ \hline
+
+\end{longtable}
+
+\clearpage
+
+\small
+\centering
+\setcounter{rownumbers}{0}
+\begin{longtable}{ccccc}
+\tablecaption{Signal decay branches.}
+\tableheaderP{rowNo & \thead{signal decay branch} & \topoTags{iSigDcyBr & }nCase & nCCase \\}
+
+% \rn = 1
+\rn & $ \Lambda_{c}^{+} \rightarrow \pi^{0} \pi^{+} \pi^{-} \Sigma^{+} $ & \topoTags{0 & }0 & 0 \\ \hline
+
+\end{longtable}
+\end{document}

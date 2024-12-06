@@ -1,0 +1,202 @@
+
+Processing fitInclusive4660.cc...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[#0] WARNING:InputArguments -- The parameter 'sigma' with range [0, 0.00450633] of the RooGaussian 'gauss' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:Caching -- Changing internal binning of variable 'M_BC_r3c' in FFT 'SignalPdf' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(sumpdf) WARNING: a likelihood fit is requested of what appears to be weighted data.
+       While the estimated values of the parameters will always be calculated taking the weights into account,
+       there are multiple ways to estimate the errors of the parameters. You are advised to make an 
+       explicit choice for the error calculation:
+           - Either provide SumW2Error(true), to calculate a sum-of-weights-corrected HESSE error matrix
+             (error will be proportional to the number of events in MC).
+           - Or provide SumW2Error(false), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights, i.e., a dataset with <sum of weights> events).
+           - Or provide AsymptoticError(true), to use the asymptotically correct expression
+             (for details see https://arxiv.org/abs/1911.01303).
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_SignalPdf' created with bounds [2.25,2.33046]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x5294360 with pdf modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(argus_Int[M_BC_r3c]) using numeric integrator RooIntegrator1D to calculate Int(M_BC_r3c)
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'refrange_fft_SignalPdf' created with bounds [2.25,2.33046]
+[#0] WARNING:Eval -- The FFT convolution 'SignalPdf' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'M_BC_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x51338c0 with pdf modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(argus_Int[M_BC_r3c]) using numeric integrator RooIntegrator1D to calculate Int(M_BC_r3c)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (modelPdf)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (SignalPdf,argus)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 c           -7.48590e+01  1.10000e+01   -1.00000e+02  1.00000e+01
+     2 mean        -2.91816e-04  1.26142e-04   -9.22526e-04  3.38894e-04
+     3 nbkg         4.42725e+03  2.21362e+03    0.00000e+00  1.06254e+05
+     4 nsig         4.42725e+03  2.21362e+03    0.00000e+00  1.06254e+05
+     5 sigma        8.43760e-06  4.21880e-06    0.00000e+00  4.50633e-03
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    6 **MIGRAD        2500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-1.1023e+06 FROM MIGRAD    STATUS=INITIATE       47 CALLS          48 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  c           -7.48590e+01   1.10000e+01   0.00000e+00   6.64729e+03
+   2  mean        -2.91816e-04   1.26142e-04   0.00000e+00  -2.62267e+03
+   3  nbkg         4.42725e+03   2.21362e+03   0.00000e+00  -3.15675e+04
+   4  nsig         4.42725e+03   2.21362e+03   0.00000e+00  -3.53982e+05
+   5  sigma        6.76326e-05   4.21880e-06   1.59065e-01  -1.22449e+01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-1.2678e+06 FROM MIGRAD    STATUS=CONVERGED     330 CALLS         331 TOTAL
+                     EDM=7.72819e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  c           -1.00000e+02   7.86631e-02   4.16388e-02** at limit **
+   2  mean         6.74157e-05   1.09158e-05   1.62548e-02   3.93375e-02
+   3  nbkg         3.57824e+03   7.74239e+01   3.11090e-03   1.10624e+00
+   4  nsig         8.56686e+04   2.96766e+02   5.46685e-03  -2.44382e-01
+   5  sigma        8.11456e-04   2.93804e-05   1.31181e-02  -4.01467e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  8.385e-10  5.239e-13 -3.801e-05  3.776e-05  2.989e-12 
+  5.239e-13  1.192e-10 -4.097e-05  4.081e-05 -3.817e-11 
+ -3.801e-05 -4.097e-05  5.994e+03 -2.402e+03 -1.563e-04 
+  3.776e-05  4.081e-05 -2.402e+03  8.807e+04  1.554e-04 
+  2.989e-12 -3.817e-11 -1.563e-04  1.554e-04  8.633e-10 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5
+        1  0.01735   1.000  0.002 -0.017  0.004  0.004
+        2  0.13217   0.002  1.000 -0.048  0.013 -0.119
+        3  0.13693  -0.017 -0.048  1.000 -0.105 -0.069
+        4  0.10551   0.004  0.013 -0.105  1.000  0.018
+        5  0.14095   0.004 -0.119 -0.069  0.018  1.000
+ **********
+ **    7 **SET ERR         0.5
+ **********
+ **********
+ **    8 **SET PRINT           1
+ **********
+ **********
+ **    9 **HESSE        2500
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-1.2678e+06 FROM HESSE     STATUS=OK             31 CALLS         362 TOTAL
+                     EDM=7.74869e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  c           -1.00000e+02   7.86607e-02   8.32775e-03   1.72787e+01
+                                 WARNING -   - ABOVE PARAMETER IS AT LIMIT.
+   2  mean         6.74157e-05   1.09156e-05   6.50191e-04   2.53561e+00
+   3  nbkg         3.57824e+03   7.74103e+01   6.22180e-04  -1.20168e+00
+   4  nsig         8.56686e+04   2.96780e+02   2.18674e-04   6.59250e-01
+   5  sigma        8.11456e-04   2.93818e-05   5.24724e-04  -6.94316e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  5    ERR DEF=0.5
+  8.385e-10  1.046e-13 -7.571e-06  7.566e-06  5.868e-13 
+  1.046e-13  1.192e-10 -4.092e-05  4.091e-05 -3.825e-11 
+ -7.571e-06 -4.092e-05  5.992e+03 -2.413e+03 -1.534e-04 
+  7.566e-06  4.091e-05 -2.413e+03  8.808e+04  1.534e-04 
+  5.868e-13 -3.825e-11 -1.534e-04  1.534e-04  8.634e-10 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5
+        1  0.00346   1.000  0.000 -0.003  0.001  0.001
+        2  0.13230   0.000  1.000 -0.048  0.013 -0.119
+        3  0.13567  -0.003 -0.048  1.000 -0.105 -0.067
+        4  0.10592   0.001  0.013 -0.105  1.000  0.018
+        5  0.14046   0.001 -0.119 -0.067  0.018  1.000
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: -1.2678e+06, estimated distance to minimum: 7.74869e-05
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+                    m0    2.3305e+00
+                     p    8.0000e+00
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+                     c   -7.4859e+01   -1.0000e+02 +/-  7.87e-02  <none>
+                  mean   -2.9182e-04    6.7416e-05 +/-  1.09e-05  <none>
+                  nbkg    4.4272e+03    3.5782e+03 +/-  7.74e+01  <none>
+                  nsig    4.4272e+03    8.5669e+04 +/-  2.97e+02  <none>
+                 sigma    8.4376e-06    8.1146e-04 +/-  2.94e-05  <none>
+
+[#1] INFO:InputArguments -- RooAbsData::plotOn(data) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x56f9b20 with pdf modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(argus_Int[M_BC_r3c]) using numeric integrator RooIntegrator1D to calculate Int(M_BC_r3c)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) directly selected PDF components: (SignalPdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) indirectly selected PDF components: (modelPdf,gauss)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x5295110 with pdf modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(argus_Int[M_BC_r3c]) using numeric integrator RooIntegrator1D to calculate Int(M_BC_r3c)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) directly selected PDF components: (argus)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) indirectly selected PDF components: ()
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x51341b0 with pdf modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 0 from preexisting content.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(argus_Int[M_BC_r3c]) using numeric integrator RooIntegrator1D to calculate Int(M_BC_r3c)
+0x7ffffa597360 RooAddPdf::sumpdf = [#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x51341b0 with pdf modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c] for nset () with code 0 from preexisting content.
+6.61227e+12 [Auto,Dirty] 
+  0x5de67f0/V- RooFFTConvPdf::SignalPdf = [#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x5124330 with pdf modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c for nset (M_BC_r3c) with code 1 from preexisting content.
+50.3526 [Auto,Dirty] 
+  --- RooAbsCachedPdf begin cache ---
+[0] Configuration for observables ()
+  [0] 0x56f9b20 RooHistPdf::modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c] = 6.88845e+12 [Auto,Dirty] 
+  [0]   0x50da0b0/V- RooRealVar::M_BC_r3c = 2.29023
+  [0]   0x7ffffa598ff0/V- RooRealVar::mean = 6.74157e-05 +/- 1.09156e-05
+  [0]   0x7ffffa599358/V- RooRealVar::sigma = 0.000811456 +/- 2.93818e-05
+[1] Configuration for observables (M_BC_r3c)
+  [1] 0x5124450 RooHistPdf::modelPdf_CONV_gauss_CACHE_Obs[M_BC_r3c]_NORM_M_BC_r3c = 6.88845e+12/1.36804e+11 [Auto,Clean] 
+  [1]   0x50da0b0/V- RooRealVar::M_BC_r3c = 2.29023
+  [1]   0x7ffffa598ff0/V- RooRealVar::mean = 6.74157e-05 +/- 1.09156e-05
+  [1]   0x7ffffa599358/V- RooRealVar::sigma = 0.000811456 +/- 2.93818e-05
+  --- RooAbsCachedPdf end cache --- 
+    0x50da0b0/V- RooRealVar::M_BC_r3c = 2.29023
+    0x5ed74a0/-- RooKeysPdf::modelPdf = 45.8911 [Auto,Dirty] 
+      0x50da0b0/V- RooRealVar::M_BC_r3c = 2.29023
+    0x7ffffa598b10/-- RooGaussian::gauss = 0 [Auto,Dirty] 
+      0x50da0b0/V- RooRealVar::M_BC_r3c = 2.29023
+      0x7ffffa598ff0/V- RooRealVar::mean = 6.74157e-05 +/- 1.09156e-05
+      0x7ffffa599358/V- RooRealVar::sigma = 0.000811456 +/- 2.93818e-05
+    0x7ffffa598ff0/V- RooRealVar::mean = 6.74157e-05 +/- 1.09156e-05
+    0x7ffffa599358/V- RooRealVar::sigma = 0.000811456 +/- 2.93818e-05
+  0x7ffffa597d60/V- RooRealVar::nsig = 85668.6 +/- 296.78
+  0x5de72e0/V- RooArgusBG::argus = 1.40732e-13 [Auto,Dirty] 
+    0x50da0b0/V- RooRealVar::M_BC_r3c = 2.29023
+    0x7ffffa5987a0/V- RooRealVar::m0 = 2.33046
+    0x7ffffa5980d0/V- RooRealVar::c = -100 +/- 0.0786607
+    0x7ffffa598438/V- RooRealVar::p = 8
+  0x7ffffa5979f8/V- RooRealVar::nbkg = 3578.24 +/- 77.4103
+[#1] INFO:Eval -- RooRealVar::setRange(M_BC_r3c) new range named 'signal' created with bounds [2.25,2.33046]
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(argus_Int[M_BC_r3c]) using numeric integrator RooIntegrator1D to calculate Int(M_BC_r3c)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(argus_Int[M_BC_r3c|signal]_Norm[M_BC_r3c]) using numeric integrator RooIntegrator1D to calculate Int(M_BC_r3c)
+ nsignal 85668.6 +- 296.78 nsig 85668.6 isig->getVal()1
+ nbg 3578.21 +- 77.4098
+ chain_data->GetEntries(cut_sum1) 88545
+m_fitres->minNll(): -1.2678e+06
+fit: efficiency = 0.0857  ,all 1e+06 ,fit num 85668.6
+truth: efficiency = 0.2996  ,all 1e+06 ,truth num 299605
+efficiency = 0.0857 
+mean: 6.74157e-05 1.09156e-05
+sigma: 0.000811456 2.93818e-05
+(int) 0

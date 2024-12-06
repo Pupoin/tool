@@ -1,0 +1,222 @@
+
+Processing fit_chi2.C...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(data) Ignored 8005 out of range events
+[#1] INFO:Caching -- Changing internal binning of variable 'chi2_min_r3c' in FFT 'SignalPdf' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#1] INFO:Eval -- RooRealVar::setRange(chi2_min_r3c) new range named 'fitrange' created with bounds [0,100]
+[#1] INFO:Eval -- RooRealVar::setRange(chi2_min_r3c) new range named 'refrange_fft_SignalPdf' created with bounds [0,100]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x2feb0a0 with pdf modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] for nset (chi2_min_r3c) with code 0
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Eval -- RooRealVar::setRange(chi2_min_r3c) new range named 'refrange_fft_SignalPdf' created with bounds [0,100]
+[#0] WARNING:Eval -- The FFT convolution 'SignalPdf' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'chi2_min_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x2fbbd20 with pdf modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] for nset (chi2_min_r3c) with code 0 from preexisting content.
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (modelPdf,bkgPdf)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (SignalPdf)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 mean         7.83130e-02  2.00000e-01   -1.00000e+00  1.00000e+00
+     2 nbkg         6.12900e+02  3.06450e+02    0.00000e+00  1.47096e+04
+     3 nsig         6.12900e+02  3.06450e+02    0.00000e+00  1.47096e+04
+     4 sigma        3.48950e-02  1.74475e-02    0.00000e+00  5.00000e-01
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    6 **MIGRAD        2000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-9279.3 FROM MIGRAD    STATUS=INITIATE       57 CALLS          58 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mean         3.61505e-01   2.00000e-01   4.71381e-02  -6.46188e+00
+   2  nbkg         6.12900e+02   3.06450e+02   0.00000e+00  -9.38876e+03
+   3  nsig         6.12900e+02   3.06450e+02   0.00000e+00  -5.12918e+03
+   4  sigma        3.48950e-02   1.74475e-02   0.00000e+00   1.51440e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 4 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 2.75912 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.6290e+00  4.8221e-01  1.5178e+00  5.6290e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 3.634668 TO DIAGONAL.
+ FCN=-11887.3 FROM HESSE     STATUS=NOT POSDEF     27 CALLS         181 TOTAL
+                     EDM=0.00491361    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mean         3.68397e-01   1.36710e+00   8.07197e-03   8.22777e-03
+   2  nbkg         3.66091e+03   2.99854e+01   7.59511e-04   1.49637e-01
+   3  nsig         5.92192e+02   2.02218e+01   1.12668e-03   6.89554e-02
+   4  sigma        2.28965e-02   2.53692e-01   9.85517e-02  -3.39254e-03
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-11888 FROM MIGRAD    STATUS=CONVERGED     288 CALLS         289 TOTAL
+                     EDM=0.000869148    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mean         7.96320e-02   2.82910e-01   2.10722e-02  -1.24040e-02
+   2  nbkg         3.67022e+03   7.56269e+01   7.58935e-04  -1.92963e-01
+   3  nsig         5.82652e+02   5.13229e+01   1.12572e-03  -7.00380e-02
+   4  sigma        4.76184e-02   3.69451e-01   1.75743e-01   1.24620e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  8.228e-02 -3.261e+00  3.264e+00  9.387e-04 
+ -3.261e+00  5.720e+03 -2.050e+03 -1.178e+00 
+  3.264e+00 -2.050e+03  2.634e+03  1.179e+00 
+  9.387e-04 -1.178e+00  1.179e+00  1.184e-01 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.22521   1.000 -0.150  0.222  0.010
+        2  0.52939  -0.150  1.000 -0.528 -0.045
+        3  0.54911   0.222 -0.528  1.000  0.067
+        4  0.06806   0.010 -0.045  0.067  1.000
+ **********
+ **    7 **SET ERR         0.5
+ **********
+ **********
+ **    8 **SET PRINT           1
+ **********
+ **********
+ **    9 **HESSE        2000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-11888 FROM HESSE     STATUS=OK             33 CALLS         322 TOTAL
+                     EDM=0.00163485    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  mean         7.96320e-02   2.86894e-01   5.00000e-01   7.97164e-02
+   2  nbkg         3.67022e+03   7.52158e+01   1.51787e-04  -5.24726e-01
+   3  nsig         5.82652e+02   5.06985e+01   2.25144e-04  -1.17007e+00
+   4  sigma        4.76184e-02   4.62763e-01   5.00000e-01  -9.43345e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  8.469e-02 -2.339e+00  2.339e+00  1.277e-02 
+ -2.339e+00  5.658e+03 -1.988e+03 -1.955e+00 
+  2.339e+00 -1.988e+03  2.571e+03  1.956e+00 
+  1.277e-02 -1.955e+00  1.956e+00  2.348e-01 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.17886   1.000 -0.107  0.159  0.091
+        2  0.52188  -0.107  1.000 -0.521 -0.054
+        3  0.53312   0.159 -0.521  1.000  0.080
+        4  0.11274   0.091 -0.054  0.080  1.000
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+
+  RooFitResult: minimized FCN value: -11888, estimated distance to minimum: 0.00163485
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+                  frLL    1.2784e+03
+              frhardon    3.1826e+03
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+                  mean    7.8313e-02    7.9632e-02 +/-  2.87e-01  <none>
+                  nbkg    6.1290e+02    3.6702e+03 +/-  7.52e+01  <none>
+                  nsig    6.1290e+02    5.8265e+02 +/-  5.07e+01  <none>
+                 sigma    3.4895e-02    4.7618e-02 +/-  4.63e-01  <none>
+
+[#1] INFO:Eval -- RooRealVar::setRange(chi2_min_r3c) new range named 'refrange_fft_SignalPdf' created with bounds [0,100]
+[#0] WARNING:Eval -- The FFT convolution 'SignalPdf' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'chi2_min_r3c'.
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 110 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 111 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 112 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 113 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 114 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 115 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 116 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 117 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 118 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 119 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 120 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 121 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 110 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 111 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 112 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 113 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 114 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 115 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 116 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 117 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 118 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 119 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 120 is out of range (0,109)
+[#0] ERROR:InputArguments -- RooAbsRealLValue::setBin(chi2_min_r3c) ERROR: bin index 121 is out of range (0,109)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x301a7c0 with pdf modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] for nset (chi2_min_r3c) with code 0
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) directly selected PDF components: (SignalPdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) indirectly selected PDF components: (modelPdf,gauss)
+[#0] WARNING:Eval -- The FFT convolution 'SignalPdf' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'chi2_min_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x2ff7ea0 with pdf modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] for nset (chi2_min_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) directly selected PDF components: (hadronBKGpdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) indirectly selected PDF components: (bkgPdf)
+[#0] WARNING:Eval -- The FFT convolution 'SignalPdf' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'chi2_min_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x3262b90 with pdf modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] for nset (chi2_min_r3c) with code 0 from preexisting content.
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) directly selected PDF components: (LLBKGpdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(sumpdf) indirectly selected PDF components: (bkgPdf)
+[#0] WARNING:Eval -- The FFT convolution 'SignalPdf' will run with 100 bins. A decent accuracy for difficult convolutions is typically only reached with n >= 1000. Suggest to increase the number of bins of the observable 'chi2_min_r3c'.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x32a40b0 with pdf modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] for nset (chi2_min_r3c) with code 0 from preexisting content.
+0x7ffff8f11150 RooAddPdf::sumpdf = [#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x2fb6f80 with pdf modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] for nset () with code 0 from preexisting content.
+0.00453141 [Auto,Dirty] 
+  0x2dd06b0/V- RooFFTConvPdf::SignalPdf = [#1] INFO:Caching -- RooAbsCachedPdf::getCache(SignalPdf) creating new cache 0x32f3b70 with pdf modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] for nset (chi2_min_r3c) with code 1 from preexisting content.
+0 [Auto,Dirty] 
+  --- RooAbsCachedPdf begin cache ---
+[0] Configuration for observables ()
+  [0] 0x2f94250 RooHistPdf::modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] = 0 [Auto,Dirty] 
+  [0]   0x2f14750/V- RooRealVar::chi2_min_r3c = 50
+  [0]   0x7ffff8f131a8/V- RooRealVar::mean = 0.079632 +/- 0.286894
+  [0]   0x7ffff8f12dc0/V- RooRealVar::sigma = 0.0476184 +/- 0.462763
+[1] Configuration for observables (chi2_min_r3c)
+  [1] 0x32fec50 RooHistPdf::modelPdf_CONV_gauss_CACHE_Obs[chi2_min_r3c] = 0/7.03971e-15 [Auto,Clean] 
+  [1]   0x2f14750/V- RooRealVar::chi2_min_r3c = 50
+  [1]   0x7ffff8f131a8/V- RooRealVar::mean = 0.079632 +/- 0.286894
+  [1]   0x7ffff8f12dc0/V- RooRealVar::sigma = 0.0476184 +/- 0.462763
+  --- RooAbsCachedPdf end cache --- 
+    0x2f14750/V- RooRealVar::chi2_min_r3c = 50
+    0x2e66d60/-- RooKeysPdf::modelPdf = 0.00371354 [Auto,Dirty] 
+      0x2f14750/V- RooRealVar::chi2_min_r3c = 50
+    0x7ffff8f128a0/-- RooGaussian::gauss = 0 [Auto,Dirty] 
+      0x2f14750/V- RooRealVar::chi2_min_r3c = 50
+      0x7ffff8f131a8/V- RooRealVar::mean = 0.079632 +/- 0.286894
+      0x7ffff8f12dc0/V- RooRealVar::sigma = 0.0476184 +/- 0.462763
+    0x7ffff8f131a8/V- RooRealVar::mean = 0.079632 +/- 0.286894
+    0x7ffff8f12dc0/V- RooRealVar::sigma = 0.0476184 +/- 0.462763
+  0x7ffff8f11bd0/V- RooRealVar::nsig = 582.652 +/- 50.6985
+  0x2f5dff0/V- RooAddPdf::bkgPdf = 0.00525077 [Auto,Dirty] 
+    0x2f63500/V- RooKeysPdf::LLBKGpdf = 0.00523828 [Auto,Dirty] 
+      0x2dd9b70/V- RooRealVar::chi2_min_r3c = 50
+    0x7ffff8f12480/V- RooRealVar::frLL = 1278.43
+    0x2f65970/V- RooKeysPdf::hadronBKGpdf = 0.00525579 [Auto,Dirty] 
+      0x2f62eb0/V- RooRealVar::chi2_min_r3c = 50
+    0x7ffff8f12098/V- RooRealVar::frhardon = 3182.55
+  0x7ffff8f117e8/V- RooRealVar::nbkg = 3670.22 +/- 75.2158
+chi2/ndf = 32.0252
+(int) 0

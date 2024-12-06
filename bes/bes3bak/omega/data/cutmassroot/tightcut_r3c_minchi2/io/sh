@@ -1,0 +1,20 @@
+hadd 4600io.root /publicfs/ucas/user/yuanchy8/7.0.6/omega/LL/cutmassroot/tightcut_r3c_minchi2/4600LL_selbranch.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/omega/hadron/cutmassroot/tightcut_r3c_minchi2/4600hadron_mode.root \
+
+hadd 4612io.root /publicfs/ucas/user/yuanchy8/7.0.6/omega/LL/cutmassroot/tightcut_r3c_minchi2/4612LL_selbranch.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/omega/hadron/cutmassroot/tightcut_r3c_minchi2/4612hadron_mode.root \
+
+hadd 4620io.root /publicfs/ucas/user/yuanchy8/7.0.6/omega/LL/cutmassroot/tightcut_r3c_minchi2/4620LL_selbranch.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/omega/hadron/cutmassroot/tightcut_r3c_minchi2/4620hadron_mode.root
+
+hadd 4640io.root /publicfs/ucas/user/yuanchy8/7.0.6/omega/LL/cutmassroot/tightcut_r3c_minchi2/4640LL_selbranch.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/omega/hadron/cutmassroot/tightcut_r3c_minchi2/4640hadron_mode.root
+
+hadd 4660io.root /publicfs/ucas/user/yuanchy8/7.0.6/omega/LL/cutmassroot/tightcut_r3c_minchi2/4660LL_selbranch.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/omega/hadron/cutmassroot/tightcut_r3c_minchi2/4660hadron_mode.root
+
+hadd 4680io.root /publicfs/ucas/user/yuanchy8/7.0.6/omega/LL/cutmassroot/tightcut_r3c_minchi2/4680LL_selbranch.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/omega/hadron/cutmassroot/tightcut_r3c_minchi2/4680hadron_mode.root \
+
+hadd 4700io.root /publicfs/ucas/user/yuanchy8/7.0.6/omega/LL/cutmassroot/tightcut_r3c_minchi2/4700LL_selbranch.root \
+                 /publicfs/ucas/user/yuanchy8/7.0.6/omega/hadron/cutmassroot/tightcut_r3c_minchi2/4700hadron_mode.root

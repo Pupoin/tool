@@ -1,0 +1,60 @@
+yuanchy8@lxslc713: data$ mycheckrun2 "sigma eta 1c, v10"
+4600______________________________________________________________
+num of sigma eta 1c, v10: 872
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/eta/data/4600
+number of *.txt is: 872
+number of bosslog is: 872
+wrong: 0
+resubmit using: source submitWrong
+
+4612______________________________________________________________
+num of sigma eta 1c, v10: 97
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/eta/data/4612
+number of *.txt is: 97
+number of bosslog is: 97
+wrong: 0
+resubmit using: source submitWrong
+
+-bash: cd: 462*/: No such file or directory
+462*______________________________________________________________
+num of sigma eta 1c, v10: 494
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/eta/data/4620
+number of *.txt is: 494
+number of bosslog is: 494
+wrong: 0
+resubmit using: source submitWrong
+
+4640____________________________________________________________
+num of sigma eta 1c, v10: 498
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/eta/data/4640
+number of *.txt is: 498
+number of bosslog is: 498
+wrong: 0
+resubmit using: source submitWrong
+
+4660____________________________________________________________
+num of sigma eta 1c, v10: 492
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/eta/data/4660
+number of *.txt is: 492
+number of bosslog is: 492
+wrong: 0
+resubmit using: source submitWrong
+
+4680____________________________________________________________
+num of sigma eta 1c, v10: 1417
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/eta/data/4680
+number of *.txt is: 1417
+number of bosslog is: 1417
+wrong: 0
+resubmit using: source submitWrong
+
+4700____________________________________________________________
+num of sigma eta 1c, v10: 473
+path is: /publicfs/ucas/user/yuanchy8/7.0.6/eta/data/4700
+number of *.txt is: 473
+number of bosslog is: 473
+wrong: 0
+resubmit using: source submitWrong
+
+yuanchy8@lxslc713: data$ pwd
+/publicfs/ucas/user/yuanchy8/7.0.6/eta/data

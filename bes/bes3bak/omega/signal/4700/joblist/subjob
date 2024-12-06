@@ -1,0 +1,1 @@
+hep_sub -g physics -o /dev/null -e /dev/null 4700_signalomega_sim_rec.condor -argu "%{ProcId}" -n 100
